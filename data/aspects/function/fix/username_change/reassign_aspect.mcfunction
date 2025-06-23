@@ -1,0 +1,1 @@
+$function aspects:aspect/$(aspect)/activate
