@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:azure_bluet",
+            "required": false
+        },
+        {
+            "id": "minecraft:open_eyeblossom",
+            "required": false
+        }
+    ]
+}

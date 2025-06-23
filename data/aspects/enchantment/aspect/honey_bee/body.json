@@ -1,0 +1,45 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.aspects.honey_bee",
+                "color": "#ffa41c"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "aspects:honey_bee/base_scale",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "aspects:honey_bee/max_health",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
+            }
+        ]
+    }
+}

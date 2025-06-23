@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "effect.minecraft.blindness",
+        "extra": [
+          {
+            "text": " (00:15)"
+          }
+        ],
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

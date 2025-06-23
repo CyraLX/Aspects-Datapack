@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:dandelion",
+            "required": false
+        },
+        {
+            "id": "minecraft:blue_orchid",
+            "required": false
+        }
+    ]
+}

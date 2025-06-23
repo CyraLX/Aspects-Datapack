@@ -1,0 +1,10 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "translate": "item.aspects.faded_relic.human.lore_2"
+        }
+    ]
+}

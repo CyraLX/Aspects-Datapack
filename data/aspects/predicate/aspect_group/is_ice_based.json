@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.aspect_group.ice_based": {
+            "min": 1
+        }
+    }
+}

@@ -1,0 +1,289 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.chosen_aspect",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.shulk",
+                "color": "#b953bd"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.shulk",
+                "color": "#b953bd"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.aspects.shulk.description",
+                "italic": true,
+                "color": "#eeeeee"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "shulk"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#eeeeee",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.void"
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#eeeeee",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.steel"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/shulk",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/shulk/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.shulk.small_footprint",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.shulk.small_footprint.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.shulk.febile_limbs",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.shulk.febile_limbs.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.shulk.shell",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.shulk.shell.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/shulk",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.shulk.use_name_1",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.shulk.use_condition_1",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.shulk.use_result_1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "item.aspects.focus.shulk.use_name_2",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.mainhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.shulk.use_result_2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "item.aspects.focus.shulk.use_name_3",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.offhand",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.shulk.use_result_3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

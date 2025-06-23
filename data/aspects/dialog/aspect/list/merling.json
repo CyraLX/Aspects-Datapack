@@ -1,0 +1,240 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.aspect_info",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.merling",
+                "color": "#2e89f1"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.aspect_info.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.merling",
+                "color": "#2e89f1"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.aspects.merling.description",
+                "italic": true,
+                "color": "#eeeeee"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "merling"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                "color": "#eeeeee",
+                "with": [
+                    {
+                        "text": "120"
+                    },
+                    {
+                        "translate": "lore.essence.aquatic"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/merling",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/merling/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.generic.aquatic",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.generic.aquatic.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.merling.finned_legs",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.merling.finned_legs.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.merling.aqua_affinity",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.merling.aqua_affinity.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.merling.trident_mastery",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.merling.trident_mastery.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/merling",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.merling.use_name_1",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.use",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.merling.use_result_1",
+                                            "with": [
+                                                {
+                                                    "text": "48"
+                                                },
+                                                {
+                                                    "text": "5"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

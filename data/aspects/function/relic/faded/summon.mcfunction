@@ -1,0 +1,1 @@
+function aspects:relic/faded/create_item with entity @s equipment.body.components.minecraft:custom_data.aspects

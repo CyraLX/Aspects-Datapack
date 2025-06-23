@@ -1,0 +1,179 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.aspects.rascal",
+                "color": "#3A3B3C"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "aspects:rascal/base_scale",
+                "amount": -0.35,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "aspects:rascal/max_health",
+                "amount": -0.3,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:block_interaction_range",
+                "id": "aspects:rascal/block_interaction_range",
+                "amount": 1.25,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:entity_interaction_range",
+                "id": "aspects:rascal/entity_interaction_range",
+                "amount": -0.75,
+                "operation": "add_value"
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "light": {
+                            "light": {
+                                "max": 10
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:movement_speed",
+                            "id": "aspects:rascal/dark_movement_speed",
+                            "amount": 0.4,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:block_break_speed",
+                            "id": "aspects:rascal/dark_block_break_speed",
+                            "amount": 0.25,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_speed",
+                            "id": "aspects:rascal/dark_attack_speed",
+                            "amount": 0.1,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_damage",
+                            "id": "aspects:rascal/dark_attack_damage",
+                            "amount": 2,
+                            "operation": "add_value"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:time_check",
+                            "value": {
+                                "min": 0,
+                                "max": 12000
+                            }
+                        },
+                        {
+                            "condition": "minecraft:weather_check",
+                            "thundering": false
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "location": {
+                                    "can_see_sky": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:movement_speed",
+                            "id": "aspects:rascal/light_movement_speed",
+                            "amount": -0.3,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_damage",
+                            "id": "aspects:rascal/light_attack_damage",
+                            "amount": -4,
+                            "operation": "add_value"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:block_break_speed",
+                            "id": "aspects:rascal/light_block_break_speed",
+                            "amount": -0.25,
+                            "operation": "add_multiplied_base"
+                        },
+                        {
+                            "type": "minecraft:attribute",
+                            "attribute": "minecraft:attack_speed",
+                            "id": "aspects:rascal/light_attack_speed",
+                            "amount": -0.1,
+                            "operation": "add_multiplied_base"
+                        }
+                    ]
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 100
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/merling/give_night_vision"
+                }
+            }
+        ]
+    }
+}

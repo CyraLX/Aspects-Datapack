@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:event/on_death",
+            "required": false
+        }
+    ]
+}

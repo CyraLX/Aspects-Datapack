@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:rose_bush",
+            "required": false
+        },
+        {
+            "id": "minecraft:pitcher_plant",
+            "required": false
+        }
+    ]
+}

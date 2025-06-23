@@ -1,0 +1,91 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.aspect_id": 6
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "items": "#aspects:aspect/elytrian/wings_dye_any"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:explode",
+                    "attribute_to_user": false,
+                    "knockback_multiplier": 2,
+                    "radius": 0.1,
+                    "create_fire": false,
+                    "block_interaction": "none",
+                    "small_particle": {
+                        "type": "minecraft:gust_emitter_small"
+                    },
+                    "large_particle": {
+                        "type": "minecraft:gust_emitter_large"
+                    },
+                    "sound": "minecraft:entity.wind_charge.wind_burst"
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.aspect_id": 6
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "items": "#aspects:aspect/elytrian/wings_dye_any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:focus/elytrian/activate_offhand"
+                }
+            }
+        ]
+    }
+}

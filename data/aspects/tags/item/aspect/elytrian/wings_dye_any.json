@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "#aspects:aspect/elytrian/wings_dye_red_blue",
+        "#aspects:aspect/elytrian/wings_dye_blue",
+        "#aspects:aspect/elytrian/wings_dye_green",
+        "#aspects:aspect/elytrian/wings_dye_aqua",
+        "#aspects:aspect/elytrian/wings_dye_gray_white",
+        "#aspects:aspect/elytrian/wings_dye_reset"
+    ]
+}

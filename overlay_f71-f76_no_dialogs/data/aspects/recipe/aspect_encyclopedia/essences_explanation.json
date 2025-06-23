@@ -1,0 +1,212 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "aspects:aspect_encyclopedia",
+    "show_notification": true,
+    "pattern": [
+        "sbf",
+        " p "
+    ],
+    "key": {
+        "p": [
+            "minecraft:paper"
+        ],
+        "b": [
+            "minecraft:book"
+        ],
+        "s": [
+            "minecraft:ink_sac"
+        ],
+        "f": [
+            "minecraft:feather"
+        ]
+    },
+    "result": {
+        "id": "minecraft:written_book",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": {
+                "translate": "item.aspects.aspect_encyclopedia",
+                "extra": [
+                    {
+                        "text": ": "
+                    },
+                    {
+                        "translate": "dialog.aspects.essences.explanation.external_title"
+                    }
+                ]
+            },
+            "minecraft:item_model": "aspects:aspect_encyclopedia/essences_explanation",
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:lore": [
+                {
+                    "text": "Release",
+                    "italic": false,
+                    "color": "dark_gray",
+                    "extra": [
+                        ": v1"
+                    ]
+                }
+            ],
+            "minecraft:custom_data": {
+                "aspects": {
+                    "aspect_encyclopedia": {
+                        "series": 0
+                    }
+                }
+            },
+            "minecraft:written_book_content": {
+                "author": "The Wayfarer",
+                "title": "Aspect Encyclopedia: Essences",
+                "generation": 3,
+                "pages": [
+                    {
+                        "translate": "dialog.aspects.essences.explanation.what_are_essences"
+                    },
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "dialog.aspects.essences.explanation.how_to_get_essences"
+                            },
+                            "\n\n• ",
+                            {
+                                "translate": "dialog.aspects.essences.explanation.how_to_get_essences.direct_damage"
+                            },
+                            "\n• ",
+                            {
+                                "translate": "dialog.aspects.essences.explanation.how_to_get_essences.essence_extractor",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.essence_extractor",
+                                        "color": "gold"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "dialog.aspects.essences.explanation.where_to_store_essences"
+                            },
+                            "\n\n• ",
+                            {
+                                "translate": "item.aspects.essence_cage",
+                                "color": "gold"
+                            }
+                        ]
+                    },
+                    {
+                        "translate": "dialog.aspects.essences.explanation.awakening_essence_cage",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_cage",
+                                "color": "gold"
+                            },
+                            {
+                                "text": "120",
+                                "color": "gold"
+                            },
+                            {
+                                "translate": "item.aspects.awakened_essence_cage",
+                                "color": "gold"
+                            }
+                        ]
+                    },
+                    {
+                        "translate": "dialog.aspects.essences.explanation.awakening_essence_cage.example",
+                        "italic": true,
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.human",
+                                "color": "#8b7e77"
+                            },
+                            {
+                                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                                "color": "gold",
+                                "with": [
+                                    {
+                                        "text": "120"
+                                    },
+                                    {
+                                        "translate": "lore.essence.humanoid"
+                                    }
+                                ]
+                            },
+                            {
+                                "translate": "item.aspects.awakened_essence_cage",
+                                "color": "gold"
+                            },
+                            {
+                                "translate": "aspect.aspects.human",
+                                "color": "#8b7e77"
+                            },
+                            {
+                                "translate": "aspect.aspects.enderian",
+                                "color": "#7749cb"
+                            },
+                            {
+                                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                                "color": "gold",
+                                "with": [
+                                    {
+                                        "text": "60"
+                                    },
+                                    {
+                                        "translate": "lore.essence.void"
+                                    }
+                                ]
+                            },
+                            {
+                                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                                "color": "gold",
+                                "with": [
+                                    {
+                                        "text": "60"
+                                    },
+                                    {
+                                        "translate": "lore.essence.humanoid"
+                                    }
+                                ]
+                            },
+                            {
+                                "translate": "item.aspects.awakened_essence_cage",
+                                "color": "gold"
+                            },
+                            {
+                                "translate": "aspect.aspects.enderian",
+                                "color": "#7749cb"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "dialog.aspects.essences.explanation.how_to_remove_essences",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.awakened_essence_cage",
+                                        "color": "aqua"
+                                    },
+                                    {
+                                        "translate": "item.aspects.essence_cage",
+                                        "color": "#gold"
+                                    }
+                                ]
+                            },
+                            "\n• ",
+                            {
+                                "translate": "item.aspects.essence_cleaner",
+                                "color": "#gold"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

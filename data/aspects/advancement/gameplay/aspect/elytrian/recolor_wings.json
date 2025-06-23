@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:elytra",
+            "count": 1,
+            "components": {
+                "minecraft:item_model": "aspects:wings/elytrian_0"
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.elytrian.recolor_wings"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.elytrian.recolor_wings.description"
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "dye_elytra": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "aspects:gameplay/aspect/elytrian/root"
+}

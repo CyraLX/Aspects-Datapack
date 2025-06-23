@@ -1,0 +1,91 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.honey_bee_wings",
+        "color": "gray"
+    },
+    "supported_items": "minecraft:elytra",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "chest"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:armor",
+                "id": "aspects:honey_bee/base_scale",
+                "amount": 4,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:fall_damage_multiplier",
+                "id": "aspects:honey_bee/fall_damage_multiplier",
+                "amount": -1,
+                "operation": "add_multiplied_total"
+            },
+            {
+                "attribute": "minecraft:gravity",
+                "id": "aspects:honey_bee/gravity",
+                "amount": -0.75,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:jump_strength",
+                "id": "aspects:honey_bee/jump_strength",
+                "amount": -0.4,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 1200
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "chest": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "version": 1
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/elytrian/wings/prepare_to_apply_modifiers"
+                }
+            }
+        ]
+    }
+}

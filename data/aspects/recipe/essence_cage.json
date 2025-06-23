@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:tinted_glass",
+  "addition": "minecraft:iron_block",
+  "template": "minecraft:sculk_catalyst",
+  "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:max_stack_size": 1,
+            "minecraft:item_model": "aspects:essence_cage",
+            "minecraft:damage_resistant": {
+                "types": "#aspects:special_item_damage_immune"
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "essence_cage": {}
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.aspects.essence_cage"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "item.aspects.essence_cage.stored_essences",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.stored_essences.empty"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.offhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.use_result_1"
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.awaken_condition"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.essence_cage.use_condition_1",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.use_result_2"
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.awaken_condition"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

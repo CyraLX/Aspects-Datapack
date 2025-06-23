@@ -1,0 +1,1 @@
+scoreboard players remove @s aspects.generic.moisture.turtle_helmet 1

@@ -1,0 +1,1 @@
+scoreboard players set @s aspectlib.checked_if_in_water 1

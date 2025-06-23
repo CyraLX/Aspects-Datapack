@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "offhand": {
+          "items": "#aspects:focus/honey_bee/flower_effect/any"
+        }
+      }
+    }
+  }

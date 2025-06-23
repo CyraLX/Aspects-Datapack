@@ -1,0 +1,40 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:jigsaw",
+            "count": 1,
+            "components": {
+                "minecraft:item_model": "aspects:awakened_essence_cage",
+                "minecraft:custom_data": {
+                    "aspects": {
+                        "awakened_essence_cage": {}
+                    }
+                }
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.become_any"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.become_any.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.become_any.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "become_an_aspect": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "aspects:gameplay/root"
+}

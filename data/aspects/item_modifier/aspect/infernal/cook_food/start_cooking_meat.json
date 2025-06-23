@@ -1,0 +1,10 @@
+{
+    "function": "minecraft:set_custom_data",
+    "tag": {
+        "aspects": {
+            "infernal": {
+                "ready_to_cook": true
+            }
+        }
+    }
+}

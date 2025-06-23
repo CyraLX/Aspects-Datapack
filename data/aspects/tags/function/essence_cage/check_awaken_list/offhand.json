@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:essence_cage/check_awaken_list/offhand/elytrian",
+        "aspects:essence_cage/check_awaken_list/offhand/enderian",
+        "aspects:essence_cage/check_awaken_list/offhand/feline",
+        "aspects:essence_cage/check_awaken_list/offhand/honey_bee",
+        "aspects:essence_cage/check_awaken_list/offhand/infernal",
+        "aspects:essence_cage/check_awaken_list/offhand/merling",
+        "aspects:essence_cage/check_awaken_list/offhand/rascal",
+        "aspects:essence_cage/check_awaken_list/offhand/shulk",
+        "aspects:essence_cage/check_awaken_list/offhand/human"
+    ]
+}

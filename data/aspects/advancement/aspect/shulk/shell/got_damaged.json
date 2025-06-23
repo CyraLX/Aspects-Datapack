@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "hit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/shulk/is_active"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/shulk/shell/got_damaged"
+    }
+}

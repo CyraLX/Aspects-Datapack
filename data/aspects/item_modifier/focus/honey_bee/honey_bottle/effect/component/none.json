@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "aspects:focus/honey_bee/honey_bottle/dummy"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "animation": "eat",
+        "sound": "minecraft:item.honey_bottle.drink",
+        "has_consume_particles": false
+      },
+      "minecraft:custom_data": {
+        "aspects": {
+          "honey_bee": {
+            "stored_effect": "none"
+          }
+        }
+      }
+    }
+  }
+]

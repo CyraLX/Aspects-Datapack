@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspectlib:player_id/assign",
+            "required": false
+        },
+        
+        {
+            "id": "#aspects:event/on_first_join",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:jigsaw_dummy"
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "replace": false,
+        "modifiers": [
+            {
+                "attribute": "minecraft:block_interaction_range",
+                "id": "aspects:focus/shulk/offhand_block_range",
+                "amount": -1,
+                "operation": "add_multiplied_total",
+                "slot": "offhand"
+            },
+            {
+                "attribute": "minecraft:entity_interaction_range",
+                "id": "aspects:focus/shulk/offhand_entity_range",
+                "amount": -1,
+                "operation": "add_multiplied_total",
+                "slot": "offhand"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:item_model": "aspects:focus/shulk",
+            "minecraft:consumable": {
+                "consume_seconds": 0.3,
+                "animation": "bow",
+                "sound": "minecraft:block.shulker_box.open",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 5,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.aspects.focus.shulk"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:item_model": "aspects:focus/shulk",
+                    "minecraft:enchantments": {
+                        "aspects:focus/shulk/storage/place_down": 1,
+                        "aspects:focus/shulk/camouflage/create": 1,
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "target": "shulk"
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:enchantments": {
+                "aspects:focus/shulk/storage/pick_up": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "target": "shulk"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.aspects.focus.shulk"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "lore.equipment.use_cooldown_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_cooldown"
+                    },
+                    {
+                        "translate": "lore.equipment.use_cooldown.short",
+                        "color": "dark_gray"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "translate": "lore.equipment.use_time_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_time"
+                    },
+                    {
+                        "translate": "lore.equipment.use_time.very_fast",
+                        "color": "dark_gray"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            "",
+            {
+                "translate": "item.aspects.focus.shulk.use_condition_1",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.shulk.use_result_1"
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.mainhand",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.shulk.use_result_2"
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.offhand",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.shulk.use_result_3"
+                    }
+                ]
+            }
+        ]
+    }
+]

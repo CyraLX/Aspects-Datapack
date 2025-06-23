@@ -1,0 +1,2 @@
+function aspects:debug/give_aspect_encyclopedia_essences_explanation
+function aspects:debug/give_aspect_encyclopedia_1

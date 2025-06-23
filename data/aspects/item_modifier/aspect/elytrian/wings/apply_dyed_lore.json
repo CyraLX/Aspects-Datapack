@@ -1,0 +1,13 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "insert",
+    "offset": 1,
+    "lore": [
+        {
+            "translate": "item.aspects.wings.elytrian.dyed",
+            "color": "dark_gray",
+            "italic": false
+        }
+    ]
+}

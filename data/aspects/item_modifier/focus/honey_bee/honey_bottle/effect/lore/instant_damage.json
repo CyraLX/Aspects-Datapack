@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "effect.minecraft.instant_damage",
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

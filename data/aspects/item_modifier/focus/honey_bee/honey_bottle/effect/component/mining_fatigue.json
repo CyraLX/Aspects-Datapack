@@ -1,0 +1,35 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "aspects:focus/honey_bee/honey_bottle/dummy"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "animation": "eat",
+        "sound": "minecraft:item.honey_bottle.drink",
+        "has_consume_particles": false,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:mining_fatigue",
+                "amplifier": 0,
+                "duration": 1500
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:custom_data": {
+        "aspects": {
+          "honey_bee": {
+            "stored_effect": "mining_fatigue"
+          }
+        }
+      }
+    }
+  }
+]

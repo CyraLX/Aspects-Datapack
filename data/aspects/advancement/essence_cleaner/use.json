@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "consume_item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "essence_cleaner": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:essence_cage/clean"
+    }
+}

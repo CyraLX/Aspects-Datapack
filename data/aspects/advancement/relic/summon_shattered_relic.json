@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "player_killed_player_aspect": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:player"
+                        }
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/any_score"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:relic/shattered/trigger"
+    }
+}

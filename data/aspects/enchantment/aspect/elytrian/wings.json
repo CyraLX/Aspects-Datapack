@@ -1,0 +1,130 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.elytrian_wings",
+        "color": "gray"
+    },
+    "supported_items": "minecraft:elytra",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "chest"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:repair_with_xp": [
+            {
+                "effect": {
+                    "type": "minecraft:multiply",
+                    "factor": 12
+                }
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "flags": {
+                                        "is_flying": true
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type_specific": {
+                                        "type": "minecraft:player",
+                                        "input": {
+                                            "sneak": true
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:gravity",
+                    "id": "aspects:elytrian/flying_sneaking_gravity",
+                    "amount": 0.5,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "minecraft:player",
+                            "advancements": {
+                                "aspects:gameplay/aspect/elytrian/flying_marathon": false
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/elytrian/advancement/flying_marathon/update"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 1200
+                            }
+                        }, 
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "chest": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "version": 1
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/elytrian/wings/prepare_to_apply_modifiers"
+                }
+            }
+        ]
+    }
+}

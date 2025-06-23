@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:torchflower",
+            "required": false
+        },
+        {
+            "id": "minecraft:poppy",
+            "required": false
+        }
+    ]
+}

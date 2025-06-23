@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:menu/aspect_list",
+        "#aspects:wiki_entries"
+    ]
+}

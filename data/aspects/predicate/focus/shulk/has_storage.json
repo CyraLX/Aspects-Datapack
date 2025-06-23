@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.focus.shulk.has_storage": 1
+    }
+}

@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_custom_data_from_storage

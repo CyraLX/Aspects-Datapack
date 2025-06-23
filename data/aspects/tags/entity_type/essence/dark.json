@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        { "id": "minecraft:bat", "required": false },
+        { "id": "minecraft:cave_spider", "required": false },
+        { "id": "minecraft:creaking", "required": false },
+        { "id": "minecraft:evoker", "required": false },
+        { "id": "minecraft:glow_squid", "required": false },
+        { "id": "minecraft:pillager", "required": false },
+        { "id": "minecraft:ravager", "required": false },
+        { "id": "minecraft:squid", "required": false },
+        { "id": "minecraft:vindicator", "required": false },
+        { "id": "minecraft:warden", "required": false },
+        { "id": "minecraft:witch", "required": false },
+        { "id": "minecraft:wither_skeleton", "required": false },
+        { "id": "minecraft:wither", "required": false }
+    ]
+}

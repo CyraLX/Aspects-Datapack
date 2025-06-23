@@ -1,0 +1,1 @@
+$data modify storage aspectlib:player_$(id) aspects.aspect_data.honey_bee.stored_effect set value "hero_of_the_village"

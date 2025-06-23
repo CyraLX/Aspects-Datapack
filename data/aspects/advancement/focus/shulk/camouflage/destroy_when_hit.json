@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "entity_hurt_player": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/shulk/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "effects": {
+                                "minecraft:invisibility": {
+                                    "amplifier": 1
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:focus/shulk/camouflage/destroy_when_hit"
+    }
+}

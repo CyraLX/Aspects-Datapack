@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "translate": "dialog.aspects.pause_screen"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.pause_screen.external_title"
+    },
+    "exit_action": {
+        "label": {
+            "translate": "gui.back"
+        }
+    },
+    "can_close_with_escape": true,
+    "pause": true,
+    "columns": 3,
+    "dialogs": "#aspects:pause_screen_additions"
+}

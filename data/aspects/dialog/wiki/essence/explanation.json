@@ -1,0 +1,237 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.essences.explanation"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.essences.explanation.external_title"
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.explanation.what_are_essences"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.explanation.how_to_get_essences"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "width": 18,
+            "item": {
+                "id": "minecraft:iron_sword",
+                "count": 1
+            },
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.essences.explanation.how_to_get_essences.direct_damage"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "width": 18,
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:essence_extractor",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "essence_extractor": {}
+                        }
+                    }
+                }
+            },
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.essences.explanation.how_to_get_essences.essence_extractor",
+                "with": [
+                    {
+                        "translate": "item.aspects.essence_extractor",
+                        "color": "#ffff55"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.explanation.where_to_store_essences"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "width": 18,
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "essence_cage": {}
+                        }
+                    }
+                }
+            },
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "item.aspects.essence_cage",
+                "color": "#ffff55"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.explanation.awakening_essence_cage",
+                "with": [
+                    {
+                        "translate": "item.aspects.essence_cage",
+                        "color": "#ffff55"
+                    },
+                    {
+                        "text": "120",
+                        "color": "gold"
+                    },
+                    {
+                        "translate": "item.aspects.awakened_essence_cage",
+                        "color": "aqua"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.explanation.awakening_essence_cage.example",
+                "color": "#eeeeee",
+                "italic": true,
+                "with": [
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    },
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "gold",
+                        "with": [
+                            {
+                                "text": "120"
+                            },
+                            {
+                                "translate": "lore.essence.humanoid"
+                            }
+                        ]
+                    },
+                    {
+                        "translate": "item.aspects.awakened_essence_cage",
+                        "color": "aqua"
+                    },
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    },
+                    {
+                        "translate": "aspect.aspects.enderian",
+                        "color": "#7749cb"
+                    },
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "gold",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.void"
+                            }
+                        ]
+                    },
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "gold",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.humanoid"
+                            }
+                        ]
+                    },
+                    {
+                        "translate": "item.aspects.awakened_essence_cage",
+                        "color": "aqua"
+                    },
+                    {
+                        "translate": "aspect.aspects.enderian",
+                        "color": "#7749cb"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.explanation.how_to_remove_essences",
+                "color": "#eeeeee",
+                "with": [
+                    {
+                        "translate": "item.aspects.awakened_essence_cage",
+                        "color": "aqua"
+                    },
+                    {
+                        "translate": "item.aspects.essence_cage",
+                        "color": "#ffff55"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "width": 18,
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:essence_cleaner",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "essence_cleaner": {}
+                        }
+                    }
+                }
+            },
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "item.aspects.essence_cleaner",
+                "color": "#ffff55"
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/pause_screen"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.power.feline.predator"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "aspects.feline.predator": {
+                            "min": 6
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "aspects:feline/hunting_boost_movement_speed",
+                    "amount": 0.2,
+                    "operation": "add_multiplied_base"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "aspects.feline.predator": {
+                            "max": 5
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:movement_speed",
+                    "id": "aspects:feline/hunting_crash_movement_speed",
+                    "amount": -0.4,
+                    "operation": "add_multiplied_base"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 20
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/feline/predator/update"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:aspect/elytrian/setup_aspect",
+        "aspects:aspect/enderian/setup_aspect",
+        "aspects:aspect/feline/setup_aspect",
+        "aspects:aspect/honey_bee/setup_aspect",
+        "aspects:aspect/human/setup_aspect",
+        "aspects:aspect/infernal/setup_aspect",
+        "aspects:aspect/merling/setup_aspect",
+        "aspects:aspect/rascal/setup_aspect",
+        "aspects:aspect/shulk/setup_aspect"
+    ]
+}

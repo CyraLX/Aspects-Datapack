@@ -1,0 +1,128 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:jigsaw_dummy"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:item_model": "aspects:focus/infernal",
+            "!minecraft:enchantments": {},
+            "minecraft:consumable": {
+                "consume_seconds": 1.0,
+                "animation": "bow",
+                "sound": "minecraft:item.firecharge.use",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 12,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.aspects.focus.infernal"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:item_model": "aspects:focus/infernal",
+                    "minecraft:enchantments": {
+                        "aspects:focus/infernal/burn": 1,
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "target": "infernal"
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "target": "infernal"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.aspects.focus.infernal"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "lore.equipment.use_cooldown_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_cooldown"
+                    },
+                    {
+                        "translate": "lore.equipment.use_cooldown.average",
+                        "color": "dark_gray"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "translate": "lore.equipment.use_time_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_time"
+                    },
+                    {
+                        "translate": "lore.equipment.use_time.average",
+                        "color": "dark_gray"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            "",
+            {
+                "translate": "item.modifiers.use",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.infernal.use_result_1",
+                        "with": [
+                            {
+                                "text": "12"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

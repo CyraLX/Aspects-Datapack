@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:config/help/player_kills_reward_shattered_relic",
+        "aspects:config/help/reward_faded_relic",
+        "aspects:config/help/kill_dropped_aspect_item",
+        "aspects:config/help/track_statistics",
+        "aspects:config/help/force_aspect_on_aspectless_players",
+        "aspects:config/help/aspectless_players_invisible",
+        "aspects:config/help/aspectless_players_invincible"
+    ]
+}

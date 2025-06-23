@@ -1,0 +1,53 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:jigsaw",
+            "count": 1,
+            "components": {
+                "minecraft:item_model": "aspects:focus/generic",
+                "minecraft:custom_data": {
+                    "aspects": {
+                        "focus": {}
+                    }
+                }
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.get_any_focus"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.get_any_focus.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.get_any_focus.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "picked_up_focus": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "aspects": {
+                                    "focus": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "aspects:gameplay/root"
+}

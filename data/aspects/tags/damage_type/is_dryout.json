@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:dry_out",
+            "required": false
+        },
+        {
+            "id": "aspects:generic/dehydration",
+            "required": false
+        }
+    ]
+}

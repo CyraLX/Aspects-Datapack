@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "aspects:aspect_encyclopedia/series_1",
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "aspects:aspect/give_aspect_from_trigger": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:summon_aspect_picker"
+    }
+}

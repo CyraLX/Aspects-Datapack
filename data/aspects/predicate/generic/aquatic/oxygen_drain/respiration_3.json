@@ -1,0 +1,28 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:all_of",
+                "terms": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspectlib:status_effect/water_breathing/any"
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:status_effect/water_breathing/turtle_helmet"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:enchantment/respiration/3"
+        }
+    ]
+}

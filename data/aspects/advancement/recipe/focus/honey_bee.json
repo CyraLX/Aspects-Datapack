@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "autogrant": {
+            "trigger": "minecraft:tick"
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "aspects:focus/honey_bee"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "autogrant"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "aspects:focus/honey_bee"
+        ]
+    }
+}

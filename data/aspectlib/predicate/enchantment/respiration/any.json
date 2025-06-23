@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "head": {
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "minecraft:respiration",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

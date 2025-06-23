@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "event_on_first_join": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "aspectlib:event/on_first_join/execute"
+    }
+}

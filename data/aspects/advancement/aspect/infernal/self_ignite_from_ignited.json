@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "infernal_hurt_on_fire_entity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/infernal/is_active"
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspectlib:flags/is_on_fire"
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/infernal/too_hot/self_ignite_from_ignited"
+    }
+}

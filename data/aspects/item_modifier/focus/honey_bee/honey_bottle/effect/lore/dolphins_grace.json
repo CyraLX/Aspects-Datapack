@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "effect.minecraft.dolphins_grace",
+        "extra": [
+          {
+            "text": " (00:07)"
+          }
+        ],
+        "color": "blue",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

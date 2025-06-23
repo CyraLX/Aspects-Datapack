@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspectlib:initialize",
+            "required": false
+        },
+        {
+            "id": "aspectlib:predicate/setup_scoreboard",
+            "required": false
+        },
+        {
+            "id": "aspectlib:predicate/food_level/initialize",
+            "required": false
+        },
+        
+        {
+            "id": "#aspects:load",
+            "required": false
+        }
+    ]
+}

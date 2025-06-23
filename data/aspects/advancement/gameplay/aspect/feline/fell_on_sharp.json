@@ -1,0 +1,50 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:pointed_dripstone",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.feline.fell_on_sharp"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.feline.fell_on_sharp.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.feline.fell_on_sharp.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "took_sharp_fall_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/feline/is_active"
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "aspects:aspect/feline/fall_sharp",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "parent": "aspects:gameplay/aspect/feline/root"
+}

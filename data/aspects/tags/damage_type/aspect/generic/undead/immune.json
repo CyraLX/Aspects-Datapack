@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#minecraft:is_drowning",
+            "required": false
+        },
+        {
+            "id": "#minecraft:is_freezing",
+            "required": false
+        }
+    ]
+}

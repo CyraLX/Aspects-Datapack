@@ -1,0 +1,3 @@
+execute if predicate aspects:aspect/any run return run scoreboard players reset @s aspects.choose_aspect
+function #aspects:aspect/give_aspect_from_trigger
+clear @s minecraft:written_book[minecraft:custom_data={aspects: {aspect_picker: {}}}]

@@ -1,0 +1,54 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:flags/is_flying"
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "position": {
+                    "y": {
+                        "max": 320
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:any_of",
+                "terms": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.elytrian.advancements.flying_marathon.used_focus": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.elytrian.advancements.flying_marathon.used_rocket": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.elytrian.advancements.flying_marathon.used_damage_boost": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+attribute @s minecraft:max_absorption modifier remove aspects:shulk/max_absorption

@@ -1,0 +1,182 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.aspect_info",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.human",
+                "color": "#8b7e77"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.aspect_info.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.human",
+                "color": "#8b7e77"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.aspects.human.description",
+                "italic": true,
+                "color": "#eeeeee"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "human"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                "color": "#eeeeee",
+                "with": [
+                    {
+                        "text": "120"
+                    },
+                    {
+                        "translate": "lore.essence.humanoid"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/human",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/human/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.effects.none",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.aspect_info.effects.none.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:cancel",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.focus.none",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "dialog.aspects.aspect_info.focus.none.description",
+                                    "color": "white",
+                                    "italic": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

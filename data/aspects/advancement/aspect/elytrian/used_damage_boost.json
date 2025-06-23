@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "punched": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "aspects:gameplay/aspect/elytrian/flying_marathon": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/elytrian/is_active"
+                    }
+                ],
+                "damage": {
+                    "blocked": false
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/elytrian/advancement/flying_marathon/scoreboard/used_damage_boost"
+    }
+}

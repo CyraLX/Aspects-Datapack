@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:magic",
+            "required": false
+        },
+        {
+            "id": "minecraft:indirect_magic",
+            "required": false
+        },
+        {
+            "id": "minecraft:thorns",
+            "required": false
+        }
+    ]
+}

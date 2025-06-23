@@ -1,0 +1,1861 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:aspect_encyclopedia/encyclopedia_dummy"
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": {
+            "translate": "item.aspects.aspect_encyclopedia",
+            "extra": [
+                {
+                    "text": ": "
+                },
+                {
+                    "translate": "item.aspects.aspect_encyclopedia.series",
+                    "with": [
+                        {
+                            "text": "#1"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:item_model": "aspects:aspect_encyclopedia/series_1",
+            "minecraft:written_book_content": {
+                "author": "The Wayfarer",
+                "title": "Aspect Encyclopedia: Series #1",
+                "generation": 3
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "aspect_encyclopedia": {
+                        "series": 1
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_written_book_pages",
+        "mode": "replace_all",
+        "pages": [
+            {
+                "translate": "item.aspects.aspect_encyclopedia.table_of_contents",
+                "extra": [
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.topic.aspects"
+                    },
+                    ": \n",
+                    {
+                        "text": "2. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.human",
+                                "color": "#8b7e77"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.human"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 2
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "3. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.merling",
+                                "color": "#2e89f1"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.merling"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 3
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "5. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.enderian",
+                                "color": "#7749cb"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.enderian"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 5
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "7. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.shulk",
+                                "color": "#b953bd"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.shulk"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 7
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "9. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.feline",
+                                "color": "#f96600"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.feline"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 9
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "11. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.infernal",
+                                "color": "#ac2525"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.infernal"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 11
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "13. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.elytrian",
+                                "color": "#f2f10d"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.elytrian"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 13
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "15. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.honey_bee",
+                                "color": "#ffa41c"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.honey_bee"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 15
+                        }
+                    },
+                    "\n",
+                    {
+                        "text": "17. "
+                    },
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.table_of_contents.entry",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.rascal",
+                                "color": "#3a3b3c"
+                            }
+                        ],
+                        "color": "dark_gray",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "item.aspects.aspect_encyclopedia.goto_page.aspect",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.rascal"
+                                    }
+                                ]
+                            }
+                        },
+                        "click_event": {
+                            "action": "change_page",
+                            "page": 17
+                        }
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.humanoid",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.human.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.merling",
+                        "color": "#2e89f1"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.aquatic",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.merling.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.merling",
+                        "color": "#2e89f1"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.generic.aquatic",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.generic.aquatic.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.merling.finned_legs",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.merling.finned_legs.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.merling.aqua_affinity",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.merling.aqua_affinity.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.merling.trident_mastery",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.merling.trident_mastery.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.merling.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.merling.use_result_1",
+                                                            "with": [
+                                                                {
+                                                                    "text": "48"
+                                                                },
+                                                                {
+                                                                    "text": "5"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.enderian",
+                        "color": "#7749cb"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.void",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.humanoid",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.enderian.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.enderian",
+                        "color": "#7749cb"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.generic.hydrophobic",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.generic.hydrophobic.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.enderian.slender_body",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.enderian.slender_body.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.enderian.end_attuned",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.enderian.end_attuned.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.enderian.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.enderian.use_result_1",
+                                                            "with": [
+                                                                {
+                                                                    "text": "25"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.shulk",
+                        "color": "#b953bd"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.void",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.steel",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.shulk.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.shulk",
+                        "color": "#b953bd"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.shulk.small_footprint",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.shulk.small_footprint.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.shulk.febile_limbs",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.shulk.febile_limbs.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.shulk.shell",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.shulk.shell.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.shulk.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.shulk.use_condition_1",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.shulk.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.shulk.use_name_2",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.mainhand",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.shulk.use_result_2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.shulk.use_name_3",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use_offhand",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.shulk.use_result_3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.feline",
+                        "color": "#f96600"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.feline",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.feline.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.feline",
+                        "color": "#f96600"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.feline.nine_lives",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.feline.nine_lives.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.feline.quickness",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.feline.quickness.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.feline.predator",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.feline.predator.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.feline.relentless",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.feline.relentless.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.feline.water",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.feline.water.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.feline.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.feline.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.infernal",
+                        "color": "#ac2525"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.fire",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.infernal.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.infernal",
+                        "color": "#ac2525"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.generic.hydrophobic",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.generic.hydrophobic.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.infernal.might_of_the_fire",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.infernal.might_of_the_fire.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.infernal.burning_blood",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.infernal.burning_blood.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.infernal.too_hot",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.infernal.too_hot.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.infernal.infernal_smoker",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.infernal.infernal_smoker.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.infernal.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.infernal.use_result_1",
+                                                            "with": [
+                                                                {
+                                                                    "text": "12"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.elytrian",
+                        "color": "#f2f10d"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "120",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.flying",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.elytrian.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.elytrian",
+                        "color": "#f2f10d"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.elytrian.winged_body",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.elytrian.winged_body.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.elytrian.elytra_natural",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.elytrian.elytra_natural.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.elytrian.brittle_bones",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.elytrian.brittle_bones.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.elytrian.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.elytrian.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.honey_bee",
+                        "color": "#ffa41c"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.bug",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.plant",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.honey_bee.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.honey_bee",
+                        "color": "#ffa41c"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.honey_bee.bee_sized",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.honey_bee.bee_sized.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.honey_bee.exoskeletal_elytra",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.honey_bee.exoskeletal_elytra.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.honey_bee.cautious_flying",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.honey_bee.cautious_flying.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.honey_bee.use_condition_1",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.honey_bee.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_name_2",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.honey_bee.use_condition_2",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.honey_bee.use_result_2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_name_3",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.honey_bee.use_condition_3",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.honey_bee.use_result_3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_name_4",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.honey_bee.use_condition_4",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.honey_bee.use_result_4"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_name_5",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.modifiers.use_offhand",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.honey_bee.use_result_5"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.rascal",
+                        "color": "#3a3b3c"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.essence_combination",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.dark",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.essence_combination.entry",
+                                "with": [
+                                    {
+                                        "text": "60",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "translate": "lore.essence.steel",
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.rascal.description",
+                        "italic": true
+                    }
+                ]
+            },
+            {
+                "translate": "aspect",
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.rascal",
+                        "color": "#3a3b3c"
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_effects",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.rascal.cave_attuned",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.rascal.cave_attuned.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.rascal.spawn_of_darkness",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.rascal.spawn_of_darkness.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.aspect_encyclopedia.aspect_focus",
+                        "extra": [
+                            ":\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_name_1",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.rascal.use_condition_1",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.rascal.use_result_1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_name_2",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.rascal.use_condition_2",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.rascal.use_result_2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_name_3",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.rascal.use_condition_3",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.rascal.use_result_3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_focus.entry",
+                                "with": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_name_4",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": [
+                                                {
+                                                    "translate": "item.aspects.focus.rascal.use_condition_4",
+                                                    "color": "gray",
+                                                    "italic": false
+                                                },
+                                                "\n",
+                                                {
+                                                    "text": "",
+                                                    "color": "blue",
+                                                    "italic": false,
+                                                    "extra": [
+                                                        {
+                                                            "translate": "item.aspects.focus.rascal.use_result_4"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

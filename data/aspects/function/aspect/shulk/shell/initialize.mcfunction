@@ -1,0 +1,1 @@
+scoreboard objectives add aspects.shulk.shell_timer dummy

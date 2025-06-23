@@ -1,0 +1,3 @@
+$item modify entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..1] weapon.mainhand aspects:focus/honey_bee/honey_bottle/effect/component/$(stored_effect)
+function aspects:focus/honey_bee/apply_spiked_fake_lore with entity @s equipment.offhand.components.minecraft:custom_data.aspects.honey_bee
+item modify entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..1] weapon.mainhand aspects:focus/honey_bee/honey_bottle/set_as_spiked

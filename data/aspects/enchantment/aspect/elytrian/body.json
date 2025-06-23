@@ -1,0 +1,53 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.aspects.elytrian",
+                "color": "#f2f10d"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "aspects:elytrian/base_scale",
+                "amount": -0.1,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:fall_damage_multiplier",
+                "id": "aspects:elytrian/fall_damage_multiplier",
+                "amount": 1,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/elytrian/fly_damage/check"
+                }
+            }
+        ]
+    }
+}

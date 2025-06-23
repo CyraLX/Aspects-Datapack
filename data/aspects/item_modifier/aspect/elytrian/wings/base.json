@@ -1,0 +1,94 @@
+[
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:elytra"
+    },
+    {
+        "function": "minecraft:set_count",
+        "add": false,
+        "count": 1
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "epic",
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                ]
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "version": 1
+                }
+            },
+            "minecraft:max_damage": 1200,
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:equippable": {
+                "slot": "chest",
+                "allowed_entities": "minecraft:player",
+                "asset_id": "minecraft:elytra",
+                "damage_on_hurt": false,
+                "dispensable": false,
+                "swappable": false,
+                "equip_on_interact": false
+            },
+            "minecraft:enchantments": {
+                "aspects:aspect/elytrian/wings": 1
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.aspects.wings.elytrian"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            "",
+            {
+                "translate": "item.modifiers.chest",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.wings.generic.mending"
+                    }
+                ]
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.wings.elytrian.sneak_gravity",
+                        "color": "blue",
+                        "italic": false,
+                        "with": [
+                            {
+                                "translate": "key.sneak"
+                            },
+                            {
+                                "keybind": "key.sneak"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

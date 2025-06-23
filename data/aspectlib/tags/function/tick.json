@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspectlib:predicate/submerged/tick",
+            "required": false
+        },
+
+        {
+            "id": "#aspects:tick",
+            "required": false
+        }
+    ]
+}

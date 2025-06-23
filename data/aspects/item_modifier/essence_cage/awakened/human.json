@@ -1,0 +1,55 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:essence_cage/awakened_dummy"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:item_model": "aspects:awakened_essence_cage",
+            "custom_data": {
+                "aspects": {
+                    "awakened_essence_cage": {
+                        "aspect": "human"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "item.aspects.awakened_essence_cage.stored_aspect",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    ": ",
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.consume",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "translate": "item.aspects.awakened_essence_cage.use_result_1",
+                "with": [
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    }
+                ],
+                "color": "blue",
+                "italic": false
+            }
+        ]
+    }
+]

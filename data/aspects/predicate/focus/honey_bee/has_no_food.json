@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspectlib.food_level": {
+            "max": 0
+        }
+    }
+}

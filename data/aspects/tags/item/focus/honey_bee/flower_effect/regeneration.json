@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:oxeye_daisy",
+            "required": false
+        },
+        {
+            "id": "minecraft:spore_blossom",
+            "required": false
+        }
+    ]
+}

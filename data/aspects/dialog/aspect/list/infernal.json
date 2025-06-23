@@ -1,0 +1,250 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.chosen_aspect",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.infernal",
+                "color": "#ac2525"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.infernal",
+                "color": "#ac2525"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.aspects.infernal.description",
+                "italic": true,
+                "color": "#eeeeee"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "infernal"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                "color": "#eeeeee",
+                "with": [
+                    {
+                        "text": "120"
+                    },
+                    {
+                        "translate": "lore.essence.fire"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/infernal",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/infernal/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.generic.hydrophobic",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.generic.hydrophobic.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.infernal.might_of_the_fire",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.infernal.might_of_the_fire.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.infernal.burning_blood",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.infernal.burning_blood.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.infernal.too_hot",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.infernal.too_hot.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.infernal.infernal_smoker",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.infernal.infernal_smoker.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/infernal",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.infernal.use_name_1",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.modifiers.use",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.infernal.use_result_1",
+                                            "with": [
+                                                {
+                                                    "text": "12"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

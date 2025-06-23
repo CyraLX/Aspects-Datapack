@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:hitbox_exposed_to_water"
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:reference",
+                "name": "aspectlib:has_vehicle_dismounts_underwater"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:aspect/elytrian/activate_from_trigger",
+        "aspects:aspect/enderian/activate_from_trigger",
+        "aspects:aspect/feline/activate_from_trigger",
+        "aspects:aspect/honey_bee/activate_from_trigger",
+        "aspects:aspect/human/activate_from_trigger",
+        "aspects:aspect/infernal/activate_from_trigger",
+        "aspects:aspect/merling/activate_from_trigger",
+        "aspects:aspect/rascal/activate_from_trigger",
+        "aspects:aspect/shulk/activate_from_trigger"
+    ]
+}

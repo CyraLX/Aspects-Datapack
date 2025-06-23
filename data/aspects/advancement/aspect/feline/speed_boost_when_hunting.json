@@ -1,0 +1,53 @@
+{
+    "criteria": {
+        "player_hurt_entity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/feline/is_active"
+                    },
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "effects": {
+                                            "minecraft:speed": {}
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "effects": {
+                                        "minecraft:speed": {
+                                            "duration": {
+                                                "max": 100
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "is_direct": true
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/feline/predator/hit_target"
+    }
+}

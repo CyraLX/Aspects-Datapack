@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "aspects:focus/honey_bee/honey_bottle/dummy"
+  },
+  {
+    "function": "minecraft:reference",
+    "name":"aspects:focus/honey_bee/honey_bottle/effect/component/wither"
+  },
+  {
+    "function": "minecraft:reference",
+    "name":"aspects:focus/honey_bee/honey_bottle/effect/lore/wither"
+  }
+]

@@ -1,0 +1,1 @@
+attribute @s minecraft:max_health modifier remove aspects:enderian/max_health

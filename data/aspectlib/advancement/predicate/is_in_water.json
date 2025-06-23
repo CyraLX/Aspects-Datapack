@@ -1,0 +1,69 @@
+{
+    "criteria": {
+      "in_waterlogged_block": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "state": {
+            "waterlogged": "true"
+          }
+        }
+      },
+      "in_water": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:water"
+        }
+      },
+      "in_water_cauldron": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:water_cauldron"
+        }
+      },
+      "in_bubble_column": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:bubble_column"
+        }
+      },
+      "in_kelp": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:kelp"
+        }
+      },
+      "in_kelp_plant": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:kelp_plant"
+        }
+      },
+      "in_seagrass": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:seagrass"
+        }
+      },
+      "in_tall_sea_grass": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "block": "minecraft:tall_seagrass"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "in_bubble_column",
+        "in_kelp",
+        "in_kelp_plant",
+        "in_seagrass",
+        "in_tall_sea_grass",
+        "in_water",
+        "in_water_cauldron",
+        "in_waterlogged_block"
+      ]
+    ],
+    "rewards": {
+      "function": "aspectlib:predicate/set_as_in_water"
+    }
+  }

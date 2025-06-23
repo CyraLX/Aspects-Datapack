@@ -1,0 +1,1 @@
+scoreboard players set @s aspects.aspect_group.water_breathing 1

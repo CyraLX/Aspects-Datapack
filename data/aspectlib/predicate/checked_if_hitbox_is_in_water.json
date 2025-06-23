@@ -1,0 +1,9 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspectlib.checked_if_in_water": {
+            "min": 1
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspectlib:is_magic_lesser",
+            "required": false
+        },
+        {
+            "id": "#aspectlib:is_magic_greater",
+            "required": false
+        }
+    ]
+}

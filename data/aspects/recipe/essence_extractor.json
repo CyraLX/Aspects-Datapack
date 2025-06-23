@@ -1,0 +1,126 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "aspects:essence_extractor",
+    "category": "equipment",
+    "pattern": [
+        "a",
+        "s",
+        "a"
+    ],
+    "key": {
+        "a": [
+            "minecraft:amethyst_shard"
+        ],
+        "s": [
+            "minecraft:stick"
+        ]
+    },
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:item_model": "aspects:essence_extractor",
+            "!minecraft:enchantments": {},
+            "minecraft:consumable": {
+                "consume_seconds": 0.05,
+                "animation": "bow",
+                "sound": "minecraft:block.amethyst_block.chime",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 1,
+                "cooldown_group": "aspects:essence_extractor"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.aspects.essence_extractor"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:item_model": "aspects:essence_extractor",
+                    "minecraft:enchantments": {
+                        "aspects:essence_extractor/mainhand": 1,
+                        "aspects:essence_extractor/offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "essence_extractor": {}
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "essence_extractor": {}
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.aspects.essence_extractor"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_cooldown",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        ": ",
+                        {
+                            "translate": "lore.equipment.use_cooldown.very_short",
+                            "color": "dark_gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_time",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        ": ",
+                        {
+                            "translate": "lore.equipment.use_time.instant",
+                            "color": "dark_gray",
+                            "italic": false
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.essence_extractor.use_condition_1",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_extractor.use_result_1"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.essence_extractor.disclaimer",
+                    "color": "dark_gray",
+                    "italic": false
+                }
+            ]
+        }
+    }
+}

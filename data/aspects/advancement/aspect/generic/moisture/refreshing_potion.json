@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "drink_potion": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect_group/is_moisture_dependant"
+                    }
+                ],
+                "item": {
+                    "items": "#aspectlib:water_consumables"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/generic/moisture/drunk_potion"
+    }
+}

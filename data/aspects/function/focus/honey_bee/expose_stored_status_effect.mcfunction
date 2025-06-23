@@ -1,0 +1,1 @@
+$data modify storage aspectlib:dummy stored_effect set from storage aspectlib:player_$(id) aspects.aspect_data.honey_bee.stored_effect

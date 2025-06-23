@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "offhand": {
+          "items": "minecraft:honey_bottle",
+          "predicates": {
+            "minecraft:custom_data": {
+              "aspects": {
+                "honey_bee": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

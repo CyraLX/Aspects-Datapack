@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:setup_aspect_list",
+        "aspects:aspect_group/initialize",
+        "aspects:config/initialize",
+        "aspects:stats/initialize",
+        
+        "aspects:aspect/generic/hydrophobia/scoreboard/initialize",
+        "aspects:aspect/generic/moisture/scoreboard/initialize",
+        "aspects:aspect/elytrian/initialize_scoreboards",
+        "aspects:aspect/feline/predator/scoreboard/initialize",
+        "aspects:aspect/honey_bee/initialize_scoreboard",
+        "aspects:aspect/infernal/too_hot/scoreboard/initialize",
+        "aspects:aspect/shulk/shell/initialize", 
+        
+        "aspects:focus/enderian/raycast/setup",
+        "aspects:focus/shulk/storage/setup_scoreboard",
+        "aspects:focus/shulk/storage/raycast/setup_scoreboard",
+
+        "aspects:essence_cage/scoreboard/initialize",
+        "aspects:essence_cage/store_essence_from_use/raycast/setup_scoreboard",
+        "aspects:essence_cage/store_essence_from_use/setup_scoreboard"
+    ]
+}

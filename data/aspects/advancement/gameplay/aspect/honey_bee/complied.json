@@ -1,0 +1,55 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:honey_bottle",
+            "count": 1,
+            "components": {
+                "minecraft:item_model": "aspects:suspicious_honey",
+                "custom_data": {
+                    "aspects": {
+                        "honey_bee": {
+                            "spiked": true
+                        }
+                    }
+                }
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.honey_bee.complied"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.honey_bee.complied.description"
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "gave_spiked_honey": {
+            "trigger": "minecraft:thrown_item_picked_up_by_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/honey_bee/is_active"
+                    }
+                ],
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "honey_bee": {
+                                    "spiked": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "parent": "aspects:gameplay/aspect/honey_bee/root"
+}

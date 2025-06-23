@@ -1,0 +1,47 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:jigsaw_immune_dummy"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "rare",
+            "minecraft:item_model": "aspects:relic/shattered/human",
+            "enchantment_glint_override": false,
+            "minecraft:max_stack_size": 16
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.aspects.shattered_relic.human"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "item.aspects.shattered_relic.generic.broken",
+                "with": [
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    },
+                    {
+                        "selector": "@s",
+                        "color": "#8b7e77"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            }
+        ]
+    }
+]

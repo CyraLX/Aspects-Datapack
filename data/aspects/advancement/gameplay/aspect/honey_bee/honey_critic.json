@@ -1,0 +1,146 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:honey_bottle",
+            "count": 1,
+            "components": {
+                "minecraft:item_model": "aspects:suspicious_honey",
+                "custom_data": {
+                    "aspects": {
+                        "honey_bee": {
+                            "spiked": true
+                        }
+                    }
+                },
+                "minecraft:enchantments": {
+                    "minecraft:mending": 1
+                }
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.honey_bee.honey_critic"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.honey_bee.honey_critic.description"
+            }
+        ],
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "absorption": {
+            "trigger": "minecraft:impossible"
+        },
+        "fire_resistance": {
+            "trigger": "minecraft:impossible"
+        },
+        "haste": {
+            "trigger": "minecraft:impossible"
+        },
+        "night_vision": {
+            "trigger": "minecraft:impossible"
+        },
+        "invisibility": {
+            "trigger": "minecraft:impossible"
+        },
+        "jump_boost": {
+            "trigger": "minecraft:impossible"
+        },
+        "levitation": {
+            "trigger": "minecraft:impossible"
+        },
+        "poison": {
+            "trigger": "minecraft:impossible"
+        },
+        "regeneration": {
+            "trigger": "minecraft:impossible"
+        },
+        "resistance": {
+            "trigger": "minecraft:impossible"
+        },
+        "saturation": {
+            "trigger": "minecraft:impossible"
+        },
+        "slowness": {
+            "trigger": "minecraft:impossible"
+        },
+        "speed": {
+            "trigger": "minecraft:impossible"
+        },
+        "strength": {
+            "trigger": "minecraft:impossible"
+        },
+        "water_breathing": {
+            "trigger": "minecraft:impossible"
+        },
+        "weakness": {
+            "trigger": "minecraft:impossible"
+        },
+        "wither": {
+            "trigger": "minecraft:impossible"
+        },
+        "blindness": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "absorption"
+        ],
+        [
+            "fire_resistance"
+        ],
+        [
+            "haste"
+        ],
+        [
+            "night_vision"
+        ],
+        [
+            "invisibility"
+        ],
+        [
+            "jump_boost"
+        ],
+        [
+            "levitation"
+        ],
+        [
+            "poison"
+        ],
+        [
+            "regeneration"
+        ],
+        [
+            "resistance"
+        ],
+        [
+            "saturation"
+        ],
+        [
+            "slowness"
+        ],
+        [
+            "speed"
+        ],
+        [
+            "strength"
+        ],
+        [
+            "water_breathing"
+        ],
+        [
+            "weakness"
+        ],
+        [
+            "wither"
+        ],
+        [
+            "blindness"
+        ]
+    ],
+    "parent": "aspects:gameplay/aspect/honey_bee/root"
+}

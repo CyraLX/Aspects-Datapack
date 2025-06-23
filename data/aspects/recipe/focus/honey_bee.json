@@ -1,0 +1,197 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "aspects:focus/honey_bee",
+    "category": "equipment",
+    "pattern": [
+        "aXa",
+        "qiq",
+        " q "
+    ],
+    "key": {
+        "X": [
+            "minecraft:honeycomb"
+        ],
+        "a": [
+            "minecraft:amethyst_shard"
+        ],
+        "i": [
+            "minecraft:iron_ingot"
+        ],
+        "q": [
+            "minecraft:quartz"
+        ]
+    },
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:item_model": "aspects:focus/honey_bee",
+            "!minecraft:enchantments": {},
+            "minecraft:consumable": {
+                "consume_seconds": 1,
+                "animation": "bow",
+                "sound": "minecraft:item.honey_bottle.drink",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 1,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.aspects.focus.honey_bee"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:item_model": "aspects:focus/honey_bee",
+                    "minecraft:enchantments": {
+                        "aspects:focus/honey_bee/use_mainhand": 1,
+                        "aspects:focus/honey_bee/use_offhand": 1,
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "target": "honey_bee"
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "target": "honey_bee"
+                    }
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.aspects.focus.honey_bee"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.very_short",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.very_fast",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.honey_bee.use_condition_1",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.honey_bee.use_result_1"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.honey_bee.use_condition_2",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.honey_bee.use_result_2"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.honey_bee.use_condition_3",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.honey_bee.use_result_3"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.honey_bee.use_condition_4",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.honey_bee.use_result_4"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_offhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.honey_bee.use_result_5"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

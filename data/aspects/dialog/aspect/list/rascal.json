@@ -1,0 +1,302 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.chosen_aspect",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.rascal",
+                "color": "#3A3B3C"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.rascal",
+                "color": "#444647"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.aspects.rascal.description",
+                "italic": true,
+                "color": "#eeeeee"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "rascal"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#eeeeee",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.dark"
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#eeeeee",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.steel"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/rascal",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/rascal/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.rascal.cave_attuned",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.rascal.cave_attuned.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.rascal.spawn_of_darkness",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.rascal.spawn_of_darkness.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/rascal",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.rascal.use_name_1",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.rascal.use_condition_1",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.rascal.use_result_1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "item.aspects.focus.rascal.use_name_2",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.rascal.use_condition_2",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.rascal.use_result_2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "item.aspects.focus.rascal.use_name_3",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.rascal.use_condition_3",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.rascal.use_result_3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "item.aspects.focus.rascal.use_name_4",
+                        "color": "#eeeeee",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.rascal.use_condition_4",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.rascal.use_result_4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/aspect_list"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "event_on_respawn": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspectlib:flags/is_alive"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspectlib:event/on_respawn/execute"
+    }
+}

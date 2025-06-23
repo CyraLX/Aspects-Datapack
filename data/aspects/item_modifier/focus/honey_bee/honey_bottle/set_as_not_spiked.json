@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_custom_data",
+  "tag": {
+    "aspects": {
+      "honey_bee": {
+        "spiked": false
+      }
+    }
+  }
+}

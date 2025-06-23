@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:aspect/list/human",
+        "aspects:aspect/list/merling",
+        "aspects:aspect/list/enderian",
+        "aspects:aspect/list/shulk",
+        "aspects:aspect/list/feline",
+        "aspects:aspect/list/infernal",
+        "aspects:aspect/list/elytrian",
+        "aspects:aspect/list/honey_bee",
+        "aspects:aspect/list/rascal"
+    ]
+}

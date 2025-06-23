@@ -1,0 +1,51 @@
+{ 
+	"pack": {
+		"pack_format": 71,
+		"supported_formats": {
+			"min_inclusive": 71,
+			"max_inclusive": 80
+		},
+		"description": [
+			{
+				"translate": "datapack.aspects.description.header_format",
+				"fallback": "%s | %s",
+				"with": [
+					{
+						"text": "PR1",
+						"color": "dark_purple"
+					},
+					{
+						"translate": "datapack.aspects.description.header",
+						"fallback": "Use unique Powers",
+						"color": "aqua"
+					}
+				],
+				"color": "dark_gray"
+			},
+			"\n",
+			{
+				"translate": "datapack.aspects.description.footer",
+				"fallback": "! Missing Resource Pack !",
+				"color": "aqua"
+			}
+		]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"formats": {
+					"min_inclusive": 71,
+					"max_inclusive": 76
+				},
+				"directory": "overlay_f71-f76_no_dialogs"
+			},
+			{
+				"formats": {
+					"min_inclusive": 71,
+					"max_inclusive": 71
+				},
+				"directory": "overlay_f71_1_21_5"
+			}
+		]
+	}
+}

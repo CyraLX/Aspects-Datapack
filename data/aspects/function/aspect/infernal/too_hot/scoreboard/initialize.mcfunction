@@ -1,0 +1,1 @@
+scoreboard objectives add aspects.infernal.steal_fire dummy

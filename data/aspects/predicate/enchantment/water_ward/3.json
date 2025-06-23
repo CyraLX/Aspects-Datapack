@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "chest": {
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "aspects:water_ward",
+                            "levels": {
+                                "min": 3
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

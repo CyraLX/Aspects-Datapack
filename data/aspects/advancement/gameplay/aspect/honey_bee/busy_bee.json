@@ -1,0 +1,50 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:jigsaw",
+            "count": 1,
+            "components": {
+                "minecraft:item_model": "aspects:focus/honey_bee"
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.honey_bee.busy_bee"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.honey_bee.busy_bee.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.honey_bee.busy_bee.lore"
+            }
+        ],
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "suspicious_honey_27_stacks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/honey_bee/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.honey_bee.created_honey_bottles": {
+                                "min": 432
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "aspects:gameplay/aspect/honey_bee/root"
+}

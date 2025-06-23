@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "translate": "dialog.aspects.choose_aspect"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.choose_aspect.external_title"
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "dialog.aspects.choose_aspect.lore"
+            },
+            "width": 450
+        }
+    ],
+    "can_close_with_escape": false,
+    "pause": true,
+    "columns": 3,
+    "dialogs": "#aspects:choose_aspect"
+}

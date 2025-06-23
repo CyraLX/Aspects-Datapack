@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "autogrant": {
+            "trigger": "minecraft:tick"
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "aspects:essence_cage"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "autogrant"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "aspects:essence_cage"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "effect.minecraft.mining_fatigue",
+        "extra": [
+          {
+            "text": " (01:15)"
+          }
+        ],
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

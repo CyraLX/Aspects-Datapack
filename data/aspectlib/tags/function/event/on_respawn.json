@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:event/on_respawn",
+            "required": false
+        }
+    ]
+}

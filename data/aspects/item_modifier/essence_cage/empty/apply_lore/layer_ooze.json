@@ -1,0 +1,25 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "insert",
+    "offset": 1,
+    "lore": [
+        {
+            "text": " ",
+            "color": "#384a32",
+            "italic": false,
+            "extra": [
+                {
+                    "score": {
+                        "name": "@s",
+                        "objective": "aspects.essence.ooze"
+                    }
+                },
+                " ",
+                {
+                    "translate": "lore.essence.ooze"
+                }
+            ]
+        }
+    ]
+}

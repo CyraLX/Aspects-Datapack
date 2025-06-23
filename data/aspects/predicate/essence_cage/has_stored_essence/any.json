@@ -1,0 +1,77 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/apex"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/aquatic"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/beast"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/bug"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/dark"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/ethereal"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/feline"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/fire"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/flying"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/humanoid"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/ice"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/normal"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/ooze"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/plant"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/steel"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/undead"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/void"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:essence_cage/has_stored_essence/wild"
+        }
+    ]
+}

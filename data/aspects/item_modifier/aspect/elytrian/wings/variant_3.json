@@ -1,0 +1,52 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:aspect/elytrian/wings/base"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:item_model": "aspects:wings/elytrian_3",
+            "minecraft:equippable": {
+                "slot": "chest",
+                "allowed_entities": "minecraft:player",
+                "asset_id": "aspects:wings/elytrian_3",
+                "damage_on_hurt": false,
+                "dispensable": false,
+                "swappable": false,
+                "equip_on_interact": false
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "wings": {
+                    "variant": "3"
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "insert",
+        "offset": 0,
+        "lore": [
+            {
+                "translate": "item.aspects.wings.generic.variant",
+                "color": "dark_gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": "
+                    },
+                    {
+                        "translate": "item.aspects.wings.elytrian.variant.aqua"
+                    }
+                ]
+            }
+        ]
+    }
+]

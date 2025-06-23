@@ -1,0 +1,104 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.aspects.shulk",
+                "color": "#b953bd"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "aspects:shulk/base_scale",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "aspects:shulk/max_health",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_damage",
+                "id": "aspects:shulk/attack_damage",
+                "amount": -0.25,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_knockback",
+                "id": "aspects:shulk/attack_knockback",
+                "amount": -0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:attack_speed",
+                "id": "aspects:shulk/attack_speed",
+                "amount": 0.25,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:block_interaction_range",
+                "id": "aspects:shulk/block_interaction_range",
+                "amount": -0.5,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:entity_interaction_range",
+                "id": "aspects:shulk/entity_interaction_range",
+                "amount": -0.5,
+                "operation": "add_value"
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 20
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspects.shulk.shell_timer": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/shulk/shell/update"
+                }
+            }
+        ]
+    }
+}

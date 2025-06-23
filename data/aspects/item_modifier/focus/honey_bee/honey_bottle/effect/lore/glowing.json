@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "translate": "effect.minecraft.glowing",
+        "extra": [
+          {
+            "text": " (00:45)"
+          }
+        ],
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

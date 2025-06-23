@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:cactus_flower",
+            "required": false
+        },
+        {
+            "id": "minecraft:peony",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+$execute store result bossbar aspects:feline/predator/player_$(id) value run scoreboard players get @s aspects.feline.predator

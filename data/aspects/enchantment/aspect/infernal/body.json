@@ -1,0 +1,188 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.aspects.infernal",
+                "color": "#ac2525"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "aspects:aspect/infernal/fire_immune",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:location_changed": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_on_fire": true
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:attack_damage",
+                    "id": "aspects:infernal/on_fire_attack_damage",
+                    "amount": 3.0,
+                    "operation": "add_value"
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_on_fire": true
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "is_direct": true
+                            }
+                        }
+                    ]
+                },
+                "enchanted": "victim",
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:ignite",
+                    "duration": 6
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "minecraft:player",
+                            "gamemode": [
+                                "survival",
+                                "adventure"
+                            ]
+                        },
+                        "periodic_tick": 20
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/infernal/hot_blood/update"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "aspects.infernal.steal_fire": {
+                            "min": 1
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:ignite",
+                            "duration": 4
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspects:aspect/infernal/too_hot/scoreboard/reset"
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 300
+                            }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "mainhand": {
+                                                "items": "#aspectlib:raw_food"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "offhand": {
+                                                "items": "#aspectlib:raw_food"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/infernal/cook_food/update"
+                }
+            }
+        ]
+    }
+}

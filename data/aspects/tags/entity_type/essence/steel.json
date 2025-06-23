@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        { "id": "minecraft:armadillo", "required": false },
+        { "id": "minecraft:blaze", "required": false },
+        { "id": "minecraft:breeze", "required": false },
+        { "id": "minecraft:elder_guardian", "required": false },
+        { "id": "minecraft:guardian", "required": false },
+        { "id": "minecraft:iron_golem", "required": false },
+        { "id": "minecraft:shulker", "required": false },
+        { "id": "minecraft:turtle", "required": false }
+    ]
+}

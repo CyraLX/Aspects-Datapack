@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "kill_elytrian_caged": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:essence_cage/is_in_offhand"
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:bat"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "aspects:essence_cage/entity/essence_exhausted"
+                        }
+                    }
+                ],
+                "killing_blow": {
+                    "is_direct": true
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:essence_cage/store_essence_from_kills/bat"
+    }
+}

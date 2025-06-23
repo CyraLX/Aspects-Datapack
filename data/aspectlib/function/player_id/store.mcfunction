@@ -1,0 +1,1 @@
+$data modify storage aspectlib:player_$(id) player.id set value $(id)
