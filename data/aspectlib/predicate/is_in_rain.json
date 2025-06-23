@@ -1,17 +1,17 @@
 {
-  "condition": "minecraft:all_of",
-  "terms": [
-    {
-      "condition": "minecraft:weather_check",
-      "raining": true
-    },
-    {
-      "condition": "minecraft:location_check",
-      "predicate": {
-        "biomes": "#aspectlib:can_rain",
-        "dimension": "minecraft:overworld",
-        "can_see_sky": true
-      }
-    }
-  ]
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:weather_check",
+            "raining": true
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "biomes": "#aspectlib:can_rain",
+                "dimension": "minecraft:overworld",
+                "can_see_sky": true
+            }
+        }
+    ]
 }

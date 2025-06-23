@@ -1,3 +1,4 @@
+# Create Storage Player Data for the Aspect
 $execute store result score @s aspects.aspect_id run data get storage aspects:aspect_list $(new_aspect).id
 $data modify storage aspectlib:player_$(id) aspects.aspect set from storage aspects:aspect_list $(new_aspect)
 $data modify storage aspectlib:player_$(id) aspects.aspect_data.$(new_aspect) set value {}
