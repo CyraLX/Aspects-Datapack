@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.enderian.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.generic.hydrophobic",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -88,7 +88,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.enderian.slender_body",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -101,7 +101,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.enderian.end_attuned",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -139,7 +139,7 @@
                 "extra": [
                     {
                         "translate": "item.aspects.focus.enderian.use_name_1",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

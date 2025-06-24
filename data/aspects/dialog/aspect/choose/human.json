@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.human.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "dialog.aspects.chosen_aspect.effects.none",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -113,7 +113,7 @@
                 "extra": [
                     {
                         "translate": "dialog.aspects.chosen_aspect.focus.none",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

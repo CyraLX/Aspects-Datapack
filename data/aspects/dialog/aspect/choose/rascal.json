@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.rascal.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.rascal.cave_attuned",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -88,7 +88,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.rascal.spawn_of_darkness",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -126,7 +126,7 @@
                 "extra": [
                     {
                         "translate": "item.aspects.focus.rascal.use_name_1",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -152,7 +152,7 @@
                     "\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_2",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -178,7 +178,7 @@
                     "\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_3",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -204,7 +204,7 @@
                     "\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_4",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

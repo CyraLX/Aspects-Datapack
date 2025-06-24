@@ -31,11 +31,21 @@
     "body": [
         {
             "type": "minecraft:plain_message",
-            "width": 450,
+            "width": 600,
             "contents": {
-                "translate": "aspect.aspects.shulk.description",
-                "italic": true,
-                "color": "#d6d6d6"
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.shulk",
+                        "color": "#b953bd"
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.shulk.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
             }
         },
         {
@@ -96,15 +106,6 @@
             }
         },
         {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
-                "italic": true,
-                "color": "gold"
-            }
-        },
-        {
             "type": "minecraft:item",
             "item": {
                 "id": "minecraft:jigsaw",
@@ -133,40 +134,37 @@
                     {
                         "translate": "aspect.aspects.shulk.small_footprint",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.shulk.small_footprint.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.shulk.febile_limbs",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.shulk.febile_limbs.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.shulk.shell",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.shulk.shell.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     }
                 ]
             }
@@ -197,93 +195,72 @@
                     {
                         "translate": "item.aspects.focus.shulk.use_name_1",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.aspects.focus.shulk.use_condition_1",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.shulk.use_result_1"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.shulk.use_condition_1",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.shulk.use_result_1"
+                                    }
+                                ]
+                            }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.shulk.use_name_2",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.modifiers.mainhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.shulk.use_result_2"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.modifiers.mainhand",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.shulk.use_result_2"
+                                    }
+                                ]
+                            }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.shulk.use_name_3",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.modifiers.offhand",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.shulk.use_result_3"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.modifiers.offhand",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.shulk.use_result_3"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
         }
     ],
     "can_close_with_escape": true,
-    "pause": true,
-    "action": {
-        "label": {
-            "translate": "gui.back"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "aspects:menu/aspect_list"
-        }
-    }
+    "pause": true
 }

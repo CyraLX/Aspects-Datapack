@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.merling.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.generic.aquatic",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -88,7 +88,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.merling.finned_legs",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -101,7 +101,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.merling.aqua_affinity",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -114,7 +114,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.merling.trident_mastery",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -152,7 +152,7 @@
                 "extra": [
                     {
                         "translate": "item.aspects.focus.merling.use_name_1",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

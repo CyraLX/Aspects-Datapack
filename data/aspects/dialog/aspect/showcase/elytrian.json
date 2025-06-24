@@ -33,9 +33,19 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "aspect.aspects.elytrian.description",
-                "italic": true,
-                "color": "#d6d6d6"
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.elytrian",
+                        "color": "#f2f10d"
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.elytrian.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
             }
         },
         {
@@ -78,15 +88,6 @@
             }
         },
         {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
-                "italic": true,
-                "color": "gold"
-            }
-        },
-        {
             "type": "minecraft:item",
             "item": {
                 "id": "minecraft:jigsaw",
@@ -108,47 +109,44 @@
         },
         {
             "type": "minecraft:plain_message",
-            "width": 450,
+            "width": 490,
             "contents": {
                 "translate": "",
                 "extra": [
                     {
                         "translate": "aspect.aspects.elytrian.winged_body",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.elytrian.winged_body.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.elytrian.elytra_natural",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.elytrian.elytra_natural.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.elytrian.brittle_bones",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.elytrian.brittle_bones.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     }
                 ]
             }
@@ -179,41 +177,28 @@
                     {
                         "translate": "item.aspects.focus.elytrian.use_name_1",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.modifiers.use",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.elytrian.use_result_1"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.modifiers.use",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.elytrian.use_result_1"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
         }
     ],
     "can_close_with_escape": true,
-    "pause": true,
-    "action": {
-        "label": {
-            "translate": "gui.back"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "aspects:menu/aspect_list"
-        }
-    }
+    "pause": true
 }

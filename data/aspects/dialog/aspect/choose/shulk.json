@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.shulk.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.shulk.small_footprint",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -88,7 +88,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.shulk.febile_limbs",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -101,7 +101,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.shulk.shell",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -139,7 +139,7 @@
                 "extra": [
                     {
                         "translate": "item.aspects.focus.shulk.use_name_1",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -165,7 +165,7 @@
                     "\n",
                     {
                         "translate": "item.aspects.focus.shulk.use_name_2",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -191,7 +191,7 @@
                     "\n",
                     {
                         "translate": "item.aspects.focus.shulk.use_name_3",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

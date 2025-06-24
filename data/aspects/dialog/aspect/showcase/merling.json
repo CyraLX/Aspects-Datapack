@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "with": [
             {
                 "translate": "aspects",
@@ -9,13 +9,13 @@
                 "italic": true
             },
             {
-                "translate": "aspect.aspects.elytrian",
-                "color": "#f2f10d"
+                "translate": "aspect.aspects.merling",
+                "color": "#2e89f1"
             }
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "with": [
             {
                 "translate": "aspects",
@@ -23,8 +23,8 @@
                 "italic": true
             },
             {
-                "translate": "aspect.aspects.elytrian",
-                "color": "#f2f10d"
+                "translate": "aspect.aspects.merling",
+                "color": "#2e89f1"
             }
         ]
     },
@@ -33,9 +33,19 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "aspect.aspects.elytrian.description",
-                "italic": true,
-                "color": "#d6d6d6"
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.merling",
+                        "color": "#2e89f1"
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.merling.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
             }
         },
         {
@@ -48,7 +58,7 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "awakened_essence_cage": {
-                                "aspect": "elytrian"
+                                "aspect": "merling"
                             }
                         }
                     }
@@ -72,18 +82,9 @@
                         "text": "120"
                     },
                     {
-                        "translate": "lore.essence.flying"
+                        "translate": "lore.essence.aquatic"
                     }
                 ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
-                "italic": true,
-                "color": "gold"
             }
         },
         {
@@ -92,9 +93,9 @@
                 "id": "minecraft:jigsaw",
                 "count": 1,
                 "components": {
-                    "minecraft:item_model": "aspects:aspect/elytrian",
+                    "minecraft:item_model": "aspects:aspect/merling",
                     "minecraft:enchantments": {
-                        "aspects:aspect/elytrian/body": 1
+                        "aspects:aspect/merling/body": 1
                     },
                     "minecraft:enchantment_glint_override": false
                 }
@@ -113,42 +114,51 @@
                 "translate": "",
                 "extra": [
                     {
-                        "translate": "aspect.aspects.elytrian.winged_body",
+                        "translate": "aspect.aspects.generic.aquatic",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "aspect.aspects.elytrian.winged_body.description",
-                                "color": "white",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.generic.aquatic.description",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
-                        "translate": "aspect.aspects.elytrian.elytra_natural",
+                        "translate": "aspect.aspects.merling.finned_legs",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "aspect.aspects.elytrian.elytra_natural.description",
-                                "color": "white",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.merling.finned_legs.description",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
-                        "translate": "aspect.aspects.elytrian.brittle_bones",
+                        "translate": "aspect.aspects.merling.aqua_affinity",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "aspect.aspects.elytrian.brittle_bones.description",
-                                "color": "white",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.merling.aqua_affinity.description",
                                 "italic": true
                             }
-                        }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.merling.trident_mastery",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.merling.trident_mastery.description",
+                                "italic": true
+                            }
+                        ]
                     }
                 ]
             }
@@ -159,7 +169,7 @@
                 "id": "minecraft:jigsaw",
                 "count": 1,
                 "components": {
-                    "minecraft:item_model": "aspects:focus/elytrian",
+                    "minecraft:item_model": "aspects:focus/merling",
                     "minecraft:enchantment_glint_override": false
                 }
             },
@@ -177,43 +187,38 @@
                 "translate": "",
                 "extra": [
                     {
-                        "translate": "item.aspects.focus.elytrian.use_name_1",
+                        "translate": "item.aspects.focus.merling.use_name_1",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.modifiers.use",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.elytrian.use_result_1"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.modifiers.use",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.merling.use_result_1",
+                                        "with": [
+                                            {
+                                                "text": "48"
+                                            },
+                                            {
+                                                "text": "5"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
         }
     ],
     "can_close_with_escape": true,
-    "pause": true,
-    "action": {
-        "label": {
-            "translate": "gui.back"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "aspects:menu/aspect_list"
-        }
-    }
+    "pause": true
 }

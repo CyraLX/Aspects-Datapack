@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.infernal.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.generic.hydrophobic",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -88,7 +88,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.infernal.might_of_the_fire",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -101,7 +101,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.infernal.burning_blood",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -114,7 +114,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.infernal.too_hot",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -127,7 +127,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.infernal.infernal_smoker",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -165,7 +165,7 @@
                 "extra": [
                     {
                         "translate": "item.aspects.focus.infernal.use_name_1",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

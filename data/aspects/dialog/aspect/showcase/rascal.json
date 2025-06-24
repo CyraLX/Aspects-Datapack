@@ -31,11 +31,21 @@
     "body": [
         {
             "type": "minecraft:plain_message",
-            "width": 450,
+            "width": 600,
             "contents": {
-                "translate": "aspect.aspects.rascal.description",
-                "italic": true,
-                "color": "#d6d6d6"
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.rascal",
+                        "color": "#444647"
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.rascal.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
             }
         },
         {
@@ -63,7 +73,7 @@
         },
         {
             "type": "minecraft:plain_message",
-            "width": 450,
+            "width": 600,
             "contents": {
                 "text": "",
                 "extra": [
@@ -96,15 +106,6 @@
             }
         },
         {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
-                "italic": true,
-                "color": "gold"
-            }
-        },
-        {
             "type": "minecraft:item",
             "item": {
                 "id": "minecraft:jigsaw",
@@ -126,34 +127,32 @@
         },
         {
             "type": "minecraft:plain_message",
-            "width": 450,
+            "width": 600,
             "contents": {
                 "translate": "",
                 "extra": [
                     {
                         "translate": "aspect.aspects.rascal.cave_attuned",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.rascal.cave_attuned.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.rascal.spawn_of_darkness",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
+                        "extra": [
+                            "\n",
+                            {
                                 "translate": "aspect.aspects.rascal.spawn_of_darkness.description",
-                                "color": "white",
                                 "italic": true
                             }
-                        }
+                        ]
                     }
                 ]
             }
@@ -177,126 +176,101 @@
         },
         {
             "type": "minecraft:plain_message",
-            "width": 450,
+            "width": 600,
             "contents": {
                 "translate": "",
                 "extra": [
                     {
                         "translate": "item.aspects.focus.rascal.use_name_1",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.aspects.focus.rascal.use_condition_1",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.rascal.use_result_1"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.rascal.use_condition_1",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_result_1"
+                                    }
+                                ]
+                            }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_2",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.aspects.focus.rascal.use_condition_2",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.rascal.use_result_2"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.rascal.use_condition_2",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_result_2"
+                                    }
+                                ]
+                            }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_3",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.aspects.focus.rascal.use_condition_3",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.rascal.use_result_3"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.rascal.use_condition_3",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_result_3"
+                                    }
+                                ]
+                            }
+                        ]
                     },
-                    "\n",
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_4",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "item.aspects.focus.rascal.use_condition_4",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                "\n",
-                                {
-                                    "text": "",
-                                    "color": "blue",
-                                    "italic": false,
-                                    "extra": [
-                                        {
-                                            "translate": "item.aspects.focus.rascal.use_result_4"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.rascal.use_condition_4",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.rascal.use_result_4"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
         }
     ],
     "can_close_with_escape": true,
-    "pause": true,
-    "action": {
-        "label": {
-            "translate": "gui.back"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "aspects:menu/aspect_list"
-        }
-    }
+    "pause": true
 }

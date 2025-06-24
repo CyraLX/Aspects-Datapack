@@ -35,7 +35,7 @@
             "contents": {
                 "translate": "aspect.aspects.feline.description",
                 "italic": true,
-                "color": "#eeeeee"
+                "color": "#d6d6d6"
             }
         },
         {
@@ -75,7 +75,7 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.feline.nine_lives",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -88,7 +88,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.feline.quickness",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -101,7 +101,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.feline.predator",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -114,7 +114,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.feline.relentless",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -127,7 +127,7 @@
                     "\n",
                     {
                         "translate": "aspect.aspects.feline.water",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "bold": true,
                         "hover_event": {
                             "action": "show_text",
@@ -166,7 +166,7 @@
                 "extra": [
                     {
                         "translate": "item.aspects.focus.feline.use_name_1",
-                        "color": "#eeeeee",
+                        "color": "#d6d6d6",
                         "hover_event": {
                             "action": "show_text",
                             "value": [

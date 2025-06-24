@@ -1,0 +1,310 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.chosen_aspect",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.honey_bee",
+                "color": "#ffa41c"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.honey_bee",
+                "color": "#ffa41c"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 600,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.honey_bee",
+                        "color": "#ffa41c"
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.honey_bee.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": "honey_bee"
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 600,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.bug"
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "60"
+                            },
+                            {
+                                "translate": "lore.essence.plant"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/honey_bee",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/honey_bee/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.effects"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 600,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.honey_bee.bee_sized",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.honey_bee.bee_sized.description",
+                                "italic": true
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.honey_bee.exoskeletal_elytra",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.honey_bee.exoskeletal_elytra.description",
+                                "italic": true
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.honey_bee.cautious_flying",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.honey_bee.cautious_flying.description",
+                                "italic": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/honey_bee",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.chosen_aspect.focus"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 600,
+            "contents": {
+                "translate": "",
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.honey_bee.use_name_1",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.honey_bee.use_condition_1",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_result_1"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.focus.honey_bee.use_name_2",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.honey_bee.use_condition_2",
+                                "italic": true
+                            },
+                            "\n",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_result_2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.focus.honey_bee.use_name_3",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.honey_bee.use_condition_3",
+                                "italic": true
+                            },
+                            "\n",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_result_3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.focus.honey_bee.use_name_4",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.aspects.focus.honey_bee.use_condition_4",
+                                "italic": true
+                            },
+                            "\n",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_result_4"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.focus.honey_bee.use_name_5",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.modifiers.offhand",
+                                "italic": true
+                            },
+                            "\n",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.honey_bee.use_result_5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true
+}

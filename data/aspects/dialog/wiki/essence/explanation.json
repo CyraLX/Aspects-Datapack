@@ -116,7 +116,7 @@
             "width": 450,
             "contents": {
                 "translate": "dialog.aspects.essences.explanation.awakening_essence_cage.example",
-                "color": "#eeeeee",
+                "color": "#d6d6d6",
                 "italic": true,
                 "with": [
                     {
@@ -187,7 +187,7 @@
             "width": 450,
             "contents": {
                 "translate": "dialog.aspects.essences.explanation.how_to_remove_essences",
-                "color": "#eeeeee",
+                "color": "#d6d6d6",
                 "with": [
                     {
                         "translate": "item.aspects.awakened_essence_cage",

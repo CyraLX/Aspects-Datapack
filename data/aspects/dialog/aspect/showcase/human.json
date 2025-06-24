@@ -33,9 +33,20 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    },
+                    "\n",
+                    {
+                        
                 "translate": "aspect.aspects.human.description",
                 "italic": true,
                 "color": "#d6d6d6"
+                    }
+                ]
             }
         },
         {
@@ -78,15 +89,6 @@
             }
         },
         {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.aspect_info.hover_tutorial",
-                "italic": true,
-                "color": "gold"
-            }
-        },
-        {
             "type": "minecraft:item",
             "item": {
                 "id": "minecraft:jigsaw",
@@ -110,21 +112,9 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
-                "extra": [
-                    {
-                        "translate": "dialog.aspects.aspect_info.effects.none",
-                        "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "dialog.aspects.aspect_info.effects.none.description",
-                                "color": "white",
-                                "italic": true
-                            }
-                        }
-                    }
-                ]
+                "translate": "dialog.aspects.aspect_info.effects.none.description",
+                "color": "#d6d6d6",
+                "italic": true
             }
         },
         {
@@ -148,35 +138,12 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
-                "extra": [
-                    {
-                        "translate": "dialog.aspects.aspect_info.focus.none",
-                        "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "dialog.aspects.aspect_info.focus.none.description",
-                                    "color": "white",
-                                    "italic": true
-                                }
-                            ]
-                        }
-                    }
-                ]
+                "translate": "dialog.aspects.aspect_info.focus.none.description",
+                "color": "#d6d6d6",
+                "italic": true
             }
         }
     ],
     "can_close_with_escape": true,
-    "pause": true,
-    "action": {
-        "label": {
-            "translate": "gui.back"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "aspects:menu/aspect_list"
-        }
-    }
+    "pause": true
 }
