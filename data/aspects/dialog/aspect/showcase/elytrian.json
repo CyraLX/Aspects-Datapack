@@ -111,7 +111,7 @@
             "type": "minecraft:plain_message",
             "width": 490,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "aspect.aspects.elytrian.winged_body",
@@ -172,7 +172,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "item.aspects.focus.elytrian.use_name_1",

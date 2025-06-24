@@ -110,7 +110,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "aspect.aspects.generic.hydrophobic",
@@ -200,7 +200,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "item.aspects.focus.infernal.use_name_1",

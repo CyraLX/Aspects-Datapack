@@ -128,7 +128,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "aspect.aspects.rascal.cave_attuned",
@@ -179,7 +179,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "item.aspects.focus.rascal.use_name_1",

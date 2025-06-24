@@ -128,7 +128,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "aspect.aspects.honey_bee.bee_sized",
@@ -192,7 +192,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "item.aspects.focus.honey_bee.use_name_1",

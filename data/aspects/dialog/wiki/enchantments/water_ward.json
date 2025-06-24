@@ -1,0 +1,203 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.enchantments.water_ward",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "enchantment.aspects.water_ward"
+            },
+            {
+                "translate": "enchantment.level.1",
+                "extra": [
+                    "-",
+                    {
+                        "translate": "enchantment.level.2"
+                    }
+                ]
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.enchantments.water_ward.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "enchantment.aspects.water_ward"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "enchantment.aspects.water_ward.description"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.enchantments.water_ward.detailed_information"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1,
+                "components": {
+                    "minecraft:stored_enchantments": {
+                        "aspects:water_ward": 2
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.enchantments.at_higher_levels",
+                "color": "#f6c7ff"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "color": "#d6d6d6",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.1"
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.2"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:iron_chestplate",
+                "count": 1,
+                "components": {
+                    "minecraft:enchantments": {
+                        "aspects:water_ward": 1
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.enchantments.compatible_with",
+                "color": "#c7fdff"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "color": "#d6d6d6",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.enchantments.compatible_with.chest"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:cancel",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.enchantments.incompatabilities",
+                "color": "#ffc7c7"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "color": "#d6d6d6",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.enchantments.incompatabilities.protection"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:chest",
+                "count": 1
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.enchantments.acquisition",
+                "color": "#c7ffd5"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "color": "#d6d6d6",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.enchantments.acquisition.spawned_mob_equipment"
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.enchantments.acquisition.container_loot_equipment"
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.enchantments.acquisition.villager_sold_equipment"
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.enchantments.acquisition.villager_trades"
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/enchantments"
+        }
+    }
+}

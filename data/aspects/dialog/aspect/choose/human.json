@@ -71,7 +71,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "dialog.aspects.chosen_aspect.effects.none",
@@ -109,7 +109,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "",
+                "text": "",
                 "extra": [
                     {
                         "translate": "dialog.aspects.chosen_aspect.focus.none",

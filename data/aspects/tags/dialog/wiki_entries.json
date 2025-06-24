@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "#aspects:wiki_categories/essence"
+        "#aspects:wiki_categories/essence",
+        "aspects:menu/enchantments"
     ]
 }

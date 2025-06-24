@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "translate": "dialog.aspects.enchantments"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.enchantments.external_title"
+    },
+    "exit_action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/pause_screen"
+        }
+    },
+    "can_close_with_escape": true,
+    "pause": true,
+    "columns": 3,
+    "dialogs": "#aspects:wiki_categories/enchantments"
+}
