@@ -7,7 +7,6 @@ execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:periodic_t
 # Make sure players username has an Aspect attached to it, if not get their aspect from the storage and fix it
 execute as @a[predicate=!aspects:aspect/any_score,predicate=aspects:aspect/any] at @s run function #aspects:fix/username_change
 
-
 # Generic Powers
 execute as @a[predicate=aspects:generic/should_check_if_in_water, predicate=aspectlib:gamemode/survival_or_adventure, predicate=aspectlib:periodic_tick/20] at @s run function aspectlib:predicate/check_if_in_water
 ## Hydrophobia

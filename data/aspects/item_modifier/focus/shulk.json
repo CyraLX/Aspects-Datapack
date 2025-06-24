@@ -30,7 +30,6 @@
             "minecraft:enchantment_glint_override": false,
             "minecraft:tooltip_display": {
                 "hidden_components": [
-                    "minecraft:attribute_modifiers",
                     "minecraft:enchantments"
                 ]
             },
@@ -143,7 +142,7 @@
             },
             "",
             {
-                "translate": "item.modifiers.mainhand",
+                "translate": "item.modifiers.use_mainhand",
                 "color": "gray",
                 "italic": false
             },
@@ -159,7 +158,7 @@
             },
             "",
             {
-                "translate": "item.modifiers.offhand",
+                "translate": "item.modifiers.use_offhand",
                 "color": "gray",
                 "italic": false
             },

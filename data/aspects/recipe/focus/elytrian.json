@@ -43,7 +43,7 @@
                 "has_consume_particles": false
             },
             "minecraft:use_cooldown": {
-                "seconds": 20,
+                "seconds": 15,
                 "cooldown_group": "aspects:focus"
             },
             "minecraft:use_remainder": {
@@ -90,7 +90,7 @@
                             "translate": "lore.equipment.use_cooldown"
                         },
                         {
-                            "translate": "lore.equipment.use_cooldown.long",
+                            "translate": "lore.equipment.use_cooldown.average",
                             "color": "dark_gray"
                         }
                     ],
