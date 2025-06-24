@@ -47,9 +47,6 @@
         },
         "fly_no_elytra_milestone_7": {
             "trigger": "minecraft:impossible"
-        },
-        "fly_no_elytra_milestone_8": {
-            "trigger": "minecraft:impossible"
         }
     },
     "parent": "aspects:gameplay/aspect/elytrian/root",

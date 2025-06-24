@@ -10,4 +10,3 @@ execute if score @s aspects.elytrian.advancements.flying_marathon.distance_trave
 execute if score @s aspects.elytrian.advancements.flying_marathon.distance_traveled matches 5000 run return run advancement grant @s only aspects:gameplay/aspect/elytrian/flying_marathon fly_no_elytra_milestone_5
 execute if score @s aspects.elytrian.advancements.flying_marathon.distance_traveled matches 6000 run return run advancement grant @s only aspects:gameplay/aspect/elytrian/flying_marathon fly_no_elytra_milestone_6
 execute if score @s aspects.elytrian.advancements.flying_marathon.distance_traveled matches 7000 run return run advancement grant @s only aspects:gameplay/aspect/elytrian/flying_marathon fly_no_elytra_milestone_7
-execute if score @s aspects.elytrian.advancements.flying_marathon.distance_traveled matches 8000 run return run advancement grant @s only aspects:gameplay/aspect/elytrian/flying_marathon fly_no_elytra_milestone_8

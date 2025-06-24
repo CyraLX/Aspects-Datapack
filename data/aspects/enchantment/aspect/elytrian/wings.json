@@ -76,7 +76,11 @@
                             "type": "minecraft:player",
                             "advancements": {
                                 "aspects:gameplay/aspect/elytrian/flying_marathon": false
-                            }
+                            },
+                            "gamemode": [
+                                "adventure",
+                                "survival"
+                            ]
                         }
                     }
                 },
