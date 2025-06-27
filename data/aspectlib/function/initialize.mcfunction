@@ -6,6 +6,7 @@ scoreboard objectives add aspectlib.dummy dummy
 function aspectlib:player_id/initialize
 ## Events
 function aspectlib:event/on_death/load
+function aspectlib:event/on_join/load
 function aspectlib:event/on_respawn/load
 ## Predicates
 ### Submerged

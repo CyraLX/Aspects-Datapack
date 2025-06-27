@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspectlib:predicate/submerged/tick",
+            "id": "aspectlib:tick",
             "required": false
         },
 
