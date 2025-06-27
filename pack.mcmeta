@@ -11,7 +11,7 @@
 				"fallback": "%s | %s",
 				"with": [
 					{
-						"text": "R1",
+						"text": "PR1",
 						"color": "dark_purple"
 					},
 					{
