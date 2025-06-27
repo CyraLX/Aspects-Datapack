@@ -26,7 +26,7 @@
         "count": 1,
         "components": {
             "minecraft:max_stack_size": 1,
-            "minecraft:rarity": "rare",
+            "minecraft:rarity": "uncommon",
             "minecraft:enchantment_glint_override": false,
             "minecraft:tooltip_display": {
                 "hidden_components": [
@@ -50,9 +50,14 @@
                     "minecraft:item_name": {
                         "translate": "item.aspects.focus.shulk"
                     },
-                    "minecraft:rarity": "rare",
+                    "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
                     "minecraft:item_model": "aspects:focus/shulk",
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:enchantments"
+                        ]
+                    },
                     "minecraft:enchantments": {
                         "aspects:focus/shulk/storage/place_down": 1,
                         "aspects:focus/shulk/camouflage/create": 1,

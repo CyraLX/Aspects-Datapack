@@ -26,7 +26,7 @@
         "count": 1,
         "components": {
             "minecraft:max_stack_size": 1,
-            "minecraft:rarity": "rare",
+            "minecraft:rarity": "uncommon",
             "minecraft:enchantment_glint_override": false,
             "minecraft:tooltip_display": {
                 "hidden_components": [
@@ -52,9 +52,15 @@
                     "minecraft:item_name": {
                         "translate": "item.aspects.focus.feline"
                     },
-                    "minecraft:rarity": "rare",
+                    "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
                     "minecraft:item_model": "aspects:focus/feline",
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
                     "minecraft:enchantments": {
                         "aspects:focus/feline/jump": 1,
                         "aspects:focus/generic/modify_mainhand": 1,

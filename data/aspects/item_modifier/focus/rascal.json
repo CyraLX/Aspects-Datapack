@@ -6,7 +6,7 @@
     {
         "function": "minecraft:set_components",
         "components": {
-            "minecraft:rarity": "rare",
+            "minecraft:rarity": "uncommon",
             "minecraft:enchantment_glint_override": false,
             "minecraft:tooltip_display": {
                 "hidden_components": [
@@ -32,9 +32,15 @@
                     "minecraft:item_name": {
                         "translate": "item.aspects.focus.rascal"
                     },
-                    "minecraft:rarity": "rare",
+                    "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
                     "minecraft:item_model": "aspects:focus/rascal",
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
                     "minecraft:enchantments": {
                         "aspects:focus/generic/modify_mainhand": 1,
                         "aspects:focus/generic/modify_offhand": 1
