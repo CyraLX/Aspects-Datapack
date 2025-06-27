@@ -1,7 +1,24 @@
 {
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-        "aspects.choose_aspect": {}
-    }
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "aspects.choose_aspect": {}
+            }
+        }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "aspects.choose_aspect": {
+                    "max": -1
+                }
+            }
+        }
+    ]
 }
