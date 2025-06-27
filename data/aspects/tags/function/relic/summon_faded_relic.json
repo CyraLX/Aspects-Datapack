@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "aspects:relic/faded/summon"
+        "aspects:relic/faded/prepare_player_id_for_macro"
     ]
 }
