@@ -1,0 +1,2 @@
+scoreboard players reset @s aspects.choose_aspect
+tellraw @s ["",{text:"The Wayfarer whispers to you: ",italic:true,color:"gray"},{selector:"@s",italic:true,color:"gray"},{text:" I have already completed my part of The Deal, have I not?",italic:true,color:"gray"}]

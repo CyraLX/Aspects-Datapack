@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:notice",
+    "type": "minecraft:multi_action",
     "title": {
         "translate": "dialog.aspects.chosen_aspect",
         "with": [
@@ -290,7 +290,7 @@
     ],
     "can_close_with_escape": true,
     "pause": true,
-    "action": {
+    "exit_action": {
         "label": {
             "translate": "gui.back"
         },
@@ -298,5 +298,16 @@
             "type": "show_dialog",
             "dialog": "aspects:menu/aspect_list"
         }
-    }
+    },
+    "actions": [
+        {
+            "label": {
+                "translate": "gui.aspects.first_choice"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "trigger aspects.choose_aspect set 8"
+            }
+        }
+    ]
 }
