@@ -1,8 +1,8 @@
 # Give temporary tag
 tag @s add stats_retriever
 # Give feedback in chat
-execute if entity @a[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs, tag=!stats_retriever] [{"text":"[Aspects] ","color":"#f88379"},{"selector":"@s","color":"#aaaaaa","extra":[{"text":" is viewing statistics for All Vanilla Aspects"}]}]
-tellraw @s [{"text":"[Aspects] ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"Statistics for All Vanilla Aspects"},{"text":":"}]}]
+execute if entity @a[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs, tag=!stats_retriever] [{"text":"[Aspects]: ","color":"#f88379"},{"selector":"@s","color":"#aaaaaa","extra":[{"text":" is viewing statistics for All Vanilla Aspects"}]}]
+tellraw @s [{"text":"[Aspects]: ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"Statistics for All Vanilla Aspects"},{"text":":"}]}]
 tellraw @s [{"text":"> ","color":"#aaaaaa","extra":[{"text":"Human","color":"#8b7e77"},{"text":" (","color":"#666666"},{"score":{"name":"#aspects","objective":"aspects.stats.human.current"},"color":"gold"},{"text":")","color":"#666666"}]}]
 tellraw @s [{"text":"\\ ","color":"#aaaaaa","extra":[{"score":{"name":"#aspects","objective":"aspects.stats.human.total"},"color":"gold"},{"text":" Total ","color":"#aaaaaa"},{"text":"-","color":"#666666"},{"text":" ","color":"#aaaaaa"},{"score":{"name":"#aspects","objective":"aspects.stats.human.faded"},"color":"gold"},{"text":" Removals ","color":"#aaaaaa"},{"text":"-","color":"#666666"},{"text":" ","color":"#aaaaaa"},{"score":{"name":"#aspects","objective":"aspects.stats.human.current"},"color":"gold"},{"text":" Peak ","color":"#aaaaaa"},{"text":"-","color":"#666666"},{"text":" ","color":"#aaaaaa"},{"score":{"name":"#aspects","objective":"aspects.stats.human.first_pick"},"color":"gold"},{"text":" First Picks","color":"#aaaaaa"}]}]
 tellraw @s [{"text":"> ","color":"#aaaaaa","extra":[{"text":"Merling","color":"#2e89f1"},{"text":" (","color":"#666666"},{"score":{"name":"#aspects","objective":"aspects.stats.merling.current"},"color":"gold"},{"text":")","color":"#666666"}]}]

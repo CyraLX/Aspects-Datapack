@@ -1,0 +1,281 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.custom_items.essence_cage",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "item.aspects.essence_cage"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.custom_items.essence_cage.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "item.aspects.essence_cage"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:essence_cage"
+                }
+            },
+            "width": 18,
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.essence_cage.description"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.essence_cage.check_essence_information",
+                "color": "gold",
+                "italic": true,
+                "with": [
+                    {
+                        "translate": "dialog.aspects.essences.explanation.external_title",
+                        "color": "#fff349",
+                        "click_event": {
+                            "action": "show_dialog",
+                            "dialog": "aspects:wiki/essence/explanation"
+                        },
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.custom_items.essence_cage.check_essence_information.hover_info",
+                                "with": [
+                                    {
+                                        "translate": "dialog.aspects.essences.explanation.external_title"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:smithing_table",
+                "count": 1
+            },
+            "width": 18,
+            "description": {
+                "translate": "dialog.aspects.custom_items.recipe.smithing",
+                "color": "#d6d6d6",
+                "with": [
+                    {
+                        "translate": "item.aspects.essence_cage"
+                    }
+                ]
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.recipe.smithing.format",
+                "color": "gold",
+                "with": [
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            "[",
+                            {
+                                "translate": "block.minecraft.sculk_catalyst"
+                            },
+                            "]"
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:sculk_catalyst",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            "[",
+                            {
+                                "translate": "block.minecraft.tinted_glass"
+                            },
+                            "]"
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:tinted_glass",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            "[",
+                            {
+                                "translate": "block.minecraft.iron_block"
+                            },
+                            "]"
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:iron_block",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "translate": "dialog.aspects.custom_items.recipe.result",
+                        "with": [
+                            {
+                                "text": "1",
+                                "color": "white"
+                            },
+                            {
+                                "text": "",
+                                "color": "#ffff55",
+                                "extra": [
+                                    "[",
+                                    {
+                                        "translate": "item.aspects.essence_cage"
+                                    },
+                                    "]"
+                                ],
+                                "hover_event": {
+                                    "action": "show_item",
+                                    "id": "minecraft:jigsaw",
+                                    "count": 1,
+                                    "components": {
+                                        "minecraft:rarity": "uncommon",
+                                        "minecraft:max_stack_size": 1,
+                                        "minecraft:item_model": "aspects:essence_cage",
+                                        "minecraft:damage_resistant": {
+                                            "types": "#aspects:special_item_damage_immune"
+                                        },
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "essence_cage": {}
+                                            }
+                                        },
+                                        "minecraft:item_name": [
+                                            {
+                                                "translate": "item.aspects.essence_cage"
+                                            }
+                                        ],
+                                        "minecraft:lore": [
+                                            {
+                                                "translate": "item.aspects.essence_cage.stored_essences",
+                                                "color": "gray",
+                                                "italic": false
+                                            },
+                                            {
+                                                "text": " ",
+                                                "color": "dark_gray",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.essence_cage.stored_essences.empty"
+                                                    }
+                                                ]
+                                            },
+                                            "",
+                                            {
+                                                "translate": "item.modifiers.offhand",
+                                                "color": "gray",
+                                                "italic": false
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "blue",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.essence_cage.use_result_1"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "blue",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.essence_cage.awaken_condition"
+                                                    }
+                                                ]
+                                            },
+                                            "",
+                                            {
+                                                "translate": "item.aspects.essence_cage.use_condition_1",
+                                                "color": "gray",
+                                                "italic": false
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "blue",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.essence_cage.use_result_2"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "blue",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.essence_cage.awaken_condition"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/custom_items"
+        }
+    }
+}

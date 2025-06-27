@@ -1,7 +1,7 @@
 # Add seperator
 tellraw @s ""
 # Header
-tellraw @s [{"text":"[Aspects] ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"REWARD_FADED_RELIC","color":"gold"}]}]
+tellraw @s [{"text":"[Aspects]: ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"REWARD_FADED_RELIC","color":"gold"}]}]
 # Explanation
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"> ","bold":true},{"text":"Should reward players with a Faded Relic based on their old Aspect when swiching Aspects","italic":true}]}]
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"/ ","bold":true},{"text":"Default: "},{"text":"Enabled","color":"green"}]}]

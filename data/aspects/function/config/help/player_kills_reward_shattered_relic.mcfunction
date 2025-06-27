@@ -1,7 +1,7 @@
 # Add seperator
 tellraw @s ""
 # Header
-tellraw @s [{"text":"[Aspects] ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"PLAYER_KILLS_REWARD_SHATTERED_RELIC","color":"gold"}]}]
+tellraw @s [{"text":"[Aspects]: ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"PLAYER_KILLS_REWARD_SHATTERED_RELIC","color":"gold"}]}]
 # Explanation
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"> ","bold":true},{"text":"When a Player kills an Aspect, should they drop a Shattered Relic","italic":true}]}]
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"/ ","bold":true},{"text":"Default: "},{"text":"Enabled","color":"green"}]}]

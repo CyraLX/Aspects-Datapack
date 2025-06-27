@@ -1,7 +1,7 @@
 # Add seperator
 tellraw @s ""
 # Header
-tellraw @s [{"text":"[Aspects] ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"FORCE_ASPECT_ON_ASPECTLESS_PLAYERS","color":"gold"}]}]
+tellraw @s [{"text":"[Aspects]: ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"FORCE_ASPECT_ON_ASPECTLESS_PLAYERS","color":"gold"}]}]
 # Explanation
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"> ","bold":true},{"text":"Should players without an Aspect be invincible","italic":true,"extra":[{"text":"\n (Functional on 1.21.6+ only!)","color":"#9e9e70"}]}]}]
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"/ ","bold":true},{"text":"Default: "},{"text":"Enabled","color":"green"}]}]

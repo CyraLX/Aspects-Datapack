@@ -1,7 +1,7 @@
 # Add seperator
 tellraw @s ""
 # Header
-tellraw @s [{"text":"[Aspects] ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"TRACK_STATISTICS","color":"gold"}]}]
+tellraw @s [{"text":"[Aspects]: ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"TRACK_STATISTICS","color":"gold"}]}]
 # Explanation
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"> ","bold":true},{"text":"Should update statistics tracked by Aspects such as Aspect pick count, remove count, active count, ect...","italic":true,"extra":[{"text":"\n (If turned off and turned on again later, statistics WILL desync! Only turn off if you intent to keep it that way permanently or need to test something for a brief period)","color":"#9e7070"}]}]}]
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"/ ","bold":true},{"text":"Default: "},{"text":"Enabled","color":"green"}]}]

@@ -10,7 +10,7 @@ function aspectlib:player_id/store with storage aspectlib:dummy
 data remove storage aspectlib:dummy id
 
 # Log in chat
-execute if entity @a[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] [{"text":"[AspectLib] ","color":"#7700A7"},{"selector":"@s","color":"#aaaaaa","extra":[{"text":" was assigned ID "},{"text":"#","color":"gold","extra":[{"score":{"name":"@s","objective":"aspectlib.player_id"}}]}]}]
+execute if entity @a[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] [{"text":"[AspectLib]: ","color":"#7700A7"},{"selector":"@s","color":"#aaaaaa","extra":[{"text":" was assigned ID "},{"text":"#","color":"gold","extra":[{"score":{"name":"@s","objective":"aspectlib.player_id"}}]}]}]
 
 # Increment the max player ID by one
 scoreboard players add #aspects aspectlib.player_id 1

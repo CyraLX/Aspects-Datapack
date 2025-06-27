@@ -1,7 +1,7 @@
 # Add seperator
 tellraw @s ""
 # Header
-tellraw @s [{"text":"[Aspects] ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"KILL_DROPPED_ASPECT_ITEM","color":"gold"}]}]
+tellraw @s [{"text":"[Aspects]: ","color":"#f88379"},{"text":"","color":"#aaaaaa","extra":[{"text":"KILL_DROPPED_ASPECT_ITEM","color":"gold"}]}]
 # Explanation
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"> ","bold":true},{"text":"When a Player Aspect dies, should they drop the Aspect Item that was equipped on them","italic":true,"extra":[{"text":"\n (This is a bug fix regarding `minecraft:prevent_equipment_drop` not functioning correctly` in versions 1.21.5 or lower)","color":"#9e9e70"}]}]}]
 tellraw @s [{"text":"","color":"#aaaaaa","extra":[{"text":"/ ","bold":true},{"text":"Default: "},{"text":"Enabled","color":"green"}]}]
