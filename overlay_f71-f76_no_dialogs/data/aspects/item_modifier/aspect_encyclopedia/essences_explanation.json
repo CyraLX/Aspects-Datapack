@@ -174,14 +174,14 @@
                             },
                             {
                                 "translate": "item.aspects.essence_cage",
-                                "color": "#gold"
+                                "color": "gold"
                             }
                         ]
                     },
                     "\n• ",
                     {
                         "translate": "item.aspects.essence_cleaner",
-                        "color": "#gold"
+                        "color": "gold"
                     }
                 ]
             }

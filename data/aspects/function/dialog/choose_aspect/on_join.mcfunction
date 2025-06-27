@@ -1,0 +1,1 @@
+function aspects:dialog/choose_aspect/on_first_join

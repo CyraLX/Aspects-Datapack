@@ -1,0 +1,1 @@
+scoreboard objectives add aspects.dialog.choose_menu dummy

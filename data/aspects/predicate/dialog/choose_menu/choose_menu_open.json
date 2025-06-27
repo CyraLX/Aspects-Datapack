@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.dialog.choose_menu": {
+            "min": 1
+        }
+    }
+}

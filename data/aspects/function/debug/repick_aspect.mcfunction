@@ -9,3 +9,6 @@ scoreboard players reset @s aspects.choose_aspect
 
 # Reset trigger requirements
 advancement revoke @s only aspects:aspect/give_aspect_from_trigger
+
+# Opens the Menu
+function aspects:dialog/choose_aspect/open_menu
