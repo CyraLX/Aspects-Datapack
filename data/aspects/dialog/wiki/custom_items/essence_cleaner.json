@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.custom_items.essence_cage",
+        "translate": "dialog.aspects.custom_items.essence_cleaner",
         "with": [
             {
                 "translate": "aspects",
@@ -9,12 +9,12 @@
                 "italic": true
             },
             {
-                "translate": "item.aspects.essence_cage"
+                "translate": "item.aspects.essence_cleaner"
             }
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.custom_items.essence_cage.external_title",
+        "translate": "dialog.aspects.custom_items.essence_cleaner.external_title",
         "with": [
             {
                 "translate": "aspects",
@@ -22,7 +22,7 @@
                 "italic": true
             },
             {
-                "translate": "item.aspects.essence_cage"
+                "translate": "item.aspects.essence_cleaner"
             }
         ]
     },
@@ -33,7 +33,7 @@
                 "id": "minecraft:jigsaw",
                 "count": 1,
                 "components": {
-                    "minecraft:item_model": "aspects:essence_cage"
+                    "minecraft:item_model": "aspects:essence_cleaner"
                 }
             },
             "width": 18,
@@ -44,55 +44,18 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.essence_cage.description"
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.custom_items.essence_cage.check_essence_information",
-                "color": "gold",
-                "italic": true,
-                "with": [
-                    {
-                        "text": "",
-                        "color": "#fff349",
-                        "extra": [
-                            "[",
-                            {
-                                "translate": "dialog.aspects.essences.explanation.external_title"
-                            },
-                            "]"
-                        ],
-                        "click_event": {
-                            "action": "show_dialog",
-                            "dialog": "aspects:wiki/essence/explanation"
-                        },
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "dialog.aspects.custom_items.essence_cage.check_essence_information.hover_info",
-                                "with": [
-                                    {
-                                        "translate": "dialog.aspects.essences.explanation.external_title"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
+                "translate": "dialog.aspects.custom_items.essence_cleaner.description"
             }
         },
         {
             "type": "minecraft:item",
             "item": {
-                "id": "minecraft:smithing_table",
+                "id": "minecraft:crafting_table",
                 "count": 1
             },
             "width": 18,
             "description": {
-                "translate": "dialog.aspects.custom_items.recipe.smithing",
+                "translate": "dialog.aspects.custom_items.recipe.crafting_shaped",
                 "color": "#d6d6d6"
             },
             "show_decorations": false,
@@ -102,7 +65,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.recipe.smithing.format",
+                "translate": "dialog.aspects.custom_items.recipe.crafting_shaped.1x3",
                 "color": "gold",
                 "with": [
                     {
@@ -111,13 +74,13 @@
                         "extra": [
                             "[",
                             {
-                                "translate": "block.minecraft.sculk_catalyst"
+                                "translate": "item.minecraft.amethyst_shard"
                             },
                             "]"
                         ],
                         "hover_event": {
                             "action": "show_item",
-                            "id": "minecraft:sculk_catalyst",
+                            "id": "minecraft:amethyst_shard",
                             "count": 1
                         }
                     },
@@ -127,13 +90,13 @@
                         "extra": [
                             "[",
                             {
-                                "translate": "block.minecraft.tinted_glass"
+                                "translate": "item.minecraft.stick"
                             },
                             "]"
                         ],
                         "hover_event": {
                             "action": "show_item",
-                            "id": "minecraft:tinted_glass",
+                            "id": "minecraft:stick",
                             "count": 1
                         }
                     },
@@ -143,13 +106,13 @@
                         "extra": [
                             "[",
                             {
-                                "translate": "block.minecraft.iron_block"
+                                "translate": "item.minecraft.amethyst_shard"
                             },
                             "]"
                         ],
                         "hover_event": {
                             "action": "show_item",
-                            "id": "minecraft:iron_block",
+                            "id": "minecraft:amethyst_shard",
                             "count": 1
                         }
                     },
@@ -166,7 +129,7 @@
                                 "extra": [
                                     "[",
                                     {
-                                        "translate": "item.aspects.essence_cage"
+                                        "translate": "item.aspects.essence_cleaner"
                                     },
                                     "]"
                                 ],
@@ -175,41 +138,94 @@
                                     "id": "minecraft:jigsaw",
                                     "count": 1,
                                     "components": {
-                                        "minecraft:rarity": "uncommon",
                                         "minecraft:max_stack_size": 1,
-                                        "minecraft:item_model": "aspects:essence_cage",
-                                        "minecraft:damage_resistant": {
-                                            "types": "#aspects:special_item_damage_immune"
+                                        "minecraft:rarity": "uncommon",
+                                        "minecraft:enchantment_glint_override": false,
+                                        "minecraft:tooltip_display": {
+                                            "hidden_components": [
+                                                "minecraft:attribute_modifiers",
+                                                "minecraft:enchantments"
+                                            ]
+                                        },
+                                        "minecraft:item_model": "aspects:essence_cleaner",
+                                        "!minecraft:enchantments": {},
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 5,
+                                            "animation": "bow",
+                                            "sound": "minecraft:block.water.ambient",
+                                            "has_consume_particles": false
+                                        },
+                                        "minecraft:use_cooldown": {
+                                            "seconds": 1,
+                                            "cooldown_group": "aspects:essence_cleaner"
+                                        },
+                                        "minecraft:use_remainder": {
+                                            "id": "minecraft:jigsaw",
+                                            "components": {
+                                                "minecraft:item_name": {
+                                                    "translate": "item.aspects.essence_cleaner"
+                                                },
+                                                "minecraft:rarity": "uncommon",
+                                                "minecraft:enchantment_glint_override": false,
+                                                "minecraft:tooltip_display": {
+                                                    "hidden_components": [
+                                                        "minecraft:attribute_modifiers",
+                                                        "minecraft:enchantments"
+                                                    ]
+                                                },
+                                                "minecraft:item_model": "aspects:essence_cleaner",
+                                                "minecraft:enchantments": {
+                                                    "aspects:essence_cleaner/mainhand": 1,
+                                                    "aspects:essence_cleaner/offhand": 1
+                                                },
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "essence_cleaner": {}
+                                                    }
+                                                }
+                                            },
+                                            "count": 1
                                         },
                                         "minecraft:custom_data": {
                                             "aspects": {
-                                                "essence_cage": {}
+                                                "essence_cleaner": {}
                                             }
                                         },
                                         "minecraft:item_name": [
                                             {
-                                                "translate": "item.aspects.essence_cage"
+                                                "translate": "item.aspects.essence_cleaner"
                                             }
                                         ],
                                         "minecraft:lore": [
                                             {
-                                                "translate": "item.aspects.essence_cage.stored_essences",
+                                                "translate": "lore.equipment.use_cooldown",
                                                 "color": "gray",
-                                                "italic": false
-                                            },
-                                            {
-                                                "text": " ",
-                                                "color": "dark_gray",
                                                 "italic": false,
                                                 "extra": [
+                                                    ": ",
                                                     {
-                                                        "translate": "item.aspects.essence_cage.stored_essences.empty"
+                                                        "translate": "lore.equipment.use_cooldown.very_short",
+                                                        "color": "dark_gray",
+                                                        "italic": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "lore.equipment.use_time",
+                                                "color": "gray",
+                                                "italic": false,
+                                                "extra": [
+                                                    ": ",
+                                                    {
+                                                        "translate": "lore.equipment.use_time.long",
+                                                        "color": "dark_gray",
+                                                        "italic": false
                                                     }
                                                 ]
                                             },
                                             "",
                                             {
-                                                "translate": "item.modifiers.offhand",
+                                                "translate": "item.aspects.essence_cleaner.use_condition_1",
                                                 "color": "gray",
                                                 "italic": false
                                             },
@@ -219,43 +235,7 @@
                                                 "italic": false,
                                                 "extra": [
                                                     {
-                                                        "translate": "item.aspects.essence_cage.use_result_1"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "blue",
-                                                "italic": false,
-                                                "extra": [
-                                                    {
-                                                        "translate": "item.aspects.essence_cage.awaken_condition"
-                                                    }
-                                                ]
-                                            },
-                                            "",
-                                            {
-                                                "translate": "item.aspects.essence_cage.use_condition_1",
-                                                "color": "gray",
-                                                "italic": false
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "blue",
-                                                "italic": false,
-                                                "extra": [
-                                                    {
-                                                        "translate": "item.aspects.essence_cage.use_result_2"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "blue",
-                                                "italic": false,
-                                                "extra": [
-                                                    {
-                                                        "translate": "item.aspects.essence_cage.awaken_condition"
+                                                        "translate": "item.aspects.essence_cleaner.use_result_1"
                                                     }
                                                 ]
                                             }

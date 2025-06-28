@@ -1,4 +1,5 @@
 # Clean up before removing Aspect
+function aspects:aspect/elytrian/rocket_damage/scoreboard/disable
 function aspectlib:player_id/expose
 function aspects:aspect/elytrian/remove_data with storage aspectlib:dummy
 function aspects:aspect/elytrian/fly_damage/remove

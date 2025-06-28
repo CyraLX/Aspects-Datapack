@@ -1,6 +1,10 @@
 {
     "replace": false,
     "values": [
-        "aspects:wiki/custom_items/essence_cage"
+        "aspects:wiki/custom_items/essence_cage",
+        "aspects:wiki/custom_items/awakened_essence_cage",
+        "aspects:wiki/custom_items/essence_extractor",
+        "aspects:wiki/custom_items/essence_cleaner",
+        "aspects:wiki/custom_items/aspect_focuses"
     ]
 }

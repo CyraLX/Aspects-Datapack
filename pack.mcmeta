@@ -3,30 +3,30 @@
 		"pack_format": 71,
 		"supported_formats": {
 			"min_inclusive": 71,
-			"max_inclusive": 80
+			"max_inclusive": 81
 		},
 		"description": [
 			{
 				"translate": "datapack.aspects.description.header_format",
 				"fallback": "%s | %s",
+				"color": "dark_gray",
 				"with": [
 					{
-						"text": "v1.0",
+						"text": "v1.01",
 						"color": "dark_purple"
 					},
 					{
 						"translate": "datapack.aspects.description.header",
 						"fallback": "Use unique Powers",
-						"color": "aqua"
+						"color": "gray"
 					}
-				],
-				"color": "dark_gray"
+				]
 			},
 			"\n",
 			{
 				"translate": "datapack.aspects.description.footer",
 				"fallback": "! Missing Resource Pack !",
-				"color": "aqua"
+				"color": "dark_gray"
 			}
 		]
 	},

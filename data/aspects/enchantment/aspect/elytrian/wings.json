@@ -128,6 +128,12 @@
                     "type": "minecraft:run_function",
                     "function": "aspects:aspect/elytrian/wings/prepare_to_apply_modifiers"
                 }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/elytrian/rocket_damage/update_rocket_damage"
+                }
             }
         ]
     }

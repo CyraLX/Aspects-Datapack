@@ -1,0 +1,62 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.custom_items.aspect_focuses",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.custom_items.aspect_focuses.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/generic"
+                }
+            },
+            "width": 18,
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.aspect_focuses.description",
+                "with": [
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77"
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "aspects:menu/custom_items"
+        }
+    }
+}

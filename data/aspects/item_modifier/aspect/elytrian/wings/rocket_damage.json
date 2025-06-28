@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_damage",
+        "add": true,
+        "damage": -0.0078125
+    },
+    {
+        "function": "minecraft:set_damage",
+        "damage": 0,
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "chest": {
+                            "predicates": {
+                                "minecraft:damage": {
+                                    "durability": {
+                                        "max": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

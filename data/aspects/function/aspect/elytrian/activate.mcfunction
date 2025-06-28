@@ -3,6 +3,7 @@ function aspects:aspect/generic/activate
 # Prepare for new Aspect
 function aspectlib:equipment/drop_chestplate
 function aspects:aspect/elytrian/advancement/flying_marathon/cancel_tracking
+function aspects:aspect/elytrian/rocket_damage/scoreboard/reset
 # Set new Aspect
 function aspectlib:player_id/expose
 data modify storage aspectlib:dummy new_aspect set from storage aspects:aspect_list elytrian.name

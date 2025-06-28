@@ -47,7 +47,10 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.enchantments.water_ward.detailed_information"
+                "translate": "dialog.aspects.enchantments.water_ward.detailed_information",
+                "with": [
+                    "20"
+                ]
             }
         },
         {
@@ -77,11 +80,19 @@
                 "color": "#d6d6d6",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.1"
+                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.1",
+                        "with": [
+                            "+5",
+                            "+10"
+                        ]
                     },
                     "\n",
                     {
-                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.2"
+                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.2",
+                        "with": [
+                            "33",
+                            "100"
+                        ]
                     }
                 ]
             }
