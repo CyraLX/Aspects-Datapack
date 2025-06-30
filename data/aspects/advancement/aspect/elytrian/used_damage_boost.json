@@ -19,6 +19,10 @@
                     {
                         "condition": "minecraft:reference",
                         "name": "aspects:aspect/elytrian/is_active"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspectlib:flags/is_flying"
                     }
                 ],
                 "damage": {
