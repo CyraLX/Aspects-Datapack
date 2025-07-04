@@ -104,7 +104,7 @@
                 "count": 1,
                 "components": {
                     "minecraft:enchantments": {
-                        "aspects:water_ward": 1
+                        "aspects:water_ward": 2
                     }
                 }
             },

@@ -1,4 +1,5 @@
+scoreboard objectives add aspects.elytrian.advancements.flying_marathon.distance_traveled dummy
 scoreboard objectives add aspects.elytrian.advancements.flying_marathon.used_focus dummy
 scoreboard objectives add aspects.elytrian.advancements.flying_marathon.used_rocket minecraft.used:minecraft.firework_rocket
+scoreboard objectives add aspects.elytrian.advancements.flying_marathon.used_trident minecraft.used:minecraft.trident
 scoreboard objectives add aspects.elytrian.advancements.flying_marathon.used_damage_boost dummy
-scoreboard objectives add aspects.elytrian.advancements.flying_marathon.distance_traveled dummy

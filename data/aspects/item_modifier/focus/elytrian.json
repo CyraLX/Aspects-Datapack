@@ -1,21 +1,12 @@
 [
     {
         "function": "minecraft:reference",
-        "name": "aspects:jigsaw_dummy"
+        "name": "aspects:focus_dummy"
     },
     {
         "function": "minecraft:set_components",
         "components": {
-            "minecraft:rarity": "uncommon",
-            "minecraft:enchantment_glint_override": false,
-            "minecraft:tooltip_display": {
-                "hidden_components": [
-                    "minecraft:attribute_modifiers",
-                    "minecraft:enchantments"
-                ]
-            },
             "minecraft:item_model": "aspects:focus/elytrian",
-            "!minecraft:enchantments": {},
             "minecraft:consumable": {
                 "consume_seconds": 1,
                 "animation": "bow",

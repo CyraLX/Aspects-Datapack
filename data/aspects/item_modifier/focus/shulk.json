@@ -1,7 +1,7 @@
 [
     {
         "function": "minecraft:reference",
-        "name": "aspects:jigsaw_dummy"
+        "name": "aspects:focus_dummy"
     },
     {
         "function": "minecraft:set_attributes",
@@ -26,12 +26,13 @@
     {
         "function": "minecraft:set_components",
         "components": {
-            "minecraft:rarity": "uncommon",
-            "minecraft:enchantment_glint_override": false,
             "minecraft:tooltip_display": {
                 "hidden_components": [
                     "minecraft:enchantments"
                 ]
+            },
+            "minecraft:enchantments": {
+                "aspects:focus/shulk/storage/pick_up": 1
             },
             "minecraft:item_model": "aspects:focus/shulk",
             "minecraft:consumable": {
@@ -73,9 +74,6 @@
                     }
                 },
                 "count": 1
-            },
-            "minecraft:enchantments": {
-                "aspects:focus/shulk/storage/pick_up": 1
             },
             "minecraft:custom_data": {
                 "aspects": {

@@ -42,6 +42,15 @@
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
+                            "aspects.elytrian.advancements.flying_marathon.used_trident": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
                             "aspects.elytrian.advancements.flying_marathon.used_damage_boost": {
                                 "min": 1
                             }

@@ -74,13 +74,13 @@
                         "extra": [
                             "[",
                             {
-                                "translate": "item.minecraft.amethyst_shard"
+                                "translate": "item.minecraft.water_bucket"
                             },
                             "]"
                         ],
                         "hover_event": {
                             "action": "show_item",
-                            "id": "minecraft:amethyst_shard",
+                            "id": "minecraft:water_bucket",
                             "count": 1
                         }
                     },

@@ -8,14 +8,14 @@
         "a"
     ],
     "key": {
+        "w": [
+            "minecraft:water_bucket"
+        ],
         "s": [
             "minecraft:stick"
         ],
         "a": [
             "minecraft:amethyst_shard"
-        ],
-        "w": [
-            "minecraft:water_bucket"
         ]
     },
     "result": {

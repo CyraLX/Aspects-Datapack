@@ -58,7 +58,7 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:attack_damage",
                     "id": "aspects:infernal/on_fire_attack_damage",
-                    "amount": 3.0,
+                    "amount": 4.0,
                     "operation": "add_value"
                 }
             }
