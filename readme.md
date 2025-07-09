@@ -1,4 +1,6 @@
-![Aspects Title Image](https://cdn.modrinth.com/data/cached_images/a9f7ac15eb16211feadff20035aaa9bf5b52866a.png)
+<p align="center">
+  <img src="https://cdn.modrinth.com/data/cached_images/a9f7ac15eb16211feadff20035aaa9bf5b52866a.png">
+</p>
 
 <p align="center">
   <a href="https://modrinth.com/datapack/corrupted-aspects" style="text-decoration:none"><img src="https://img.shields.io/badge/Modrinth-Download-5DA545?style=for-the-badge&logo=modrinth&logoColor=white" alt="Download on Modrinth"></a><a href="https://www.curseforge.com/minecraft/mc-mods/corrupted-aspects" style="text-decoration:none"><img src="https://img.shields.io/badge/CurseForge-Download-ff7c00?style=for-the-badge&logo=curseforge&logoColor=white" alt="Download on CurseForge"></a><a href="https://www.planetminecraft.com/data-pack/aspects-6655714" style="text-decoration:none"><img src="https://img.shields.io/badge/PlanetMinecraft-Download-49C349?style=for-the-badge&logo=minecraft&logoColor=white" alt="Download on PlanetMinecraft"></a><a href="https://smithed.net/packs/corrupted-aspects" style="text-decoration:none"><img src="https://img.shields.io/badge/Smithed-Download-795D9C?style=for-the-badge" alt="Download on Smithed"></a>
