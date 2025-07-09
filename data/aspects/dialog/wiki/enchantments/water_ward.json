@@ -125,6 +125,10 @@
                 "extra": [
                     {
                         "translate": "dialog.aspects.enchantments.compatible_with.chest"
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.enchantments.compatible_with.elytra"
                     }
                 ]
             }
