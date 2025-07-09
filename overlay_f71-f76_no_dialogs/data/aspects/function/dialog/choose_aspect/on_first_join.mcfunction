@@ -2,7 +2,7 @@ function aspects:debug/give_aspect_encyclopedia_essences_explanation
 function aspects:debug/give_aspect_encyclopedia_1
 
 execute unless score #aspects aspects.config.force_aspect_on_aspectless_players matches 1.. run return fail
-execute if predicate aspects:dialog/choose_menu/choose_menu_open run return fail
+execute if predicate aspects:dialog/choose_menu/is_open run return fail
 execute if predicate aspects:aspect/any_score run return fail
 execute if predicate aspects:aspect/any run return fail
 

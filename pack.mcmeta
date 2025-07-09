@@ -7,7 +7,7 @@
 		},
 		"description": [
 			{
-				"translate": "datapack.aspects.description.header_format",
+				"translate": "dataPack.aspects.description.header_format",
 				"fallback": "%s | %s",
 				"color": "dark_gray",
 				"with": [
@@ -16,7 +16,7 @@
 						"color": "dark_purple"
 					},
 					{
-						"translate": "datapack.aspects.description.header",
+						"translate": "dataPack.aspects.description.header",
 						"fallback": "Use unique Powers",
 						"color": "gray"
 					}
@@ -24,7 +24,7 @@
 			},
 			"\n",
 			{
-				"translate": "datapack.aspects.description.footer",
+				"translate": "dataPack.aspects.description.footer",
 				"fallback": "! Missing Resource Pack !",
 				"color": "dark_gray"
 			}

@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#minecraft:enchantable/chest_armor",
+            "required": false
+        },
+        {
+            "id": "#aspectlib:equipment/elytra",
+            "required": false
+        }
+    ]
+}
