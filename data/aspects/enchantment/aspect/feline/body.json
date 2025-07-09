@@ -51,6 +51,12 @@
                 "id": "aspects:feline/movement_speed",
                 "amount": 0.1,
                 "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:block_break_speed",
+                "id": "aspects:feline/block_break_speed",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
             }
         ],
         "minecraft:location_changed": [

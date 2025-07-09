@@ -80,16 +80,10 @@
                 "color": "#d6d6d6",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.1",
+                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels",
                         "with": [
                             "+5",
-                            "+10"
-                        ]
-                    },
-                    "\n",
-                    {
-                        "translate": "dialog.aspects.enchantments.water_ward.at_higher_levels.2",
-                        "with": [
+                            "+10",
                             "33",
                             "100"
                         ]

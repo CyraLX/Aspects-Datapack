@@ -1,0 +1,1 @@
+attribute @s minecraft:movement_speed modifier remove aspects:feline/predator_pursuing_movement_speed
