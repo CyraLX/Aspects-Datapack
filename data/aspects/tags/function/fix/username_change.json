@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "aspects:fix/username_change/execute"
+        "aspects:fix/username_change/check"
     ]
 }

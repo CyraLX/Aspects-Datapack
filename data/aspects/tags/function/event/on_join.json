@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "aspects:dialog/choose_aspect/on_join"
+        "aspects:dialog/choose_aspect/on_join",
+        "#aspects:fix/username_change"
     ]
 }
