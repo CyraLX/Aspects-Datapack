@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:aspect/elytrian/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/enderian/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/feline/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/human/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/infernal/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/merling/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/rascal/body",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/shulk/body",
+            "required": false
+        }
+    ]
+}
