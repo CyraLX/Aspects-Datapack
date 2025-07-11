@@ -8,8 +8,9 @@ execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:periodic_t
 execute as @a[predicate=!aspects:aspect/any_score,predicate=aspects:aspect/any] at @s run function #aspects:fix/username_change
 
 # Generic Powers
-execute as @a[predicate=aspects:generic/should_check_if_in_water, predicate=aspectlib:gamemode/survival_or_adventure, predicate=aspectlib:periodic_tick/20] at @s run function aspectlib:predicate/check_if_in_water
+## Perform water check for later powers
+execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:gamemode/survival_or_adventure, predicate=aspectlib:periodic_tick/20] at @s run function aspectlib:predicate/check_if_in_water
 ## Hydrophobia
-execute as @a[predicate=aspects:aspect_group/is_hydrophobic, scores={aspectlib.checked_if_in_water=1..}] at @s run function aspects:aspect/generic/hydrophobia/update
+execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspects:aspect_group/is_hydrophobic, scores={aspectlib.checked_if_in_water=1..}] at @s run function aspects:aspect/generic/hydrophobia/update
 ## Moisture
-execute as @a[predicate=aspects:aspect_group/is_moisture_dependant, scores={aspectlib.checked_if_in_water=1..}] at @s run function aspects:aspect/generic/moisture/update
+execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspects:aspect_group/is_moisture_dependant, scores={aspectlib.checked_if_in_water=1..}] at @s run function aspects:aspect/generic/moisture/update
