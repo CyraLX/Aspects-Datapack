@@ -39,7 +39,7 @@ Each Aspect grants:
 - **Focus Powers** (active abilities you can trigger with unique Focus items)
 
 <details>
-<summary>See Available Aspects (check out Gallery for even more details)</summary>
+<summary>See Available Aspects (check out Modrinth/Curseforge Gallery for even more details)</summary>
 
 | Aspect    | Effect(s) | Focus Ability(s) |
 |:----------|:-----------|:----------------|
