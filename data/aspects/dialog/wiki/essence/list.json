@@ -69,8 +69,32 @@
                 "translate": "dialog.aspects.essences.list.entry",
                 "color": "#d6d6d6",
                 "with": [
+                    { "translate": "lore.essence.dark", "color": "gold" },
+                    { "translate": "dialog.aspects.essences.list.dark", "italic": true }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.list.entry",
+                "color": "#d6d6d6",
+                "with": [
                     { "translate": "lore.essence.ethereal", "color": "gold" },
                     { "translate": "dialog.aspects.essences.list.ethereal", "italic": true }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.list.entry",
+                "color": "#d6d6d6",
+                "with": [
+                    { "translate": "lore.essence.feline", "color": "gold" },
+                    { "translate": "dialog.aspects.essences.list.feline", "italic": true }
                 ]
             }
         },
@@ -119,6 +143,18 @@
                 "with": [
                     { "translate": "lore.essence.ice", "color": "gold" },
                     { "translate": "dialog.aspects.essences.list.ice", "italic": true }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.essences.list.entry",
+                "color": "#d6d6d6",
+                "with": [
+                    { "translate": "lore.essence.normal", "color": "gold" },
+                    { "translate": "dialog.aspects.essences.list.normal", "italic": true }
                 ]
             }
         },
