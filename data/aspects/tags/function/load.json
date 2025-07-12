@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "aspects:pack_format",
         "aspects:setup_aspect_list",
         "aspects:aspect_group/initialize",
         "aspects:config/initialize",
