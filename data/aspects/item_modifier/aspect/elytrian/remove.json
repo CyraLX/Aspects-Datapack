@@ -1,0 +1,15 @@
+[
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "aspects:aspect/elytrian/body": 0
+        },
+        "add": false
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {}
+        }
+    }
+]

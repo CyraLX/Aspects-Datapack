@@ -4,27 +4,14 @@
         "name": "aspects:jigsaw_immune_dummy"
     },
     {
+        "function": "minecraft:reference",
+        "name": "aspects:aspect/human/set_base"
+    },
+    {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:rarity": "epic",
-            "minecraft:custom_data": {
-                "aspects": {
-                    "aspect": "human"
-                }
-            },
             "minecraft:item_model": "aspects:aspect/human",
-            "minecraft:equippable": {
-                "slot": "body",
-                "equip_sound": "minecraft:entity.player.hurt",
-                "allowed_entities": "minecraft:player",
-                "dispensable": false,
-                "swappable": false,
-                "damage_on_hurt": false,
-                "equip_on_interact": false
-            },
-            "minecraft:enchantments": {
-                "aspects:aspect/human/body": 1
-            },
             "minecraft:enchantment_glint_override": false
         }
     },
