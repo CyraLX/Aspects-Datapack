@@ -27,5 +27,15 @@
                 "aspect": "merling"
             }
         }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.aspects.aspect.merling"
+            }
+        ]
     }
 ]
