@@ -14,7 +14,10 @@
                         "minecraft:custom_data": {
                             "aspects": {
                                 "focus": {
-                                    "target": "enderian"
+                                    "aspect": {
+                                        "namespace": "aspects",
+                                        "name": "enderian"
+                                    }
                                 }
                             }
                         }

@@ -10,7 +10,10 @@
             "custom_data": {
                 "aspects": {
                     "awakened_essence_cage": {
-                        "aspect": "human"
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "human"
+                        }
                     }
                 }
             }

@@ -68,7 +68,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "focus": {
-                                "target": "shulk"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "shulk"
+                                }
                             }
                         }
                     }
@@ -78,7 +81,10 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "focus": {
-                        "target": "shulk"
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "shulk"
+                        }
                     }
                 }
             }

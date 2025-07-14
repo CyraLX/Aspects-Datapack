@@ -1,1 +1,1 @@
-$item modify entity @s weapon.mainhand aspects:focus/$(aspect)
+$item modify entity @s weapon.mainhand $(namespace):focus/$(name)

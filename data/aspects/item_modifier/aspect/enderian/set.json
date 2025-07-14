@@ -14,5 +14,15 @@
             "minecraft:item_model": "aspects:aspect/enderian",
             "minecraft:enchantment_glint_override": false
         }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.aspects.aspect.enderian"
+            }
+        ]
     }
 ]

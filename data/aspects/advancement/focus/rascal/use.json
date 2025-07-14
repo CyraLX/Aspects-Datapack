@@ -14,7 +14,10 @@
                         "minecraft:custom_data": {
                             "aspects": {
                                 "focus": {
-                                    "target": "rascal"
+                                    "aspect": {
+                                        "namespace": "aspects",
+                                        "name": "rascal"
+                                    }
                                 }
                             }
                         }

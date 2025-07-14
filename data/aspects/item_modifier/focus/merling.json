@@ -39,7 +39,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "focus": {
-                                "target": "merling"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "merling"
+                                }
                             }
                         }
                     }
@@ -49,7 +52,10 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "focus": {
-                        "target": "merling"
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "merling"
+                        }
                     }
                 }
             }

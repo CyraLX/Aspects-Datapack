@@ -41,7 +41,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "focus": {
-                                "target": "honey_bee"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "honey_bee"
+                                }
                             }
                         }
                     }
@@ -51,7 +54,10 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "focus": {
-                        "target": "honey_bee"
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "honey_bee"
+                        }
                     }
                 }
             }

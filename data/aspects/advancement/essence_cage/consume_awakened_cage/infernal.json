@@ -8,7 +8,10 @@
                         "minecraft:custom_data": {
                             "aspects": {
                                 "awakened_essence_cage": {
-                                    "aspect": "infernal"
+                                    "aspect": {
+                                        "namespace": "aspects",
+                                        "name": "infernal"
+                                    }
                                 }
                             }
                         }

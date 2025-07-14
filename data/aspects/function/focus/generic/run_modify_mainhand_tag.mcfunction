@@ -1,1 +1,0 @@
-function #aspects:focus/modify_mainhand

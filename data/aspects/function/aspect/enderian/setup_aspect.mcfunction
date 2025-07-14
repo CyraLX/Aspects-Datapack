@@ -1,1 +1,1 @@
-data modify storage aspects:aspect_list enderian set value {id: 2, name: "enderian", translatable: "aspect.aspects.enderian"}
+data modify storage aspects:aspect_list enderian set value {id: 2, namespace: "aspects", name: "enderian", translatable: "aspect.aspects.enderian"}

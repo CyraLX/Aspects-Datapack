@@ -24,18 +24,11 @@
         "function": "minecraft:set_custom_data",
         "tag": {
             "aspects": {
-                "aspect": "infernal"
+                "aspect": {
+                    "namespace": "aspects",
+                    "name": "infernal"
+                }
             }
         }
-    },
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "item_name",
-        "name": [
-            {
-                "translate": "item.aspects.aspect.infernal"
-            }
-        ]
     }
 ]

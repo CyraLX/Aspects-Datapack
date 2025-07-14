@@ -24,18 +24,11 @@
         "function": "minecraft:set_custom_data",
         "tag": {
             "aspects": {
-                "aspect": "shulk"
+                "aspect": {
+                    "namespace": "aspects",
+                    "name": "shulk"
+                }
             }
         }
-    },
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "item_name",
-        "name": [
-            {
-                "translate": "item.aspects.aspect.shulk"
-            }
-        ]
     }
 ]

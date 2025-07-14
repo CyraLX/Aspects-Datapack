@@ -22,7 +22,7 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/generic/run_modify_offhand_tag"
+                    "function": "aspects:focus/generic/modify_offhand"
                 }
             }
         ]

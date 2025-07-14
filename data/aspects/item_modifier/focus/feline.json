@@ -40,7 +40,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "focus": {
-                                "target": "feline"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "feline"
+                                }
                             }
                         }
                     }
@@ -50,7 +53,10 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "focus": {
-                        "target": "feline"
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "feline"
+                        }
                     }
                 }
             }

@@ -8,7 +8,10 @@
                         "minecraft:custom_data": {
                             "aspects": {
                                 "awakened_essence_cage": {
-                                    "aspect": "shulk"
+                                    "aspect": {
+                                        "namespace": "aspects",
+                                        "name": "shulk"
+                                    }
                                 }
                             }
                         }

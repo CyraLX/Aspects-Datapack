@@ -24,18 +24,11 @@
         "function": "minecraft:set_custom_data",
         "tag": {
             "aspects": {
-                "aspect": "honey_bee"
+                "aspect": {
+                    "namespace": "aspects",
+                    "name": "honey_bee"
+                }
             }
         }
-    },
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "target": "item_name",
-        "name": [
-            {
-                "translate": "item.aspects.aspect.honey_bee"
-            }
-        ]
     }
 ]

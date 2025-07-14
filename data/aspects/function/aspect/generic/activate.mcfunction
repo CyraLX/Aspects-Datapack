@@ -3,10 +3,13 @@ execute if score @s aspects.choose_aspect = @s aspects.choose_aspect run scorebo
 # Call ON_ASPECT_SWITCH event
 function aspects:event/on_aspect_change/execute
 # Default required storage values
-data modify storage aspectlib:dummy new_aspect set value "undefined"
-data modify storage aspectlib:dummy old_aspect set value "undefined"
+data modify storage aspectlib:dummy new_aspect_namespace set value "undefined"
+data modify storage aspectlib:dummy new_aspect_name set value "undefined"
+data modify storage aspectlib:dummy old_aspect_namespace set value "undefined"
+data modify storage aspectlib:dummy old_aspect_name set value "undefined"
 # Store previous Aspect for later use
-data modify storage aspectlib:dummy old_aspect set from entity @s equipment.body.components.minecraft:custom_data.aspects.aspect
+data modify storage aspectlib:dummy old_aspect_namespace set from entity @s equipment.body.components.minecraft:custom_data.aspects.aspect.namespace
+data modify storage aspectlib:dummy old_aspect_name set from entity @s equipment.body.components.minecraft:custom_data.aspects.aspect.name
 # Remove previous Aspect
 function #aspects:aspect/generic_remove with entity @s equipment.body.components.minecraft:custom_data.aspects
 # Play sounds
