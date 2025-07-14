@@ -1,14 +1,21 @@
 {
-    "condition": "minecraft:inverted",
-    "term": {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-            "slots": {
-                "armor.*": {
-                    "items": "minecraft:air"
-                }
-            }
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:equipment/has_helmet"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:equipment/has_chestplate"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:equipment/has_leggings"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:equipment/has_boots"
         }
-    }
+    ]
 }
