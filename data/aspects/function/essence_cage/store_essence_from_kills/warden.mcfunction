@@ -9,12 +9,12 @@ scoreboard players add @s aspects.essence.apex 40
 scoreboard players add @s aspects.essence.dark 40
 scoreboard players add @s aspects.essence.ethereal 40
 # Check potential breakpoints to become an Awakened Essence Cage, if so clean up and return
-execute if function aspects:essence_cage/check_awaken_list/offhand run return run data remove storage aspects:dummy stored_essences
+execute if function aspects:essence_cage/check_awaken_list/offhand run return run data remove storage aspectlib:dummy stored_essences
 # Otherwise update the Essence Cage with new essence counts
-execute store result storage aspects:dummy stored_essences.apex int 1 run scoreboard players get @s aspects.essence.apex
-execute store result storage aspects:dummy stored_essences.dark int 1 run scoreboard players get @s aspects.essence.dark
-execute store result storage aspects:dummy stored_essences.ethereal int 1 run scoreboard players get @s aspects.essence.ethereal
+execute store result storage aspectlib:dummy stored_essences.apex int 1 run scoreboard players get @s aspects.essence.apex
+execute store result storage aspectlib:dummy stored_essences.dark int 1 run scoreboard players get @s aspects.essence.dark
+execute store result storage aspectlib:dummy stored_essences.ethereal int 1 run scoreboard players get @s aspects.essence.ethereal
 function aspects:essence_cage/update_custom_data_offhand
 function aspects:essence_cage/update_lore
 # Clean up storage data
-data remove storage aspects:dummy stored_essences
+data remove storage aspectlib:dummy stored_essences
