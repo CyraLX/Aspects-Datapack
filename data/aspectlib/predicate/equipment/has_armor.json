@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "slots": {
+                "armor.*": {
+                    "items": "minecraft:air"
+                }
+            }
+        }
+    }
+}

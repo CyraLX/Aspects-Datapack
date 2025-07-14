@@ -2,6 +2,6 @@
     "replace": false,
     "values": [
         { "id": "#minecraft:dismounts_underwater", "required": false },
-        { "id": "#minecraft:boat", "required": false }
+        { "id": "#aspectlib:boat", "required": false }
     ]
 }
