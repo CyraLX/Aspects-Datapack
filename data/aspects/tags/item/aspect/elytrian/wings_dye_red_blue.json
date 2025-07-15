@@ -1,8 +1,17 @@
 {
     "replace": false,
     "values": [
-        "minecraft:red_dye",
-        "minecraft:orange_dye",
-        "minecraft:yellow_dye"
+        {
+            "id": "minecraft:red_dye",
+            "required": false
+        },
+        {
+            "id": "minecraft:orange_dye",
+            "required": false
+        },
+        {
+            "id": "minecraft:yellow_dye",
+            "required": false
+        }
     ]
 }

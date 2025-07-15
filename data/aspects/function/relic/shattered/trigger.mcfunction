@@ -4,4 +4,5 @@ advancement revoke @s only aspects:relic/summon_shattered_relic
 execute unless score #aspects aspects.config.player_kills_reward_shattered_relic matches 1 run return fail
 
 # If all passes, execute tag
-function #aspects:relic/summon_shattered_relic
+function aspectlib:player_id/expose
+function aspects:relic/shattered/prepare_aspect_for_macro with storage aspectlib:dummy

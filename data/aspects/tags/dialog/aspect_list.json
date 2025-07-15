@@ -1,14 +1,41 @@
 {
     "replace": false,
     "values": [
-        "aspects:aspect/list/human",
-        "aspects:aspect/list/merling",
-        "aspects:aspect/list/enderian",
-        "aspects:aspect/list/shulk",
-        "aspects:aspect/list/feline",
-        "aspects:aspect/list/infernal",
-        "aspects:aspect/list/elytrian",
-        "aspects:aspect/list/honey_bee",
-        "aspects:aspect/list/rascal"
+        {
+            "id": "aspects:aspect/list/human",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/merling",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/enderian",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/shulk",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/feline",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/infernal",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/elytrian",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/honey_bee",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/list/rascal",
+            "required": false
+        }
     ]
 }

@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "aspects:on_aspect_change"
+        {
+            "id": "aspects:on_aspect_change",
+            "required": false
+        }
     ]
 }

@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "aspects:update_tick"
+        {
+            "id": "aspects:update_tick",
+            "required": false
+        }
     ]
 }

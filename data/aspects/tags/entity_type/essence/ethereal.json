@@ -1,8 +1,17 @@
 {
     "replace": false,
     "values": [
-        { "id": "minecraft:allay", "required": false },
-        { "id": "minecraft:vex", "required": false },
-        { "id": "minecraft:warden", "required": false }
+        {
+            "id": "minecraft:allay",
+            "required": false
+        },
+        {
+            "id": "minecraft:vex",
+            "required": false
+        },
+        {
+            "id": "minecraft:warden",
+            "required": false
+        }
     ]
 }

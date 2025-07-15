@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "#minecraft:replaceable"
+        {
+            "id": "#minecraft:replaceable",
+            "required": false
+        }
     ]
 }

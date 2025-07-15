@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        "aspects:menu/aspect_list",
-        "#aspects:wiki_entries"
+        {
+            "id": "aspects:menu/aspect_list",
+            "required": false
+        },
+        {
+            "id": "#aspects:wiki_entries",
+            "required": false
+        }
     ]
 }

@@ -1,8 +1,17 @@
 {
     "replace": false,
     "values": [
-        { "id": "minecraft:polar_bear", "required": false },
-        { "id": "minecraft:stray", "required": false },
-        { "id": "minecraft:snow_golem", "required": false }
+        {
+            "id": "minecraft:polar_bear",
+            "required": false
+        },
+        {
+            "id": "minecraft:stray",
+            "required": false
+        },
+        {
+            "id": "minecraft:snow_golem",
+            "required": false
+        }
     ]
 }

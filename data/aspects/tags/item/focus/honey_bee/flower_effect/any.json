@@ -1,43 +1,157 @@
 {
     "replace": false,
     "values": [
-        "#aspects:focus/honey_bee/flower_effect/absorption",
-        "#aspects:focus/honey_bee/flower_effect/bad_omen",
-        "#aspects:focus/honey_bee/flower_effect/blindness",
-        "#aspects:focus/honey_bee/flower_effect/conduit_power",
-        "#aspects:focus/honey_bee/flower_effect/darkness",
-        "#aspects:focus/honey_bee/flower_effect/dolphins_grace",
-        "#aspects:focus/honey_bee/flower_effect/fire_resistance",
-        "#aspects:focus/honey_bee/flower_effect/glowing",
-        "#aspects:focus/honey_bee/flower_effect/haste",
-        "#aspects:focus/honey_bee/flower_effect/health_boost",
-        "#aspects:focus/honey_bee/flower_effect/hero_of_the_village",
-        "#aspects:focus/honey_bee/flower_effect/hunger",
-        "#aspects:focus/honey_bee/flower_effect/infested",
-        "#aspects:focus/honey_bee/flower_effect/instant_damage",
-        "#aspects:focus/honey_bee/flower_effect/instant_health",
-        "#aspects:focus/honey_bee/flower_effect/invisibility",
-        "#aspects:focus/honey_bee/flower_effect/jump_boost",
-        "#aspects:focus/honey_bee/flower_effect/levitation",
-        "#aspects:focus/honey_bee/flower_effect/luck",
-        "#aspects:focus/honey_bee/flower_effect/mining_fatigue",
-        "#aspects:focus/honey_bee/flower_effect/nausea",
-        "#aspects:focus/honey_bee/flower_effect/night_vision",
-        "#aspects:focus/honey_bee/flower_effect/oozing",
-        "#aspects:focus/honey_bee/flower_effect/poison",
-        "#aspects:focus/honey_bee/flower_effect/regeneration",
-        "#aspects:focus/honey_bee/flower_effect/resistance",
-        "#aspects:focus/honey_bee/flower_effect/saturation",
-        "#aspects:focus/honey_bee/flower_effect/slow_falling",
-        "#aspects:focus/honey_bee/flower_effect/slowness",
-        "#aspects:focus/honey_bee/flower_effect/speed",
-        "#aspects:focus/honey_bee/flower_effect/strength",
-        "#aspects:focus/honey_bee/flower_effect/unluck",
-        "#aspects:focus/honey_bee/flower_effect/water_breathing",
-        "#aspects:focus/honey_bee/flower_effect/weakness",
-        "#aspects:focus/honey_bee/flower_effect/weaving",
-        "#aspects:focus/honey_bee/flower_effect/wind_charged",
-        "#aspects:focus/honey_bee/flower_effect/wither",
-        "#aspects:focus/honey_bee/flower_effect/none"
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/absorption",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/bad_omen",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/blindness",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/conduit_power",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/darkness",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/dolphins_grace",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/fire_resistance",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/glowing",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/haste",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/health_boost",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/hero_of_the_village",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/hunger",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/infested",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/instant_damage",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/instant_health",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/invisibility",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/jump_boost",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/levitation",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/luck",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/mining_fatigue",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/nausea",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/night_vision",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/oozing",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/poison",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/regeneration",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/resistance",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/saturation",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/slow_falling",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/slowness",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/speed",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/strength",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/unluck",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/water_breathing",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/weakness",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/weaving",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/wind_charged",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/wither",
+            "required": false
+        },
+        {
+            "id": "#aspects:focus/honey_bee/flower_effect/none",
+            "required": false
+        }
     ]
 }

@@ -2,4 +2,4 @@
 function aspects:relic/faded/trigger
 
 # Deactivate previous Aspect
-$function aspects:aspect/$(aspect)/deactivate
+$function $(namespace):aspect/$(name)/deactivate

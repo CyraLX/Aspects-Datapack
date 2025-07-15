@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "aspects:fix/username_change/check"
+        {
+            "id": "aspects:fix/username_change/check",
+            "required": false
+        }
     ]
 }

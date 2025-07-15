@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        "minecraft:green_dye",
-        "minecraft:lime_dye"
+        {
+            "id": "minecraft:green_dye",
+            "required": false
+        },
+        {
+            "id": "minecraft:lime_dye",
+            "required": false
+        }
     ]
 }

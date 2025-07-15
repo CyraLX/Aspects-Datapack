@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "minecraft:blue_dye"
+        {
+            "id": "minecraft:blue_dye",
+            "required": false
+        }
     ]
 }

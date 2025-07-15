@@ -1,14 +1,41 @@
 {
     "replace": false,
     "values": [
-        "aspects:aspect/human/on_respawn",
-        "aspects:aspect/merling/on_respawn",
-        "aspects:aspect/enderian/on_respawn",
-        "aspects:aspect/shulk/on_respawn",
-        "aspects:aspect/feline/on_respawn",
-        "aspects:aspect/infernal/on_respawn",
-        "aspects:aspect/elytrian/on_respawn",
-        "aspects:aspect/honey_bee/on_respawn",
-        "aspects:aspect/rascal/on_respawn"
+        {
+            "id": "aspects:aspect/human/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/merling/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/enderian/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/shulk/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/feline/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/infernal/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/elytrian/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/rascal/on_respawn",
+            "required": false
+        }
     ]
 }

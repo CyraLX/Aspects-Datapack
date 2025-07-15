@@ -1,8 +1,17 @@
 {
     "replace": false,
     "values": [
-        "#aspects:wiki_categories/essence",
-        "aspects:menu/custom_items",
-        "aspects:menu/enchantments"
+        {
+            "id": "#aspects:wiki_categories/essence",
+            "required": false
+        },
+        {
+            "id": "aspects:menu/custom_items",
+            "required": false
+        },
+        {
+            "id": "aspects:menu/enchantments",
+            "required": false
+        }
     ]
 }

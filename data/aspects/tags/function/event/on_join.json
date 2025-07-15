@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        "aspects:dialog/choose_aspect/on_join",
-        "#aspects:fix/username_change"
+        {
+            "id": "aspects:dialog/choose_aspect/on_join",
+            "required": false
+        },
+        {
+            "id": "#aspects:fix/username_change",
+            "required": false
+        }
     ]
 }

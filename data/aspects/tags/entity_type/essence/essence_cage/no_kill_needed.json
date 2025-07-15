@@ -1,15 +1,48 @@
 {
     "values": [
-        { "id": "#aspectlib:passive", "required": false },
-        { "id": "minecraft:bee", "required": false },
-        { "id": "minecraft:dolphin", "required": false },
-        { "id": "minecraft:fox", "required": false },
-        { "id": "minecraft:goat", "required": false },
-        { "id": "minecraft:llama", "required": false },
-        { "id": "minecraft:panda", "required": false },
-        { "id": "minecraft:polar_bear", "required": false },
-        { "id": "minecraft:trader_llama", "required": false },
-        { "id": "minecraft:wolf", "required": false },
-        { "id": "minecraft:creaking", "required": false }
+        {
+            "id": "#aspectlib:passive",
+            "required": false
+        },
+        {
+            "id": "minecraft:bee",
+            "required": false
+        },
+        {
+            "id": "minecraft:dolphin",
+            "required": false
+        },
+        {
+            "id": "minecraft:fox",
+            "required": false
+        },
+        {
+            "id": "minecraft:goat",
+            "required": false
+        },
+        {
+            "id": "minecraft:llama",
+            "required": false
+        },
+        {
+            "id": "minecraft:panda",
+            "required": false
+        },
+        {
+            "id": "minecraft:polar_bear",
+            "required": false
+        },
+        {
+            "id": "minecraft:trader_llama",
+            "required": false
+        },
+        {
+            "id": "minecraft:wolf",
+            "required": false
+        },
+        {
+            "id": "minecraft:creaking",
+            "required": false
+        }
     ]
 }

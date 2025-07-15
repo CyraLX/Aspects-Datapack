@@ -1,27 +1,81 @@
 {
     "replace": false,
     "values": [
-        "aspects:pack_format",
-        "aspects:setup_aspect_list",
-        "aspects:aspect_group/initialize",
-        "aspects:config/initialize",
-        "aspects:stats/initialize",
-        "aspects:dialog/choose_aspect/initialize_scoreboard",
-        
-        "aspects:aspect/generic/hydrophobia/scoreboard/initialize",
-        "aspects:aspect/generic/moisture/scoreboard/initialize",
-        "aspects:aspect/elytrian/initialize_scoreboards",
-        "aspects:aspect/feline/predator/scoreboard/initialize",
-        "aspects:aspect/honey_bee/initialize_scoreboard",
-        "aspects:aspect/infernal/too_hot/scoreboard/initialize",
-        "aspects:aspect/shulk/shell/initialize", 
-        
-        "aspects:focus/enderian/raycast/setup",
-        "aspects:focus/shulk/storage/setup_scoreboard",
-        "aspects:focus/shulk/storage/raycast/setup_scoreboard",
-
-        "aspects:essence_cage/scoreboard/initialize",
-        "aspects:essence_cage/store_essence_from_use/raycast/setup_scoreboard",
-        "aspects:essence_cage/store_essence_from_use/setup_scoreboard"
+        {
+            "id": "aspects:pack_format",
+            "required": false
+        },
+        {
+            "id": "aspects:setup_aspect_list",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:config/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:stats/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:dialog/choose_aspect/initialize_scoreboard",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/generic/hydrophobia/scoreboard/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/generic/moisture/scoreboard/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/elytrian/initialize_scoreboards",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/feline/predator/scoreboard/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/initialize_scoreboard",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/infernal/too_hot/scoreboard/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/shulk/shell/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/enderian/raycast/setup",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/shulk/storage/setup_scoreboard",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/shulk/storage/raycast/setup_scoreboard",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_cage/scoreboard/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_cage/store_essence_from_use/raycast/setup_scoreboard",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_cage/store_essence_from_use/setup_scoreboard",
+            "required": false
+        }
     ]
 }

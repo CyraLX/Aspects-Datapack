@@ -13,7 +13,6 @@
             "id": "aspectlib:predicate/food_level/initialize",
             "required": false
         },
-        
         {
             "id": "#aspects:load",
             "required": false

@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        "minecraft:water_bucket",
-        "minecraft:milk_bucket"
+        {
+            "id": "minecraft:water_bucket",
+            "required": false
+        },
+        {
+            "id": "minecraft:milk_bucket",
+            "required": false
+        }
     ]
 }

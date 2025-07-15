@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        "minecraft:light_blue_dye",
-        "minecraft:cyan_dye"
+        {
+            "id": "minecraft:light_blue_dye",
+            "required": false
+        },
+        {
+            "id": "minecraft:cyan_dye",
+            "required": false
+        }
     ]
 }

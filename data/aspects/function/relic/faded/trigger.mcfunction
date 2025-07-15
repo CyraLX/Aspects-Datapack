@@ -4,4 +4,5 @@ execute unless score #aspects aspects.config.reward_faded_relic matches 1 run re
 execute unless predicate aspects:aspect/any run return fail
 
 # If all passes, execute tag
-function #aspects:relic/summon_faded_relic
+function aspectlib:player_id/expose
+function aspects:relic/faded/prepare_aspect_for_macro with storage aspectlib:dummy

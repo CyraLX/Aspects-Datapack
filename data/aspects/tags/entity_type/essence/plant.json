@@ -1,10 +1,25 @@
 {
     "replace": false,
     "values": [
-        { "id": "minecraft:bogged", "required": false },
-        { "id": "minecraft:creaking", "required": false },
-        { "id": "minecraft:creeper", "required": false },
-        { "id": "minecraft:mooshroom", "required": false },
-        { "id": "minecraft:sniffer", "required": false }
+        {
+            "id": "minecraft:bogged",
+            "required": false
+        },
+        {
+            "id": "minecraft:creaking",
+            "required": false
+        },
+        {
+            "id": "minecraft:creeper",
+            "required": false
+        },
+        {
+            "id": "minecraft:mooshroom",
+            "required": false
+        },
+        {
+            "id": "minecraft:sniffer",
+            "required": false
+        }
     ]
 }

@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        { "id": "#minecraft:dismounts_underwater", "required": false },
-        { "id": "#aspectlib:boat", "required": false }
+        {
+            "id": "#minecraft:dismounts_underwater",
+            "required": false
+        },
+        {
+            "id": "#aspectlib:boat",
+            "required": false
+        }
     ]
 }
