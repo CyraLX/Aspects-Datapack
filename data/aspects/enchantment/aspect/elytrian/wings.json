@@ -92,44 +92,6 @@
         ],
         "minecraft:tick": [
             {
-                "requirements": {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "periodic_tick": 1200
-                            }
-                        }, 
-                        {
-                            "condition": "minecraft:inverted",
-                            "term": {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "equipment": {
-                                        "chest": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "version": 1
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "aspects:aspect/elytrian/wings/prepare_to_apply_modifiers"
-                }
-            },
-            {
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "aspects:aspect/elytrian/rocket_damage/update_rocket_damage"

@@ -1,7 +1,6 @@
 # Remove active Aspect
-function #aspects:aspect/generic_remove with entity @s equipment.body.components.minecraft:custom_data.aspects
-# Make sure to clean up from Aspect
-function aspects:aspect/generic/deactivate
+data modify storage aspectlib:dummy aspect set from entity @s equipment.body.components.minecraft:custom_data.aspects.aspect
+function aspects:aspect/generic/remove_old_aspect with storage aspectlib:dummy aspect
 
 # Reset Scoreboards
 scoreboard players reset @s aspects.aspect_id

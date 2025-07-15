@@ -6,7 +6,11 @@
             "required": false
         },
         {
-            "id": "#aspects:fix/username_change",
+            "id": "aspects:data_fixer/pack_format/check",
+            "required": false
+        },
+        {
+            "id": "#aspects:data_fixer/username_change",
             "required": false
         }
     ]

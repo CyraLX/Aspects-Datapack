@@ -19,7 +19,7 @@
             },
             "minecraft:custom_data": {
                 "aspects": {
-                    "version": 1
+                    "unique": true
                 }
             },
             "minecraft:max_damage": 1200,

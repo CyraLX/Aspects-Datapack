@@ -5,7 +5,7 @@ execute if score @s aspects.choose_aspect = @s aspects.choose_aspect run scorebo
 # Call ON_ASPECT_SWITCH event
 function aspects:event/on_aspect_change/execute
 # Remove previous Aspect
-function aspects:aspect/generic/remove_old_aspect with storage aspectlib:dummy old_aspect
+execute if data storage aspectlib:dummy old_aspect run function aspects:aspect/generic/remove_old_aspect with storage aspectlib:dummy old_aspect
 # Set new Aspect
 function aspects:aspect/generic/assign_data with storage aspectlib:dummy
 # Trigger events

@@ -1,31 +1,33 @@
 # Create Storage Player Data for the Aspect
-$execute store result score @s aspects.aspect_id run data get storage aspects:aspect_list $(new_aspect_namespace):$(new_aspect_name).id
+$scoreboard players set @s aspects.aspect_id $(new_aspect_id)
 $data modify storage aspectlib:player_$(id) aspects.aspect set from storage aspects:aspect_list $(new_aspect_name)
-$data modify storage aspectlib:player_$(id) aspects.aspect_data.$(new_aspect_namespace):$(new_aspect_name) set value {}
+$data modify storage aspectlib:player_$(id) aspects.aspect_data."$(new_aspect_namespace):$(new_aspect_name)" set value {}
 
-# # Don't update statistics if disabled
-# execute if score #aspects aspects.config.track_statistics matches ..0 run return fail
-# # Make sure the changed Aspect is not the same before continuing
-# ## Check if old and new Aspects are defined before cchecking
-# scoreboard players set #aspects.old aspects.aspect_id -2147483647
-# scoreboard players set #aspects.new aspects.aspect_id -2147483647
-# $execute store success score #aspects.old aspectlib.dummy run data get storage aspects:aspect_list $(old_aspect).id
-# $execute store success score #aspects.new aspectlib.dummy run data get storage aspects:aspect_list $(new_aspect_name).id
-# $execute store result score #aspects.old aspects.aspect_id run data get storage aspects:aspect_list $(old_aspect).id
-# $execute store result score #aspects.new aspects.aspect_id run data get storage aspects:aspect_list $(new_aspect_name).id
-# ## If old and new Aspects are defined and they are both the same, cancel tracking statistics for this
-# execute if score #aspects.old aspectlib.dummy matches 1.. if score #aspects.new aspectlib.dummy matches 1.. if score #aspects.old aspects.aspect_id = #aspects.new aspects.aspect_id run return fail
-# # Update new Aspect Stats
-# ## Increase Total Picks
-# $scoreboard players add #aspects aspects.stats.$(new_aspect_name).total 1
-# ## Increase Active Users
-# $scoreboard players add #aspects aspects.stats.$(new_aspect_name).current 1
-# ## Update Peak Active Users
-# $scoreboard players operation #aspects aspects.stats.$(new_aspect_name).peak > #aspects aspects.stats.$(new_aspect_name).current
-# ## If user picked new Aspect as their first, increase First Pick and return early
-# $execute if score #aspects.old aspectlib.dummy matches ..0 run return run scoreboard players add #aspects aspects.stats.$(new_aspect_name).first_pick 1
-# # Update old Aspect stats
-# ## Increase Removed Count
-# $scoreboard players add #aspects aspects.stats.$(old_aspect).faded 1
-# ## Decrease Active Users
-# $scoreboard players remove #aspects aspects.stats.$(old_aspect).current 1
+# Don't update statistics if disabled
+execute if score #aspects aspects.config.track_statistics matches ..0 run return fail
+
+# Make sure the changed Aspect is not the same before continuing
+## Store IDs in scoreboards
+$execute if data storage aspects:aspect_list $(old_aspect_namespace):$(old_aspect_name) store result score #aspects.old aspects.aspect_id run data get storage aspects:aspect_list $(old_aspect_namespace):$(old_aspect_name).id
+$execute store result score #aspects.new aspects.aspect_id run data get storage aspects:aspect_list $(new_aspect_namespace):$(new_aspect_name).id
+
+## If new ID is undefined, cancel
+execute unless score #aspects.new aspects.aspect_id = #aspects.new aspects.aspect_id run return fail
+## If old and new aspect is the same, cancel
+execute if score #aspects.old aspects.aspect_id = #aspects.new aspects.aspect_id run return fail
+
+# Update new Aspect Stats
+## Increase Total Picks
+$scoreboard players add #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).total 1
+## Increase Active Users
+$scoreboard players add #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).current 1
+## Update Peak Active Users
+$scoreboard players operation #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).peak > #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).current
+## If user picked new Aspect as their first, increase First Pick and return early
+$execute unless score #aspects.old aspects.aspect_id = #aspects.old aspects.aspect_id run return run scoreboard players add #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).first_pick 1
+
+# Update old Aspect stats
+## Increase Removed Count
+$scoreboard players add #$(old_aspect_namespace) $(old_aspect_namespace).stats.$(old_aspect_name).faded 1
+## Decrease Active Users
+$scoreboard players remove #$(old_aspect_namespace) $(old_aspect_namespace).stats.$(old_aspect_name).current 1

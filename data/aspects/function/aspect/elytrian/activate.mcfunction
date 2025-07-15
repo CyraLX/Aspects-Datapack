@@ -1,5 +1,5 @@
 # Aspect specific PRE-ACTIVATE logic
-function aspectlib:equipment/drop_chestplate
+execute unless predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/drop_chestplate
 function aspects:aspect/elytrian/advancement/flying_marathon/cancel_tracking
 function aspects:aspect/elytrian/rocket_damage/scoreboard/reset
 

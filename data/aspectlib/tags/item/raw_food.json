@@ -48,22 +48,6 @@
         {
             "id": "#c:foods/raw_fish",
             "required": false
-        },
-        {
-            "id": "#forge:foods/raw_meats",
-            "required": false
-        },
-        {
-            "id": "#forge:foods/raw_meat",
-            "required": false
-        },
-        {
-            "id": "#forge:foods/raw_fishes",
-            "required": false
-        },
-        {
-            "id": "#forge:foods/raw_fish",
-            "required": false
         }
     ]
 }

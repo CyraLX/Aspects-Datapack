@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:stats/get/all",
+            "id": "aspects:aspect/elytrian/wings/validate",
             "required": false
         }
     ]

@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:fix/username_change/check",
+            "id": "aspects:data_fixer/pack_format/update",
             "required": false
         }
     ]

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:data_fixer/username_change/check",
+            "required": false
+        }
+    ]
+}

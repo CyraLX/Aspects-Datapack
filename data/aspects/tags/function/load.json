@@ -18,10 +18,6 @@
             "required": false
         },
         {
-            "id": "aspects:stats/initialize",
-            "required": false
-        },
-        {
             "id": "aspects:dialog/choose_aspect/initialize_scoreboard",
             "required": false
         },
@@ -31,10 +27,6 @@
         },
         {
             "id": "aspects:aspect/generic/moisture/scoreboard/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/elytrian/initialize_scoreboards",
             "required": false
         },
         {
