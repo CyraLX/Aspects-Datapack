@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"kill_elytrian_caged": {
+		"kill_honey_bee_caged": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"player": [

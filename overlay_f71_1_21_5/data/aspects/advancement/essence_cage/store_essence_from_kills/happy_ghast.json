@@ -3,8 +3,5 @@
         "impossible": {
             "trigger": "minecraft:impossible"
         }
-    },
-    "rewards": {
-        "function": "aspects:essence_cage/store_essence_from_kills/happy_ghast"
     }
 }

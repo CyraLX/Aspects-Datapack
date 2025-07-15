@@ -1,12 +1,12 @@
 {
     "criteria": {
-        "kill_elytrian_caged": {
+        "kill_while_holding_cage": {
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "player": [
                     {
                         "condition": "minecraft:reference",
-                        "name": "aspects:essence_cage/is_in_offhand"
+                        "name": "aspects:essence_cage/is_held"
                     }
                 ],
                 "entity": [
@@ -32,6 +32,6 @@
         }
     },
     "rewards": {
-        "function": "aspects:essence_cage/store_essence_from_kills/ghast"
+        "function": "aspects:essence_cage/store_essence_from_entity/ghast"
     }
 }
