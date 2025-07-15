@@ -1,2 +1,2 @@
-$data modify storage aspectlib:player_$(id) aspects.aspect_data.honey_bee.stored_effect set value "water_breathing"
+$data modify storage aspectlib:player_$(id) aspects.aspect_data.aspects:honey_bee.stored_effect set value "water_breathing"
 advancement grant @s only aspects:gameplay/aspect/honey_bee/honey_critic water_breathing

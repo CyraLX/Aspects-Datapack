@@ -20,7 +20,7 @@
             },
             "minecraft:custom_data": {
                 "aspects": {
-                    "version": 1
+                    "unique": true
                 }
             },
             "minecraft:unbreakable": {},

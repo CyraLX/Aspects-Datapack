@@ -1,2 +1,2 @@
-$data modify storage aspectlib:player_$(id) aspects.aspect_data.honey_bee.stored_effect set value "fire_resistance"
+$data modify storage aspectlib:player_$(id) aspects.aspect_data.aspects:honey_bee.stored_effect set value "fire_resistance"
 advancement grant @s only aspects:gameplay/aspect/honey_bee/honey_critic fire_resistance

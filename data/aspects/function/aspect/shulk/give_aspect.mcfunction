@@ -1,12 +1,13 @@
-# Give Aspect Item to Body Slot
-execute if items entity @s armor.body * run item modify entity @s armor.body aspects:aspect/shulk/set_base
-execute unless items entity @s armor.body * run item replace entity @s armor.body with minecraft:jigsaw[minecraft:equippable={"slot":"body","equip_sound":"minecraft:entity.experience_orb.pickup"}]
-execute if items entity @s armor.body minecraft:jigsaw[minecraft:equippable={"slot":"body","equip_sound":"minecraft:entity.experience_orb.pickup"}] run item modify entity @s armor.body aspects:aspect/shulk/set
-# Store the Player ID in the Aspect Item
-function aspectlib:player_id/expose
-function aspects:aspect/generic/store_id_on_aspect with storage aspectlib:dummy
-# Logic after Aspect Item is given
+# Aspect specific PRE-GIVE_ASPECT logic
+
+# Generic GIVE_ASPECT logic
+function aspects:aspect/generic/give_aspect with storage aspects:aspect_list aspects:shulk
+
+# Aspect specific POST-GIVE_ASPECT logic
 ## Grant attributes
 function aspects:aspect/shulk/attributes/grant_base
 ## Reset Shell timer
 scoreboard players set @s aspects.shulk.shell_timer 0
+
+
+

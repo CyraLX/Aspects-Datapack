@@ -1,1 +1,1 @@
-$data remove storage aspectlib:player_$(id) aspects.aspect_data.shulk
+$data remove storage aspectlib:player_$(id) aspects.aspect_data.aspects:shulk

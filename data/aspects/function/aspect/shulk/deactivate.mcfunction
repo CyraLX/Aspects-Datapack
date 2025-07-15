@@ -1,8 +1,10 @@
-# Clean up before removing Aspect
+# Aspect specific PRE-DEACTIVATE logic
+## Place down stored container
 function aspects:focus/shulk/storage/place_down
-function aspects:aspect/shulk/remove_data with storage aspectlib:dummy
-item modify entity @s armor.body aspects:aspect/shulk/remove
-# Perform generic ACTIVATE logic
-function aspects:aspect/generic/deactivate
-# Remove attributes granted by Aspect
+
+# Generic DEACTIVATE logic
+function aspects:aspect/generic/deactivate with storage aspects:aspect_list aspects:shulk
+
+# Aspect specific POST-DEACTIVATE logic
+## Remove attributes that were granted by the aspect
 function aspects:aspect/shulk/attributes/revoke_base

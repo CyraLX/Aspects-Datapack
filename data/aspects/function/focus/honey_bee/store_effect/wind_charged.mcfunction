@@ -1,1 +1,1 @@
-$data modify storage aspectlib:player_$(id) aspects.aspect_data.honey_bee.stored_effect set value "wind_charged"
+$data modify storage aspectlib:player_$(id) aspects.aspect_data.aspects:honey_bee.stored_effect set value "wind_charged"

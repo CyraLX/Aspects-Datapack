@@ -1,7 +1,8 @@
-# Clean up before removing Aspect
-function aspectlib:player_id/expose
-function aspects:aspect/rascal/remove_data with storage aspectlib:dummy
+# Aspect specific PRE-DEACTIVATE logic
+
+# Generic DEACTIVATE logic
+function aspects:aspect/generic/deactivate with storage aspects:aspect_list aspects:rascal
+
+# Aspect specific POST-DEACTIVATE logic
+## Clear Night Vision
 effect clear @s minecraft:night_vision
-item modify entity @s armor.body aspects:aspect/rascal/remove
-# Perform generic ACTIVATE logic
-function aspects:aspect/generic/deactivate
