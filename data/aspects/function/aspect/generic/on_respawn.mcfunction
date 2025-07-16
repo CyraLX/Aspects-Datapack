@@ -1,0 +1,1 @@
+$function $(namespace):aspect/$(name)/give_aspect
