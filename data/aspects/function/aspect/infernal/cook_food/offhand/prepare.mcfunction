@@ -1,2 +1,2 @@
-item modify entity @s weapon.offhand aspects:aspect/infernal/cook_food/start_cooking_meat
+item modify entity @s weapon.offhand {function:"minecraft:set_custom_data",tag:{aspects:{infernal:{ready_to_cook:1b}}}}
 playsound entity.generic.burn player @a[distance=..16] ~ ~ ~ 1 1
