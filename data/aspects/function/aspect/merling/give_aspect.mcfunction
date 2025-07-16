@@ -5,6 +5,8 @@ function aspects:aspect/generic/give_aspect with storage aspects:aspect_list asp
 
 # Aspect specific POST-GIVE_ASPECT logic
 ## Give Night Vision
-function aspects:aspect/feline/give_night_vision
+function aspects:aspect/merling/give_night_vision
+## Re-add Aspect Group features
+function aspects:aspect_group/update/moisture_dependant
 ## Fill "Moisture" meter
-scoreboard players set @s aspects.generic.moisture 180
+function aspects:aspect/generic/moisture/scoreboard/fill

@@ -46,13 +46,25 @@
         "minecraft:location_changed": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "flags": {
-                            "is_on_fire": true
+                    "condition": "minecraft:any_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_on_fire": true
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{HasVisualFire: true}"
+                            }
                         }
-                    }
+                    ]
                 },
                 "effect": {
                     "type": "minecraft:attribute",
@@ -69,13 +81,25 @@
                     "condition": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "flags": {
-                                    "is_on_fire": true
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "flags": {
+                                            "is_on_fire": true
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{HasVisualFire: true}"
+                                    }
                                 }
-                            }
+                            ]
                         },
                         {
                             "condition": "minecraft:damage_source_properties",

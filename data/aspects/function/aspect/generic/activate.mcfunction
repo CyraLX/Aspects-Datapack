@@ -9,7 +9,7 @@ execute if data storage aspectlib:dummy old_aspect run function aspects:aspect/g
 # Set new Aspect
 function aspects:aspect/generic/assign_data with storage aspectlib:dummy
 # Trigger events
-$function $(namespace):aspect/$(name)/on_respawn
+function aspects:aspect/generic/prepare_for_on_respawn
 # Regrant advancement to show they became it as a Toast
 $advancement revoke @s only $(namespace):gameplay/aspect/$(name)/root
 $advancement grant @s only $(namespace):gameplay/aspect/$(name)/root

@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:data_fixer/pack_format/fixes/0-3",
+            "id": "aspects:data_fixer/pack_format/fixes/0-3/run",
             "required": false
         },
         {

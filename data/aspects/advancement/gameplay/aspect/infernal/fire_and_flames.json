@@ -28,13 +28,13 @@
                     },
                     {
                         "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_on_fire"
+                        "name": "aspectlib:flags/is_on_fire_with_visual"
                     }
                 ],
                 "entity": [
                     {
                         "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_on_fire"
+                        "name": "aspectlib:flags/is_on_fire_with_visual"
                     }
                 ]
             }
