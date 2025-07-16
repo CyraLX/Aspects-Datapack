@@ -30,7 +30,7 @@
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:scale",
-                "id": "aspects:rascal/base_scale",
+                "id": "aspects:rascal/scale",
                 "amount": -0.35,
                 "operation": "add_multiplied_base"
             },

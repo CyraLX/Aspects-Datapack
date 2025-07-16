@@ -2,7 +2,15 @@
     "replace": false,
     "values": [
         {
+            "id": "aspects:data_fixer/pack_format/fixes/0-3",
+            "required": false
+        },
+        {
             "id": "aspects:aspect/elytrian/wings/validate",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/wings/validate",
             "required": false
         }
     ]

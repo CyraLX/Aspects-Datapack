@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "aspects:focus/generic/modify_offhand",
-            "required": false
-        }
-    ]
-}

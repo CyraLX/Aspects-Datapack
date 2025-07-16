@@ -1,5 +1,5 @@
 # Remove Aspect Data
-function aspectlib:player_id/expose
+function aspectlib:player/id/expose
 $function $(namespace):aspect/$(name)/remove_data with storage aspectlib:dummy
 # Remove Aspect Item
 $item modify entity @s armor.body $(namespace):aspect/$(name)/remove

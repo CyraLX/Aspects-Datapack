@@ -1,5 +1,5 @@
 # Aspect specific PRE-DEACTIVATE logic
-execute if predicate aspects:equipment/aspect_unique/chest run item replace entity @s armor.chest with air
+execute if predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/remove/chestplate
 function aspects:aspect/elytrian/fly_damage/remove
 function aspects:aspect/elytrian/rocket_damage/scoreboard/disable
 

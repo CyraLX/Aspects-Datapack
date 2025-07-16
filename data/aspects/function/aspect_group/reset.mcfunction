@@ -1,4 +1,4 @@
-function aspectlib:player_id/expose
+function aspectlib:player/id/expose
 function aspects:aspect/generic/hydrophobia/bossbar/destroy with storage aspectlib:dummy
 function aspects:aspect/generic/hydrophobia/scoreboard/reset
 function aspects:aspect/generic/moisture/bossbar/destroy with storage aspectlib:dummy

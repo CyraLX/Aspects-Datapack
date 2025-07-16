@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "aspects:relic/faded/prepare_player_id_for_macro",
-            "required": false
-        }
-    ]
-}

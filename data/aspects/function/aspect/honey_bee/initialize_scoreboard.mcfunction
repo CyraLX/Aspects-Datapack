@@ -1,1 +1,0 @@
-scoreboard objectives add aspects.honey_bee.created_honey_bottles dummy

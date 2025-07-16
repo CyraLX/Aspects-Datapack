@@ -18,6 +18,10 @@
             "required": false
         },
         {
+            "id": "aspects:stats/initialize",
+            "required": false
+        },
+        {
             "id": "aspects:dialog/choose_aspect/initialize_scoreboard",
             "required": false
         },
@@ -27,34 +31,6 @@
         },
         {
             "id": "aspects:aspect/generic/moisture/scoreboard/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/feline/predator/scoreboard/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/honey_bee/initialize_scoreboard",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/infernal/too_hot/scoreboard/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/shulk/shell/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:focus/enderian/raycast/setup",
-            "required": false
-        },
-        {
-            "id": "aspects:focus/shulk/storage/setup_scoreboard",
-            "required": false
-        },
-        {
-            "id": "aspects:focus/shulk/storage/raycast/setup_scoreboard",
             "required": false
         },
         {

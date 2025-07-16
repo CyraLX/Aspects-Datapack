@@ -30,7 +30,7 @@
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:scale",
-                "id": "aspects:shulk/base_scale",
+                "id": "aspects:shulk/scale",
                 "amount": -0.5,
                 "operation": "add_multiplied_base"
             },

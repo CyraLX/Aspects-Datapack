@@ -1,4 +1,4 @@
-function aspectlib:player_id/expose
+function aspectlib:player/id/expose
 
 # Obtainable
 execute if items entity @s weapon.offhand #aspects:focus/honey_bee/flower_effect/absorption run return run function aspects:focus/honey_bee/store_effect/absorption with storage aspectlib:dummy

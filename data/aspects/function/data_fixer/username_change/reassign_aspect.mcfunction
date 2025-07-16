@@ -1,2 +1,2 @@
-$function aspects:aspect/$(aspect)/activate
-$scoreboard players set @s aspectlib.player_id $(player_id)
+$function $(aspect_namespace):aspect/$(aspect_name)/activate
+$scoreboard players set @s aspectlib.player_id $(id)

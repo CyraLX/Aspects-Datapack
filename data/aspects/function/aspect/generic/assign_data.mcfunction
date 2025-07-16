@@ -1,6 +1,6 @@
 # Create Storage Player Data for the Aspect
 $scoreboard players set @s aspects.aspect_id $(new_aspect_id)
-$data modify storage aspectlib:player_$(id) aspects.aspect set from storage aspects:aspect_list $(new_aspect_name)
+$data modify storage aspectlib:player_$(id) aspects.aspect set from storage aspects:aspect_list $(new_aspect_namespace):$(new_aspect_name)
 $data modify storage aspectlib:player_$(id) aspects.aspect_data."$(new_aspect_namespace):$(new_aspect_name)" set value {}
 
 # Don't update statistics if disabled
@@ -18,16 +18,16 @@ execute if score #aspects.old aspects.aspect_id = #aspects.new aspects.aspect_id
 
 # Update new Aspect Stats
 ## Increase Total Picks
-$scoreboard players add #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).total 1
+$scoreboard players add #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.total 1
 ## Increase Active Users
-$scoreboard players add #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).current 1
+$scoreboard players add #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.active 1
 ## Update Peak Active Users
-$scoreboard players operation #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).peak > #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).current
+$scoreboard players operation #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.active_peak > #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.active
 ## If user picked new Aspect as their first, increase First Pick and return early
-$execute unless score #aspects.old aspects.aspect_id = #aspects.old aspects.aspect_id run return run scoreboard players add #$(new_aspect_namespace) $(new_aspect_namespace).stats.$(new_aspect_name).first_pick 1
+$execute unless score #aspects.old aspects.aspect_id = #aspects.old aspects.aspect_id run return run scoreboard players add #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.first_pick 1
 
 # Update old Aspect stats
 ## Increase Removed Count
-$scoreboard players add #$(old_aspect_namespace) $(old_aspect_namespace).stats.$(old_aspect_name).faded 1
+$scoreboard players add #$(old_aspect_namespace):$(old_aspect_name) aspects.aspect_stats.faded 1
 ## Decrease Active Users
-$scoreboard players remove #$(old_aspect_namespace) $(old_aspect_namespace).stats.$(old_aspect_name).current 1
+$scoreboard players remove #$(old_aspect_namespace):$(old_aspect_name) aspects.aspect_stats.active 1

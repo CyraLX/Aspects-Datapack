@@ -24,25 +24,25 @@
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:armor",
-                "id": "aspects:honey_bee/base_scale",
+                "id": "aspects:honey_bee/wings_armor",
                 "amount": 4,
                 "operation": "add_value"
             },
             {
                 "attribute": "minecraft:fall_damage_multiplier",
-                "id": "aspects:honey_bee/fall_damage_multiplier",
+                "id": "aspects:honey_bee/wings_fall_damage_multiplier",
                 "amount": -1,
                 "operation": "add_multiplied_total"
             },
             {
                 "attribute": "minecraft:gravity",
-                "id": "aspects:honey_bee/gravity",
+                "id": "aspects:honey_bee/wings_gravity",
                 "amount": -0.75,
                 "operation": "add_multiplied_base"
             },
             {
                 "attribute": "minecraft:jump_strength",
-                "id": "aspects:honey_bee/jump_strength",
+                "id": "aspects:honey_bee/wings_jump_strength",
                 "amount": -0.4,
                 "operation": "add_multiplied_base"
             }
@@ -56,26 +56,16 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "periodic_tick": 1200
+                                "periodic_tick": 100
                             }
                         },
                         {
                             "condition": "minecraft:inverted",
                             "term": {
-                                "condition": "minecraft:entity_properties",
+                                "condition": "minecraft:entity_scores",
                                 "entity": "this",
-                                "predicate": {
-                                    "equipment": {
-                                        "chest": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "version": 1
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                                "scores": {
+                                    "aspects.aspect_id": 7
                                 }
                             }
                         }
@@ -83,7 +73,7 @@
                 },
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:aspect/elytrian/wings/prepare_to_apply_modifiers"
+                    "function": "aspectlib:equipment/remove/chestplate"
                 }
             }
         ]

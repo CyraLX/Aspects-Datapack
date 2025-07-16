@@ -2,7 +2,11 @@
     "replace": false,
     "values": [
         {
-            "id": "aspectlib:player_id/assign",
+            "id": "aspectlib:player/id/trigger",
+            "required": false
+        },
+        {
+            "id": "aspectlib:player/username/trigger",
             "required": false
         },
         {

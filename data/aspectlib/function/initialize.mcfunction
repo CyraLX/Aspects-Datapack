@@ -3,7 +3,7 @@ scoreboard objectives add aspectlib.dummy dummy
 
 # Load other function initializers
 ## Player IDs
-function aspectlib:player_id/initialize
+function aspectlib:player/id/initialize
 ## Events
 function aspectlib:event/on_death/load
 function aspectlib:event/on_join/load

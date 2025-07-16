@@ -30,7 +30,7 @@
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:scale",
-                "id": "aspects:honey_bee/base_scale",
+                "id": "aspects:honey_bee/scale",
                 "amount": -0.2,
                 "operation": "add_multiplied_base"
             },

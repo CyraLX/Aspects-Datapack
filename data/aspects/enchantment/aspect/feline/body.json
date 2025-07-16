@@ -30,7 +30,7 @@
         "minecraft:attributes": [
             {
                 "attribute": "minecraft:scale",
-                "id": "aspects:feline/base_scale",
+                "id": "aspects:feline/scale",
                 "amount": -0.1,
                 "operation": "add_multiplied_base"
             },

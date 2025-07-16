@@ -1,4 +1,4 @@
-function aspectlib:player_id/expose
+function aspectlib:player/id/expose
 
 # Update Bossbar with the Score value 
 function aspects:aspect/generic/moisture/bossbar/set_value with storage aspectlib:dummy

@@ -1,5 +1,5 @@
 # Aspect specific PRE-ACTIVATE logic
-execute unless predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/drop_chestplate
+execute unless predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/drop/chestplate
 
 # Generic ACTIVATE logic
 function aspects:aspect/generic/activate with storage aspects:aspect_list aspects:honey_bee

@@ -1,5 +1,5 @@
 # Expose the player ID
-function aspectlib:player_id/expose
+function aspectlib:player/id/expose
 # Reset/Default aspect data
 ## New Aspect
 data remove storage aspectlib:dummy new_aspect

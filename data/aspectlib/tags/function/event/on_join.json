@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "aspectlib:player/username/trigger",
+            "required": false
+        },
+        {
             "id": "#aspects:event/on_join",
             "required": false
         }
