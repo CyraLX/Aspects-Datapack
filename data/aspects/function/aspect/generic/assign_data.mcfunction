@@ -5,6 +5,8 @@ $data modify storage aspectlib:player_$(id) aspects.aspect_data."$(new_aspect_na
 
 # Don't update statistics if disabled
 execute if score #aspects aspects.config.track_statistics matches ..0 run return fail
+# Don't update statistics if not a player
+execute if entity @s[type=!minecraft:player] run return fail
 
 # Make sure the changed Aspect is not the same before continuing
 ## Store IDs in scoreboards
