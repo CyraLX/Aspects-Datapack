@@ -10,4 +10,4 @@ function aspects:aspect/feline/predator/bossbar/hide with storage aspectlib:dumm
 ## Reset scores
 function aspects:aspect/feline/predator/scoreboard/reset
 # Remove enchantment
-item modify entity @s armor.body aspects:aspect/feline/predator/remove_enchantment
+item modify entity @s armor.body {function:"set_enchantments",add:0b,enchantments:{"aspects:aspect/feline/predator/temp":0}}

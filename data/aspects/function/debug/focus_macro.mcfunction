@@ -1,2 +1,2 @@
-item replace entity @s weapon.offhand with minecraft:stick 1
-$item modify entity @s weapon.offhand $(namespace):focus/$(name)
+$data modify storage aspectlib:dummy item_modifier set value "$(namespace):focus/$(name)"
+function aspects:utility/summon_item with storage aspectlib:dummy

@@ -56,7 +56,8 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "periodic_tick": 100
+                                "periodic_tick": 100,
+                                "type": "minecraft:player"
                             }
                         },
                         {

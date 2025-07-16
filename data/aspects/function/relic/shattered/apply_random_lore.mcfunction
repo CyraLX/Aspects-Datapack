@@ -1,2 +1,2 @@
-$execute if predicate aspectlib:random/050 run return run item modify entity @n[type=minecraft:armor_stand, tag=shattered_relic_granter, distance=..4] weapon.mainhand aspects:relic/shattered/addon/random_lore/generic/$(random_1)
-$item modify entity @n[type=minecraft:armor_stand, tag=shattered_relic_granter, distance=..4] weapon.mainhand $(aspect_namespace):relic/shattered/addon/random_lore/$(aspect_name)/$(random_2)
+$execute if predicate aspectlib:random/050 run return run item modify entity @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..4] weapon.mainhand {function:"minecraft:set_lore",entity:"this",mode:"append",lore:[{translate:"item.aspects.shattered_relic.generic.lore_$(random_1)"}]}
+$item modify entity @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..4] weapon.mainhand {function:"minecraft:set_lore",entity:"this",mode:"append",lore:[{translate:"item.$(aspect_namespace).shattered_relic.$(aspect_name).lore_$(random_2)"}]}

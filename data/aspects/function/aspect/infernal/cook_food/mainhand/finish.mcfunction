@@ -1,2 +1,2 @@
-item modify entity @s weapon.mainhand aspects:aspect/infernal/cook_food/finish_cooking_meat
+item modify entity @s weapon.mainhand {function:"minecraft:furnace_smelt"}
 playsound entity.generic.burn player @a[distance=..16] ~ ~ ~ 1 1

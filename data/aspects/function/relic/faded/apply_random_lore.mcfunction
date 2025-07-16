@@ -1,2 +1,2 @@
-$execute if predicate aspectlib:random/050 run return run item modify entity @n[type=minecraft:armor_stand, tag=faded_relic_granter, distance=..4] weapon.mainhand aspects:relic/faded/addon/random_lore/generic/$(random_1)
-$item modify entity @n[type=minecraft:armor_stand, tag=faded_relic_granter, distance=..4] weapon.mainhand $(aspect_namespace):relic/faded/addon/random_lore/$(aspect_name)/$(random_2)
+$execute if predicate aspectlib:random/050 run return run item modify entity @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..4] weapon.mainhand {function:"minecraft:set_lore",entity:"this",mode:"append",lore:[{translate:"item.aspects.faded_relic.generic.lore_$(random_1)"}]}
+$item modify entity @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..4] weapon.mainhand {function:"minecraft:set_lore",entity:"this",mode:"append",lore:[{translate:"item.$(aspect_namespace).faded_relic.$(aspect_name).lore_$(random_2)"}]}
