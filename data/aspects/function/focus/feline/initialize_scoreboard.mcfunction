@@ -1,0 +1,1 @@
+scoreboard objectives add aspects.focus.feline.can_jump dummy

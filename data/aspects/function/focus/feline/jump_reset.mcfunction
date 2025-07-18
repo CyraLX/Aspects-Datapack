@@ -1,0 +1,1 @@
+scoreboard players set @s aspects.focus.feline.can_jump 1
