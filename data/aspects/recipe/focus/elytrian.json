@@ -50,7 +50,8 @@
                 "id": "minecraft:jigsaw",
                 "components": {
                     "minecraft:item_name": {
-                        "translate": "item.aspects.focus.elytrian"
+                        "translate": "item.aspects.focus.elytrian",
+                        "color": "#ffff55"
                     },
                     "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
@@ -69,7 +70,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "focus": {
-                                "target": "elytrian"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "elytrian"
+                                }
                             }
                         }
                     }
@@ -79,43 +83,53 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "focus": {
-                        "target": "elytrian"
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "elytrian"
+                        }
                     }
                 }
             },
             "minecraft:item_name": [
                 {
-                    "translate": "item.aspects.focus.elytrian"
+                    "translate": "item.aspects.focus.elytrian",
+                    "color": "#ffff55"
                 }
             ],
             "minecraft:lore": [
                 {
-                    "translate": "lore.equipment.use_cooldown_format",
-                    "with": [
-                        {
-                            "translate": "lore.equipment.use_cooldown"
-                        },
-                        {
-                            "translate": "lore.equipment.use_cooldown.average",
-                            "color": "dark_gray"
-                        }
-                    ],
-                    "color": "gray",
-                    "italic": false
-                },
-                {
                     "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
                     "with": [
                         {
                             "translate": "lore.equipment.use_time"
                         },
                         {
-                            "translate": "lore.equipment.use_time.average",
-                            "color": "dark_gray"
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "1"
+                            ]
                         }
-                    ],
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
                     "color": "gray",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "15"
+                            ]
+                        }
+                    ]
                 },
                 "",
                 {

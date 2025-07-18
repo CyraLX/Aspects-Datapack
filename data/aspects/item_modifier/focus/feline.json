@@ -21,7 +21,8 @@
                 "id": "minecraft:jigsaw",
                 "components": {
                     "minecraft:item_name": {
-                        "translate": "item.aspects.focus.feline"
+                        "translate": "item.aspects.focus.feline",
+                        "color": "#ffff55"
                     },
                     "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
@@ -68,7 +69,8 @@
         "entity": "this",
         "name": [
             {
-                "translate": "item.aspects.focus.feline"
+                "translate": "item.aspects.focus.feline",
+                "color": "#ffff55"
             }
         ]
     },
@@ -78,32 +80,38 @@
         "mode": "replace_all",
         "lore": [
             {
-                "translate": "lore.equipment.use_cooldown_format",
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.short",
-                        "color": "dark_gray"
-                    }
-                ],
-                "color": "gray",
-                "italic": false
-            },
-            {
                 "translate": "lore.equipment.use_time_format",
+                "color": "gray",
+                "italic": false,
                 "with": [
                     {
                         "translate": "lore.equipment.use_time"
                     },
                     {
-                        "translate": "lore.equipment.use_time.very_fast",
-                        "color": "dark_gray"
+                        "translate": "lore.equipment.use_time.seconds",
+                        "color": "#757575",
+                        "with": [
+                            "0.3"
+                        ]
                     }
-                ],
+                ]
+            },
+            {
+                "translate": "lore.equipment.use_cooldown_format",
                 "color": "gray",
-                "italic": false
+                "italic": false,
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_cooldown"
+                    },
+                    {
+                        "translate": "lore.equipment.use_cooldown.seconds",
+                        "color": "#757575",
+                        "with": [
+                            "5"
+                        ]
+                    }
+                ]
             },
             "",
             {

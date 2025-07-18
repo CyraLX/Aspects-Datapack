@@ -47,7 +47,8 @@
                 "id": "minecraft:jigsaw",
                 "components": {
                     "minecraft:item_name": {
-                        "translate": "item.aspects.essence_cleaner"
+                        "translate": "item.aspects.essence_cleaner",
+                        "color": "#ffff55"
                     },
                     "minecraft:rarity": "uncommon",
                     "minecraft:enchantment_glint_override": false,
@@ -77,23 +78,11 @@
             },
             "minecraft:item_name": [
                 {
-                    "translate": "item.aspects.essence_cleaner"
+                    "translate": "item.aspects.essence_cleaner",
+                    "color": "#ffff55"
                 }
             ],
             "minecraft:lore": [
-                {
-                    "translate": "lore.equipment.use_cooldown",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        ": ",
-                        {
-                            "translate": "lore.equipment.use_cooldown.very_short",
-                            "color": "dark_gray",
-                            "italic": false
-                        }
-                    ]
-                },
                 {
                     "translate": "lore.equipment.use_time",
                     "color": "gray",
@@ -101,9 +90,28 @@
                     "extra": [
                         ": ",
                         {
-                            "translate": "lore.equipment.use_time.long",
-                            "color": "dark_gray",
-                            "italic": false
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "italic": false,
+                            "with": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                        ": ",
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "italic": false,
+                            "with": [
+                                "1"
+                            ]
                         }
                     ]
                 },
