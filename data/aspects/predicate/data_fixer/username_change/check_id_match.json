@@ -1,0 +1,18 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspectlib.player_id": {
+            "min": {
+                "type": "minecraft:storage",
+                "storage": "aspectlib:dummy",
+                "path": "id"
+            },
+            "max": {
+                "type": "minecraft:storage",
+                "storage": "aspectlib:dummy",
+                "path": "id"
+            }
+        }
+    }
+}

@@ -9,7 +9,4 @@ scoreboard players reset @s aspects.dialog.choose_menu
 
 # Reset trigger requirements
 advancement revoke @s only aspects:aspect/give_aspect_from_trigger
-
-# Trigger events
-function #aspectlib:event/on_first_join
-function #aspectlib:event/on_join
+advancement revoke @s only aspectlib:event/on_first_join
