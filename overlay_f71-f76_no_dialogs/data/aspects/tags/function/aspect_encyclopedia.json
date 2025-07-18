@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "aspects:debug/give/aspect_encyclopedia_essences_explanation",
+        "aspects:debug/give/aspect_encyclopedia_1"
+    ]
+}
