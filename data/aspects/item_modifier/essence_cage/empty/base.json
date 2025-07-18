@@ -48,7 +48,7 @@
             },
             "",
             {
-                "translate": "item.modifiers.offhand",
+                "translate": "item.modifiers.held",
                 "color": "gray",
                 "italic": false
             },
