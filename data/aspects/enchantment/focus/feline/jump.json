@@ -54,7 +54,7 @@
                         {
                             "type": "minecraft:explode",
                             "attribute_to_user": false,
-                            "knockback_multiplier": 1,
+                            "knockback_multiplier": 0.8,
                             "radius": 0.1,
                             "create_fire": false,
                             "block_interaction": "none",
