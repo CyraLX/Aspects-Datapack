@@ -25,6 +25,10 @@ scoreboard objectives add aspects.config.aspectless_players_invisible dummy
 ## (Functional on 1.21.6+ only!)
 ## Default: 1 (true)
 scoreboard objectives add aspects.config.aspectless_players_invincible dummy
+## Should players without an Aspect be have extreme negative effects
+## (Functional on 1.21.6+ only!)
+## Default: 1 (true)
+scoreboard objectives add aspects.config.aspectless_players_negative_effects dummy
 
 # Default scoreboards to default values if unset
 execute unless score #aspects aspects.config.reward_faded_relic = #aspects aspects.config.reward_faded_relic run scoreboard players set #aspects aspects.config.reward_faded_relic 1
@@ -34,3 +38,4 @@ execute unless score #aspects aspects.config.track_statistics = #aspects aspects
 execute unless score #aspects aspects.config.force_aspect_on_aspectless_players = #aspects aspects.config.force_aspect_on_aspectless_players run scoreboard players set #aspects aspects.config.force_aspect_on_aspectless_players 1
 execute unless score #aspects aspects.config.aspectless_players_invisible = #aspects aspects.config.aspectless_players_invisible run scoreboard players set #aspects aspects.config.aspectless_players_invisible 1
 execute unless score #aspects aspects.config.aspectless_players_invincible = #aspects aspects.config.aspectless_players_invincible run scoreboard players set #aspects aspects.config.aspectless_players_invincible 1
+execute unless score #aspects aspects.config.aspectless_players_negative_effects = #aspects aspects.config.aspectless_players_negative_effects run scoreboard players set #aspects aspects.config.aspectless_players_negative_effects 1

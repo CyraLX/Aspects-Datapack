@@ -11,5 +11,6 @@ scoreboard players set #aspects aspects.config.track_statistics 1
 scoreboard players set #aspects aspects.config.force_aspect_on_aspectless_players 1
 scoreboard players set #aspects aspects.config.aspectless_players_invisible 1
 scoreboard players set #aspects aspects.config.aspectless_players_invincible 1
+scoreboard players set #aspects aspects.config.aspectless_players_negative_effects 1
 # Cleanup
 tag @s remove config_changer

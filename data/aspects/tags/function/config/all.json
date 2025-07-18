@@ -28,6 +28,10 @@
         {
             "id": "aspects:config/help/aspectless_players_invincible",
             "required": false
+        },
+        {
+            "id": "aspects:config/help/aspectless_players_negative_effects",
+            "required": false
         }
     ]
 }
