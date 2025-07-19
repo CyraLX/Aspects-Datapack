@@ -22,6 +22,6 @@
         }
     },
     "rewards": {
-        "function": "aspects:summon_aspect_picker"
+        "function": "aspects:debug/give/aspect_picker"
     }
 }

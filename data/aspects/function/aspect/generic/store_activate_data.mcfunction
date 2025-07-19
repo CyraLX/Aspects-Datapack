@@ -18,7 +18,7 @@ data modify storage aspectlib:dummy new_aspect_id set from storage aspectlib:dum
 data modify storage aspectlib:dummy new_aspect_namespace set from storage aspectlib:dummy new_aspect.namespace
 data modify storage aspectlib:dummy new_aspect_name set from storage aspectlib:dummy new_aspect.name
 ## Old Aspect (cancel early if missing)
-data modify storage aspectlib:dummy old_aspect set from entity @s equipment.body.components.minecraft:custom_data.aspects.aspect
+data modify storage aspectlib:dummy old_aspect set from entity @s equipment.body.components."minecraft:custom_data".aspects.aspect
 execute unless data storage aspectlib:dummy old_aspect run return fail
 data modify storage aspectlib:dummy old_aspect_id set from storage aspectlib:dummy old_aspect.id
 data modify storage aspectlib:dummy old_aspect_namespace set from storage aspectlib:dummy old_aspect.namespace

@@ -1,1 +1,1 @@
-$data remove storage aspectlib:player_$(id) aspects.aspect_data.aspects:infernal
+$data remove storage aspectlib:player_$(id) aspects.aspect_data."aspects:infernal"
