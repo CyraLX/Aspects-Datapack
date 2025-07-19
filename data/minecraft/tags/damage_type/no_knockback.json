@@ -1,7 +1,13 @@
 {
     "replace": false,
     "values": [
-        "aspects:generic/dehydration",
-        "aspects:generic/hydrophobia"
+        {
+            "id": "aspects:generic/dehydration",
+            "required": false
+        },
+        {
+            "id": "aspects:generic/hydrophobia",
+            "required": false
+        }
     ]
 }

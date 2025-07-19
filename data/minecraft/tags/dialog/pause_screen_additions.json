@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "aspects:menu/pause_screen"
+        {
+            "id": "aspects:menu/pause_screen",
+            "required": false
+        }
     ]
 }

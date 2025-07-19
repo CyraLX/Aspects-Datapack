@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "aspects:generic/dehydration"
+        {
+            "id": "aspects:generic/dehydration",
+            "required": false
+        }
     ]
 }

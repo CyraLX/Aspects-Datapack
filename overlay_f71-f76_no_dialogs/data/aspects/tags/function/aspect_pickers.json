@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "aspects:debug/give/aspect_picker"
+        {
+            "id": "aspects:debug/give/aspect_picker",
+            "required": false
+        }
     ]
 }

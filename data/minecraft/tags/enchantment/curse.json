@@ -1,24 +1,81 @@
 {
     "replace": false,
     "values": [
-        "#aspects:aspect",
-        "aspects:aspect/elytrian/wings",
-        "aspects:aspect/feline/predator/temp",
-        "aspects:aspect/honey_bee/wings",
-        "aspects:essence_cleaner/mainhand",
-        "aspects:essence_cleaner/offhand",
-        "aspects:essence_extractor/mainhand",
-        "aspects:essence_extractor/offhand",
-        "aspects:focus/generic/modify_mainhand",
-        "aspects:focus/generic/modify_offhand",
-        "aspects:focus/elytrian/use",
-        "aspects:focus/feline/jump",
-        "aspects:focus/honey_bee/use_mainhand",
-        "aspects:focus/honey_bee/use_offhand",
-        "aspects:focus/infernal/burn",
-        "aspects:focus/shulk/camouflage/check_and_destroy",
-        "aspects:focus/shulk/camouflage/create",
-        "aspects:focus/shulk/storage/pick_up",
-        "aspects:focus/shulk/storage/place_down"
+        {
+            "id": "#aspects:aspect",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/elytrian/wings",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/feline/predator/temp",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/wings",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_cleaner/mainhand",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_cleaner/offhand",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_extractor/mainhand",
+            "required": false
+        },
+        {
+            "id": "aspects:essence_extractor/offhand",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/generic/modify_mainhand",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/generic/modify_offhand",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/elytrian/use",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/feline/jump",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/honey_bee/use_mainhand",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/honey_bee/use_offhand",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/infernal/burn",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/shulk/camouflage/check_and_destroy",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/shulk/camouflage/create",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/shulk/storage/pick_up",
+            "required": false
+        },
+        {
+            "id": "aspects:focus/shulk/storage/place_down",
+            "required": false
+        }
     ]
 }
