@@ -1,5 +1,7 @@
 # Setup a dummy scoreboard for temporary use in the future
 scoreboard objectives add aspectlib.dummy dummy
+# Setup an empty storage for cleanup
+data modify storage aspectlib:empty empty set value {}
 
 # Load other function initializers
 ## Player IDs

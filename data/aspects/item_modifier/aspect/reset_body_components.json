@@ -14,9 +14,17 @@
         }
     },
     {
-        "function": "minecraft:set_custom_data",
-        "tag": {
-            "aspects": {}
-        }
+        "function": "minecraft:copy_custom_data",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "aspectlib:empty"
+        },
+        "ops": [
+            {
+                "source": "empty",
+                "target": "aspects",
+                "op": "replace"
+            }
+        ]
     }
 ]
