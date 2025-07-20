@@ -2,6 +2,8 @@
 function aspectlib:player/id/expose
 # Update previous and current pack_format data in player storage
 function #aspects:data_fixer/pack_format/update with storage aspectlib:dummy
+# Fix the Aspect Item
+function aspects:data_fixer/pack_format/trigger_fix_aspect_item
 # Run validate functions with the following data:
 # Player ID, Previous and Current pack_format, active Aspect namespace, name and ID
 ## Reset/Default aspect data
