@@ -1,5 +1,5 @@
 # Setup data for the Aspect
-## id = Integer Identifier of the Aspect. Range: 0 to 10000000
+## id = Integer Identifier of the Aspect. Range: 0 to 16777216
 ## namespace = Namespace string of your project
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
