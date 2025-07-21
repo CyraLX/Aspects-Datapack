@@ -153,6 +153,18 @@
                                 "italic": true
                             }
                         ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.rascal.photosensitive",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.rascal.photosensitive.description",
+                                "italic": true
+                            }
+                        ]
                     }
                 ]
             }

@@ -1721,6 +1721,22 @@
                                         }
                                     }
                                 ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
+                                        "translate": "aspect.aspects.rascal.photosensitive",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.rascal.photosensitive.description"
+                                            }
+                                        }
+                                    }
+                                ]
                             }
                         ]
                     },

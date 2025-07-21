@@ -97,6 +97,19 @@
                                 "italic": true
                             }
                         }
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.rascal.photosensitive",
+                        "color": "#d6d6d6",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.rascal.photosensitive.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
                     }
                 ]
             }
