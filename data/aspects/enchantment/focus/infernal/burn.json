@@ -32,7 +32,7 @@
                 ],
                 "effect": {
                     "type": "minecraft:ignite",
-                    "duration": 12
+                    "duration": 16
                 }
             }
         ]

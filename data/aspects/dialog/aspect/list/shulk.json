@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "with": [
             {
                 "translate": "aspects",
@@ -15,7 +15,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "with": [
             {
                 "translate": "aspects",
@@ -99,7 +99,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
                 "italic": true,
                 "color": "gold"
             }
@@ -121,7 +121,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.effects"
+                "translate": "dialog.aspects.aspect_info.effects"
             }
         },
         {
@@ -131,8 +131,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "aspect.aspects.shulk.small_footprint",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.shulk.small_footprint"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -142,10 +147,55 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.max_health"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.aspects.shulk.febile_limbs",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.shulk.febile_limbs"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -155,10 +205,88 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.attack_knockback"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.5",
+                                            {
+                                                "translate": "attribute.name.block_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.5",
+                                            {
+                                                "translate": "attribute.name.entity_interaction_range"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.aspects.shulk.shell",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.shulk.shell"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -167,8 +295,200 @@
                                 "italic": true
                             }
                         }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+4",
+                                                    {
+                                                        "translate": "attribute.name.max_absorption"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.damaged",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.heal_absorption_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "4",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.after",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "10s"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "extra.aspects.hover_context",
+                "color": "green",
+                "with": [
+                    {
+                        "translate": "badge_details.aspects.hover_all"
+                    }
+                ],
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+4",
+                                            {
+                                                "translate": "attribute.name.max_absorption"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.max_health"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-50%",
+                                            {
+                                                "translate": "attribute.name.attack_knockback"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.5",
+                                            {
+                                                "translate": "attribute.name.block_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.5",
+                                            {
+                                                "translate": "attribute.name.entity_interaction_range"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.damaged",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.heal_absorption_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "4",
+                                            {
+                                                "translate": "badge_details.aspects.modifier.after",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "10s"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
             }
         },
         {
@@ -185,7 +505,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus"
+                "translate": "dialog.aspects.aspect_info.focus"
             }
         },
         {
@@ -195,8 +515,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "item.aspects.focus.shulk.use_name_1",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.shulk.use_name_1"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -221,8 +546,13 @@
                     },
                     "\n",
                     {
-                        "translate": "item.aspects.focus.shulk.use_name_2",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.shulk.use_name_2"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -247,8 +577,13 @@
                     },
                     "\n",
                     {
-                        "translate": "item.aspects.focus.shulk.use_name_3",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.shulk.use_name_3"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [

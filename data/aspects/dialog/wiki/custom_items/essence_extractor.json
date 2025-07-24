@@ -72,11 +72,14 @@
                         "text": "",
                         "color": "white",
                         "extra": [
-                            "[",
                             {
-                                "translate": "item.minecraft.amethyst_shard"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.amethyst_shard"
+                                    }
+                                ]
+                            }
                         ],
                         "hover_event": {
                             "action": "show_item",
@@ -88,11 +91,14 @@
                         "text": "",
                         "color": "white",
                         "extra": [
-                            "[",
                             {
-                                "translate": "item.minecraft.stick"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.stick"
+                                    }
+                                ]
+                            }
                         ],
                         "hover_event": {
                             "action": "show_item",
@@ -104,11 +110,14 @@
                         "text": "",
                         "color": "white",
                         "extra": [
-                            "[",
                             {
-                                "translate": "item.minecraft.amethyst_shard"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.amethyst_shard"
+                                    }
+                                ]
+                            }
                         ],
                         "hover_event": {
                             "action": "show_item",
@@ -127,11 +136,14 @@
                                 "text": "",
                                 "color": "#ffff55",
                                 "extra": [
-                                    "[",
                                     {
-                                        "translate": "item.aspects.essence_extractor"
-                                    },
-                                    "]"
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            {
+                                                "translate": "item.aspects.essence_extractor"
+                                            }
+                                        ]
+                                    }
                                 ],
                                 "hover_event": {
                                     "action": "show_item",

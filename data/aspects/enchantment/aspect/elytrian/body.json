@@ -29,12 +29,6 @@
         "minecraft:prevent_armor_change": {},
         "minecraft:attributes": [
             {
-                "attribute": "minecraft:scale",
-                "id": "aspects:elytrian/scale",
-                "amount": -0.1,
-                "operation": "add_multiplied_base"
-            },
-            {
                 "attribute": "minecraft:fall_damage_multiplier",
                 "id": "aspects:elytrian/fall_damage_multiplier",
                 "amount": 1,
@@ -46,6 +40,66 @@
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "aspects:aspect/elytrian/fly_damage/check"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 100
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "chest": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "unique": true
+                                                    }
+                                                },
+                                                "minecraft:enchantments": [
+                                                    {
+                                                        "enchantments": [
+                                                            "aspects:aspect/elytrian/wings"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:in_wall",
+                            "min_damage": 10,
+                            "max_damage": 10
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspectlib:equipment/drop/chestplate"
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspects:aspect/elytrian/wings/equip"
+                        }
+                    ]
                 }
             }
         ]

@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "with": [
             {
                 "translate": "aspects",
@@ -15,7 +15,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "with": [
             {
                 "translate": "aspects",
@@ -99,7 +99,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
                 "italic": true,
                 "color": "gold"
             }
@@ -121,7 +121,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.effects"
+                "translate": "dialog.aspects.aspect_info.effects"
             }
         },
         {
@@ -131,8 +131,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "aspect.aspects.rascal.cave_attuned",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.rascal.cave_attuned"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -142,10 +147,77 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-35%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+1.25",
+                                            {
+                                                "translate": "attribute.name.block_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.75",
+                                            {
+                                                "translate": "attribute.name.entity_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-30%",
+                                            {
+                                                "translate": "attribute.name.max_health"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.aspects.rascal.spawn_of_darkness",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.rascal.spawn_of_darkness"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -155,10 +227,111 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.night_vision"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "effect.duration.infinite"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.light_level_less",
+                                        "with": [
+                                            "10"
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+40%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+25%",
+                                                    {
+                                                        "translate": "attribute.name.block_break_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+2",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.aspects.rascal.photosensitive",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.rascal.photosensitive"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -167,8 +340,263 @@
                                 "italic": true
                             }
                         }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.exposed_to_sunlight",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-30%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.block_break_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-4",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "extra.aspects.hover_context",
+                "color": "green",
+                "with": [
+                    {
+                        "translate": "badge_details.aspects.hover_all"
+                    }
+                ],
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "effect.minecraft.night_vision"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.duration.infinite"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-35%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+1.25",
+                                            {
+                                                "translate": "attribute.name.block_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-0.75",
+                                            {
+                                                "translate": "attribute.name.entity_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-30%",
+                                            {
+                                                "translate": "attribute.name.max_health"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.light_level_less",
+                                "with": [
+                                    "10"
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+40%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+25%",
+                                            {
+                                                "translate": "attribute.name.block_break_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+10%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+2",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.exposed_to_sunlight",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-30%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.block_break_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-4",
+                                            {
+                                                "translate": "attribute.name.attack_damage"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
             }
         },
         {
@@ -185,7 +613,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus"
+                "translate": "dialog.aspects.aspect_info.focus"
             }
         },
         {
@@ -195,8 +623,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "item.aspects.focus.rascal.use_name_1",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.rascal.use_name_1"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -221,8 +654,13 @@
                     },
                     "\n",
                     {
-                        "translate": "item.aspects.focus.rascal.use_name_2",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.rascal.use_name_2"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -247,8 +685,13 @@
                     },
                     "\n",
                     {
-                        "translate": "item.aspects.focus.rascal.use_name_3",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.rascal.use_name_3"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -273,8 +716,13 @@
                     },
                     "\n",
                     {
-                        "translate": "item.aspects.focus.rascal.use_name_4",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.rascal.use_name_4"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [

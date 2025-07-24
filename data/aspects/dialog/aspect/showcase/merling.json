@@ -104,7 +104,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.effects"
+                "translate": "dialog.aspects.aspect_info.effects"
             }
         },
         {
@@ -132,6 +132,18 @@
                             "\n",
                             {
                                 "translate": "aspect.aspects.merling.finned_legs.description",
+                                "italic": true
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.merling.fish_eyes",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.merling.fish_eyes.description",
                                 "italic": true
                             }
                         ]
@@ -177,7 +189,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus"
+                "translate": "dialog.aspects.aspect_info.focus"
             }
         },
         {

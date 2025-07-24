@@ -435,6 +435,22 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
+                                        "translate": "aspect.aspects.merling.fish_eyes",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.merling.fish_eyes.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
                                         "translate": "aspect.aspects.merling.aqua_affinity",
                                         "color": "dark_gray",
                                         "hover_event": {
@@ -946,6 +962,22 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
+                                        "translate": "aspect.aspects.feline.cat_eyes",
+                                        "color": "dark_gray",
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "aspect.aspects.feline.cat_eyes.description"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
+                                "with": [
+                                    {
                                         "translate": "aspect.aspects.feline.quickness",
                                         "color": "dark_gray",
                                         "hover_event": {
@@ -968,22 +1000,6 @@
                                             "action": "show_text",
                                             "value": {
                                                 "translate": "aspect.aspects.feline.predator.description"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
-                                "with": [
-                                    {
-                                        "translate": "aspect.aspects.feline.relentless",
-                                        "color": "dark_gray",
-                                        "hover_event": {
-                                            "action": "show_text",
-                                            "value": {
-                                                "translate": "aspect.aspects.feline.relentless.description"
                                             }
                                         }
                                     }
@@ -1204,7 +1220,7 @@
                                                             "translate": "item.aspects.focus.infernal.use_result_1",
                                                             "with": [
                                                                 {
-                                                                    "text": "12"
+                                                                    "text": "16"
                                                                 }
                                                             ]
                                                         }

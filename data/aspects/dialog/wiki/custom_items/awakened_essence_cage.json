@@ -76,11 +76,14 @@
                         "text": "",
                         "color": "#fff349",
                         "extra": [
-                            "[",
                             {
-                                "translate": "dialog.aspects.essences.explanation.external_title"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "dialog.aspects.essences.explanation.external_title"
+                                    }
+                                ]
+                            }
                         ],
                         "click_event": {
                             "action": "show_dialog",

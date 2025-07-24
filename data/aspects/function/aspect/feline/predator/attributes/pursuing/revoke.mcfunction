@@ -1,2 +1,3 @@
+attribute @s minecraft:movement_efficiency modifier remove aspects:feline/predator_pursuing_movement_efficiency
 attribute @s minecraft:movement_speed modifier remove aspects:feline/predator_pursuing_movement_speed
 attribute @s minecraft:attack_speed modifier remove aspects:feline/predator_pursuing_attack_speed

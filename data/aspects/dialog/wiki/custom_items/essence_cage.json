@@ -59,11 +59,14 @@
                         "text": "",
                         "color": "#fff349",
                         "extra": [
-                            "[",
                             {
-                                "translate": "dialog.aspects.essences.explanation.external_title"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "dialog.aspects.essences.explanation.external_title"
+                                    }
+                                ]
+                            }
                         ],
                         "click_event": {
                             "action": "show_dialog",
@@ -109,11 +112,14 @@
                         "text": "",
                         "color": "white",
                         "extra": [
-                            "[",
                             {
-                                "translate": "block.minecraft.sculk_catalyst"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.sculk_catalyst"
+                                    }
+                                ]
+                            }
                         ],
                         "hover_event": {
                             "action": "show_item",
@@ -125,11 +131,14 @@
                         "text": "",
                         "color": "white",
                         "extra": [
-                            "[",
                             {
-                                "translate": "block.minecraft.tinted_glass"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.tinted_glass"
+                                    }
+                                ]
+                            }
                         ],
                         "hover_event": {
                             "action": "show_item",
@@ -141,11 +150,14 @@
                         "text": "",
                         "color": "white",
                         "extra": [
-                            "[",
                             {
-                                "translate": "block.minecraft.iron_block"
-                            },
-                            "]"
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.iron_block"
+                                    }
+                                ]
+                            }
                         ],
                         "hover_event": {
                             "action": "show_item",
@@ -164,11 +176,14 @@
                                 "text": "",
                                 "color": "#ffff55",
                                 "extra": [
-                                    "[",
                                     {
-                                        "translate": "item.aspects.essence_cage"
-                                    },
-                                    "]"
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            {
+                                                "translate": "item.aspects.essence_cage"
+                                            }
+                                        ]
+                                    }
                                 ],
                                 "hover_event": {
                                     "action": "show_item",

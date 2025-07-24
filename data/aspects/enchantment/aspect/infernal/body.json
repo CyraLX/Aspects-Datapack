@@ -170,7 +170,16 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "periodic_tick": 300
+                                "periodic_tick": 160
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_on_fire": true
+                                }
                             }
                         },
                         {

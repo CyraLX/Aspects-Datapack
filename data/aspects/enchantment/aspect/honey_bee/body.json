@@ -40,6 +40,68 @@
                 "amount": -0.2,
                 "operation": "add_multiplied_base"
             }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 100
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "chest": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "unique": true
+                                                    }
+                                                },
+                                                "minecraft:enchantments": [
+                                                    {
+                                                        "enchantments": [
+                                                            "aspects:aspect/honey_bee/wings"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:damage_entity",
+                            "damage_type": "minecraft:in_wall",
+                            "min_damage": 8,
+                            "max_damage": 8
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspectlib:equipment/drop/chestplate"
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspects:aspect/honey_bee/wings/equip"
+                        }
+                    ]
+                }
+            }
         ]
     }
 }

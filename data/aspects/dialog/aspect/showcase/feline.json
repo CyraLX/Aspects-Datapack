@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "with": [
             {
                 "translate": "aspects",
@@ -15,7 +15,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "with": [
             {
                 "translate": "aspects",
@@ -104,7 +104,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.effects"
+                "translate": "dialog.aspects.aspect_info.effects"
             }
         },
         {
@@ -120,6 +120,18 @@
                             "\n",
                             {
                                 "translate": "aspect.aspects.feline.nine_lives.description",
+                                "italic": true
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.feline.cat_eyes",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.feline.cat_eyes.description",
                                 "italic": true
                             }
                         ]
@@ -144,18 +156,6 @@
                             "\n",
                             {
                                 "translate": "aspect.aspects.feline.predator.description",
-                                "italic": true
-                            }
-                        ]
-                    },
-                    "\n\n",
-                    {
-                        "translate": "aspect.aspects.feline.relentless",
-                        "color": "#d6d6d6",
-                        "extra": [
-                            "\n",
-                            {
-                                "translate": "aspect.aspects.feline.relentless.description",
                                 "italic": true
                             }
                         ]
@@ -191,7 +191,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus"
+                "translate": "dialog.aspects.aspect_info.focus"
             }
         },
         {

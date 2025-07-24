@@ -221,7 +221,7 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:block_break_speed",
                     "id": "aspects:merling/out_of_water_block_break_speed",
-                    "amount": -0.2,
+                    "amount": -0.25,
                     "operation": "add_multiplied_base"
                 }
             }

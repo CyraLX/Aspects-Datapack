@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "with": [
             {
                 "translate": "aspects",
@@ -15,7 +15,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "with": [
             {
                 "translate": "aspects",
@@ -104,7 +104,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.effects"
+                "translate": "dialog.aspects.aspect_info.effects"
             }
         },
         {
@@ -189,7 +189,7 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus"
+                "translate": "dialog.aspects.aspect_info.focus"
             }
         },
         {
@@ -216,7 +216,7 @@
                                         "translate": "item.aspects.focus.infernal.use_result_1",
                                         "with": [
                                             {
-                                                "text": "12"
+                                                "text": "16"
                                             }
                                         ]
                                     }

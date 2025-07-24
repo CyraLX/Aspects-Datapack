@@ -74,8 +74,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "aspect.aspects.feline.nine_lives",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.feline.nine_lives"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -85,10 +90,132 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.except",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.pointed_dripstone"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.max_health"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.aspects.feline.quickness",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.feline.cat_eyes"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "aspect.aspects.feline.cat_eyes.description",
+                                "color": "white",
+                                "italic": true
+                            }
+                        }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "effect.minecraft.night_vision"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.duration.infinite"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.feline.quickness"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -98,10 +225,77 @@
                             }
                         }
                     },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.block_break_speed"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.sprinting",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+25%",
+                                                    {
+                                                        "translate": "attribute.name.jump_strength"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "\n",
                     {
-                        "translate": "aspect.aspects.feline.predator",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.feline.predator"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
@@ -111,23 +305,158 @@
                             }
                         }
                     },
-                    "\n",
+                    " ",
                     {
-                        "translate": "aspect.aspects.feline.relentless",
-                        "color": "#d6d6d6",
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "aspect.aspects.feline.relentless.description",
-                                "color": "white",
-                                "italic": true
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.attacking",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "+1.0",
+                                                    {
+                                                        "translate": "attribute.name.movement_efficiency"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "3s"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "3s"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "+10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "3s"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.above_effects_stops",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.movement_efficiency"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "7s"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "-40%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "7s"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            "7s"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         }
                     },
                     "\n",
                     {
-                        "translate": "aspect.aspects.feline.water",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "aspect.aspects.feline.water"
+                            }
+                        ],
                         "bold": true,
                         "hover_event": {
                             "action": "show_text",
@@ -137,8 +466,379 @@
                                 "italic": true
                             }
                         }
+                    },
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
+                                "extra": [
+                                    {
+                                        "translate": "badge_details.aspects.trigger.wet",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-40%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.in_thing",
+                                        "with": [
+                                            {
+                                                "translate": "block.minecraft.water"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-75%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-25%",
+                                                    {
+                                                        "translate": "attribute.name.water_movement_efficiency"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "extra.aspects.hover_context",
+                "color": "green",
+                "with": [
+                    {
+                        "translate": "badge_details.aspects.hover_all"
+                    }
+                ],
+                "hover_event": {
+                    "action": "show_text",
+                    "value": {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "badge_details.aspects.trigger.basic",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "effect.minecraft.night_vision"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.duration.infinite"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.except",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.pointed_dripstone"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.scale"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-10%",
+                                            {
+                                                "translate": "attribute.name.max_health"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-20%",
+                                            {
+                                                "translate": "attribute.name.block_break_speed"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.sprinting",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+20%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+25%",
+                                            {
+                                                "translate": "attribute.name.jump_strength"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.attacking",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "+1.0",
+                                            {
+                                                "translate": "attribute.name.movement_efficiency"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "3s"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "+20%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "3s"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "+10%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "3s"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.above_effects_stops",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.movement_efficiency"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "7s"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "-40%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "7s"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "-20%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    "7s"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.wet",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-40%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.in_thing",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.water"
+                                    }
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-75%",
+                                            {
+                                                "translate": "attribute.name.movement_speed"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-25%",
+                                            {
+                                                "translate": "attribute.name.water_movement_efficiency"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
             }
         },
         {
@@ -165,8 +865,13 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "item.aspects.focus.feline.use_name_1",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.feline.use_name_1"
+                            }
+                        ],
                         "hover_event": {
                             "action": "show_text",
                             "value": [

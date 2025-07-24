@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "aspects:aspect/generic/moisture/bossbar/validate",
+            "required": false
+        },
+        {
             "id": "aspects:aspect/elytrian/wings/validate",
             "required": false
         },

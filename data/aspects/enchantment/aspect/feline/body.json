@@ -41,18 +41,6 @@
                 "operation": "add_multiplied_base"
             },
             {
-                "attribute": "minecraft:movement_efficiency",
-                "id": "aspects:feline/movement_efficiency",
-                "amount": 1.0,
-                "operation": "add_value"
-            },
-            {
-                "attribute": "minecraft:movement_speed",
-                "id": "aspects:feline/movement_speed",
-                "amount": 0.1,
-                "operation": "add_multiplied_base"
-            },
-            {
                 "attribute": "minecraft:block_break_speed",
                 "id": "aspects:feline/block_break_speed",
                 "amount": -0.2,
