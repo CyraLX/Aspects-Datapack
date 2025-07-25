@@ -1,0 +1,53 @@
+{
+    "criteria": {
+        "using_outdated_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "focus": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "aspects": {
+                                                    "focus": {
+                                                        "aspect": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:data_fixer/focus_item/modify_offhand"
+    }
+}
