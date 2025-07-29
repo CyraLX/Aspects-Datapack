@@ -9,10 +9,10 @@ execute if data storage aspectlib:dummy old_aspect run function aspects:aspect/g
 # Set new Aspect
 function aspects:aspect/generic/assign_data with storage aspectlib:dummy
 # Trigger events
-function aspects:aspect/generic/prepare_for_on_respawn
+function aspects:aspect/generic/on_respawn with storage aspectlib:dummy function_origin
 # Regrant advancement to show they became it as a Toast
-$advancement revoke @s only $(namespace):gameplay/aspect/$(name)/root
-$advancement grant @s only $(namespace):gameplay/aspect/$(name)/root
+$execute if entity @s[type=minecraft:player] run advancement revoke @s only $(namespace):gameplay/aspect/$(name)/root
+$execute if entity @s[type=minecraft:player] run advancement grant @s only $(namespace):gameplay/aspect/$(name)/root
 # Play sounds
 playsound minecraft:entity.zombie_villager.converted player @a[distance=0.1..16] ~ ~ ~ 1 1.5
 playsound minecraft:entity.zombie_villager.converted player @s ~ ~ ~ 1 1.5 1
