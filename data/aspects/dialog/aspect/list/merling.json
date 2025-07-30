@@ -517,6 +517,7 @@
                                                             "60s"
                                                         ]
                                                     },
+                                                    " ",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
@@ -792,6 +793,7 @@
                                                             "60s"
                                                         ]
                                                     },
+                                                    " ",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
