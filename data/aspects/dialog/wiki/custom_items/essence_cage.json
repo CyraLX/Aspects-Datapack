@@ -75,7 +75,7 @@
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "dialog.aspects.custom_items.essence_cage.check_essence_information.hover_info",
+                                "translate": "extra.aspects.redirect_to",
                                 "with": [
                                     {
                                         "translate": "dialog.aspects.essences.explanation.external_title"
@@ -291,7 +291,7 @@
             "translate": "gui.back"
         },
         "action": {
-            "type": "show_dialog",
+            "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/custom_items"
         }
     }

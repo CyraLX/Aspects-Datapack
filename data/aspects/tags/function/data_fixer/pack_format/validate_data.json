@@ -2,19 +2,23 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:data_fixer/pack_format/fixes/0-3/run",
+            "id": "aspects:data_fixer/pack_format/fixes/0-2/run",
             "required": false
         },
         {
-            "id": "aspects:aspect/generic/moisture/bossbar/validate",
+            "id": "aspects:aspect/generic/moisture/validate/bossbar/0-2",
             "required": false
         },
         {
-            "id": "aspects:aspect/elytrian/wings/validate",
+            "id": "aspects:aspect/elytrian/validate/wings/0-2",
             "required": false
         },
         {
-            "id": "aspects:aspect/honey_bee/wings/validate",
+            "id": "aspects:aspect/honey_bee/validate/wings/0-2",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/merling/validate/0-3",
             "required": false
         }
     ]

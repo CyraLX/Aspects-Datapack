@@ -646,7 +646,7 @@
             "translate": "gui.yes"
         },
         "action": {
-            "type": "run_command",
+            "type": "minecraft:run_command",
             "command": "trigger aspects.choose_aspect set 7"
         }
     },
@@ -655,7 +655,7 @@
             "translate": "gui.no"
         },
         "action": {
-            "type": "show_dialog",
+            "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/choose_aspect"
         }
     }

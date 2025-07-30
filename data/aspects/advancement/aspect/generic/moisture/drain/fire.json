@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "drink_potion": {
+        "take_fire_damage": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "player": [

@@ -265,11 +265,23 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "periodic_tick": 100
-                    }
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 20
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspectlib.is_submerged": 1
+                            }
+                        }
+                    ]
                 },
                 "effect": {
                     "type": "minecraft:run_function",

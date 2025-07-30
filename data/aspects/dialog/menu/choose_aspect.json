@@ -9,10 +9,10 @@
     "body": [
         {
             "type": "minecraft:plain_message",
+            "width": 450,
             "contents": {
                 "translate": "dialog.aspects.choose_aspect.lore"
-            },
-            "width": 450
+            }
         }
     ],
     "can_close_with_escape": false,

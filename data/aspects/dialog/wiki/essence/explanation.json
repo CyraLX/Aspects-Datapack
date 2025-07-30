@@ -230,7 +230,7 @@
             "translate": "gui.back"
         },
         "action": {
-            "type": "show_dialog",
+            "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/pause_screen"
         }
     }

@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "drink_potion": {
+        "damaged_by_sponge": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "player": [

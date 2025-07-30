@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-        "aspectlib.submerged.is_active": 1
+        "aspectlib.is_submerged": 1
     }
 }
