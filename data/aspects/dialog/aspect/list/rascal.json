@@ -186,6 +186,28 @@
                                     "\n",
                                     {
                                         "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+100%",
+                                            {
+                                                "translate": "attribute.name.safe_fall_distance"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-30%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
                                         "color": "red",
                                         "with": [
                                             "-0.75",
@@ -464,6 +486,28 @@
                                             "+1.25",
                                             {
                                                 "translate": "attribute.name.block_interaction_range"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "+100%",
+                                            {
+                                                "translate": "attribute.name.safe_fall_distance"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "green",
+                                        "with": [
+                                            "-30%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
                                             }
                                         ]
                                     },

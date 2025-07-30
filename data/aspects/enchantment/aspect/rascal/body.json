@@ -51,6 +51,18 @@
                 "id": "aspects:rascal/entity_interaction_range",
                 "amount": -0.75,
                 "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:safe_fall_distance",
+                "id": "aspects:rascal/safe_fall_distance",
+                "amount": 1,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:fall_damage_multiplier",
+                "id": "aspects:rascal/fall_damage_multiplier",
+                "amount": -0.3,
+                "operation": "add_multiplied_base"
             }
         ],
         "minecraft:location_changed": [
