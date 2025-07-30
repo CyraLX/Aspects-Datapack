@@ -1,0 +1,39 @@
+{
+    "criteria": {
+        "drink_potion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect_group/is_moisture_dependant"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.generic.moisture": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": "minecraft:sponge"
+                            }
+                        }
+                    },
+                    "type": {
+                        "is_direct": true
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/generic/moisture/drain/sponge"
+    }
+}

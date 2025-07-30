@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "drink_potion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect_group/is_moisture_dependant"
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_fire",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect/generic/moisture/drain/fire"
+    }
+}
