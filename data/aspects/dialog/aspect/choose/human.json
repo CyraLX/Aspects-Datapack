@@ -74,16 +74,21 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.chosen_aspect.effects.none",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "dialog.aspects.chosen_aspect.effects.none.description",
-                                "color": "white",
-                                "italic": true
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.chosen_aspect.effects.none",
+                                "hover_event": {
+                                    "action": "show_text",
+                                    "value": {
+                                        "translate": "dialog.aspects.chosen_aspect.effects.none.description",
+                                        "color": "white",
+                                        "italic": true
+                                    }
+                                }
                             }
-                        }
+                        ]
                     }
                 ]
             }
@@ -112,18 +117,23 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.chosen_aspect.focus.none",
+                        "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                                {
-                                    "translate": "dialog.aspects.chosen_aspect.focus.none.description",
-                                    "color": "white",
-                                    "italic": true
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.chosen_aspect.focus.none",
+                                "hover_event": {
+                                    "action": "show_text",
+                                    "value": [
+                                        {
+                                            "translate": "dialog.aspects.chosen_aspect.focus.none.description",
+                                            "color": "white",
+                                            "italic": true
+                                        }
+                                    ]
                                 }
-                            ]
-                        }
+                            }
+                        ]
                     }
                 ]
             }

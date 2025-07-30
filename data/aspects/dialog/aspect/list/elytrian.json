@@ -541,7 +541,25 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.aspect_info.focus"
+                "translate": "dialog.aspects.aspect_info.focus",
+                "extra": [
+                    " ",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
+                            {
+                                "translate": "badge_details.aspects.hover"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.aspect_info.focus.hover"
+                            }
+                        }
+                    }
+                ]
             }
         },
         {
