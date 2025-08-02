@@ -47,7 +47,29 @@
                     }
                 ]
             }
+        },
+        "picked_up_awakened_essence_cage": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "aspects": {
+                                    "awakened_essence_cage": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     },
+    "requirements": [
+        [
+            "picked_up_essence_cage",
+            "picked_up_awakened_essence_cage"
+        ]
+    ],
     "parent": "aspects:gameplay/root"
 }
