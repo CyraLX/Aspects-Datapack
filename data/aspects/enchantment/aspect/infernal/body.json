@@ -46,6 +46,39 @@
         "minecraft:location_changed": [
             {
                 "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "flags": {
+                                        "is_on_fire": true
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{HasVisualFire: true}"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "attribute": "minecraft:attack_speed",
+                    "id": "aspects:infernal/extinguished_attack_speed",
+                    "operation": "add_multiplied_base",
+                    "amount": -0.2
+                }
+            },
+            {
+                "requirements": {
                     "condition": "minecraft:any_of",
                     "terms": [
                         {
@@ -70,8 +103,8 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:attack_damage",
                     "id": "aspects:infernal/on_fire_attack_damage",
-                    "amount": 4.0,
-                    "operation": "add_value"
+                    "operation": "add_value",
+                    "amount": 4.0
                 }
             }
         ],
@@ -170,7 +203,7 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "periodic_tick": 160
+                                "periodic_tick": 220
                             }
                         },
                         {

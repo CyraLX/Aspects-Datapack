@@ -303,6 +303,23 @@
                                                 ]
                                             }
                                         ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.on_fire_not",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -517,7 +534,7 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "8s"
+                                                    "12s"
                                                 ]
                                             }
                                         ]
@@ -656,6 +673,23 @@
                             },
                             "\n\n",
                             {
+                                "translate": "badge_details.aspects.trigger.on_fire_not",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute",
+                                        "color": "red",
+                                        "with": [
+                                            "-20%",
+                                            {
+                                                "translate": "attribute.name.attack_speed"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
                                 "translate": "badge_details.aspects.trigger.on_fire",
                                 "extra": [
                                     "\n",
@@ -733,7 +767,7 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "8s"
+                                                    "12s"
                                                 ]
                                             }
                                         ]
