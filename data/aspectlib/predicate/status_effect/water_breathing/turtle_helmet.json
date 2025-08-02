@@ -5,6 +5,7 @@
         "effects": {
             "minecraft:water_breathing": {
                 "duration": {
+                    "min": 0,
                     "max": 200
                 }
             }

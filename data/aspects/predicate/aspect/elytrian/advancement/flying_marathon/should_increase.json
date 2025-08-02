@@ -8,6 +8,14 @@
         {
             "condition": "minecraft:location_check",
             "predicate": {
+                "fluid": {
+                    "fluids": "minecraft:empty"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
                 "position": {
                     "y": {
                         "max": 320

@@ -1,4 +1,4 @@
-execute unless predicate aspects:aspect/elytrian/advancement/flying_marathon/should_increase unless predicate aspectlib:flags/is_flying run return run function aspects:aspect/elytrian/advancement/flying_marathon/cancel_tracking
+execute unless predicate aspects:aspect/elytrian/advancement/flying_marathon/should_increase if predicate aspects:aspect/elytrian/advancement/flying_marathon/should_reset_progress run return run function aspects:aspect/elytrian/advancement/flying_marathon/cancel_tracking
 
 execute if predicate aspects:aspect/elytrian/advancement/flying_marathon/should_increase run scoreboard players add @s aspects.elytrian.advancements.flying_marathon.distance_traveled 1
 
