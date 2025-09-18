@@ -104,6 +104,10 @@
         {
             "id": "minecraft:interaction",
             "required": false
+        },
+        {
+            "id": "minecraft:end_crystal",
+            "required": false
         }
     ]
 }

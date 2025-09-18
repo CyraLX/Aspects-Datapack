@@ -1,2 +1,2 @@
 data modify storage aspectlib:dummy item_modifier set value "aspects:aspect_encyclopedia/essences_explanation"
-function aspects:utility/summon_item with storage aspectlib:dummy
+function aspectlib:debug/summon_item_macro with storage aspectlib:dummy
