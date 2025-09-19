@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspectlib:bosses/major",
+            "required": false
+        },
+        {
+            "id": "#aspectlib:bosses/minor",
+            "required": false
+        }
+    ]
+}

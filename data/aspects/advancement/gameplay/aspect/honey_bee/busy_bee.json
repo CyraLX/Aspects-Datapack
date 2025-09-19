@@ -16,7 +16,9 @@
             },
             "\n",
             {
-                "translate": "advancements.aspects.aspect.honey_bee.busy_bee.lore"
+                "translate": "advancements.aspects.aspect.honey_bee.busy_bee.lore",
+                "color": "gray",
+                "italic": true
             }
         ],
         "frame": "challenge",

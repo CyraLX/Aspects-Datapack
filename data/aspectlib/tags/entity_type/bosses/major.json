@@ -8,10 +8,6 @@
         {
             "id": "minecraft:wither",
             "required": false
-        },
-        {
-            "id": "minecraft:warden",
-            "required": false
         }
     ]
 }
