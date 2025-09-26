@@ -7,6 +7,7 @@ function aspects:aspect/generic/moisture/scoreboard/reset
 scoreboard players reset @s aspects.aspect_group.sensitive_to_impaling
 scoreboard players reset @s aspects.aspect_group.sensitive_to_bane_of_arthropods
 scoreboard players reset @s aspects.aspect_group.sensitive_to_smite
+scoreboard players reset @s aspects.aspect_group.inverted_healing_and_harm
 scoreboard players reset @s aspects.aspect_group.hydrophobic
 scoreboard players reset @s aspects.aspect_group.fireproof
 scoreboard players reset @s aspects.aspect_group.fire_based

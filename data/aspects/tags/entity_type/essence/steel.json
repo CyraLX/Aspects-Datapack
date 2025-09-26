@@ -14,6 +14,10 @@
             "required": false
         },
         {
+            "id": "minecraft:copper_golem",
+            "required": false
+        },
+        {
             "id": "minecraft:elder_guardian",
             "required": false
         },

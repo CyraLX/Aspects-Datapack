@@ -112,6 +112,7 @@ This document lists the essences associated with various entities.
 - Guardian        - Steel, Aquatic
 - Shulker         - Void, Steel
 - Turtle          - Steel, Aquatic
+- Copper Golem    - Steel
 
 ## Undead
 - Bogged          - Undead, Plant

@@ -10,4 +10,4 @@ data modify storage aspects:aspect_list aspects:enderian set value {id: 2, names
 function aspects:stats/aspect/initialize with storage aspects:aspect_list aspects:enderian
 
 # Setup scoreboard objectives for the Aspect
-function aspects:focus/enderian/raycast/initialize_scoreboards
+function aspects:item/focus/enderian/raycast/initialize_scoreboards

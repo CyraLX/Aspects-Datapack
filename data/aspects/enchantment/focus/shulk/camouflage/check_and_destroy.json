@@ -29,7 +29,7 @@
                 },
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/shulk/camouflage/check_and_destroy"
+                    "function": "aspects:item/focus/shulk/camouflage/check_and_destroy"
                 }
             }
         ]

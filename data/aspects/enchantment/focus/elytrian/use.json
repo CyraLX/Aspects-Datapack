@@ -83,7 +83,7 @@
                 ],
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/elytrian/activate_offhand"
+                    "function": "aspects:item/focus/elytrian/activate_offhand"
                 }
             }
         ]

@@ -9,4 +9,4 @@ data modify storage aspectlib:dummy aspect_id set from storage aspectlib:dummy a
 function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-ACTIVATE logic
-function aspects:focus/shulk/storage/sync_has_storage with storage aspectlib:dummy
+function aspects:item/focus/shulk/storage/sync_has_storage with storage aspectlib:dummy

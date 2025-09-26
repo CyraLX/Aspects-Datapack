@@ -36,6 +36,15 @@
 		"entries": [
 			{
 				"formats": {
+					"min_inclusive": 72,
+					"max_inclusive": 81
+				},
+				"min_format": 72,
+				"max_format": 81,
+				"directory": "overlay_f72-f81_1_21_8"
+			},
+			{
+				"formats": {
 					"min_inclusive": 71,
 					"max_inclusive": 76
 				},

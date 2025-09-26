@@ -1,6 +1,6 @@
 # Aspect specific PRE-DEACTIVATE logic
 ## Place down stored container
-function aspects:focus/shulk/storage/place_down
+function aspects:item/focus/shulk/storage/place_down
 
 # Generic DEACTIVATE logic
 function aspects:aspect/generic/deactivate with storage aspects:aspect_list aspects:shulk

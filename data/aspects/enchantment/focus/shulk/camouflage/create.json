@@ -31,7 +31,7 @@
                 ],
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/shulk/camouflage/create_block_display"
+                    "function": "aspects:item/focus/shulk/camouflage/create_block_display"
                 }
             }
         ]

@@ -11,4 +11,4 @@ function aspects:stats/aspect/initialize with storage aspects:aspect_list aspect
 
 # Setup scoreboard objectives for the Aspect
 function aspects:aspect/feline/predator/scoreboard/initialize
-function aspects:focus/feline/initialize_scoreboard
+function aspects:item/focus/feline/initialize_scoreboard

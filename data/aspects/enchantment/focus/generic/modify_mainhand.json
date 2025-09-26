@@ -22,7 +22,7 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/generic/modify_mainhand"
+                    "function": "aspects:item/focus/generic/modify_mainhand"
                 }
             }
         ]

@@ -30,7 +30,10 @@
                         "minecraft:custom_data": {
                             "aspects": {
                                 "focus": {
-                                    "target": "elytrian"
+                                    "aspect": {
+                                        "namespace": "aspects",
+                                        "name": "elytrian"
+                                    }
                                 }
                             }
                         }

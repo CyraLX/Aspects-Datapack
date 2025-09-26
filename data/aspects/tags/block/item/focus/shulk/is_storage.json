@@ -1,0 +1,17 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:chest",
+            "required": false
+        },
+        {
+            "id": "minecraft:barrel",
+            "required": false
+        },
+        {
+            "id": "#minecraft:copper_chests",
+            "required": false
+        }
+    ]
+}

@@ -68,7 +68,7 @@
                         },
                         {
                             "type": "minecraft:run_function",
-                            "function": "aspects:focus/feline/jump_triggered"
+                            "function": "aspects:item/focus/feline/jump_triggered"
                         }
                     ]
                 }

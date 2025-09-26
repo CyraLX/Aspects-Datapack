@@ -197,7 +197,7 @@
                 },
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/feline/jump_reset"
+                    "function": "aspects:item/focus/feline/jump_reset"
                 }
             }
         ]

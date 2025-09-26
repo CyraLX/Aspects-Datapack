@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"kill_feline_caged": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "aspects:item/essence_cage/is_held"
+					}
+				],
+				"entity": [
+					{
+						"condition": "minecraft:reference",
+						"name": "aspects:aspect/feline/is_active"
+					}
+				],
+				"killing_blow": {
+					"is_direct": true
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "aspects:item/essence_cage/store_aspect_from_aspect/feline"
+	}
+}

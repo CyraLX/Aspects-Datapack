@@ -11,4 +11,4 @@ function aspects:stats/aspect/initialize with storage aspects:aspect_list aspect
 
 # Setup scoreboard objectives for the Aspect
 scoreboard objectives add aspects.shulk.shell_timer dummy
-function aspects:focus/shulk/storage/initialize_scoreboard
+function aspects:item/focus/shulk/storage/initialize_scoreboard

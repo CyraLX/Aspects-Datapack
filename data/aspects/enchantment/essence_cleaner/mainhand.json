@@ -22,7 +22,7 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:essence_cleaner/modify_mainhand"
+                    "function": "aspects:item/essence_cleaner/modify_mainhand"
                 }
             }
         ]

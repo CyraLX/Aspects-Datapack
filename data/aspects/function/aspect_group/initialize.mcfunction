@@ -4,6 +4,8 @@ scoreboard objectives add aspects.aspect_group.sensitive_to_impaling dummy
 scoreboard objectives add aspects.aspect_group.sensitive_to_bane_of_arthropods dummy
 # Undead creatures
 scoreboard objectives add aspects.aspect_group.sensitive_to_smite dummy
+# Instant Health damages and Instant Harm heals
+scoreboard objectives add aspects.aspect_group.inverted_healing_and_harm dummy
 # Creatures harmed by Water
 scoreboard objectives add aspects.aspect_group.hydrophobic dummy
 # Creatures that take no Fire Damage

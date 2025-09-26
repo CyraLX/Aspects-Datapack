@@ -1,0 +1,1 @@
+scoreboard players set @s aspects.aspect_group.inverted_healing_and_harm 1

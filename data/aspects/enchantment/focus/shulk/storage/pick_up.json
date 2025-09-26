@@ -40,7 +40,7 @@
                 ],
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:focus/shulk/storage/pick_up"
+                    "function": "aspects:item/focus/shulk/storage/pick_up"
                 }
             }
         ]

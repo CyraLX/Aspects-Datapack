@@ -16,7 +16,7 @@
         },
         {
             "condition": "minecraft:reference",
-            "name": "aspects:focus/in_offhand"
+            "name": "aspects:item/focus/in_offhand"
         }
     ]
 }
