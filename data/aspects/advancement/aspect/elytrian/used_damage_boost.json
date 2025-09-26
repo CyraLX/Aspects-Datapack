@@ -24,10 +24,7 @@
                         "condition": "minecraft:reference",
                         "name": "aspectlib:flags/is_flying"
                     }
-                ],
-                "damage": {
-                    "blocked": false
-                }
+                ]
             }
         }
     },

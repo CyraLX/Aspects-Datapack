@@ -8,10 +8,6 @@
         {
             "id": "minecraft:barrel",
             "required": false
-        },
-        {
-            "id": "#minecraft:copper_chests",
-            "required": false
         }
     ]
 }
