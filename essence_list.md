@@ -88,6 +88,7 @@ This document lists the essences associated with various entities.
 - Witch           - Dark, Humanoid
 - Zombie          - Undead, Humanoid
 - Zombie Villager - Undead, Humanoid
+- Copper Golem    - Humanoid, Steel
 
 ## Ice
 - Polar Bear      - Ice, Beast
@@ -112,7 +113,8 @@ This document lists the essences associated with various entities.
 - Guardian        - Steel, Aquatic
 - Shulker         - Void, Steel
 - Turtle          - Steel, Aquatic
-- Copper Golem    - Steel
+- Iron Golem      - Humanoid, Steel
+- Copper Golem    - Humanoid, Steel
 
 ## Undead
 - Bogged          - Undead, Plant

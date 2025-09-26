@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "minecraft:copper_golem",
+            "required": false
+        },
+        {
             "id": "minecraft:enderman",
             "required": false
         },
