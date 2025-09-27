@@ -1,0 +1,1 @@
+$function aspects:aspect/generic/give_aspect with storage aspects:aspect_list aspects:$(aspect_item)

@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "aspects:data_fixer/aspect_item/check",
+            "required": false
+        },
+        {
             "id": "aspects:data_fixer/pack_format/check",
             "required": false
         },

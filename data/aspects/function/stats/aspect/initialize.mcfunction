@@ -9,3 +9,5 @@ $scoreboard players add #$(namespace):$(name) aspects.aspect_stats.active 0
 $scoreboard players add #$(namespace):$(name) aspects.aspect_stats.active_peak 0
 ## Times an Aspect was picked as their first choice
 $scoreboard players add #$(namespace):$(name) aspects.aspect_stats.first_pick 0
+## Times an Aspect used their Focus
+$scoreboard players add #$(namespace):$(name) aspects.aspect_stats.focus_uses 0

@@ -13,3 +13,6 @@ scoreboard objectives modify aspects.aspect_stats.active_peak displayname {trans
 # Times an Aspect was picked as their first choice
 scoreboard objectives add aspects.aspect_stats.first_pick dummy
 scoreboard objectives modify aspects.aspect_stats.first_pick displayname {translate: "scoreboard.aspects.aspect_stats.first_pick"}
+# Times an Aspect used their Focus
+scoreboard objectives add aspects.aspect_stats.focus_uses dummy
+scoreboard objectives modify aspects.aspect_stats.focus_uses displayname {translate: "scoreboard.aspects.aspect_stats.focus_uses"}

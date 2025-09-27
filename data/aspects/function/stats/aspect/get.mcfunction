@@ -8,5 +8,6 @@ $tellraw @s [{"text":"| ","color":"#aaaaaa","extra":[{"text":"Removed Count","co
 $tellraw @s [{"text":"| ","color":"#aaaaaa","extra":[{"text":"Currently Active","color":"white"},{"text":": "}]},{"score":{"name":"#$(namespace):$(name)","objective":"aspects.aspect_stats.active"},"color":"gold"}]
 $tellraw @s [{"text":"| ","color":"#aaaaaa","extra":[{"text":"Active Peak","color":"white"},{"text":": "}]},{"score":{"name":"#$(namespace):$(name)","objective":"aspects.aspect_stats.active_peak"},"color":"gold"}]
 $tellraw @s [{"text":"| ","color":"#aaaaaa","extra":[{"text":"First Picks","color":"white"},{"text":": "}]},{"score":{"name":"#$(namespace):$(name)","objective":"aspects.aspect_stats.first_pick"},"color":"gold"}]
+$tellraw @s [{"text":"| ","color":"#aaaaaa","extra":[{"text":"Focus Uses","color":"white"},{"text":": "}]},{"score":{"name":"#$(namespace):$(name)","objective":"aspects.aspect_stats.focus_uses"},"color":"gold"}]
 # Cleanup
 tag @s remove stats_retriever

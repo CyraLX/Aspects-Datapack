@@ -1,1 +1,0 @@
-$function aspects:aspect/generic/give_aspect with storage aspects:aspect_list $(namespace):$(name)

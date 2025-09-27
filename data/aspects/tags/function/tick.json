@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:update_tick",
+            "id": "aspects:tick/update",
             "required": false
         }
     ]
