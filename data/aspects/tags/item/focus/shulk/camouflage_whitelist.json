@@ -551,6 +551,10 @@
         },
         {
             "required": false,
+            "id": "#minecraft:chains"
+        },
+        {
+            "required": false,
             "id": "cherry_button"
         },
         {
