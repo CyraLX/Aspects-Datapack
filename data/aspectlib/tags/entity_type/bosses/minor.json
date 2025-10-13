@@ -4,6 +4,10 @@
         {
             "id": "minecraft:warden",
             "required": false
+        },
+        {
+            "id": "minecraft:elder_guardian",
+            "required": false
         }
     ]
 }
