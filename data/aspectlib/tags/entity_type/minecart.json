@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "minecraft:minecart",
+            "required": false
+        },
+        {
             "id": "minecraft:tnt_minecart",
             "required": false
         },

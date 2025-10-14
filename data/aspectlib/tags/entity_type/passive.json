@@ -140,6 +140,10 @@
         {
             "id": "minecraft:zombie_horse",
             "required": false
+        },
+        {
+            "id": "minecraft:skeleton_horse",
+            "required": false
         }
     ]
 }

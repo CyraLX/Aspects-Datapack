@@ -307,7 +307,7 @@
                                                     },
                                                     "18",
                                                     {
-                                                        "translate": "badge_details.aspects.modifier.when_flying",
+                                                        "translate": "badge_details.aspects.modifier.when_fall_flying",
                                                         "color": "gray",
                                                         "italic": true
                                                     }
@@ -475,7 +475,7 @@
                                             },
                                             "18",
                                             {
-                                                "translate": "badge_details.aspects.modifier.when_flying",
+                                                "translate": "badge_details.aspects.modifier.when_fall_flying",
                                                 "color": "gray",
                                                 "italic": true
                                             }

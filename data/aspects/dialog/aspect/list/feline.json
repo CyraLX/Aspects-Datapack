@@ -420,7 +420,7 @@
                                             }
                                         ]
                                     },
-                                    "\n\n",
+                                    "\n",
                                     {
                                         "translate": "badge_details.aspects.trigger.above_effects_stops",
                                         "extra": [
@@ -762,7 +762,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.above_effects_stops",
                                 "extra": [
