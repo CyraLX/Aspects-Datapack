@@ -497,7 +497,7 @@
                                             }
                                         ]
                                     },
-                                    "\n\n",
+                                    "\n",
                                     {
                                         "translate": "badge_details.aspects.trigger.in_thing",
                                         "with": [
@@ -803,7 +803,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.in_thing",
                                 "with": [

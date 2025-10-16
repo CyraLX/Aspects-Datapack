@@ -198,7 +198,7 @@
                                             }
                                         ]
                                     },
-                                    "\n\n",
+                                    "\n",
                                     {
                                         "translate": "badge_details.aspects.trigger.used",
                                         "with": [
@@ -481,7 +481,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.used",
                                 "with": [

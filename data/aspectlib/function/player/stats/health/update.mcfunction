@@ -1,9 +1,12 @@
+# Store player nbt
+data modify storage aspectlib:dummy player_nbt set from entity @s
+
 # Store current Absoprtion
-execute store result score @s aspectlib.absorption run data get entity @s AbsorptionAmount 10
+execute store result score @s aspectlib.absorption run data get storage aspectlib:dummy player_nbt.AbsorptionAmount 100
 # Store current Health
-execute store result score @s aspectlib.hp run data get entity @s Health 10
+execute store result score @s aspectlib.hp run data get storage aspectlib:dummy player_nbt.Health 100
 # Store max Health
-execute store result score @s aspectlib.hp_max run attribute @s minecraft:max_health get 10
+execute store result score @s aspectlib.hp_max run attribute @s minecraft:max_health get 100
 # Store total Health
 scoreboard players operation @s aspectlib.hp_total = @s aspectlib.hp
 scoreboard players operation @s aspectlib.hp_total += @s aspectlib.absorption
@@ -20,3 +23,6 @@ scoreboard players operation @s aspectlib.hp_relative_total *= #aspects aspectli
 scoreboard players operation #aspects aspectlib.dummy = @s aspectlib.hp_max
 scoreboard players operation #aspects aspectlib.dummy += @s aspectlib.absorption
 scoreboard players operation @s aspectlib.hp_relative_total /= #aspects aspectlib.dummy
+
+# Cleanup storage
+data remove storage aspectlib:dummy player_nbt
