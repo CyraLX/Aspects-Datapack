@@ -6,10 +6,12 @@ data modify storage aspectlib:empty empty set value {}
 # Load other function initializers
 ## Player IDs
 function aspectlib:player/id/initialize
+## Player Stats
+### Health
+function aspectlib:player/stats/health/initialize
 ## Events
 function aspectlib:event/on_death/load
 function aspectlib:event/on_join/load
-function aspectlib:event/on_respawn/load
 ## Predicates
 ### Submerged
 function aspectlib:predicate/submerged/initialize

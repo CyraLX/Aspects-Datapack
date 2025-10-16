@@ -284,6 +284,27 @@
                                                         "translate": "block.minecraft.magma_block"
                                                     }
                                                 ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.inside",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "block.minecraft.lava"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -592,6 +613,27 @@
                                         "with": [
                                             {
                                                 "translate": "block.minecraft.magma_block"
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            "-100%",
+                                            {
+                                                "translate": "attribute.name.fall_damage_multiplier"
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.inside",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.lava"
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
