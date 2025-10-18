@@ -17,7 +17,12 @@ scoreboard players set #aspects aspectlib.dummy 100
 scoreboard players operation @s aspectlib.hp_relative = @s aspectlib.hp
 scoreboard players operation @s aspectlib.hp_relative *= #aspects aspectlib.dummy
 scoreboard players operation @s aspectlib.hp_relative /= @s aspectlib.hp_max
-# Calculate percentage of current Health with Absorption
+# Caclucalte persentage of current Health with Absorption with base max Health
+scoreboard players operation @s aspectlib.hp_relative_overflow = @s aspectlib.hp
+scoreboard players operation @s aspectlib.hp_relative_overflow += @s aspectlib.absorption
+scoreboard players operation @s aspectlib.hp_relative_overflow *= #aspects aspectlib.dummy
+scoreboard players operation @s aspectlib.hp_relative_overflow /= @s aspectlib.hp_max
+# Calculate percentage of current Health with Absorption with modified max Health that contains current Absorption
 scoreboard players operation @s aspectlib.hp_relative_total = @s aspectlib.hp_total
 scoreboard players operation @s aspectlib.hp_relative_total *= #aspects aspectlib.dummy
 scoreboard players operation #aspects aspectlib.dummy = @s aspectlib.hp_max
