@@ -278,7 +278,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                                "aspectlib.is_submerged": 1
+                                "aspectlib.is_submerged_water": 1
                             }
                         }
                     ]

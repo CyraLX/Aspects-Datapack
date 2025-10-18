@@ -496,7 +496,12 @@
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "badge_details.aspects.trigger.submerged",
+                                "translate": "badge_details.aspects.trigger.submerged_in",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.water"
+                                    }
+                                ],
                                 "extra": [
                                     "\n",
                                     {
@@ -772,7 +777,12 @@
                             },
                             "\n\n",
                             {
-                                "translate": "badge_details.aspects.trigger.submerged",
+                                "translate": "badge_details.aspects.trigger.submerged_in",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.water"
+                                    }
+                                ],
                                 "extra": [
                                     "\n",
                                     {
