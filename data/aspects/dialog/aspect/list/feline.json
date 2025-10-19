@@ -375,7 +375,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "3s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "3"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -394,7 +399,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "3s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "3"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -413,7 +423,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "3s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "3"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -438,7 +453,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "7s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "7"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -457,7 +477,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "7s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "7"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -476,7 +501,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "7s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "7"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -717,7 +747,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "3s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "3"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -736,7 +771,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "3s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "3"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -755,7 +795,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "3s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "3"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -780,7 +825,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "7s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "7"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -799,7 +849,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "7s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "7"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -818,7 +873,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "7s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "7"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]

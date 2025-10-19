@@ -113,7 +113,12 @@
                                                 "color": "red",
                                                 "with": [
                                                     "2",
-                                                    "1s",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -395,7 +400,12 @@
                                         "color": "red",
                                         "with": [
                                             "2",
-                                            "1s",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",

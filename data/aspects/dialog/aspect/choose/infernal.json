@@ -113,7 +113,12 @@
                                                 "color": "red",
                                                 "with": [
                                                     "2",
-                                                    "1s",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -271,23 +276,6 @@
                                     },
                                     "\n\n",
                                     {
-                                        "translate": "badge_details.aspects.trigger.on_fire",
-                                        "extra": [
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "color": "green",
-                                                "with": [
-                                                    "+4",
-                                                    {
-                                                        "translate": "attribute.name.attack_damage"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "\n\n",
-                                    {
                                         "translate": "badge_details.aspects.trigger.on_fire_not",
                                         "extra": [
                                             "\n",
@@ -298,6 +286,23 @@
                                                     "-20%",
                                                     {
                                                         "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.on_fire",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+4",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
                                                     }
                                                 ]
                                             }
@@ -352,7 +357,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "1s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -370,7 +380,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "1s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -388,7 +403,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "1s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -437,7 +457,12 @@
                                                 "translate": "badge_details.aspects.effect.ignite_attacker",
                                                 "color": "green",
                                                 "with": [
-                                                    "6s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "6"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -465,7 +490,12 @@
                                                 "translate": "badge_details.aspects.effect.ignite_self",
                                                 "color": "green",
                                                 "with": [
-                                                    "4s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "4"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -516,7 +546,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "12s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "12"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -610,7 +645,12 @@
                                         "color": "red",
                                         "with": [
                                             "2",
-                                            "1s",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",
@@ -691,7 +731,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.on_fire",
                                 "extra": [
@@ -719,7 +759,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "1s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -737,7 +782,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "1s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -755,7 +805,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "1s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -770,7 +825,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "12s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "12"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]
@@ -780,7 +840,12 @@
                                         "translate": "badge_details.aspects.effect.ignite_attacker",
                                         "color": "green",
                                         "with": [
-                                            "6s"
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "6"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -808,7 +873,12 @@
                                         "translate": "badge_details.aspects.effect.ignite_self",
                                         "color": "green",
                                         "with": [
-                                            "4s"
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "4"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]

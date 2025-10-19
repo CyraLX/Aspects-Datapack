@@ -169,7 +169,11 @@
                                                     },
                                                     " ",
                                                     {
-                                                        "translate": "badge_details.aspects.modifier.mending"
+                                                        "translate": "badge_details.aspects.modifier.mending",
+                                                        "with": [
+                                                            "1",
+                                                            "12"
+                                                        ]
                                                     }
                                                 ]
                                             }
@@ -406,7 +410,11 @@
                                                     },
                                                     " ",
                                                     {
-                                                        "translate": "badge_details.aspects.modifier.mending"
+                                                        "translate": "badge_details.aspects.modifier.mending",
+                                                        "with": [
+                                                            "1",
+                                                            "12"
+                                                        ]
                                                     }
                                                 ]
                                             }

@@ -170,7 +170,12 @@
                                                 "color": "red",
                                                 "with": [
                                                     "2",
-                                                    "1s",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -384,7 +389,6 @@
                         "text": "",
                         "extra": [
                             {
-                                
                                 "translate": "badge_details.aspects.trigger.basic",
                                 "extra": [
                                     "\n",
@@ -453,7 +457,12 @@
                                         "color": "red",
                                         "with": [
                                             "2",
-                                            "1s",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",

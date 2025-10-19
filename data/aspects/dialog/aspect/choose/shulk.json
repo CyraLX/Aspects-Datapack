@@ -167,7 +167,7 @@
                                         "translate": "badge_details.aspects.effect.attribute",
                                         "color": "green",
                                         "with": [
-                                            "-25%",
+                                            "+25%",
                                             {
                                                 "translate": "attribute.name.attack_speed"
                                             }
@@ -284,7 +284,12 @@
                                                         "color": "gray",
                                                         "italic": true,
                                                         "with": [
-                                                            "10s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "10"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -333,7 +338,7 @@
                                         "translate": "badge_details.aspects.effect.attribute",
                                         "color": "green",
                                         "with": [
-                                            "-25%",
+                                            "+25%",
                                             {
                                                 "translate": "attribute.name.attack_speed"
                                             }
@@ -422,7 +427,12 @@
                                                 "color": "gray",
                                                 "italic": true,
                                                 "with": [
-                                                    "10s"
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "10"
+                                                        ]
+                                                    }
                                                 ]
                                             }
                                         ]

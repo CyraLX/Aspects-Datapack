@@ -131,6 +131,41 @@
                                     },
                                     "\n\n",
                                     {
+                                        "translate": "badge_details.aspects.trigger.out_of",
+                                        "with": [
+                                            {
+                                                "translate": "bossbar.aspects.generic.moisture"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "color": "red",
+                                                "with": [
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_everything"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
                                         "translate": "badge_details.aspects.trigger.wet_not",
                                         "extra": [
                                             "\n",
@@ -149,14 +184,24 @@
                                                             {
                                                                 "translate": "badge_details.aspects.modifier.overtime",
                                                                 "with": [
-                                                                    "1s"
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "1"
+                                                                        ]
+                                                                    }
                                                                 ]
                                                             },
                                                             " ",
                                                             {
                                                                 "translate": "badge_details.aspects.modifier.empty_in",
                                                                 "with": [
-                                                                    "20s"
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "20"
+                                                                        ]
+                                                                    }
                                                                 ]
                                                             },
                                                             " ",
@@ -183,37 +228,7 @@
                                             }
                                         ]
                                     },
-                                    "\n\n",
-                                    {
-                                        "translate": "badge_details.aspects.trigger.out_of",
-                                        "with": [
-                                            {
-                                                "translate": "bossbar.aspects.generic.moisture"
-                                            }
-                                        ],
-                                        "extra": [
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
-                                                "color": "red",
-                                                "with": [
-                                                    "2",
-                                                    "1s",
-                                                    {
-                                                        "text": "",
-                                                        "color": "gray",
-                                                        "italic": true,
-                                                        "extra": [
-                                                            {
-                                                                "translate": "badge_details.aspects.modifier.ignores_everything"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "\n\n",
+                                    "\n",
                                     {
                                         "translate": "badge_details.aspects.trigger.wet",
                                         "extra": [
@@ -233,14 +248,24 @@
                                                             {
                                                                 "translate": "badge_details.aspects.modifier.overtime",
                                                                 "with": [
-                                                                    "1s"
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "1"
+                                                                        ]
+                                                                    }
                                                                 ]
                                                             },
                                                             " ",
                                                             {
                                                                 "translate": "badge_details.aspects.modifier.full_in",
                                                                 "with": [
-                                                                    "6s"
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "6"
+                                                                        ]
+                                                                    }
                                                                 ]
                                                             }
                                                         ]
@@ -274,7 +299,7 @@
                                             }
                                         ]
                                     },
-                                    "\n\n",
+                                    "\n",
                                     {
                                         "translate": "badge_details.aspects.trigger.damaged_by",
                                         "with": [
@@ -299,7 +324,7 @@
                                             }
                                         ]
                                     },
-                                    "\n\n",
+                                    "\n",
                                     {
                                         "translate": "badge_details.aspects.trigger.damaged_with",
                                         "with": [
@@ -480,14 +505,24 @@
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
                                                         "with": [
-                                                            "60s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "60"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     " ",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
-                                                            "1s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -761,14 +796,24 @@
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
                                                         "with": [
-                                                            "60s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "60"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     " ",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
-                                                            "1s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -844,6 +889,41 @@
                             },
                             "\n\n",
                             {
+                                "translate": "badge_details.aspects.trigger.out_of",
+                                "with": [
+                                    {
+                                        "translate": "bossbar.aspects.generic.moisture"
+                                    }
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "color": "red",
+                                        "with": [
+                                            "2",
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "1"
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.ignores_everything"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
                                 "translate": "badge_details.aspects.trigger.wet_not",
                                 "extra": [
                                     "\n",
@@ -862,14 +942,24 @@
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
-                                                            "1s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     " ",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.empty_in",
                                                         "with": [
-                                                            "20s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "20"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     " ",
@@ -939,37 +1029,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.out_of",
-                                "with": [
-                                    {
-                                        "translate": "bossbar.aspects.generic.moisture"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
-                                        "color": "red",
-                                        "with": [
-                                            "2",
-                                            "1s",
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.ignores_everything"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.wet",
                                 "extra": [
@@ -989,14 +1049,24 @@
                                                     {
                                                         "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
-                                                            "1s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     " ",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.full_in",
                                                         "with": [
-                                                            "6s"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "6"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -1030,7 +1100,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.damaged_by",
                                 "with": [
@@ -1055,7 +1125,7 @@
                                     }
                                 ]
                             },
-                            "\n\n",
+                            "\n",
                             {
                                 "translate": "badge_details.aspects.trigger.damaged_with",
                                 "with": [
