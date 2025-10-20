@@ -58,7 +58,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "awakened_essence_cage": {
-                                "aspect": "rascal"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "rascal"
+                                }
                             }
                         }
                     }

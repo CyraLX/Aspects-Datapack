@@ -48,7 +48,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "awakened_essence_cage": {
-                                "aspect": "feline"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "feline"
+                                }
                             }
                         }
                     }

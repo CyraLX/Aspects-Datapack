@@ -58,7 +58,10 @@
                     "minecraft:custom_data": {
                         "aspects": {
                             "awakened_essence_cage": {
-                                "aspect": "elytrian"
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "elytrian"
+                                }
                             }
                         }
                     }
