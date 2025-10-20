@@ -1,17 +1,17 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "body": {
-        "predicates": {
-          "minecraft:enchantments": [
-            {
-              "enchantments": "#aspects:aspect"
-            }
-          ]
-        }
-      }
-    }
-  }
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"body": {
+				"predicates": {
+					"minecraft:enchantments": [
+						{
+							"enchantments": "#aspects:aspect"
+						}
+					]
+				}
+			}
+		}
+	}
 }
