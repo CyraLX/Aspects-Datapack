@@ -1,10 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.essences.list"
+        "translate": "dialog.aspects.essences.list",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "external_title": {
-        "translate": "dialog.aspects.essences.list.external_title"
+        "translate": "dialog.aspects.essences.list.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "body": [
         {

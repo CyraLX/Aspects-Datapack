@@ -2,6 +2,7 @@
     "type": "minecraft:notice",
     "title": {
         "translate": "dialog.aspects.custom_items.essence_cage",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",
@@ -15,6 +16,7 @@
     },
     "external_title": {
         "translate": "dialog.aspects.custom_items.essence_cage.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",

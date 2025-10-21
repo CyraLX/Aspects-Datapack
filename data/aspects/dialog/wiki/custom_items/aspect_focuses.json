@@ -2,6 +2,7 @@
     "type": "minecraft:notice",
     "title": {
         "translate": "dialog.aspects.custom_items.aspect_focuses",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",
@@ -12,6 +13,7 @@
     },
     "external_title": {
         "translate": "dialog.aspects.custom_items.aspect_focuses.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",

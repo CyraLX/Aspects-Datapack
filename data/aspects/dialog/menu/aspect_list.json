@@ -1,10 +1,12 @@
 {
     "type": "minecraft:dialog_list",
     "title": {
-        "translate": "dialog.aspects.aspect_list"
+        "translate": "dialog.aspects.aspect_list",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "external_title": {
-        "translate": "dialog.aspects.aspect_list.external_title"
+        "translate": "dialog.aspects.aspect_list.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "exit_action": {
         "label": {

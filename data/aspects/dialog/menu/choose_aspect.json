@@ -1,17 +1,20 @@
 {
     "type": "minecraft:dialog_list",
     "title": {
-        "translate": "dialog.aspects.choose_aspect"
+        "translate": "dialog.aspects.choose_aspect",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "external_title": {
-        "translate": "dialog.aspects.choose_aspect.external_title"
+        "translate": "dialog.aspects.choose_aspect.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "body": [
         {
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.choose_aspect.lore"
+                "translate": "dialog.aspects.choose_aspect.lore",
+                "fallback": "!! Missing Resource Pack for Aspects !!"
             }
         }
     ],

@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "aspects:check_for_resource_pack",
+            "required": false
+        },
+        {
             "id": "aspects:dialog/choose_aspect/on_join",
             "required": false
         },

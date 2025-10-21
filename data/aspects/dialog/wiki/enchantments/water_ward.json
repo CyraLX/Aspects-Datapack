@@ -2,6 +2,7 @@
     "type": "minecraft:notice",
     "title": {
         "translate": "dialog.aspects.enchantments.water_ward",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",
@@ -24,6 +25,7 @@
     },
     "external_title": {
         "translate": "dialog.aspects.enchantments.water_ward.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",

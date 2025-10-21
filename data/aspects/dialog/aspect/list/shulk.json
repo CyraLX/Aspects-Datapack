@@ -2,6 +2,7 @@
     "type": "minecraft:notice",
     "title": {
         "translate": "dialog.aspects.aspect_info",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",
@@ -16,6 +17,7 @@
     },
     "external_title": {
         "translate": "dialog.aspects.aspect_info.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",

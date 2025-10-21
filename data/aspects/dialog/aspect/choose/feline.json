@@ -2,6 +2,7 @@
     "type": "minecraft:confirmation",
     "title": {
         "translate": "dialog.aspects.chosen_aspect",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",
@@ -16,6 +17,7 @@
     },
     "external_title": {
         "translate": "dialog.aspects.chosen_aspect.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
                 "translate": "aspects",
