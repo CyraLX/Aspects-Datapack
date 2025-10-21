@@ -166,7 +166,53 @@
                                     },
                                     "\n\n",
                                     {
-                                        "translate": "badge_details.aspects.trigger.wet_not",
+                                        "translate": "badge_details.aspects.trigger.wet",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.restore_modifiers",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "bossbar.aspects.generic.moisture"
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.overtime",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "1"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.full_in",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "6"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.inverted",
                                         "extra": [
                                             "\n",
                                             {
@@ -219,52 +265,6 @@
                                                                 "with": [
                                                                     {
                                                                         "translate": "effect.minecraft.water_breathing"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.trigger.wet",
-                                        "extra": [
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.effect.restore_modifiers",
-                                                "color": "green",
-                                                "with": [
-                                                    {
-                                                        "translate": "bossbar.aspects.generic.moisture"
-                                                    },
-                                                    {
-                                                        "text": "",
-                                                        "color": "gray",
-                                                        "italic": true,
-                                                        "extra": [
-                                                            {
-                                                                "translate": "badge_details.aspects.modifier.overtime",
-                                                                "with": [
-                                                                    {
-                                                                        "translate": "extra.aspects.seconds",
-                                                                        "with": [
-                                                                            "1"
-                                                                        ]
-                                                                    }
-                                                                ]
-                                                            },
-                                                            " ",
-                                                            {
-                                                                "translate": "badge_details.aspects.modifier.full_in",
-                                                                "with": [
-                                                                    {
-                                                                        "translate": "extra.aspects.seconds",
-                                                                        "with": [
-                                                                            "6"
-                                                                        ]
                                                                     }
                                                                 ]
                                                             }
@@ -924,7 +924,53 @@
                             },
                             "\n\n",
                             {
-                                "translate": "badge_details.aspects.trigger.wet_not",
+                                "translate": "badge_details.aspects.trigger.wet",
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.restore_modifiers",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "bossbar.aspects.generic.moisture"
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "extra": [
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.overtime",
+                                                        "with": [
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.full_in",
+                                                        "with": [
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "6"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "badge_details.aspects.trigger.inverted",
                                 "extra": [
                                     "\n",
                                     {
@@ -1024,52 +1070,6 @@
                                             "-20%",
                                             {
                                                 "translate": "attribute.name.attack_speed"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.wet",
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.restore_modifiers",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "bossbar.aspects.generic.moisture"
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.overtime",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "1"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.full_in",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "6"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
                                             }
                                         ]
                                     }
