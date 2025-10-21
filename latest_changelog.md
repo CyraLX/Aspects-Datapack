@@ -1,24 +1,26 @@
-# Aspects 1.1.2
+# Aspects 1.1.3
 
 ## General Changes
-- Added `focus_uses` statistic which tracks how many times a Focus was used per Aspect. This is not retroactive.
+- (1.21.6+) Many improvements to Aspect Dialogs to make the text more clearer
+- (1.21.6+) Fixed Awakened Essence Cages in Dialogs not showing the essence color inside them
+- (1.21.5) Fixed Aspect Pickers not being granted
+- If a Resource Pack is now missing on the client, the datapack makes it more clear with direct messages
+- When a player has an undefined Aspect, they will now have a Aspect Choosing dialog open if config `aspects.config.force_aspect_on_aspectless_players` is still `true`
+- Updated to support snapshots up to 25w43a
 
 ## Aspect Changes
 ### Infernal
-- Now gets -20% Attack Speed when not On Fire
-- Cooks food every 12s instead of 8s
-### Merling
-- Fixed Moisture not working with Infinite Water Breathing
-### Elytrian
-- Flying Marathon advancement now will not count if the Elytrian is in fluid
+- Now gets -100% Fall Damage Multiplier when in Lava (Can Lava Bucket clutch now!)
+- Gets Fire Resistance temporarely when submerged in Lava for extended Lava Vision
 
 ## Technical Changes
-- Moved `aspects:util/summon_item` function to `aspectlib:debug/summon_item_macro`
-- Added `minecraft:end_crystal` to `aspectlib:non-living` entity type tag
-- Added many missing water blocks in `aspectlib:is_water` block tag
-- Refractored log functions to `aspectlib:debug/log/toggle_<basic|expanded>`
-- Seperated boss entity type tags to `aspectlib:bosses/<minor|major|any>`
-- Username change amount is now tracked in Player Storage at `aspectlib.player.username_changes`
-- Pack format fixes macro tag now prefix the namespace of the addon for pack format fields
-- Most item related entries (except `enchantments`, `item_modifiers`, `recipes` and most tags) are now stored in an `item` directory
-- Added `inverted_healing_and_harm` Aspect Group (used for addons that use mods to invert healing and harm from potions so they can mark it for predicate detection)
+- Increased Pack Format to 6
+- `aspectlib:bosses/minor` Entity Type tag now contains `minecraft:elder_guardian`
+- Added `aspectlib:minecrat` Entity Type tag containing all minecarts
+- `aspectlib:passive` Entity Type tag now contains `minecraft:skeleton_horse`
+- `aspectlib.health` scoreboard has been reworked into `aspectlib.hp`
+- Added multiple new scoreboards related to health under `aspectlib` namespace: `absorption`, `hp_total`, `hp_max`, `hp_relative`, `hp_relative_overflow`, `hp_relative_total`
+- Fixed respawn/death events being broken when being `/kill`ed with any amount of Absorption Health
+- Added `aspectlib.is_submerged_water` and `aspectlib.is_submerged_lava` scoreboard booleans and their respective predicates
+- `aspectlib.is_submerged` scoreboard boolean now is true when user is submerged in any liquid
+- `hydrophobic` and `moisture_dependant` Aspect Groups now are fully group driven
