@@ -6,5 +6,3 @@ function aspects:aspect/generic/give_aspect with storage aspects:aspect_list asp
 # Aspect specific POST-GIVE_ASPECT logic
 ## Give Night Vision
 function aspects:aspect/merling/give_night_vision
-## Fill "Moisture" meter
-function aspects:aspect/generic/moisture/scoreboard/fill

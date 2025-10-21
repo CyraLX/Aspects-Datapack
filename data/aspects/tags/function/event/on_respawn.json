@@ -4,6 +4,14 @@
         {
             "id": "aspects:aspect/generic/prepare_for_on_respawn",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/generic/moisture/on_respawn",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/generic/hydrophobia/on_respawn",
+            "required": false
         }
     ]
 }

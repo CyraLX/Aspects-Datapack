@@ -6,5 +6,3 @@ function aspects:aspect/generic/give_aspect with storage aspects:aspect_list asp
 # Aspect specific POST-GIVE_ASPECT logic
 ## Grant attributes
 function aspects:aspect/enderian/attributes/grant_base
-## Refill "Hydrophobia" meter
-function aspects:aspect/generic/hydrophobia/scoreboard/fill
