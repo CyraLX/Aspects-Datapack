@@ -17,4 +17,4 @@ function aspectlib:event/on_join/load
 function aspectlib:predicate/submerged/initialize
 
 # Broadcast finished load
-execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] [{"text":"[AspectLib]: ","color":"#7700A7"},{"text":"Initialized!","color":"#aaaaaa"}]
+execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{"text":"[AspectLib]: ","color":"#7700A7"},{text:"Initialized!"}]}
