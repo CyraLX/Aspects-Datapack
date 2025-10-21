@@ -5,6 +5,6 @@ advancement revoke @s only aspects:aspect/give_aspect_from_trigger
 # Flag that player is choosing an Aspect
 scoreboard players set @s aspects.dialog.choose_menu 1
 # Give books to pick an Aspect
-function #aspects:aspect_pickers
+function #aspects:item/aspect_pickers
 
 return 1
