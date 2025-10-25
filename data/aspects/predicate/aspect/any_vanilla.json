@@ -1,0 +1,41 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/elytrian/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/enderian/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/feline/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/honey_bee/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/human/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/infernal/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/merling/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/rascal/is_active"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/shulk/is_active"
+        }
+    ]
+}

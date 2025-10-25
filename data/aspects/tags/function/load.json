@@ -6,7 +6,11 @@
             "required": false
         },
         {
-            "id": "aspects:setup_aspect_list",
+            "id": "aspects:registry/aspect/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/initialize",
             "required": false
         },
         {

@@ -4,10 +4,10 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:aspect_list aspects:honey_bee set value {id: 7, namespace: "aspects", name: "honey_bee", color: "#ffa41c", sound: "minecraft:entity.bee.loop"}
+data modify storage aspects:registry aspect.aspects:honey_bee set value {id: 7, namespace: "aspects", name: "honey_bee", color: "#ffa41c", sound: "minecraft:entity.bee.loop"}
 
-# Setup statistic tracking for the Aspect
-function aspects:stats/aspect/initialize with storage aspects:aspect_list aspects:honey_bee
+# Generic REGISTER_ASPECT logic
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect.aspects:honey_bee
 
 # Setup scoreboard objectives for the Aspect
 scoreboard objectives add aspects.honey_bee.created_honey_bottles dummy

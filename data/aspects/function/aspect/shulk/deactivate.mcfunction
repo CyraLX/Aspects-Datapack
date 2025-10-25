@@ -3,7 +3,7 @@
 function aspects:item/focus/shulk/storage/place_down
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:aspect_list aspects:shulk
+function aspects:aspect/generic/deactivate with storage aspects:registry aspect.aspects:shulk
 
 # Aspect specific POST-DEACTIVATE logic
 ## Remove attributes that were granted by the aspect

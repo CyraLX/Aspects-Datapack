@@ -4,9 +4,9 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:aspect_list aspects:rascal set value {id: 8, namespace: "aspects", name: "rascal", color: "#3A3B3C", sound: "minecraft:block.deepslate.break"}
+data modify storage aspects:registry aspect.aspects:human set value {id: 0, namespace: "aspects", name: "human", color: "#8b7e77", sound: "minecraft:entity.player.hurt"}
 
-# Setup statistic tracking for the Aspect
-function aspects:stats/aspect/initialize with storage aspects:aspect_list aspects:rascal
+# Generic REGISTER_ASPECT logic
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect.aspects:human
 
 # Setup scoreboard objectives for the Aspect

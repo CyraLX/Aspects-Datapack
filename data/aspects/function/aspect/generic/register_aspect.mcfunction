@@ -1,3 +1,6 @@
+# Logger
+$execute if entity @p[tag=get_debug_logs_expanded] run tellraw @a[tag=get_debug_logs_expanded] {text:"",color:"#aaaaaa",extra:[{text:"| ",color:"green"},{translate:"$(namespace)",color:"aqua"}," defined ",{translate:"aspect.$(namespace).$(name)",color:"$(color)"}," Aspect"]}
+
 # Setup statistic tracking for the Aspect
 ## Total amount of changes to an Aspect
 $scoreboard players add #$(namespace):$(name) aspects.aspect_stats.total 0

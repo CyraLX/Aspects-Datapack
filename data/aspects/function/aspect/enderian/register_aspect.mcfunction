@@ -4,10 +4,10 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:aspect_list aspects:enderian set value {id: 2, namespace: "aspects", name: "enderian", color: "#7749cb", sound: "minecraft:entity.enderman.ambient"}
+data modify storage aspects:registry aspect.aspects:enderian set value {id: 2, namespace: "aspects", name: "enderian", color: "#7749cb", sound: "minecraft:entity.enderman.ambient"}
 
-# Setup statistic tracking for the Aspect
-function aspects:stats/aspect/initialize with storage aspects:aspect_list aspects:enderian
+# Generic REGISTER_ASPECT logic
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect.aspects:enderian
 
 # Setup scoreboard objectives for the Aspect
 function aspects:item/focus/enderian/raycast/initialize_scoreboards

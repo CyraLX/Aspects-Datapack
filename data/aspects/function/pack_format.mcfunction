@@ -6,8 +6,8 @@ scoreboard objectives add aspects.version.is_dev dummy
 # Define current version
 scoreboard players set #aspects aspects.version.release 1
 scoreboard players set #aspects aspects.version.major 1
-scoreboard players set #aspects aspects.version.minor 3
-scoreboard players set #aspects aspects.version.is_dev 0
+scoreboard players set #aspects aspects.version.minor 4
+scoreboard players set #aspects aspects.version.is_dev 1
 # Initialize trigger to get current version
 function aspects:trigger/version/get/initialize
 
@@ -16,4 +16,4 @@ scoreboard objectives add aspects.pack_format dummy
 scoreboard objectives add aspects.pack_format.dependency.min dummy
 scoreboard objectives add aspects.pack_format.dependency.max dummy
 # Define current pack format
-scoreboard players set #aspects aspects.pack_format 6
+scoreboard players set #aspects aspects.pack_format 7
