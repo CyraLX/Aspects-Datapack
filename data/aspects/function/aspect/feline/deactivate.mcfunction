@@ -6,6 +6,6 @@ function aspects:aspect/feline/predator/scoreboard/reset
 effect clear @s minecraft:night_vision
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect.aspects:feline
+function aspects:aspect/generic/deactivate with storage aspects:registry aspect."aspects:feline"
 
 # Aspect specific POST-DEACTIVATE logic

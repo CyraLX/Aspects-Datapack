@@ -4,10 +4,10 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:registry aspect.aspects:elytrian set value {id: 6, namespace: "aspects", name: "elytrian", color: "#f2f10d", sound: "minecraft:entity.parrot.ambient"}
+data modify storage aspects:registry aspect."aspects:elytrian" set value {id: 6, namespace: "aspects", name: "elytrian", color: "#f2f10d", sound: "minecraft:entity.parrot.ambient"}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect.aspects:elytrian
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:elytrian"
 
 # Setup scoreboard objectives for the Aspect
 function aspects:aspect/elytrian/advancement/flying_marathon/scoreboard/initialize

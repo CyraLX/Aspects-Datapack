@@ -6,6 +6,6 @@ function aspects:aspect/elytrian/advancement/flying_marathon/cancel_tracking
 function aspects:aspect/elytrian/rocket_damage/scoreboard/reset
 
 # Generic ACTIVATE logic
-function aspects:aspect/generic/activate with storage aspects:registry aspect.aspects:elytrian
+function aspects:aspect/generic/activate with storage aspects:registry aspect."aspects:elytrian"
 
 # Aspect specific POST-ACTIVATE logic

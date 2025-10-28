@@ -4,10 +4,10 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:registry aspect.aspects:feline set value {id: 4, namespace: "aspects", name: "feline", color: "#f96600", sound: "minecraft:entity.cat.ambient"}
+data modify storage aspects:registry aspect."aspects:feline" set value {id: 4, namespace: "aspects", name: "feline", color: "#f96600", sound: "minecraft:entity.cat.ambient"}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect.aspects:feline
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:feline"
 
 # Setup scoreboard objectives for the Aspect
 function aspects:aspect/feline/predator/scoreboard/initialize

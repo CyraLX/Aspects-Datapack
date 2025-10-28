@@ -1,4 +1,4 @@
-$data modify storage aspectlib:dummy function_origin set from storage aspects:registry aspect.$(namespace):$(name)
+$data modify storage aspectlib:dummy function_origin set from storage aspects:registry aspect."$(namespace):$(name)"
 function aspects:aspect/generic/store_activate_data
 # Remove the option to be able to use trigger to run this function
 execute if score @s aspects.choose_aspect = @s aspects.choose_aspect run scoreboard players reset @s aspects.choose_aspect
