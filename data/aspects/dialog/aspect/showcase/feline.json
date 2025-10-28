@@ -107,7 +107,8 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.aspect_info.effects"
+                "translate": "dialog.aspects.aspect_info.effects",
+                "color": "#f6c7ff"
             }
         },
         {
@@ -194,7 +195,8 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.aspect_info.focus"
+                "translate": "dialog.aspects.aspect_info.focus",
+                "color": "#c7fdff"
             }
         },
         {
