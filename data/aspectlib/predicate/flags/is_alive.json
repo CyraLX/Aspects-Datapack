@@ -1,12 +1,29 @@
 {
-    "condition": "minecraft:inverted",
-    "term": {
-        "condition": "minecraft:entity_scores",
-        "entity": "this",
-        "scores": {
-            "aspectlib.hp": {
-                "max": 0
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "minecraft:player",
+                    "advancements": {
+                        "aspectlib:event/on_death": false
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                    "aspectlib.hp": {
+                        "max": 0
+                    }
+                }
             }
         }
-    }
+    ]
 }

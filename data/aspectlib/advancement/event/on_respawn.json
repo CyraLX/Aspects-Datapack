@@ -17,8 +17,16 @@
                         }
                     },
                     {
-                        "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_alive"
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspectlib.hp": {
+                                    "max": 0
+                                }
+                            }
+                        }
                     },
                     {
                         "condition": "minecraft:entity_scores",
