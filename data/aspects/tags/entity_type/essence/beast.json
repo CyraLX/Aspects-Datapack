@@ -96,6 +96,10 @@
         {
             "id": "minecraft:zombified_piglin",
             "required": false
+        },
+        {
+            "id": "minecraft:camel_husk",
+            "required": false
         }
     ]
 }

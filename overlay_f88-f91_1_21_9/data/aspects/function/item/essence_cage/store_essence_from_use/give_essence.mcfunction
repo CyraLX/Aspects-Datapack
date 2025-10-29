@@ -7,12 +7,12 @@ execute if entity @s[type=minecraft:camel] as @p[tag=aspects.essence_cage.extrac
 execute if entity @s[type=minecraft:cat] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/cat
 execute if entity @s[type=minecraft:chicken] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/chicken
 execute if entity @s[type=minecraft:cod] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/cod
-# execute if entity @s[type=minecraft:copper_golem] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/copper_golem
+execute if entity @s[type=minecraft:copper_golem] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/copper_golem
 execute if entity @s[type=minecraft:cow] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/cow
 execute if entity @s[type=minecraft:donkey] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/donkey
 execute if entity @s[type=minecraft:frog] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/frog
 execute if entity @s[type=minecraft:glow_squid] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/glow_squid
-# execute if entity @s[type=minecraft:happy_ghast] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/happy_ghast
+execute if entity @s[type=minecraft:happy_ghast] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/happy_ghast
 execute if entity @s[type=minecraft:horse] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/horse
 # execute if entity @s[type=minecraft:nautilus] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/nautilus
 # execute if entity @s[type=minecraft:zombie_nautilus] as @p[tag=aspects.essence_cage.extractor.use.origin,distance=..5] run return run function aspects:item/essence_cage/store_essence_from_entity/zombie_nautilus

@@ -1,7 +1,8 @@
-# Create Storage Player Data for the Aspect
+# Set score id of new Aspect to user
 $scoreboard players set @s aspects.aspect_id $(new_aspect_id)
 # Don't continue if not a player
 execute if entity @s[type=!minecraft:player] run return fail
+# Create Storage Player Data for the Aspect
 $data modify storage aspectlib:player_$(id) aspects.aspect set from storage aspects:registry aspect."$(new_aspect_namespace):$(new_aspect_name)"
 $data modify storage aspectlib:player_$(id) aspects.aspect_data."$(new_aspect_namespace):$(new_aspect_name)" set value {}
 
@@ -10,6 +11,8 @@ execute unless score #aspects aspects.config.track_statistics matches 1.. run re
 
 # Make sure the changed Aspect is not the same before continuing
 ## Store IDs in scoreboards
+scoreboard players reset #aspects.old aspects.aspect_id
+scoreboard players reset #aspects.new aspects.aspect_id
 $execute if data storage aspects:registry aspect."$(old_aspect_namespace):$(old_aspect_name)" store result score #aspects.old aspects.aspect_id run data get storage aspects:registry aspect."$(old_aspect_namespace):$(old_aspect_name)".id
 $execute store result score #aspects.new aspects.aspect_id run data get storage aspects:registry aspect."$(new_aspect_namespace):$(new_aspect_name)".id
 
@@ -27,9 +30,12 @@ $scoreboard players add #$(new_aspect_namespace):$(new_aspect_name) aspects.aspe
 $scoreboard players operation #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.active_peak > #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.active
 ## If user picked new Aspect as their first, increase First Pick and return early
 $execute unless score #aspects.old aspects.aspect_id = #aspects.old aspects.aspect_id run return run scoreboard players add #$(new_aspect_namespace):$(new_aspect_name) aspects.aspect_stats.first_pick 1
-
-# Update old Aspect stats
+# Update old Aspect Stats
 ## Increase Removed Count
 $scoreboard players add #$(old_aspect_namespace):$(old_aspect_name) aspects.aspect_stats.faded 1
 ## Decrease Active Users
 $scoreboard players remove #$(old_aspect_namespace):$(old_aspect_name) aspects.aspect_stats.active 1
+
+# Stats debug logs
+# $function aspects:stats/aspect/get with storage aspects:registry aspect."$(old_aspect_namespace):$(old_aspect_name)"
+# $function aspects:stats/aspect/get with storage aspects:registry aspect."$(new_aspect_namespace):$(new_aspect_name)"

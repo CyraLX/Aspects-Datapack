@@ -1,5 +1,10 @@
-# Remove Aspect Data
+# Expose Player ID for later
 function aspectlib:player/id/expose
+# Store Removed Aspect
+$data modify storage aspectlib:dummy namespace set value $(namespace)
+$data modify storage aspectlib:dummy name set value $(name)
+function aspects:aspect/generic/store_previous_aspect with storage aspectlib:dummy
+# Remove Aspect Data
 $function $(namespace):aspect/$(name)/remove_data with storage aspectlib:dummy
 # Remove Aspect Item
 item modify entity @s armor.body aspects:aspect/reset_body_components

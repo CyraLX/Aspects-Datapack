@@ -1,0 +1,80 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:essence_cage/cage_dummy"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "epic",
+            "minecraft:item_model": "aspects:universal_essence_cage",
+            "custom_data": {
+                "aspects": {
+                    "universal_essence_cage": {}
+                }
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 5,
+                "animation": "block",
+                "sound": "minecraft:block.soul_soil.step",
+                "has_consume_particles": true,
+                "on_consume_effects": [
+                    {
+                        "type": "minecraft:apply_effects",
+                        "effects": [
+                            {
+                                "id": "minecraft:hunger",
+                                "amplifier": 4,
+                                "duration": 1200,
+                                "show_icon": true,
+                                "show_particles": false,
+                                "ambient": true
+                            },
+                            {
+                                "id": "minecraft:blindness",
+                                "amplifier": 1,
+                                "duration": 15,
+                                "show_icon": false,
+                                "show_particles": false,
+                                "ambient": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.aspects.universal_essence_cage"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            "",
+            {
+                "translate": "item.modifiers.consume",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.universal_essence_cage.use_result_1"
+                    }
+                ]
+            }
+        ]
+    }
+]

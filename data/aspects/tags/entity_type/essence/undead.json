@@ -56,6 +56,18 @@
         {
             "id": "minecraft:wither",
             "required": false
+        },
+        {
+            "id": "minecraft:zombie_nautilus",
+            "required": false
+        },
+        {
+            "id": "minecraft:parched",
+            "required": false
+        },
+        {
+            "id": "minecraft:camel_husk",
+            "required": false
         }
     ]
 }

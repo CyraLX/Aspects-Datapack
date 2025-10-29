@@ -3,10 +3,10 @@
 		"pack_format": 71,
 		"supported_formats": {
 			"min_inclusive": 71,
-			"max_inclusive": 91
+			"max_inclusive": 92
 		},
 		"min_format": 71,
-		"max_format": 91,
+		"max_format": 92,
 		"description": [
 			{
 				"translate": "dataPack.aspects.description.header_format",
@@ -34,6 +34,15 @@
 	},
 	"overlays": {
 		"entries": [
+			{
+				"formats": {
+					"min_inclusive": 88,
+					"max_inclusive": 91
+				},
+				"min_format": 88,
+				"max_format": 91,
+				"directory": "overlay_f88-f91_1_21_9"
+			},
 			{
 				"formats": {
 					"min_inclusive": 71,

@@ -22,9 +22,12 @@ This document lists the essences associated with various entities.
 - Tadpole         - Aquatic, Normal
 - Tropical Fish   - Aquatic
 - Turtle          - Steel, Aquatic
+- Nautilus        - Aquatic, Steel
+- Zombie Nautilus - Aquatic, Undead
 
 ## Beast
 - Camel           - Normal, Beast
+- Camel Husk      - Undead, Beast
 - Cow             - Normal, Beast
 - Donkey          - Beast, Normal
 - Goat            - Beast, Normal
@@ -120,6 +123,7 @@ This document lists the essences associated with various entities.
 - Bogged          - Undead, Plant
 - Drowned         - Aquatic, Undead
 - Husk            - Undead, Humanoid
+- Parched         - Undead
 - Phantom         - Flying, Undead
 - Skeleton        - Undead
 - Skeleton Horse  - Undead, Beast

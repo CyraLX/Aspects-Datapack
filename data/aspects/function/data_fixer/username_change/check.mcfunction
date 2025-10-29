@@ -1,5 +1,5 @@
 # Make sure players username has an Aspect attached to it, if not get their aspect from the storage and fix it
-execute unless data entity @s equipment.body.components."minecraft:custom_data".aspects run return fail
+execute unless data entity @s equipment.body.components."minecraft:custom_data".aspects.player_id run return fail
 data modify storage aspectlib:dummy aspect_item set from entity @s equipment.body.components."minecraft:custom_data".aspects
 data modify storage aspectlib:dummy id set from storage aspectlib:dummy aspect_item.player_id
 data modify storage aspectlib:dummy aspect_namespace set from storage aspectlib:dummy aspect_item.aspect.namespace

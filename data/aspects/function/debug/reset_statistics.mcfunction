@@ -8,3 +8,5 @@ scoreboard players reset * aspects.aspect_stats.active
 scoreboard players reset * aspects.aspect_stats.active_peak
 # Times an Aspect was picked as their first choice
 scoreboard players reset * aspects.aspect_stats.first_pick
+# Times an Aspect used their Focus
+scoreboard players reset * aspects.aspect_stats.focus_uses
