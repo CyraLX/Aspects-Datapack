@@ -52,20 +52,19 @@
                     "type": "minecraft:all_of",
                     "effects": [
                         {
-                            "type": "minecraft:apply_impulse",
-                            "coordinate_scale": [
-                                1, 1, 1
-                            ],
-                            "direction": [
-                                0, 0, 1
-                            ],
-                            "magnitude": 0.916
-                        },
-                        {
-                            "type": "minecraft:play_sound",
-                            "sound": "minecraft:entity.experience_bottle.throw",
-                            "volume": 1.0,
-                            "pitch": 1.0
+                            "type": "minecraft:explode",
+                            "attribute_to_user": false,
+                            "knockback_multiplier": 0.8,
+                            "radius": 0.1,
+                            "create_fire": false,
+                            "block_interaction": "none",
+                            "small_particle": {
+                                "type": "minecraft:item_snowball"
+                            },
+                            "large_particle": {
+                                "type": "minecraft:cloud"
+                            },
+                            "sound": "minecraft:entity.experience_bottle.throw"
                         },
                         {
                             "type": "minecraft:run_function",

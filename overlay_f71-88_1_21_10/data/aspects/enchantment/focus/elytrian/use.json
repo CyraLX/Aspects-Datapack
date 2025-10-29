@@ -42,15 +42,6 @@
                                 }
                             }
                         }
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "flags": {
-                                "is_fall_flying": false
-                            }
-                        }
                     }
                 ],
                 "effect": {
@@ -67,61 +58,6 @@
                         "type": "minecraft:gust_emitter_large"
                     },
                     "sound": "minecraft:entity.wind_charge.wind_burst"
-                }
-            },
-            {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "aspects.aspect_id": 6
-                        }
-                    },
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "equipment": {
-                                    "offhand": {
-                                        "items": "#aspects:aspect/elytrian/wings_dye_any"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "flags": {
-                                "is_fall_flying": true
-                            }
-                        }
-                    }
-                ],
-                "effect": {
-                    "type": "minecraft:all_of",
-                    "effects": [
-                        {
-                            "type": "minecraft:apply_impulse",
-                            "coordinate_scale": [
-                                1, 0.5, 1
-                            ],
-                            "direction": [
-                                0, 0, 1
-                            ],
-                            "magnitude": 0.916
-                        },
-                        {
-                            "type": "minecraft:play_sound",
-                            "sound": "minecraft:entity.wind_charge.wind_burst",
-                            "volume": 1.0,
-                            "pitch": 1.0
-                        }
-                    ]
                 }
             },
             {
