@@ -3,10 +3,10 @@
 		"pack_format": 71,
 		"supported_formats": {
 			"min_inclusive": 71,
-			"max_inclusive": 92
+			"max_inclusive": 93
 		},
 		"min_format": 71,
-		"max_format": 92,
+		"max_format": 93,
 		"description": [
 			{
 				"translate": "dataPack.aspects.description.header_format",
