@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "minecraft:green_dye",
+            "id": "minecraft:light_blue_dye",
             "required": false
         }
     ]

@@ -6,7 +6,15 @@
             "required": false
         },
         {
-            "id": "#aspects:aspect/elytrian/wings_dye_blue",
+            "id": "#aspects:aspect/elytrian/wings_dye_orange",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_yellow",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_lime",
             "required": false
         },
         {
@@ -14,11 +22,47 @@
             "required": false
         },
         {
-            "id": "#aspects:aspect/elytrian/wings_dye_aqua",
+            "id": "#aspects:aspect/elytrian/wings_dye_light_blue",
             "required": false
         },
         {
-            "id": "#aspects:aspect/elytrian/wings_dye_gray_white",
+            "id": "#aspects:aspect/elytrian/wings_dye_cyan",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_blue",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_pink",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_magenta",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_purple",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_white",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_light_gray",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_gray",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_black",
+            "required": false
+        },
+        {
+            "id": "#aspects:aspect/elytrian/wings_dye_brown",
             "required": false
         },
         {

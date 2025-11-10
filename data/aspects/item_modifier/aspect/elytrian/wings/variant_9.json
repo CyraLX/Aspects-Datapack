@@ -6,11 +6,11 @@
     {
         "function": "minecraft:set_components",
         "components": {
-            "minecraft:item_model": "aspects:wings/elytrian_3",
+            "minecraft:item_model": "aspects:wings/elytrian_9",
             "minecraft:equippable": {
                 "slot": "chest",
                 "allowed_entities": "minecraft:player",
-                "asset_id": "aspects:wings/elytrian_3",
+                "asset_id": "aspects:wings/elytrian_9",
                 "damage_on_hurt": false,
                 "dispensable": false,
                 "swappable": false,
@@ -23,7 +23,7 @@
         "tag": {
             "aspects": {
                 "wings": {
-                    "variant": "3"
+                    "variant": "9"
                 }
             }
         }
@@ -43,7 +43,7 @@
                         "text": ": "
                     },
                     {
-                        "translate": "item.aspects.wings.elytrian.variant.3"
+                        "translate": "item.aspects.wings.elytrian.variant.9"
                     }
                 ]
             }

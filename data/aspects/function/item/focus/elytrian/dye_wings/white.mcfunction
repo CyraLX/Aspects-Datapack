@@ -1,4 +1,4 @@
-item modify entity @s armor.chest aspects:aspect/elytrian/wings/variant_4
+item modify entity @s armor.chest aspects:aspect/elytrian/wings/variant_11
 item modify entity @s armor.chest aspects:aspect/elytrian/wings/apply_dyed_lore
 item modify entity @s weapon.offhand aspectlib:consume/1
 

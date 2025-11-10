@@ -4,14 +4,6 @@
         {
             "id": "minecraft:red_dye",
             "required": false
-        },
-        {
-            "id": "minecraft:orange_dye",
-            "required": false
-        },
-        {
-            "id": "minecraft:yellow_dye",
-            "required": false
         }
     ]
 }

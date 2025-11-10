@@ -1,5 +1,5 @@
-# Get random value between 0 and 4 (One of Parrot variants) for the first time...
-execute unless score @s aspects.elytrian.wings.original_variant = @s aspects.elytrian.wings.original_variant run execute store result storage aspectlib:dummy random short 1 run random value 0..4 aspects:aspect/elytrian
+# Get random value between 0 and 15 (#16 patterns) for the first time...
+execute unless score @s aspects.elytrian.wings.original_variant = @s aspects.elytrian.wings.original_variant run execute store result storage aspectlib:dummy random short 1 run random value 0..15 aspects:aspect/elytrian
 # Otherwise use the previous random value
 execute if score @s aspects.elytrian.wings.original_variant = @s aspects.elytrian.wings.original_variant store result storage aspectlib:dummy random short 1 run scoreboard players get @s aspects.elytrian.wings.original_variant
 # Make sure the value is stored in the scoreboard
