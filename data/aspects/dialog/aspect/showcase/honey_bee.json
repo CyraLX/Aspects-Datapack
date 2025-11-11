@@ -71,7 +71,8 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.aspect_info.essence_combination"
+                "translate": "dialog.aspects.aspect_info.essence_combination",
+                "color": "#c7ffe8"
             }
         },
         {
