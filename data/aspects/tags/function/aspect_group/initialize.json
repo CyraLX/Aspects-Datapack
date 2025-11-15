@@ -1,0 +1,57 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:aspect_group/cold_natural/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/coldproof/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/fire_natural/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/fireproof/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/hydrophobic/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/inverted_breathing/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/inverted_healing_and_harm/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/moisture_dependant/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/sensitive_to_bane_of_arthropods/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/sensitive_to_impaling/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/sensitive_to_smite/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/water_breathing/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/winged/initialize",
+            "required": false
+        }
+    ]
+}

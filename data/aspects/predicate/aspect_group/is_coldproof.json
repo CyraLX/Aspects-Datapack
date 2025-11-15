@@ -2,7 +2,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-        "aspects.aspect_group.ice_based": {
+        "aspects.aspect_group.coldproof": {
             "min": 1
         }
     }

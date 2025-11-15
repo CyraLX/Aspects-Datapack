@@ -6,7 +6,8 @@ function aspects:aspect/generic/activate with storage aspects:registry aspect."a
 
 # Aspect specific POST-ACTIVATE logic
 ## Set Aspect Group
-function aspects:aspect_group/set/sensitive_to_bane_of_arthropods
+function aspects:aspect_group/sensitive_to_bane_of_arthropods/activate
+function aspects:aspect_group/winged/activate
 ## Set stored potion effect to none
 function aspects:item/focus/honey_bee/set_none with storage aspectlib:dummy
 

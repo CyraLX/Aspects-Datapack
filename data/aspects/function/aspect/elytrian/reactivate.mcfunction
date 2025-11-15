@@ -12,3 +12,5 @@ data modify storage aspectlib:dummy aspect_id set from storage aspectlib:dummy a
 function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-REACTIVATE logic
+## Set Aspect Group
+function aspects:aspect_group/winged/activate

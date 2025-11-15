@@ -10,6 +10,7 @@ function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-REACTIVATE logic
 ## Set Aspect Groups
-function aspects:aspect_group/set/sensitive_to_impaling
-function aspects:aspect_group/set/water_breathing
-function aspects:aspect_group/set/moisture_dependant
+function aspects:aspect_group/sensitive_to_impaling/activate
+function aspects:aspect_group/inverted_breathing/activate
+function aspects:aspect_group/water_breathing/activate
+function aspects:aspect_group/moisture_dependant/activate

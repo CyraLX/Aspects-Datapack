@@ -1,1 +1,0 @@
-scoreboard players set @s aspects.aspect_group.fire_based 1

@@ -9,3 +9,5 @@ function aspects:aspect/elytrian/rocket_damage/scoreboard/reset
 function aspects:aspect/generic/activate with storage aspects:registry aspect."aspects:elytrian"
 
 # Aspect specific POST-ACTIVATE logic
+## Set Aspect Group
+function aspects:aspect_group/winged/activate

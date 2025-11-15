@@ -14,7 +14,7 @@
             "required": false
         },
         {
-            "id": "aspects:aspect_group/initialize",
+            "id": "#aspects:aspect_group/initialize",
             "required": false
         },
         {

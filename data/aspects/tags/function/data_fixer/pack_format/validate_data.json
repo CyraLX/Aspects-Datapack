@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "aspects:data_fixer/pack_format/fixes/0-6/run",
+            "required": false
+        },
+        {
             "id": "aspects:aspect/generic/moisture/validate/bossbar/0-2",
             "required": false
         },

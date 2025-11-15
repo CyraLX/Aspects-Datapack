@@ -10,6 +10,6 @@ function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-REACTIVATE logic
 ## Set Aspect Groups
-function aspects:aspect_group/set/hydrophobic
-function aspects:aspect_group/set/fire_based
-function aspects:aspect_group/set/fireproof
+function aspects:aspect_group/hydrophobic/activate
+function aspects:aspect_group/fire_natural/activate
+function aspects:aspect_group/fireproof/activate

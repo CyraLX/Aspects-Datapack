@@ -1,1 +1,0 @@
-scoreboard players set @s aspects.aspect_group.ice_based 1
