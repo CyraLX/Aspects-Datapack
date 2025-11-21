@@ -1,0 +1,2 @@
+function aspectlib:predicate/food_level/initialize
+function aspectlib:predicate/submerged/initialize

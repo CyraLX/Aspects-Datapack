@@ -1,0 +1,18 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:location_check",
+        "predicate": {
+            "position": {
+                "x": {
+                    "min": -690,
+                    "max": 690
+                },
+                "z": {
+                    "min": -690,
+                    "max": 690
+                }
+            }
+        }
+    }
+}

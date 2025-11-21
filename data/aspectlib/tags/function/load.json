@@ -6,11 +6,7 @@
             "required": false
         },
         {
-            "id": "aspectlib:predicate/setup_scoreboard",
-            "required": false
-        },
-        {
-            "id": "aspectlib:predicate/food_level/initialize",
+            "id": "#aspectlib:config/initialize",
             "required": false
         },
         {

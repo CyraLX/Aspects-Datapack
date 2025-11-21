@@ -3,10 +3,10 @@
 		"pack_format": 71,
 		"supported_formats": {
 			"min_inclusive": 71,
-			"max_inclusive": 93
+			"max_inclusive": 94
 		},
 		"min_format": 71,
-		"max_format": 93,
+		"max_format": 94,
 		"description": [
 			{
 				"translate": "dataPack.aspects.description.header_format",
@@ -50,7 +50,7 @@
 				},
 				"min_format": 88,
 				"max_format": 91,
-				"directory": "overlay_f88-f91_1_21_9"
+				"directory": "overlay_f88-f91_1_21_9_entities"
 			},
 			{
 				"formats": {
@@ -68,7 +68,7 @@
 				},
 				"min_format": 72,
 				"max_format": 81,
-				"directory": "overlay_f72-f81_1_21_8"
+				"directory": "overlay_f72-f81_1_21_8_entities"
 			},
 			{
 				"formats": {
@@ -86,7 +86,7 @@
 				},
 				"min_format": 71,
 				"max_format": 71,
-				"directory": "overlay_f71_1_21_5"
+				"directory": "overlay_f71_1_21_5_entities"
 			}
 		]
 	}

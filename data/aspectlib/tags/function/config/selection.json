@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:config/selection",
+            "required": false
+        }
+    ]
+}

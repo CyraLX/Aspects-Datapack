@@ -4,9 +4,7 @@
     "predicate": {
         "equipment": {
             "chest": {
-                "items": [
-                    "minecraft:elytra"
-                ]
+                "items": "#aspectlib:equipment/elytra"
             }
         }
     }

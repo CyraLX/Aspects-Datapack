@@ -7,7 +7,7 @@
         },
         {
             "condition": "minecraft:reference",
-            "name": "aspectlib:hitbox_exposed_to_water"
+            "name": "aspectlib:flags/is_wet"
         }
     ]
 }

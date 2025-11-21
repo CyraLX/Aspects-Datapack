@@ -2,11 +2,11 @@
     "replace": false,
     "values": [
         {
-            "id": "minecraft:water",
+            "id": "#aspectlib:contains_water",
             "required": false
         },
         {
-            "id": "minecraft:water_cauldron",
+            "id": "minecraft:water",
             "required": false
         },
         {

@@ -1,5 +1,5 @@
 # If the player is exposed to water, increment scores and return
-execute if predicate aspectlib:hitbox_exposed_to_water run return run function aspects:aspect/generic/moisture/scoreboard/increase
+execute if predicate aspectlib:flags/is_wet run return run function aspects:aspect/generic/moisture/scoreboard/increase
 
 # If user has normal water breathing, do not do anything else
 execute if predicate aspectlib:status_effect/water_breathing/normal run return fail

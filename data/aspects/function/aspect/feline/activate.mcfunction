@@ -1,5 +1,5 @@
 # Aspect specific PRE-ACTIVATE logic
-## Initialize Aspect Effect
+## Initialize Predator Aspect Effect
 function aspects:aspect/feline/predator/bossbar/initialize
 
 # Generic ACTIVATE logic

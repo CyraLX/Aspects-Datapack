@@ -1,0 +1,37 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:config/reward_shattered_relic/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/reward_faded_relic/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/kill_dropped_aspect_item/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/track_statistics/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/force_aspect_on_aspectless_players/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/aspectless_players_invisible/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/aspectless_players_invulnerable/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/aspectless_players_negative_effects/default",
+            "required": false
+        }
+    ]
+}

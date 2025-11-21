@@ -13,8 +13,7 @@ function aspectlib:player/stats/health/initialize
 function aspectlib:event/on_death/load
 function aspectlib:event/on_join/load
 ## Predicates
-### Submerged
-function aspectlib:predicate/submerged/initialize
+function aspectlib:predicate/initialize
 
 # Broadcast finished load
 execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{"text":"[AspectLib]: ","color":"#7700A7"},{text:"Initialized!"}]}

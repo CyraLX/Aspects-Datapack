@@ -1,7 +1,7 @@
 # Return early if current Aspect is valid
 $execute if data storage aspects:registry aspect."$(namespace):$(name)" run return fail
 # Print logs
-$execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," had an Unregistered Aspect ",{text:"$(namespace):$(name)",color:"gold"},"!\nResetting their data and opening ",{translate:"dialog.aspects.choose_aspect",color:"gold"},"dialog for them"]}
+$execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," had an Unregistered Aspect ",{text:"$(namespace):$(name)",color:"gold"},"!\nResetting their data and opening ",{translate:"dialog.aspects.choose_aspect",color:"gold"}," dialog for them"]}
 
 # Try calling undefined Aspect's deactivate function
 function aspects:dialog/choose_aspect/undefined/try_deactivating with storage aspectlib:dummy aspect

@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "aspectlib:predicate/on_respawn",
+            "required": false
+        },
+        {
             "id": "#aspects:event/on_respawn",
             "required": false
         }

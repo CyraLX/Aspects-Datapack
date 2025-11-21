@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:status_effect/invisibility/any"
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Invisible:1b}"
+            }
+        }
+    ]
+}
