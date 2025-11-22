@@ -10,6 +10,14 @@
             "required": false
         },
         {
+            "id": "aspects:aspect_group/extreme_dehydration/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect_group/extreme_hydrophobia/initialize",
+            "required": false
+        },
+        {
             "id": "aspects:aspect_group/fire_natural/initialize",
             "required": false
         },

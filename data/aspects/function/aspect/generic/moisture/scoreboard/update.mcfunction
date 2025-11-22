@@ -10,7 +10,7 @@ execute if score @s aspects.generic.moisture.turtle_helmet matches 1.. if predic
 execute if score @s aspects.generic.moisture matches ..0 run scoreboard players set @s aspects.generic.moisture 0
 execute if score @s aspects.generic.moisture matches 600.. run scoreboard players set @s aspects.generic.moisture 600
 # If Moisture is 0, damage player and return
-execute if score @s aspects.generic.moisture matches ..0 run return run damage @s 2.0 aspects:generic/dehydration
+execute if score @s aspects.generic.moisture matches ..0 run return run function aspects:aspect/generic/moisture/damage_user
 # Otherwise play a pop sound randomly while decreasing score and returning
 execute if score @s aspects.generic.moisture matches 1..599 if predicate aspectlib:random/040 run playsound ui.hud.bubble_pop player @s ~ ~ ~ 1.0 1.25
 
