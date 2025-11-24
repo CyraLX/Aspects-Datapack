@@ -23,5 +23,6 @@
     },
     "rewards": {
         "function": "aspects:debug/give/aspect_picker"
-    }
+    },
+    "parent": "aspects:root"
 }

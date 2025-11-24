@@ -1,10 +1,11 @@
 {
     "criteria": {
-      "tick": {
-        "trigger": "minecraft:tick"
+        "tick": {
+            "trigger": "minecraft:tick"
         }
-      },
+    },
     "rewards": {
-      "function": "aspectlib:predicate/checked_if_in_water"
-    }
-  }
+        "function": "aspectlib:predicate/checked_if_in_water"
+    },
+    "parent": "aspectlib:root"
+}
