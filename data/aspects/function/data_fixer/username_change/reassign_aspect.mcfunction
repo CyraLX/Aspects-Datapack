@@ -1,5 +1,5 @@
 # Logger
-execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]}, {selector:"@s",color:"gold"}," doesn't have a valid Aspect ID score (likely from a username change). Pulling ID from Aspect Item and reactivating their Aspect..."]}
+$execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]}, {selector:"@s",color:"gold"}," doesn't have a valid Aspect ID score (likely from a username change). Pulling ID from Aspect Item (",{text:"#$(id)",color:"gold"},") and reactivating their Aspect..."]}
 
 $scoreboard players set @s aspectlib.player_id $(id)
 function aspectlib:player/username/trigger

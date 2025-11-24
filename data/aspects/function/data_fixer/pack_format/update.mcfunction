@@ -1,5 +1,6 @@
 # If there exists legacy storage data, convert it to the new format
 $execute if data storage aspectlib:player_$(id) aspects run data modify storage aspectlib:users player.$(id) set from storage aspectlib:player_$(id)
+
 # If data is missing, create
 $execute unless data storage aspectlib:users player.$(id).aspects.pack_format run data modify storage aspectlib:users player.$(id).aspects.pack_format set value {previous: 0, current: 0}
 # Update previous pack_format

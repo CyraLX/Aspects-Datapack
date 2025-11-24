@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "aspects:data_fixer/username_change/check",
+            "required": false
+        },
+        {
             "id": "aspects:dialog/choose_aspect/on_join",
             "required": false
         },
@@ -15,10 +19,6 @@
         },
         {
             "id": "aspects:data_fixer/pack_format/check",
-            "required": false
-        },
-        {
-            "id": "aspects:data_fixer/username_change/check",
             "required": false
         }
     ]
