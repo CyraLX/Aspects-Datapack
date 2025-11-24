@@ -6,11 +6,11 @@
             "required": false
         },
         {
-            "id": "aspects:aspect/generic/moisture/on_respawn",
+            "id": "aspects:aspect_group/moisture_dependant/logic/on_respawn",
             "required": false
         },
         {
-            "id": "aspects:aspect/generic/hydrophobia/on_respawn",
+            "id": "aspects:aspect_group/hydrophobic/logic/on_respawn",
             "required": false
         }
     ]

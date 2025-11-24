@@ -403,12 +403,12 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.aspects.generic.aquatic",
+                                        "translate": "aspect.aspects.aspect_group.aquatic",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": {
-                                                "translate": "aspect.aspects.generic.aquatic.description"
+                                                "translate": "aspect.aspects.aspect_group.aquatic.description"
                                             }
                                         }
                                     }
@@ -593,12 +593,12 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.aspects.generic.hydrophobic",
+                                        "translate": "aspect.aspects.aspect_group.hydrophobic",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": {
-                                                "translate": "aspect.aspects.generic.hydrophobic.description"
+                                                "translate": "aspect.aspects.aspect_group.hydrophobic.description"
                                             }
                                         }
                                     }
@@ -1114,12 +1114,12 @@
                                 "translate": "item.aspects.aspect_encyclopedia.aspect_effects.entry",
                                 "with": [
                                     {
-                                        "translate": "aspect.aspects.generic.hydrophobic",
+                                        "translate": "aspect.aspects.aspect_group.hydrophobic",
                                         "color": "dark_gray",
                                         "hover_event": {
                                             "action": "show_text",
                                             "value": {
-                                                "translate": "aspect.aspects.generic.hydrophobic.description"
+                                                "translate": "aspect.aspects.aspect_group.hydrophobic.description"
                                             }
                                         }
                                     }

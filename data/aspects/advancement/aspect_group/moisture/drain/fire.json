@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "take_fire_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect_group/is_moisture_dependant"
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_fire",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect_group/moisture_dependant/logic/drain/fire"
+    },
+    "parent": "aspects:root"
+}

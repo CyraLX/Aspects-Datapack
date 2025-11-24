@@ -33,5 +33,6 @@
     },
     "rewards": {
         "function": "aspects:item/essence_cage/store_essence_from_entity/frog"
-    }
+    },
+    "parent": "aspects:root"
 }

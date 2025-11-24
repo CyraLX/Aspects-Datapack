@@ -19,5 +19,6 @@
     },
     "rewards": {
         "function": "aspects:aspect/feline/predator/hit_target"
-    }
+    },
+    "parent": "aspects:root"
 }

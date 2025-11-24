@@ -22,5 +22,6 @@
     },
     "rewards": {
         "function": "aspects:item/essence_cage/activate_aspect/honey_bee"
-    }
+    },
+    "parent": "aspects:root"
 }

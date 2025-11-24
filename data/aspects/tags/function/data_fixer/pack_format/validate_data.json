@@ -10,7 +10,7 @@
             "required": false
         },
         {
-            "id": "aspects:aspect/generic/moisture/validate/bossbar/0-2",
+            "id": "aspects:aspect_group/moisture_dependant/logic/validate/bossbar/0-2",
             "required": false
         },
         {

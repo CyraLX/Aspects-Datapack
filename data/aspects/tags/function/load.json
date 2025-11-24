@@ -26,14 +26,6 @@
             "required": false
         },
         {
-            "id": "aspects:aspect/generic/hydrophobia/scoreboard/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/generic/moisture/scoreboard/initialize",
-            "required": false
-        },
-        {
             "id": "aspects:item/essence_cage/scoreboard/initialize",
             "required": false
         },

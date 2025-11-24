@@ -14,5 +14,6 @@
     },
     "rewards": {
         "function": "aspects:aspect/shulk/shell/got_damaged"
-    }
+    },
+    "parent": "aspects:root"
 }

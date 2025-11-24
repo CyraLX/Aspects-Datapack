@@ -142,13 +142,13 @@
                         "color": "#d6d6d6",
                         "with": [
                             {
-                                "translate": "aspect.aspects.generic.hydrophobic"
+                                "translate": "aspect.aspects.aspect_group.hydrophobic"
                             }
                         ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "aspect.aspects.generic.hydrophobic.description",
+                                "translate": "aspect.aspects.aspect_group.hydrophobic.description",
                                 "color": "white",
                                 "italic": true
                             }

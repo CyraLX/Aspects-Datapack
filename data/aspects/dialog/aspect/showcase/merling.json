@@ -119,12 +119,12 @@
                 "text": "",
                 "extra": [
                     {
-                        "translate": "aspect.aspects.generic.aquatic",
+                        "translate": "aspect.aspects.aspect_group.aquatic",
                         "color": "#d6d6d6",
                         "extra": [
                             "\n",
                             {
-                                "translate": "aspect.aspects.generic.aquatic.description",
+                                "translate": "aspect.aspects.aspect_group.aquatic.description",
                                 "italic": true
                             }
                         ]

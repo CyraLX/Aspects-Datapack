@@ -1,0 +1,1 @@
+scoreboard players remove @s aspects.aspect_group.moisture_dependant.turtle_helmet 1

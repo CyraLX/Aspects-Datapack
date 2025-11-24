@@ -19,5 +19,6 @@
     },
     "rewards": {
         "function": "aspects:trigger/version/run"
-    }
+    },
+    "parent": "aspects:root"
 }

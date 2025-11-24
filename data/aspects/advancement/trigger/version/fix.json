@@ -22,5 +22,6 @@
     },
     "rewards": {
         "function": "aspects:trigger/version/fix"
-    }
+    },
+    "parent": "aspects:root"
 }

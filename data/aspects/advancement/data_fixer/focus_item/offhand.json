@@ -49,5 +49,6 @@
     },
     "rewards": {
         "function": "aspects:data_fixer/focus_item/modify_offhand"
-    }
+    },
+    "parent": "aspects:root"
 }

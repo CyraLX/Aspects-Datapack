@@ -23,5 +23,6 @@
     },
     "rewards": {
         "function": "aspects:item/relic/shattered/trigger"
-    }
+    },
+    "parent": "aspects:root"
 }

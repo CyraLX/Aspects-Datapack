@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "drink_potion": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect_group/is_hydrophobic"
+                    }
+                ],
+                "item": {
+                    "items": "#aspectlib:water_consumables"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:aspect_group/hydrophobic/logic/drunk_potion"
+    },
+    "parent": "aspects:root"
+}

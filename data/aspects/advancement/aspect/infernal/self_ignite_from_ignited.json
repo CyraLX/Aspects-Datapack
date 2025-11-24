@@ -25,5 +25,6 @@
     },
     "rewards": {
         "function": "aspects:aspect/infernal/too_hot/self_ignite_from_ignited"
-    }
+    },
+    "parent": "aspects:root"
 }

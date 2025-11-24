@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.aspect_group.hydrophobic.state": 3
+    }
+}

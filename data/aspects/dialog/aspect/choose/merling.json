@@ -81,13 +81,13 @@
                         "color": "#d6d6d6",
                         "with": [
                             {
-                                "translate": "aspect.aspects.generic.aquatic"
+                                "translate": "aspect.aspects.aspect_group.aquatic"
                             }
                         ],
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "aspect.aspects.generic.aquatic.description",
+                                "translate": "aspect.aspects.aspect_group.aquatic.description",
                                 "color": "white",
                                 "italic": true
                             }
@@ -137,7 +137,7 @@
                                         "translate": "badge_details.aspects.trigger.out_of",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.generic.moisture"
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                             }
                                         ],
                                         "extra": [
@@ -177,7 +177,7 @@
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.generic.moisture"
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                                     },
                                                     {
                                                         "text": "",
@@ -223,7 +223,7 @@
                                                 "color": "red",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.generic.moisture"
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                                     },
                                                     {
                                                         "text": "",
@@ -295,7 +295,7 @@
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.generic.moisture"
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                                     },
                                                     "50%"
                                                 ]
@@ -320,7 +320,7 @@
                                                 "color": "red",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.generic.moisture"
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                                     },
                                                     "3.33%"
                                                 ]
@@ -342,7 +342,7 @@
                                                 "color": "red",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.generic.moisture"
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                                     },
                                                     "25%"
                                                 ]
@@ -895,7 +895,7 @@
                                 "translate": "badge_details.aspects.trigger.out_of",
                                 "with": [
                                     {
-                                        "translate": "bossbar.aspects.generic.moisture"
+                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                     }
                                 ],
                                 "extra": [
@@ -935,7 +935,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.generic.moisture"
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                             },
                                             {
                                                 "text": "",
@@ -981,7 +981,7 @@
                                         "color": "red",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.generic.moisture"
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                             },
                                             {
                                                 "text": "",
@@ -1096,7 +1096,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.generic.moisture"
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                             },
                                             "50%"
                                         ]
@@ -1121,7 +1121,7 @@
                                         "color": "red",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.generic.moisture"
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                             },
                                             "3.33%"
                                         ]
@@ -1143,7 +1143,7 @@
                                         "color": "red",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.generic.moisture"
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                             },
                                             "25%"
                                         ]

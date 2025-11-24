@@ -17,5 +17,6 @@
     },
     "rewards": {
         "function": "aspects:item/essence_cage/store_essence_from_use/use"
-    }
+    },
+    "parent": "aspects:root"
 }

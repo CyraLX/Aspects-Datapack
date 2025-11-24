@@ -25,5 +25,6 @@
     },
     "rewards": {
         "function": "aspects:item/focus/shulk/camouflage/destroy_when_hit"
-    }
+    },
+    "parent": "aspects:root"
 }

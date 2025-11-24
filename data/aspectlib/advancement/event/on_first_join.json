@@ -6,5 +6,6 @@
     },
     "rewards": {
         "function": "aspectlib:event/on_first_join/execute"
-    }
+    },
+    "parent": "aspectlib:root"
 }

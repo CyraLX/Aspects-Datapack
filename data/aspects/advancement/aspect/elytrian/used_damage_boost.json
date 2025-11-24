@@ -30,5 +30,6 @@
     },
     "rewards": {
         "function": "aspects:aspect/elytrian/advancement/flying_marathon/scoreboard/used_damage_boost"
-    }
+    },
+    "parent": "aspects:root"
 }

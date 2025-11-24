@@ -23,5 +23,6 @@
 	},
 	"rewards": {
 		"function": "aspects:item/essence_cage/store_aspect_from_aspect/rascal"
-	}
+	},
+    "parent": "aspects:root"
 }

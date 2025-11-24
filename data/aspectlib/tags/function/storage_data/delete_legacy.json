@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspectlib:storage_data/delete_legacy",
+            "required": false
+        },
+        {
+            "id": "aspects:storage_data/delete_legacy",
+            "required": false
+        }
+    ]
+}

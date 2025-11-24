@@ -21,8 +21,7 @@
     },
     "criteria": {
         "root": {
-            "trigger": "minecraft:tick",
-            "conditions": {}
+            "trigger": "minecraft:tick"
         }
     }
 }

@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:generic/dehydration",
+            "id": "aspects:aspect_group/dehydration",
             "required": false
         }
     ]

@@ -28,5 +28,6 @@
     },
     "rewards": {
         "function": "aspects:item/focus/merling/activate"
-    }
+    },
+    "parent": "aspects:root"
 }

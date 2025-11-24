@@ -28,5 +28,6 @@
     },
     "rewards": {
         "function": "aspects:item/focus/enderian/active"
-    }
+    },
+    "parent": "aspects:root"
 }

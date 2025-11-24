@@ -44,5 +44,6 @@
     },
     "rewards": {
         "function": "aspects:aspect/elytrian/advancement/flying_marathon/scoreboard/used_focus"
-    }
+    },
+    "parent": "aspects:root"
 }

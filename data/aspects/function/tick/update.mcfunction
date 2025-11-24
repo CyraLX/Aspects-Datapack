@@ -9,4 +9,4 @@ execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:gamemode/s
 execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:gamemode/survival_or_adventure, predicate=aspects:equipment/aspect_unique/offhand] at @s run item replace entity @s weapon.offhand with minecraft:air
 
 # Generic Powers
-execute as @a[predicate=aspectlib:flags/is_alive] at @s run function aspects:tick/generic_powers
+execute as @a[predicate=aspectlib:flags/is_alive] at @s run function aspects:tick/aspect_groups

@@ -19,5 +19,6 @@
     },
     "rewards": {
         "function": "aspectlib:event/on_death/execute"
-    }
+    },
+    "parent": "aspectlib:root"
 }

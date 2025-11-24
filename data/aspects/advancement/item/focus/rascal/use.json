@@ -28,5 +28,6 @@
     },
     "rewards": {
         "function": "aspects:item/focus/rascal/active"
-    }
+    },
+    "parent": "aspects:root"
 }
