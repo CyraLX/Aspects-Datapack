@@ -1,1 +1,1 @@
-$data modify storage aspectlib:player_$(id) aspects.aspect_data."aspects:honey_bee".stored_effect set value "oozing"
+$data modify storage aspectlib:users player.$(id).aspects.aspect_data."aspects:honey_bee".stored_effect set value "oozing"

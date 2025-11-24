@@ -1,2 +1,2 @@
-$data remove storage aspectlib:player_$(id) aspects.aspect_data."aspects:enderian"
-$data modify storage aspectlib:player_$(id) aspects.aspect set value {}
+$data remove storage aspectlib:users player.$(id).aspects.aspect_data."aspects:enderian"
+$data modify storage aspectlib:users player.$(id).aspects.aspect set value {}

@@ -3,8 +3,8 @@ $scoreboard players set @s aspects.aspect_id $(new_aspect_id)
 # Don't continue if not a player
 execute if entity @s[type=!minecraft:player] run return fail
 # Create Storage Player Data for the Aspect
-$data modify storage aspectlib:player_$(id) aspects.aspect set from storage aspects:registry aspect."$(new_aspect_namespace):$(new_aspect_name)"
-$data modify storage aspectlib:player_$(id) aspects.aspect_data."$(new_aspect_namespace):$(new_aspect_name)" set value {}
+$data modify storage aspectlib:users player.$(id).aspects.aspect set from storage aspects:registry aspect."$(new_aspect_namespace):$(new_aspect_name)"
+$data modify storage aspectlib:users player.$(id).aspects.aspect_data."$(new_aspect_namespace):$(new_aspect_name)" set value {}
 
 # Don't update statistics if disabled
 execute unless score #aspects aspects.config.track_statistics matches 1.. run return fail

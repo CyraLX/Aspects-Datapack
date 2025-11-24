@@ -1,2 +1,2 @@
-$data modify storage aspectlib:player_$(id) aspects.aspect_data."aspects:honey_bee".stored_effect set value "night_vision"
+$data modify storage aspectlib:users player.$(id).aspects.aspect_data."aspects:honey_bee".stored_effect set value "night_vision"
 advancement grant @s only aspects:gameplay/aspect/honey_bee/honey_critic night_vision
