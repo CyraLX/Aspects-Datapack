@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:aspect_group/hydrophobia",
+            "required": false
+        }
+    ]
+}
