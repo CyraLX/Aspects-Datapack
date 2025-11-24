@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:aspect/elytrian/wings",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/wings",
+            "required": false
+        }
+    ]
+}

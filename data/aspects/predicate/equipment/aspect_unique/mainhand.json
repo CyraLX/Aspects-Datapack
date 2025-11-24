@@ -6,7 +6,7 @@
             "entity": "this",
             "predicate": {
                 "equipment": {
-                    "chest": {
+                    "mainhand": {
                         "predicates": {
                             "minecraft:custom_data": {
                                 "aspects": {
@@ -23,7 +23,7 @@
             "entity": "this",
             "predicate": {
                 "equipment": {
-                    "chest": {
+                    "mainhand": {
                         "predicates": {
                             "minecraft:enchantments": [
                                 {

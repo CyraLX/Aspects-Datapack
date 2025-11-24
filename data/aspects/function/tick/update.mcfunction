@@ -4,9 +4,9 @@ execute if score #aspects aspects.config.kill_dropped_aspect_item matches 1.. as
 execute as @a[predicate=aspects:dialog/choose_menu/is_open] at @s run function aspects:dialog/choose_aspect/effects
 # Make sure players have their Aspect by calling Event ON_RESPAWN if they are missing one
 execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:periodic_tick/100, predicate=!aspects:aspect/any, predicate=aspects:aspect/any_score] at @s run function aspects:tick/missing_aspect
+# Delete unique items when held in mainhand or offhand
+execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:gamemode/survival_or_adventure, predicate=aspects:equipment/aspect_unique/mainhand] at @s run item replace entity @s weapon.mainhand with minecraft:air
+execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:gamemode/survival_or_adventure, predicate=aspects:equipment/aspect_unique/offhand] at @s run item replace entity @s weapon.offhand with minecraft:air
 
 # Generic Powers
-## Hydrophobia
-execute as @a[predicate=aspectlib:periodic_tick/20, predicate=aspects:aspect_group/is_hydrophobic, predicate=aspectlib:flags/is_alive, predicate=aspectlib:flags/is_wet] at @s run function aspects:aspect/generic/hydrophobia/update
-## Moisture
-execute as @a[predicate=aspectlib:periodic_tick/20, predicate=aspects:aspect_group/is_moisture_dependant, predicate=aspectlib:flags/is_alive, predicate=aspectlib:flags/is_wet] at @s run function aspects:aspect/generic/moisture/update
+execute as @a[predicate=aspectlib:flags/is_alive] at @s run function aspects:tick/generic_powers

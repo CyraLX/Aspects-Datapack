@@ -1,17 +1,39 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "equipment": {
-            "legs": {
-                "predicates": {
-                    "minecraft:custom_data": {
-                        "aspects": {
-                            "unique": true
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "legs": {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "aspects": {
+                                    "unique": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "legs": {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "#aspects:aspect_unique"
+                                }
+                            ]
                         }
                     }
                 }
             }
         }
-    }
+    ]
 }
