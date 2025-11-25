@@ -5,7 +5,7 @@
         "effects": {
             "minecraft:resistance": {
                 "amplifier": {
-                    "max": 3
+                    "max": 2
                 }
             }
         }
