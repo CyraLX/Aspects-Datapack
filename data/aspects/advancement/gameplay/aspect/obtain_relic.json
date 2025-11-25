@@ -4,7 +4,7 @@
             "id": "minecraft:jigsaw",
             "count": 1,
             "components": {
-                "minecraft:item_model": "aspects:relic/faded/human"
+                "minecraft:item_model": "aspects:advancement/aspect/obtain_relic"
             }
         },
         "title": {
