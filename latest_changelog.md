@@ -1,26 +1,42 @@
-# Aspects 1.1.3
+# Aspects 1.2.0
 
 ## General Changes
-- (1.21.6+) Many improvements to Aspect Dialogs to make the text more clearer
-- (1.21.6+) Fixed Awakened Essence Cages in Dialogs not showing the essence color inside them
-- (1.21.5) Fixed Aspect Pickers not being granted
-- If a Resource Pack is now missing on the client, the datapack makes it more clear with direct messages
-- When a player has an undefined Aspect, they will now have a Aspect Choosing dialog open if config `aspects.config.force_aspect_on_aspectless_players` is still `true`
-- Updated to support snapshots up to 25w43a
+- Updated to support 1.21.11 fully
+- (1.21.6+) More improvements to Aspect Dialogs to make the text more clearer
+- Added an unobtainable Universal Essence Cage which allows to pick any aspect when used, it is considered a creative item and requires a recipe datapack to become obtainable
+- Version triggers changed from `<namespace>.version.get` to `version.<namespace>`
+- Faded Aspect relic's textures have been remade
 
 ## Aspect Changes
+### Elytrian
+- Thanks to `maskedwatercress` for contributing to redoing 5 wing designs, along with 11 new ones!
+- This Aspect now has 16 unique wing patterns to match dye. Existing users can use dyes to swap our their natural pattern
+### Feline
+- (1.21.11+) Focus has been remade so it can also be used mid-air and properls you in a direction you are looking
 ### Infernal
-- Now gets -100% Fall Damage Multiplier when in Lava (Can Lava Bucket clutch now!)
-- Gets Fire Resistance temporarely when submerged in Lava for extended Lava Vision
+- Now uses `damage_immune` instead of `location_changed` along with attributes to nulify fall damage in lava for better consistency
 
 ## Technical Changes
-- Increased Pack Format to 6
-- `aspectlib:bosses/minor` Entity Type tag now contains `minecraft:elder_guardian`
-- Added `aspectlib:minecrat` Entity Type tag containing all minecarts
-- `aspectlib:passive` Entity Type tag now contains `minecraft:skeleton_horse`
-- `aspectlib.health` scoreboard has been reworked into `aspectlib.hp`
-- Added multiple new scoreboards related to health under `aspectlib` namespace: `absorption`, `hp_total`, `hp_max`, `hp_relative`, `hp_relative_overflow`, `hp_relative_total`
-- Fixed respawn/death events being broken when being `/kill`ed with any amount of Absorption Health
-- Added `aspectlib.is_submerged_water` and `aspectlib.is_submerged_lava` scoreboard booleans and their respective predicates
-- `aspectlib.is_submerged` scoreboard boolean now is true when user is submerged in any liquid
-- `hydrophobic` and `moisture_dependant` Aspect Groups now are fully group driven
+- Increased Pack Format to `7`
+- 1.21.11 uses the more efficient `is_in_water` predicate flag for water detection along with hard-coded blocks like the `water_cauldron`
+- Following systems were redone: Aspect Groups, Configs, Aspect Registry, Player Storage Data
+- Refractored `player_kills_reward_shattered_relic`, `fire_based` and `ice_based` Aspect Groups into `reward_shattered_relic`, `fire_natural` and `cold_natural` respectively
+- Added `winged`, `coldproof`, `inverted_breathing` Aspect Groups
+- Added `extreme_hydrophobia` and `extreme_dehydration` Aspect Groups that double the amount of damage their respective groups will do
+- Added more and improved existing loggers
+- Added `has_passenger_or_vehicle` predicate to `aspectlib`
+- Added `is_sleeping` predicate flag to `aspectlib`
+- Added `debug/swap_to_previous_aspect` function to `aspects`
+- Added `aspect_unique` enchantment tag to `aspects`
+- Added `consume/16` to `aspectlib` item modifiers
+- Added dimension predicates to `aspectlib`
+- `aspectlib:equipment/has_elytra` predicate uses `#aspectlib:equipment/elytra` now
+- Added `is_fall_flying`, `is_in_rain`, `is_in_water`, `is_invincible`, `is_invulnerable` and `is_wet` to `aspectlib` predicates
+- Added `fire_resistance` and `resistance` status effect predicates to `aspectlib`
+- Added `contains_water` block tag in `aspectlib` which is used in `is_water` block tag
+- Added `is_water` damage type tag to `aspects`
+- Fixed many scoreboard based predicates not reseting on death
+- Fixed username changes breaking everything
+- Fixed `is_alive` predicate flag being true before `ON_RESPAWN` event is called
+- Unique Aspect items are now deleted from player hands if in survival scenarios
+- All technical advancements now have a root parent for each namespace to link them all together 
