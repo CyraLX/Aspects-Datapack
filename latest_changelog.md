@@ -10,7 +10,7 @@
 ## Aspect Changes
 ### Elytrian
 - Thanks to `maskedwatercress` for contributing to redoing 5 wing designs, along with 11 new ones!
-- This Aspect now has 16 unique wing patterns to match dye. Existing users can use dyes to swap our their natural pattern
+- This Aspect now has 16 unique wing patterns to match dye. Existing users can use dyes to swap out their natural pattern
 ### Feline
 - (1.21.11+) Focus has been remade so it can also be used mid-air and properls you in a direction you are looking
 ### Infernal
