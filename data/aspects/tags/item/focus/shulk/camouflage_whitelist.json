@@ -399,6 +399,10 @@
         },
         {
             "required": false,
+            "id": "#minecraft:wooden_shelves"
+        },
+        {
+            "required": false,
             "id": "brain_coral"
         },
         {
@@ -763,11 +767,27 @@
         },
         {
             "required": false,
-            "id": "copper_ore"
+            "id": "#minecraft:copper_ores"
         },
         {
             "required": false,
             "id": "copper_trapdoor"
+        },
+        {
+            "required": false,
+            "id": "#minecraft:copper"
+        },
+        {
+            "required": false,
+            "id": "#minecraft:copper_chests"
+        },
+        {
+            "required": false,
+            "id": "#minecraft:copper_golem_statues"
+        },
+        {
+            "required": false,
+            "id": "minecraft:copper_lantern"
         },
         {
             "required": false,
@@ -1824,6 +1844,10 @@
         {
             "required": false,
             "id": "lightning_rod"
+        },
+        {
+            "required": false,
+            "id": "#minecraft:lightning_rods"
         },
         {
             "required": false,
@@ -3312,6 +3336,10 @@
         {
             "required": false,
             "id": "tnt"
+        },
+        {
+            "required": false,
+            "id": "minecraft:copper_torch"
         },
         {
             "required": false,
