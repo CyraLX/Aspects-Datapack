@@ -1,0 +1,1 @@
+execute if score #aspects aspects.essence.plant matches 60.. if score #aspects aspects.essence.bug matches 60.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect."aspects:honey_bee"

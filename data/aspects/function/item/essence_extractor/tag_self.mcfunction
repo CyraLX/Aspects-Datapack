@@ -1,0 +1,1 @@
+tag @s add aspects.essence_extractor.collector

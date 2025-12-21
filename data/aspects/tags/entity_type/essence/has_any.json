@@ -1,0 +1,77 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:essence/type/apex",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/aquatic",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/beast",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/bug",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/dark",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/ethereal",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/feline",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/fire",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/flying",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/humanoid",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/ice",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/normal",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/ooze",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/plant",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/steel",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/undead",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/void",
+            "required": false
+        },
+        {
+            "id": "#aspects:essence/type/wild",
+            "required": false
+        }
+    ]
+}

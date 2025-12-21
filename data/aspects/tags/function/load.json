@@ -26,15 +26,15 @@
             "required": false
         },
         {
-            "id": "aspects:item/essence_cage/scoreboard/initialize",
+            "id": "aspects:item/essence_cage/initialize_scoreboards",
             "required": false
         },
         {
-            "id": "aspects:item/essence_cage/store_essence_from_use/raycast/setup_scoreboard",
+            "id": "aspects:item/essence_extractor/raycast/setup_scoreboard",
             "required": false
         },
         {
-            "id": "aspects:item/essence_cage/store_essence_from_use/setup_scoreboard",
+            "id": "aspects:item/essence_extractor/setup_scoreboard",
             "required": false
         }
     ]

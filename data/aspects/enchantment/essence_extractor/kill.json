@@ -1,0 +1,104 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "#enchantable/weapon",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "attacker",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "essence_cage": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "#aspects:essence/has_any",
+                                    "nbt": "{Health: 0.0f}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:item/essence_extractor/tag_self"
+                },
+                "enchanted": "attacker",
+                "affected": "attacker"
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "attacker",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "essence_cage": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "type": "#aspects:essence/has_any",
+                                    "nbt": "{Health: 0.0f}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:item/essence_extractor/trigger"
+                },
+                "enchanted": "attacker",
+                "affected": "victim"
+            }
+        ]
+    }
+}
