@@ -1,0 +1,94 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:item_model": "aspects:essence_extractor",
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "block",
+                "sound": "block.amethyst_block.resonate",
+                "has_consume_particles": false
+            },
+            "minecraft:enchantments": {
+                "aspects:essence_extractor/kill": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "essence_extractor": {}
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.aspects.essence_extractor",
+                "color": "#ffff55"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "lore.equipment.use_time_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_time"
+                    },
+                    {
+                        "translate": "lore.equipment.use_time.instant",
+                        "color": "#757575"
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "translate": "lore.equipment.use_cooldown_format",
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_cooldown"
+                    },
+                    {
+                        "translate": "lore.equipment.use_cooldown.seconds",
+                        "color": "#757575",
+                        "with": [
+                            "1"
+                        ]
+                    }
+                ],
+                "color": "gray",
+                "italic": false
+            },
+            "",
+            {
+                "translate": "item.aspects.essence_extractor.use_condition_1",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_extractor.use_result_1"
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.aspects.essence_extractor.disclaimer",
+                "color": "dark_gray",
+                "italic": false
+            }
+        ]
+    }
+]

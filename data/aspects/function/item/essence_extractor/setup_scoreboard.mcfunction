@@ -1,1 +1,0 @@
-scoreboard objectives add aspects.essence.exhausted dummy

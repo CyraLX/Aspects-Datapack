@@ -1,7 +1,7 @@
 {
     "criteria": {
         "consume_item": {
-            "trigger": "minecraft:consume_item",
+            "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
                     "predicates": {
@@ -16,7 +16,7 @@
         }
     },
     "rewards": {
-        "function": "aspects:item/essence_cage/store_essence_from_use/use"
+        "function": "aspects:item/essence_extractor/using"
     },
     "parent": "aspects:root"
 }

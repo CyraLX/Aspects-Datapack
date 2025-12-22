@@ -1,6 +1,6 @@
 {
     "description": {
-        "translate": "enchantment.aspects.unobtainable"
+        "translate": "Essence Stealer"
     },
     "supported_items": "#enchantable/weapon",
     "weight": 1,

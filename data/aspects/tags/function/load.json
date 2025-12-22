@@ -34,7 +34,7 @@
             "required": false
         },
         {
-            "id": "aspects:item/essence_extractor/setup_scoreboard",
+            "id": "aspects:item/essence_extractor/initialize_scoreboards",
             "required": false
         }
     ]

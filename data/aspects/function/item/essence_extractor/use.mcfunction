@@ -1,3 +1,6 @@
+# Reset use timer
+scoreboard players set @s aspects.essence_extractor.use_timer 0
+
 # Return early if Essence Cage is not in Offhand
 execute unless predicate aspects:item/essence_cage/is_in_offhand run return run playsound entity.ender_eye.death player @s ~ ~ ~ 1 2
 
