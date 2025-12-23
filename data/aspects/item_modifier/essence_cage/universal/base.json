@@ -1,7 +1,7 @@
 [
     {
         "function": "minecraft:reference",
-        "name": "aspects:essence_cage/cage_dummy"
+        "name": "aspects:essence_cage/awakened_dummy"
     },
     {
         "function": "minecraft:set_components",
@@ -12,35 +12,6 @@
                 "aspects": {
                     "universal_essence_cage": {}
                 }
-            },
-            "minecraft:consumable": {
-                "consume_seconds": 5,
-                "animation": "block",
-                "sound": "minecraft:block.soul_soil.step",
-                "has_consume_particles": true,
-                "on_consume_effects": [
-                    {
-                        "type": "minecraft:apply_effects",
-                        "effects": [
-                            {
-                                "id": "minecraft:hunger",
-                                "amplifier": 4,
-                                "duration": 1200,
-                                "show_icon": true,
-                                "show_particles": false,
-                                "ambient": true
-                            },
-                            {
-                                "id": "minecraft:blindness",
-                                "amplifier": 1,
-                                "duration": 15,
-                                "show_icon": false,
-                                "show_particles": false,
-                                "ambient": true
-                            }
-                        ]
-                    }
-                ]
             }
         }
     },

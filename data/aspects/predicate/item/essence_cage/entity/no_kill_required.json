@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "type": "#aspects:essence/essence_cage/no_kill_required"
+        "type": "#aspects:essence/harvest_without_killing"
     }
 }
