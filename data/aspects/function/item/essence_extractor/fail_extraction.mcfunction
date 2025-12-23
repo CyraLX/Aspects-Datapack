@@ -1,5 +1,4 @@
 # Remove the Tag from Attacker
-execute as @a[tag=aspects.essence_extractor.collector] run tag @s remove aspects.essence_extractor.collector
-
+function aspects:item/essence_extractor/tag/remove_all
 # Visual Effects
-function aspects:item/essence_extractor/fail_extarct_effects
+function aspects:item/essence_extractor/effects/extracting_failure

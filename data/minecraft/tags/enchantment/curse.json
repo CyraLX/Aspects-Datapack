@@ -26,15 +26,7 @@
             "required": false
         },
         {
-            "id": "aspects:essence_extractor_old/mainhand",
-            "required": false
-        },
-        {
-            "id": "aspects:essence_extractor/kill",
-            "required": false
-        },
-        {
-            "id": "aspects:essence_extractor_old/offhand",
+            "id": "aspects:essence_extractor/mainhand",
             "required": false
         },
         {

@@ -183,10 +183,6 @@
                                                 "minecraft:rarity": "uncommon",
                                                 "minecraft:enchantment_glint_override": false,
                                                 "minecraft:item_model": "aspects:essence_extractor",
-                                                "minecraft:enchantments": {
-                                                    "aspects:essence_extractor_old/mainhand": 1,
-                                                    "aspects:essence_extractor_old/offhand": 1
-                                                },
                                                 "minecraft:custom_data": {
                                                     "aspects": {
                                                         "essence_extractor": {}

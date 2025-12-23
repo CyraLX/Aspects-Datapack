@@ -1,5 +1,9 @@
 [
     {
+        "function": "minecraft:set_item",
+        "item": "minecraft:iron_sword"
+    },
+    {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:rarity": "uncommon",
@@ -11,7 +15,7 @@
                 "has_consume_particles": false
             },
             "minecraft:enchantments": {
-                "aspects:essence_extractor/kill": 1
+                "aspects:essence_extractor/mainhand": 1
             },
             "minecraft:custom_data": {
                 "aspects": {
