@@ -234,7 +234,7 @@
                                             },
                                             "",
                                             {
-                                                "translate": "item.aspects.essence_extractor.use_condition_1",
+                                                "translate": "item.modifiers.use_mainhand",
                                                 "color": "gray",
                                                 "italic": false
                                             },

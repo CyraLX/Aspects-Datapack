@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:smithing_transform",
-  "base": "minecraft:tinted_glass",
-  "addition": "minecraft:iron_block",
-  "template": "minecraft:sculk_catalyst",
-  "result": {
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:tinted_glass",
+    "addition": "minecraft:iron_block",
+    "template": "minecraft:sculk_catalyst",
+    "result": {
         "id": "minecraft:jigsaw",
         "count": 1,
         "components": {
@@ -41,7 +41,7 @@
                 },
                 "",
                 {
-                    "translate": "item.modifiers.held",
+                    "translate": "item.modifiers.held_offhand",
                     "color": "gray",
                     "italic": false
                 },
@@ -51,33 +51,12 @@
                     "italic": false,
                     "extra": [
                         {
-                            "translate": "item.aspects.essence_cage.use_result_1"
-                        }
-                    ]
-                },
-                {
-                    "text": "",
-                    "color": "blue",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "translate": "item.aspects.essence_cage.awaken_condition"
-                        }
-                    ]
-                },
-                "",
-                {
-                    "translate": "item.aspects.essence_cage.use_condition_1",
-                    "color": "gray",
-                    "italic": false
-                },
-                {
-                    "text": "",
-                    "color": "blue",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "translate": "item.aspects.essence_cage.use_result_2"
+                            "translate": "item.aspects.essence_cage.use_result_1",
+                            "with": [
+                                {
+                                    "translate": "item.aspects.essence_extractor"
+                                }
+                            ]
                         }
                     ]
                 },

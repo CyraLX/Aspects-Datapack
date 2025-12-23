@@ -8,11 +8,22 @@
         "components": {
             "minecraft:rarity": "uncommon",
             "minecraft:item_model": "aspects:essence_extractor",
+            "minecraft:max_damage": 300,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers"
+                ]
+            },
             "minecraft:consumable": {
                 "consume_seconds": 2147483647,
                 "animation": "block",
                 "sound": "block.amethyst_block.resonate",
                 "has_consume_particles": false
+            },
+            "minecraft:use_effects": {
+                "speed_multiplier": 0.5,
+                "can_sprint": true,
+                "interact_vibrations": true
             },
             "minecraft:enchantments": {
                 "aspects:essence_extractor/mainhand": 1
@@ -40,40 +51,9 @@
         "entity": "this",
         "mode": "replace_all",
         "lore": [
-            {
-                "translate": "lore.equipment.use_time_format",
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_time"
-                    },
-                    {
-                        "translate": "lore.equipment.use_time.instant",
-                        "color": "#757575"
-                    }
-                ],
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "translate": "lore.equipment.use_cooldown_format",
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "1"
-                        ]
-                    }
-                ],
-                "color": "gray",
-                "italic": false
-            },
             "",
             {
-                "translate": "item.aspects.essence_extractor.use_condition_1",
+                "translate": "item.modifiers.use_mainhand",
                 "color": "gray",
                 "italic": false
             },
@@ -89,9 +69,49 @@
             },
             "",
             {
-                "translate": "item.aspects.essence_extractor.disclaimer",
-                "color": "dark_gray",
+                "translate": "item.modifiers.mainhand",
+                "color": "gray",
                 "italic": false
+            },
+            {
+                "text": " ",
+                "color": "dark_green",
+                "italic": false,
+                "extra": [
+                    "6",
+                    " ",
+                    {
+                        "translate": "attribute.name.attack_damage"
+                    }
+                ]
+            },
+            {
+                "text": " ",
+                "color": "dark_green",
+                "italic": false,
+                "extra": [
+                    "1.5",
+                    " ",
+                    {
+                        "translate": "attribute.name.attack_speed"
+                    }
+                ]
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_extractor.extra_essence_damage",
+                        "with": [
+                            "+4",
+                            {
+                                "translate": "attribute.name.attack_damage"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }

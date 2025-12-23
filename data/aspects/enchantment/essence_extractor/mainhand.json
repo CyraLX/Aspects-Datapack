@@ -18,6 +18,14 @@
         "mainhand"
     ],
     "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:attack_speed",
+                "id": "aspects:essence_extractor/attack_speed",
+                "operation": "add_value",
+                "amount": -0.1
+            }
+        ],
         "minecraft:damage": [
             {
                 "requirements": {
@@ -46,7 +54,11 @@
                 },
                 "effect": {
                     "type": "minecraft:add",
-                    "value": 1.5
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 4.0,
+                        "per_level_above_first": 1.0
+                    }
                 }
             }
         ],

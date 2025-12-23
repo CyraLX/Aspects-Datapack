@@ -107,7 +107,7 @@
             },
             "",
             {
-                "translate": "item.aspects.essence_cleaner.use_condition_1",
+                "translate": "item.modifiers.use_mainhand",
                 "color": "gray",
                 "italic": false
             },

@@ -1,9 +1,0 @@
-{
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-        "aspects.essence.fire": {
-            "min": 120
-        }
-    }
-}
