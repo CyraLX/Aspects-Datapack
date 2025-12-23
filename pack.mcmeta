@@ -14,7 +14,7 @@
 				"color": "dark_gray",
 				"with": [
 					{
-						"text": "v1.2.1-dev",
+						"text": "v1.3.0-dev",
 						"color": "dark_purple"
 					},
 					{
@@ -41,16 +41,7 @@
 				},
 				"min_format": 71,
 				"max_format": 88,
-				"directory": "overlay_f71-88_1_21_10"
-			},
-			{
-				"formats": {
-					"min_inclusive": 88,
-					"max_inclusive": 91
-				},
-				"min_format": 88,
-				"max_format": 91,
-				"directory": "overlay_f88-f91_1_21_9_entities"
+				"directory": "overlay_f71-f88_1_21_10_new_flags"
 			},
 			{
 				"formats": {
@@ -63,30 +54,12 @@
 			},
 			{
 				"formats": {
-					"min_inclusive": 72,
-					"max_inclusive": 81
-				},
-				"min_format": 72,
-				"max_format": 81,
-				"directory": "overlay_f72-f81_1_21_8_entities"
-			},
-			{
-				"formats": {
 					"min_inclusive": 71,
 					"max_inclusive": 76
 				},
 				"min_format": 71,
 				"max_format": 76,
 				"directory": "overlay_f71-f76_no_dialogs"
-			},
-			{
-				"formats": {
-					"min_inclusive": 71,
-					"max_inclusive": 71
-				},
-				"min_format": 71,
-				"max_format": 71,
-				"directory": "overlay_f71_1_21_5_entities"
 			}
 		]
 	}
