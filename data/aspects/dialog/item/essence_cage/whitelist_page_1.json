@@ -1,0 +1,106 @@
+{
+	"type": "minecraft:confirmation",
+	"title": "Whitelist Page 1",
+	"inputs": [
+		{
+			"type": "minecraft:boolean",
+			"key": "apex",
+			"label": {
+				"translate": "lore.essence.apex"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "aquatic",
+			"label": {
+				"translate": "lore.essence.aquatic"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "beast",
+			"label": {
+				"translate": "lore.essence.beast"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "bug",
+			"label": {
+				"translate": "lore.essence.bug"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "dark",
+			"label": {
+				"translate": "lore.essence.dark"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "ethereal",
+			"label": {
+				"translate": "lore.essence.ethereal"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "feline",
+			"label": {
+				"translate": "lore.essence.feline"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "fire",
+			"label": {
+				"translate": "lore.essence.fire"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "flying",
+			"label": {
+				"translate": "lore.essence.flying"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		}
+	],
+	"yes": {
+		"label": "Apply & Continue",
+		"action": {
+			"type": "minecraft:dynamic/run_command",
+			"template": "trigger aspects.essence_cage.whitelist.dialog.page_1 set $(apex)$(aquatic)$(beast)$(bug)$(dark)$(ethereal)$(feline)$(fire)$(flying)"
+		}
+	},
+	"no": {
+		"label": "Discard & Exit"
+	}
+}

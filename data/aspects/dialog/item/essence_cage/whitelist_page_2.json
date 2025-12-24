@@ -1,0 +1,103 @@
+{
+	"type": "minecraft:notice",
+	"title": "Whitelist Page 1",
+	"inputs": [
+		{
+			"type": "minecraft:boolean",
+			"key": "humanoid",
+			"label": {
+				"translate": "lore.essence.humanoid"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "ice",
+			"label": {
+				"translate": "lore.essence.ice"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "normal",
+			"label": {
+				"translate": "lore.essence.normal"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "ooze",
+			"label": {
+				"translate": "lore.essence.ooze"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "plant",
+			"label": {
+				"translate": "lore.essence.plant"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "steel",
+			"label": {
+				"translate": "lore.essence.steel"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "undead",
+			"label": {
+				"translate": "lore.essence.undead"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "void",
+			"label": {
+				"translate": "lore.essence.void"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		},
+        {
+			"type": "minecraft:boolean",
+			"key": "wild",
+			"label": {
+				"translate": "lore.essence.wild"
+			},
+			"initial": false,
+			"on_true": "1",
+			"on_false": "0"
+		}
+	],
+	"action": {
+		"label": "Apply & Finish",
+		"action": {
+			"type": "minecraft:dynamic/run_command",
+			"template": "trigger aspects.essence_cage.whitelist.dialog.page_2 set $(humanoid)$(ice)$(normal)$(ooze)$(plant)$(steel)$(undead)$(void)$(wild)"
+		}
+	}
+}

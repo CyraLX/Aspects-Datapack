@@ -1,0 +1,12 @@
+{
+	"function": "minecraft:set_custom_data",
+	"tag": {
+		"aspects": {
+			"essence_cage": {
+				"whitelist": {
+					"plant": false
+				}
+			}
+		}
+	}
+}

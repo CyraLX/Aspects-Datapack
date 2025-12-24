@@ -16,3 +16,6 @@ scoreboard objectives add aspects.essence.bug dummy
 scoreboard objectives add aspects.essence.wild dummy
 scoreboard objectives add aspects.essence.ethereal dummy
 scoreboard objectives add aspects.essence.apex dummy
+
+scoreboard objectives add aspects.essence_cage.whitelist.dialog.page_1 trigger
+scoreboard objectives add aspects.essence_cage.whitelist.dialog.page_2 trigger

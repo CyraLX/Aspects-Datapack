@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "triggered": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.essence_cage.whitelist.dialog.page_1": {
+                                "min": 0
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:item/essence_cage/whitelist/trigger_dialog_page_1"
+    },
+    "parent": "aspects:root"
+}
