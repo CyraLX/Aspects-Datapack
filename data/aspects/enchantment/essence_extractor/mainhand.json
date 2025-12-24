@@ -280,6 +280,14 @@
                 "enchanted": "attacker",
                 "affected": "victim"
             }
-        ]
+        ],
+        "minecraft:tick":[
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:item/essence_extractor/using_reset_check"
+                }
+            }
+        ] 
     }
 }

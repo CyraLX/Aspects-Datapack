@@ -1,0 +1,2 @@
+$execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/void] store result storage aspectlib:dummy stored_essences.void int 1 run scoreboard players add #aspects aspects.essence.void $(essence_amount)
+execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/void] run scoreboard players set @s aspects.essence_extractor.has_extracted_any_essence 1

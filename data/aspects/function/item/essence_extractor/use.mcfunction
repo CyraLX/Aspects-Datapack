@@ -7,7 +7,7 @@ execute unless predicate aspects:item/essence_cage/is_in_offhand run return run 
 execute unless entity @n[distance=..8, predicate=aspects:item/essence_cage/entity/no_kill_required] run return run function aspects:item/essence_extractor/effects/no_using_target
 
 # Visualize entities with exhausted essence if none is present to extract from
-execute unless entity @e[distance=..8, predicate=aspects:item/essence_cage/entity/no_kill_required, predicate=!aspects:item/essence_extractor/is_exhausted] run execute as @e[distance=..8, predicate=aspects:item/essence_cage/entity/no_kill_required, predicate=aspects:item/essence_extractor/is_exhausted] at @s run function aspects:item/essence_extractor/effects/extracting_failure
+execute unless entity @e[distance=..8, predicate=aspects:item/essence_cage/entity/no_kill_required, predicate=!aspects:item/essence_extractor/is_exhausted] run execute as @e[distance=..8, predicate=aspects:item/essence_cage/entity/no_kill_required, predicate=aspects:item/essence_extractor/is_exhausted] at @s run function aspects:item/essence_extractor/effects/extracting_failure_no_essence
 
 # Tag self
 function aspects:item/essence_extractor/tag/apply_self
