@@ -1,5 +1,29 @@
 {
     "replace": false,
     "values": [
+        {
+            "id": "minecraft:chicken",
+            "required": false
+        },
+        {
+            "id": "minecraft:cod",
+            "required": false
+        },
+        {
+            "id": "minecraft:cow",
+            "required": false
+        },
+        {
+            "id": "minecraft:pig",
+            "required": false
+        },
+        {
+            "id": "minecraft:salmon",
+            "required": false
+        },
+        {
+            "id": "minecraft:sheep",
+            "required": false
+        }
     ]
 }

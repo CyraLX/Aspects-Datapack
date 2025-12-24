@@ -1,6 +1,33 @@
 {
     "replace": false,
     "values": [
-
+        {
+            "id": "minecraft:armadillo",
+            "required": false
+        },
+        {
+            "id": "minecraft:bat",
+            "required": false
+        },
+        {
+            "id": "minecraft:creeper",
+            "required": false
+        },
+        {
+            "id": "minecraft:skeleton",
+            "required": false
+        },
+        {
+            "id": "minecraft:slime",
+            "required": false
+        },
+        {
+            "id": "minecraft:spider",
+            "required": false
+        },
+        {
+            "id": "minecraft:zombie",
+            "required": false
+        }
     ]
 }

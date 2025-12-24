@@ -1,6 +1,17 @@
 {
     "replace": false,
     "values": [
-
+        {
+            "id": "minecraft:silverfish",
+            "required": false
+        },
+        {
+            "id": "minecraft:squid",
+            "required": false
+        },
+        {
+            "id": "minecraft:tropical_fish",
+            "required": false
+        }
     ]
 }

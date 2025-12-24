@@ -1,6 +1,65 @@
 {
     "replace": false,
     "values": [
-
+        {
+            "id": "minecraft:allay",
+            "required": false
+        },
+        {
+            "id": "minecraft:camel_husk",
+            "required": false
+        },
+        {
+            "id": "minecraft:endermite",
+            "required": false
+        },
+        {
+            "id": "minecraft:evoker",
+            "required": false
+        },
+        {
+            "id": "minecraft:iron_golem",
+            "required": false
+        },
+        {
+            "id": "minecraft:mule",
+            "required": false
+        },
+        {
+            "id": "minecraft:ocelot",
+            "required": false
+        },
+        {
+            "id": "minecraft:panda",
+            "required": false
+        },
+        {
+            "id": "minecraft:piglin_brute",
+            "required": false
+        },
+        {
+            "id": "minecraft:polar_bear",
+            "required": false
+        },
+        {
+            "id": "minecraft:shulker",
+            "required": false
+        },
+        {
+            "id": "minecraft:strider",
+            "required": false
+        },
+        {
+            "id": "minecraft:tadpole",
+            "required": false
+        },
+        {
+            "id": "minecraft:villager",
+            "required": false
+        },
+        {
+            "id": "minecraft:vindicator",
+            "required": false
+        }
     ]
 }

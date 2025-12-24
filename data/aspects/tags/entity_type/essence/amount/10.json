@@ -1,6 +1,37 @@
 {
     "replace": false,
     "values": [
-
+        {
+            "id": "minecraft:happy_ghast",
+            "required": false
+        },
+        {
+            "id": "minecraft:illusioner",
+            "required": false
+        },
+        {
+            "id": "minecraft:parrot",
+            "required": false
+        },
+        {
+            "id": "minecraft:ravager",
+            "required": false
+        },
+        {
+            "id": "minecraft:sniffer",
+            "required": false
+        },
+        {
+            "id": "minecraft:trader_llama",
+            "required": false
+        },
+        {
+            "id": "minecraft:wandering_trader",
+            "required": false
+        },
+        {
+            "id": "minecraft:zoglin",
+            "required": false
+        }
     ]
 }

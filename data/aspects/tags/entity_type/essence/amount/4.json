@@ -1,6 +1,25 @@
 {
     "replace": false,
     "values": [
-
+        {
+            "id": "minecraft:axolotl",
+            "required": false
+        },
+        {
+            "id": "minecraft:bee",
+            "required": false
+        },
+        {
+            "id": "minecraft:magma_cube",
+            "required": false
+        },
+        {
+            "id": "minecraft:rabbit",
+            "required": false
+        },
+        {
+            "id": "minecraft:zombified_piglin",
+            "required": false
+        }
     ]
 }
