@@ -14,6 +14,9 @@
                                 }
                             }
                         }
+                    },
+                    "flags": {
+                        "is_sneaking": false
                     }
                 },
                 "item": {
@@ -29,7 +32,7 @@
         }
     },
     "rewards": {
-        "function": "aspects:item/essence_cage/using"
+        "function": "aspects:item/essence_cage/whitelist/using"
     },
     "parent": "aspects:root"
 }

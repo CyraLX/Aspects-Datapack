@@ -1,0 +1,38 @@
+{
+    "criteria": {
+        "consume_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:custom_data": {
+                                    "aspects": {
+                                        "essence_cage": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": true
+                    }
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "essence_cage": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:item/essence_cage/clean/using"
+    },
+    "parent": "aspects:root"
+}

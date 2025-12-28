@@ -19,3 +19,9 @@ scoreboard objectives add aspects.essence.apex dummy
 
 scoreboard objectives add aspects.essence_cage.whitelist.dialog.page_1 trigger
 scoreboard objectives add aspects.essence_cage.whitelist.dialog.page_2 trigger
+
+scoreboard objectives add aspects.essence_cage.whitelist.use_timer trigger
+scoreboard objectives add aspects.essence_cage.whitelist.use_timer_cache trigger
+
+scoreboard objectives add aspects.essence_cage.clean.use_timer trigger
+scoreboard objectives add aspects.essence_cage.clean.use_timer_cache trigger
