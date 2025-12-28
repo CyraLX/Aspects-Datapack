@@ -1,7 +1,7 @@
 [
     {
         "function": "minecraft:set_item",
-        "item": "minecraft:iron_sword"
+        "item": "minecraft:diamond_spear"
     },
     {
         "function": "minecraft:set_components",
@@ -9,11 +9,6 @@
             "minecraft:rarity": "uncommon",
             "minecraft:item_model": "aspects:essence_extractor",
             "minecraft:max_damage": 300,
-            "minecraft:tooltip_display": {
-                "hidden_components": [
-                    "minecraft:attribute_modifiers"
-                ]
-            },
             "minecraft:consumable": {
                 "consume_seconds": 2147483647,
                 "animation": "block",
@@ -64,52 +59,6 @@
                 "extra": [
                     {
                         "translate": "item.aspects.essence_extractor.use_result_1"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.mainhand",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": " ",
-                "color": "dark_green",
-                "italic": false,
-                "extra": [
-                    "6",
-                    " ",
-                    {
-                        "translate": "attribute.name.attack_damage"
-                    }
-                ]
-            },
-            {
-                "text": " ",
-                "color": "dark_green",
-                "italic": false,
-                "extra": [
-                    "1.5",
-                    " ",
-                    {
-                        "translate": "attribute.name.attack_speed"
-                    }
-                ]
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.essence_extractor.extra_essence_damage",
-                        "with": [
-                            "+4",
-                            {
-                                "translate": "attribute.name.attack_damage"
-                            }
-                        ]
                     }
                 ]
             }

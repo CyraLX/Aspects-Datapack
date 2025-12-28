@@ -4,7 +4,7 @@
     },
     "supported_items": "#minecraft:enchantable/weapon",
     "weight": 1,
-    "max_level": 1,
+    "max_level": 7,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0
@@ -56,8 +56,8 @@
                     "type": "minecraft:add",
                     "value": {
                         "type": "minecraft:linear",
-                        "base": 4.0,
-                        "per_level_above_first": 1.0
+                        "base": 0.5,
+                        "per_level_above_first": 0.5
                     }
                 }
             }
