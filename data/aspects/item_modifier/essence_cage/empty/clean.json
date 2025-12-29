@@ -1,0 +1,24 @@
+[
+    {
+        "function": "minecraft:copy_custom_data",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "aspectlib:empty"
+        },
+        "ops": [
+            {
+                "source": "empty",
+                "target": "aspects.essence_cage.stored_essences",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:essence_cage/empty/apply_lore/layer_1"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:essence_cage/empty/apply_lore/layer_empty"
+    }
+]

@@ -18,7 +18,7 @@
         "mainhand"
     ],
     "effects": {
-        "minecraft:tick":[
+        "minecraft:tick": [
             {
                 "effect": {
                     "type": "minecraft:run_function",
@@ -31,6 +31,6 @@
                     "function": "aspects:item/essence_cage/clean/using_reset_check"
                 }
             }
-        ] 
+        ]
     }
 }

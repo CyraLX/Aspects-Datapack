@@ -13,12 +13,6 @@
                     "essence_cage": {}
                 }
             },
-            "minecraft:consumable": {
-                "consume_seconds": 2147483647,
-                "animation": "brush",
-                "sound": "block.amethyst_block.resonate",
-                "has_consume_particles": false
-            },
             "minecraft:enchantments":{
                 "aspects:essence_cage/mainhand": 1
             }

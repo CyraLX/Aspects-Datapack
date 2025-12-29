@@ -30,6 +30,10 @@
             "required": false
         },
         {
+            "id": "aspects:item/essence_cage_awakened/initialize_scoreboards",
+            "required": false
+        },
+        {
             "id": "aspects:item/essence_extractor/scoreboard/initialize",
             "required": false
         }

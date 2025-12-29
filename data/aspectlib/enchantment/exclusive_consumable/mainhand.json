@@ -1,0 +1,110 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "predicates": {
+                                            "minecraft:consumable": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "aspects": {
+                                                    "essence_cage": {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspectlib:enchantment/exclusive_consumable/offhand/remove"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "mainhand": {
+                                            "predicates": {
+                                                "minecraft:consumable": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "predicates": {
+                                            "minecraft:custom_data": {
+                                                "aspects": {
+                                                    "essence_cage": {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspectlib:enchantment/exclusive_consumable/mainhand/apply"
+                }
+            }
+        ]
+    }
+}

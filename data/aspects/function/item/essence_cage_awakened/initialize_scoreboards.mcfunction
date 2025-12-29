@@ -1,0 +1,5 @@
+scoreboard objectives add aspects.essence_cage_awakened.consume.use_timer trigger
+scoreboard objectives add aspects.essence_cage_awakened.consume.use_timer_cache trigger
+
+scoreboard objectives add aspects.essence_cage_awakened.clean.use_timer trigger
+scoreboard objectives add aspects.essence_cage_awakened.clean.use_timer_cache trigger

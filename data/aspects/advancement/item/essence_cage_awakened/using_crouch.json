@@ -9,7 +9,7 @@
                             "predicates": {
                                 "minecraft:custom_data": {
                                     "aspects": {
-                                        "awakened_essence_cage": {}
+                                        "essence_cage": {}
                                     }
                                 }
                             }
@@ -23,7 +23,7 @@
                     "predicates": {
                         "minecraft:custom_data": {
                             "aspects": {
-                                "awakened_essence_cage": {}
+                                "essence_cage": {}
                             }
                         }
                     }
@@ -32,7 +32,7 @@
         }
     },
     "rewards": {
-        "function": "aspects:item/essence_cage_awakened/clean/using"
+        "function": "aspects:item/essence_cage/clean/using"
     },
     "parent": "aspects:root"
 }
