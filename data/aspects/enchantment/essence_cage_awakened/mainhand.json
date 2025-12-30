@@ -22,13 +22,13 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:item/essence_cage/whitelist/using_reset_check"
+                    "function": "aspects:item/essence_cage_awakened/consume/using_reset_check"
                 }
             },
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:item/essence_cage/clean/using_reset_check"
+                    "function": "aspects:item/essence_cage_awakened/clean/using_reset_check"
                 }
             }
         ]

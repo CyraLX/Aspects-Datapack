@@ -44,11 +44,14 @@
                                 "equipment": {
                                     "offhand": {
                                         "predicates": {
-                                            "minecraft:custom_data": {
-                                                "aspects": {
-                                                    "essence_cage": {}
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "aspectlib:exclusive_consumable/mainhand",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
                                                 }
-                                            }
+                                            ]
                                         }
                                     }
                                 }
@@ -88,11 +91,14 @@
                                 "equipment": {
                                     "mainhand": {
                                         "predicates": {
-                                            "minecraft:custom_data": {
-                                                "aspects": {
-                                                    "essence_cage": {}
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "aspectlib:exclusive_consumable/mainhand",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
                                                 }
-                                            }
+                                            ]
                                         }
                                     }
                                 }
