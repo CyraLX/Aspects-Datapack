@@ -2,6 +2,14 @@
     "replace": false,
     "values": [
         {
+            "id": "aspectlib:exclusive_consumable/mainhand",
+            "required": false
+        },
+        {
+            "id": "aspectlib:exclusive_consumable/offhand",
+            "required": false
+        },
+        {
             "id": "#aspects:aspect",
             "required": false
         },
@@ -18,11 +26,11 @@
             "required": false
         },
         {
-            "id": "aspects:essence_cleaner/mainhand",
+            "id": "aspects:essence_cage/mainhand",
             "required": false
         },
         {
-            "id": "aspects:essence_cleaner/offhand",
+            "id": "aspects:essence_cage_awakened/mainhand",
             "required": false
         },
         {

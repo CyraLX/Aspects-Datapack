@@ -1,6 +1,6 @@
 {
     "description": {
-        "translate": "enchantment.aspects.unobtainable"
+        "translate": "item.aspects.awakened_essence_cage"
     },
     "supported_items": "minecraft:jigsaw",
     "weight": 1,

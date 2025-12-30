@@ -1,18 +1,17 @@
 [
     {
         "function": "minecraft:set_item",
-        "item": "minecraft:diamond_spear"
+        "item": "minecraft:diamond_sword"
     },
     {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:rarity": "uncommon",
             "minecraft:item_model": "aspects:essence_extractor",
-            "minecraft:max_damage": 300,
+            "minecraft:max_damage": 512,
             "minecraft:consumable": {
                 "consume_seconds": 2147483647,
                 "animation": "block",
-                "sound": "block.amethyst_block.resonate",
                 "has_consume_particles": false
             },
             "minecraft:use_effects": {

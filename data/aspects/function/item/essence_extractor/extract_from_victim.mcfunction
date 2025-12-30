@@ -1,7 +1,6 @@
 # Fail if Essence has been Exhausted
 execute if predicate aspects:item/essence_extractor/is_exhausted run return run function aspects:item/essence_extractor/fail_extraction
 
-
 # Get current Stored Essences from Attacker's Essence Cage
 execute as @p[tag=essence_extractor_attacker,distance=..32] run function aspects:item/essence_extractor/essence_cage/retrieve_data
 # Store Essence amount into storage

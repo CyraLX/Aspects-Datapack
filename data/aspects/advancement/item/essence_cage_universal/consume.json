@@ -16,7 +16,7 @@
         }
     },
     "rewards": {
-        "function": "aspects:item/essence_cage/universal/consumed"
+        "function": "aspects:item/essence_cage_universal/consumed"
     },
     "parent": "aspects:root"
 }

@@ -1,5 +1,3 @@
-
-
 execute if score @s aspects.essence_cage.whitelist.dialog.page_1 matches 100000000.. run item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_whitelist/true/apex
 execute unless score @s aspects.essence_cage.whitelist.dialog.page_1 matches 100000000.. run item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_whitelist/false/apex
 scoreboard players operation @s aspects.essence_cage.whitelist.dialog.page_1 %= #100000000 aspectlib.constant
@@ -35,9 +33,6 @@ scoreboard players operation @s aspects.essence_cage.whitelist.dialog.page_1 %= 
 execute if score @s aspects.essence_cage.whitelist.dialog.page_1 matches 1.. run item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_whitelist/true/flying
 execute unless score @s aspects.essence_cage.whitelist.dialog.page_1 matches 1.. run item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_whitelist/false/flying
 
-
-
 scoreboard players reset @s aspects.essence_cage.whitelist.dialog.page_1
 
-function aspects:item/essence_cage/whitelist/open_dialog_page_2
-
+function aspects:item/essence_cage/whitelist/dialog/page_2/open

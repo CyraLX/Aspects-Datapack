@@ -1,1 +1,0 @@
-item modify entity @s weapon.offhand aspects:essence_cage/remove_consumable

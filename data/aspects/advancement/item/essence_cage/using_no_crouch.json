@@ -3,22 +3,21 @@
         "consume_item": {
             "trigger": "minecraft:using_item",
             "conditions": {
-                "player": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": {
-                                    "aspects": {
-                                        "essence_cage": {}
-                                    }
-                                }
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:item/essence_cage/is_in_mainhand"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "flags": {
+                                "is_sneaking": false
                             }
                         }
-                    },
-                    "flags": {
-                        "is_sneaking": false
                     }
-                },
+                ],
                 "item": {
                     "predicates": {
                         "minecraft:custom_data": {

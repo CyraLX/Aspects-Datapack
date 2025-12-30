@@ -33,6 +33,4 @@ scoreboard players operation @s aspects.essence_cage.whitelist.dialog.page_2 %= 
 execute if score @s aspects.essence_cage.whitelist.dialog.page_2 matches 1.. run item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_whitelist/true/wild
 execute unless score @s aspects.essence_cage.whitelist.dialog.page_2 matches 1.. run item modify entity @s weapon.mainhand aspects:essence_cage/empty/apply_whitelist/false/wild
 
-
 scoreboard players reset @s aspects.essence_cage.whitelist.dialog.page_2
-

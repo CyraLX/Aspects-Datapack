@@ -14,10 +14,6 @@
             "required": false
         },
         {
-            "id": "aspects:wiki/custom_items/essence_cleaner",
-            "required": false
-        },
-        {
             "id": "aspects:wiki/custom_items/aspect_focuses",
             "required": false
         }

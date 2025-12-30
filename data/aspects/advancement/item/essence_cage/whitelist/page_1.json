@@ -18,7 +18,7 @@
         }
     },
     "rewards": {
-        "function": "aspects:item/essence_cage/whitelist/trigger_dialog_page_1"
+        "function": "aspects:item/essence_cage/whitelist/dialog/page_1/trigger"
     },
     "parent": "aspects:root"
 }

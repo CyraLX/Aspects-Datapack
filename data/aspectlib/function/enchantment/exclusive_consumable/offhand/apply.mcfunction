@@ -1,1 +1,1 @@
-item modify entity @s weapon.offhand aspectlib:consumable/apply
+item modify entity @s weapon.offhand aspectlib:component/consumable/apply

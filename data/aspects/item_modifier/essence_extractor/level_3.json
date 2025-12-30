@@ -1,0 +1,13 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:essence_extractor/level_1"
+    },
+    {
+        "function": "minecraft:set_enchantments",
+        "add": false,
+        "enchantments": {
+            "aspects:essence_extractor/mainhand": 3
+        }
+    }
+]
