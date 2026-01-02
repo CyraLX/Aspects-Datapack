@@ -6,6 +6,8 @@ data modify storage aspectlib:dummy essence_cage set from entity @s SelectedItem
 # Remove existing essences
 data remove storage aspectlib:dummy essence_cage.stored_essences
 # Clean cage with modified data
-item modify entity @s weapon.mainhand aspects:essence_cage/empty/clean
+item modify entity @s weapon.mainhand aspects:essence_cage/empty/copy_from_storage
+# Update Item
+function aspects:item/essence_cage/lore/mainhand/update
 
 playsound minecraft:item.bucket.fill player @a[distance=..16] ~ ~ ~ 1 0.5

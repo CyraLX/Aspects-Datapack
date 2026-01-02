@@ -2,10 +2,10 @@
 	"pack": {
 		"pack_format": 71,
 		"supported_formats": {
-			"min_inclusive": 71,
+			"min_inclusive": 80,
 			"max_inclusive": 94
 		},
-		"min_format": 71,
+		"min_format": 80,
 		"max_format": 94,
 		"description": [
 			{
@@ -36,30 +36,21 @@
 		"entries": [
 			{
 				"formats": {
-					"min_inclusive": 71,
+					"min_inclusive": 80,
 					"max_inclusive": 88
 				},
-				"min_format": 71,
+				"min_format": 80,
 				"max_format": 88,
-				"directory": "overlay_f71-f88_1_21_10_new_flags"
+				"directory": "overlay_f80-f88_1_21_10_new_flags"
 			},
 			{
 				"formats": {
-					"min_inclusive": 71,
+					"min_inclusive": 80,
 					"max_inclusive": 88
 				},
-				"min_format": 71,
+				"min_format": 80,
 				"max_format": 88,
-				"directory": "overlay_f71-f88_new_item_ench_tags"
-			},
-			{
-				"formats": {
-					"min_inclusive": 71,
-					"max_inclusive": 76
-				},
-				"min_format": 71,
-				"max_format": 76,
-				"directory": "overlay_f71-f76_no_dialogs"
+				"directory": "overlay_f80-f88_new_item_ench_tags"
 			}
 		]
 	}

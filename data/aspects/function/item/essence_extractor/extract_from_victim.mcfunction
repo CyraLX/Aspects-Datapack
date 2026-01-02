@@ -6,7 +6,10 @@ execute as @p[tag=essence_extractor_attacker,distance=..32] run function aspects
 # Store Essence amount into storage
 execute store result storage aspectlib:dummy essence_amount int 1 run function aspects:item/essence_extractor/get_amount
 # Add the Essences from the Entity into storage
-function aspects:item/essence_extractor/set_type_amount with storage aspectlib:dummy
+## If Off Hands has an active whitelist
+execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/offhand/any] run function aspects:item/essence_extractor/set_type_amount_whitelist with storage aspectlib:dummy
+## If Off Hands's Essence Cage has an inavtive whitelist
+execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/offhand/empty] run function aspects:item/essence_extractor/set_type_amount with storage aspectlib:dummy
 
 # Check if any essence was extracted
 function aspects:item/essence_extractor/check_if_extract_failed

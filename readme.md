@@ -25,7 +25,7 @@ This datapack is inspired by the [Origins](https://modrinth.com/mod/origins) mod
 ## Version specifics
 Requirements:
 
-- Minecraft 1.21.5+
+- Minecraft 1.21.6+
 
 Optional
 
