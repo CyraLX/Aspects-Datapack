@@ -1,0 +1,24 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "text": " ",
+            "color": "#590016",
+            "italic": false,
+            "extra": [
+                {
+                    "score": {
+                        "name": "@s",
+                        "objective": "aspects.essence.apex"
+                    }
+                },
+                " ",
+                {
+                    "translate": "lore.essence.apex"
+                }
+            ]
+        }
+    ]
+}

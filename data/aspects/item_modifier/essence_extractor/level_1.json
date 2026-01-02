@@ -8,7 +8,7 @@
         "components": {
             "minecraft:rarity": "uncommon",
             "minecraft:item_model": "aspects:essence_extractor",
-            "minecraft:max_damage": 512,
+            "minecraft:max_damage": 750,
             "minecraft:consumable": {
                 "consume_seconds": 2147483647,
                 "animation": "block",

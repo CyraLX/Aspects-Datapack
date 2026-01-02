@@ -1,0 +1,24 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "text": " ",
+            "color": "#e2e2e2",
+            "italic": false,
+            "extra": [
+                {
+                    "score": {
+                        "name": "@s",
+                        "objective": "aspects.essence.flying"
+                    }
+                },
+                " ",
+                {
+                    "translate": "lore.essence.flying"
+                }
+            ]
+        }
+    ]
+}

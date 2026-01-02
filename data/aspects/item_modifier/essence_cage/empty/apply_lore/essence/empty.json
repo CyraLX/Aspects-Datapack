@@ -1,0 +1,17 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "text": " ",
+            "color": "#757575",
+            "italic": false,
+            "extra": [
+                {
+                    "translate": "item.aspects.essence_cage.stored_essences.empty"
+                }
+            ]
+        }
+    ]
+}

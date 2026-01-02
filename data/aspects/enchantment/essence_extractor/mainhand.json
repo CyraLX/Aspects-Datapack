@@ -273,7 +273,7 @@
                         },
                         {
                             "type": "minecraft:change_item_damage",
-                            "amount": 4
+                            "amount": 1
                         }
                     ]
                 },

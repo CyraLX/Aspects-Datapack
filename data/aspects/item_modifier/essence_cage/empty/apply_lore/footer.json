@@ -1,0 +1,37 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "translate": "item.modifiers.held_offhand",
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "",
+            "color": "blue",
+            "italic": false,
+            "extra": [
+                {
+                    "translate": "item.aspects.essence_cage.use_result_1",
+                    "with": [
+                        {
+                            "translate": "item.aspects.essence_extractor"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "",
+            "color": "blue",
+            "italic": false,
+            "extra": [
+                {
+                    "translate": "item.aspects.essence_cage.awaken_condition"
+                }
+            ]
+        }
+    ]
+}

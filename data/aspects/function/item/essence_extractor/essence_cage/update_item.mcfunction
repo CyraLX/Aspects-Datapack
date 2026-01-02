@@ -6,5 +6,4 @@ execute if predicate aspects:item/essence_cage_awakened/is_in_offhand run return
 # Update data
 item modify entity @s weapon.offhand aspects:essence_cage/empty/apply_custom_data_from_storage
 # Update lore
-function aspects:item/essence_cage/lore/update
-
+function aspects:item/essence_cage/lore/offhand/update

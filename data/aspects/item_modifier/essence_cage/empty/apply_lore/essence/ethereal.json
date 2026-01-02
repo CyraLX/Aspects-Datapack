@@ -1,0 +1,24 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        {
+            "text": " ",
+            "color": "#14959e",
+            "italic": false,
+            "extra": [
+                {
+                    "score": {
+                        "name": "@s",
+                        "objective": "aspects.essence.ethereal"
+                    }
+                },
+                " ",
+                {
+                    "translate": "lore.essence.ethereal"
+                }
+            ]
+        }
+    ]
+}

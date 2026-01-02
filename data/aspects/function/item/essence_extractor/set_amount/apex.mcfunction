@@ -1,2 +1,2 @@
-$execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/apex] store result storage aspectlib:dummy stored_essences.apex int 1 run scoreboard players add #aspects aspects.essence.apex $(essence_amount)
-execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/apex] run scoreboard players set @s aspects.essence_extractor.has_extracted_any_essence 1
+$execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/offhand/apex] store result storage aspectlib:dummy stored_essences.apex int 1 run scoreboard players add #aspects aspects.essence.apex $(essence_amount)
+execute if entity @p[tag=essence_extractor_attacker,distance=..32,predicate=aspects:item/essence_cage/whitelisted/offhand/apex] run scoreboard players set @s aspects.essence_extractor.has_extracted_any_essence 1
