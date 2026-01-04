@@ -24,7 +24,10 @@
             },
             "minecraft:custom_data": {
                 "aspects": {
-                    "essence_extractor": {}
+                    "essence_extractor": {
+                        "level": 1,
+                        "kills": 1
+                    }
                 }
             }
         }
@@ -35,8 +38,7 @@
         "entity": "this",
         "name": [
             {
-                "translate": "item.aspects.essence_extractor",
-                "color": "#ffff55"
+                "translate": "item.aspects.essence_extractor"
             }
         ]
     },

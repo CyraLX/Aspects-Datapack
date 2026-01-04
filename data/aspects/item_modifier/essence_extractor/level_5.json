@@ -9,5 +9,15 @@
         "enchantments": {
             "aspects:essence_extractor/mainhand": 5
         }
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "essence_extractor": {
+                    "level": 5
+                }
+            }
+        }
     }
 ]

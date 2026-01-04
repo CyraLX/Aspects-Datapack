@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "translate": "dialog.aspects.configs",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.configs.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "extra": [
+            {
+                "text": " ",
+                "color": "red",
+                "extra": [
+                    "(",
+                    {
+                        "translate": "extra.aspects.operator"
+                    },
+                    ")"
+                ]
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.configs.operator_only"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/pause_screen"
+        }
+    },
+    "can_close_with_escape": true,
+    "pause": true,
+    "columns": 2,
+    "button_width": 225,
+    "dialogs": "#aspects:configs"
+}

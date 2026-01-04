@@ -1,0 +1,169 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "translate": "dialog.aspects.configs.entry",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue"
+            },
+            {
+                "translate": "config.aspects.reward_shattered_relic"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.configs.entry.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue"
+            },
+            {
+                "translate": "config.aspects.reward_shattered_relic"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "config.aspects.reward_shattered_relic.description",
+                "with": [
+                    {
+                        "translate": "options.on",
+                        "color": "green"
+                    }
+                ],
+                "extra": [
+                    "\n",
+                    {
+                        "translate": "config.aspects.reward_shattered_relic.note",
+                        "color": "#d6d6d6"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.configs.entry.accepts_values",
+                        "with": [
+                            {
+                                "text": "",
+                                "color": "#d6d6d6",
+                                "extra": [
+                                    {
+                                        "translate": "options.on",
+                                        "color": "green"
+                                    },
+                                    " | ",
+                                    {
+                                        "translate": "options.off",
+                                        "color": "red"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.configs.entry.default",
+                        "with": [
+                            {
+                                "translate": "options.on",
+                                "color": "green"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "pause": true,
+    "exit_action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/configs"
+        }
+    },
+    "columns": 3,
+    "actions": [
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.set_value",
+                "with": [
+                    {
+                        "translate": "options.on",
+                        "color": "green"
+                    }
+                ]
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/reward_shattered_relic/enable"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.set_value",
+                "with": [
+                    {
+                        "translate": "options.off",
+                        "color": "red"
+                    }
+                ]
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/reward_shattered_relic/disable"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.toggle_value",
+                "with": [
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "options.on",
+                                "color": "green"
+                            },
+                            " & ",
+                            {
+                                "translate": "options.off",
+                                "color": "red"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/reward_shattered_relic/toggle"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.check_value"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/reward_shattered_relic/current"
+            }
+        }
+    ]
+}

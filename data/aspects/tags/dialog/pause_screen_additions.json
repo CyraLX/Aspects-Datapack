@@ -8,6 +8,10 @@
         {
             "id": "#aspects:wiki_entries",
             "required": false
+        },
+        {
+            "id": "aspects:menu/configs",
+            "required": false
         }
     ]
 }

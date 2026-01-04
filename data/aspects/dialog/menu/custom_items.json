@@ -19,6 +19,7 @@
     },
     "can_close_with_escape": true,
     "pause": true,
-    "columns": 3,
+    "columns": 2,
+    "button_width": 225,
     "dialogs": "#aspects:wiki_categories/custom_items"
 }

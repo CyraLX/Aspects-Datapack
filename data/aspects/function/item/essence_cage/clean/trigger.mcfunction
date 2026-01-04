@@ -10,4 +10,6 @@ item modify entity @s weapon.mainhand aspects:essence_cage/empty/copy_from_stora
 # Update Item
 function aspects:item/essence_cage/lore/mainhand/update
 
+# Sounds
+playsound minecraft:particle.soul_escape player @a[distance=..16] ~ ~ ~ 1 0.7
 playsound minecraft:item.bucket.fill player @a[distance=..16] ~ ~ ~ 1 0.5

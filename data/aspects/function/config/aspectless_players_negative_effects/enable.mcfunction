@@ -1,10 +1,8 @@
 # Give temporary tag
 tag @s add config_changer
 # Give feedback in chat
-execute if entity @p[tag=get_debug_logs] if score #aspects aspects.config.aspectless_players_negative_effects matches 1 run tellraw @a[tag=get_debug_logs, tag=!config_changer] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," set ",{text:"ASPECTLESS_PLAYERS_NEGATIVE_EFFECTS",color:"gold"}," to ",{text:"TRUE",color:"green"},", but it was already set to ",{text:"TRUE",color:"green"}]}
-execute if entity @p[tag=get_debug_logs] unless score #aspects aspects.config.aspectless_players_negative_effects matches 1 run tellraw @a[tag=get_debug_logs, tag=!config_changer] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," set ",{text:"ASPECTLESS_PLAYERS_NEGATIVE_EFFECTS",color:"gold"}," to ",{text:"TRUE",color:"green"}]}
-execute if score #aspects aspects.config.aspectless_players_negative_effects matches 1 run tellraw @s {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{text:"ASPECTLESS_PLAYERS_NEGATIVE_EFFECTS",color:"gold"}," was already set to ",{text:"TRUE",color:"green"}]}
-execute unless score #aspects aspects.config.aspectless_players_negative_effects matches 1 run tellraw @s {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{text:"ASPECTLESS_PLAYERS_NEGATIVE_EFFECTS",color:"gold"}," is now set to ",{text:"TRUE",color:"green"}]}
+execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs, tag=!config_changer] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," > ",{translate:"config.aspects.aspectless_players_negative_effects",color:"gold"}," = ",{translate:"extra.aspects.state.enabled",color:"green"}]}
+tellraw @a[tag=get_debug_logs, tag=!config_changer] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{translate:"config.aspects.aspectless_players_negative_effects",color:"gold"}," = ",{translate:"extra.aspects.state.enabled",color:"green"}]}
 # Set scoreboard
 scoreboard players set #aspects aspects.config.aspectless_players_negative_effects 1
 # Cleanup

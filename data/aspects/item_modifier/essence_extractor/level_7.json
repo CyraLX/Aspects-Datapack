@@ -9,5 +9,21 @@
         "enchantments": {
             "aspects:essence_extractor/mainhand": 7
         }
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "essence_extractor": {
+                    "level": 7
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "rare"
+        }
     }
 ]
