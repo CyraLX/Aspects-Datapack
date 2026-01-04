@@ -25,8 +25,7 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "essence_extractor": {
-                        "level": 1,
-                        "kills": 1
+                        "level": 1
                     }
                 }
             }
@@ -43,26 +42,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            "",
-            {
-                "translate": "item.modifiers.use_mainhand",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.essence_extractor.use_result_1"
-                    }
-                ]
-            }
-        ]
+        "function": "minecraft:reference",
+        "name": "aspects:essence_extractor/lore/base"
     }
 ]

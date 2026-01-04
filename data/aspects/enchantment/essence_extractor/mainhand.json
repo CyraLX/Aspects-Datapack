@@ -279,15 +279,83 @@
                 },
                 "enchanted": "attacker",
                 "affected": "victim"
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "attacker",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "essence_extractor": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Health: 0.0f}"
+                                }
+                            },
+                            {
+                                "condition": "minecraft:all_of",
+                                "terms": [
+                                    {
+                                        "condition": "minecraft:entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "type": "#aspects:essence/has_any"
+                                        }
+                                    },
+                                    {
+                                        "condition": "minecraft:inverted",
+                                        "term": {
+                                            "condition": "minecraft:entity_scores",
+                                            "entity": "this",
+                                            "scores": {
+                                                "aspects.essence.exhausted": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "aspects:item/essence_extractor/kill_counter/trigger"
+                        }
+                    ]
+                },
+                "enchanted": "attacker",
+                "affected": "attacker"
             }
         ],
-        "minecraft:tick":[
+        "minecraft:tick": [
             {
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "aspects:item/essence_extractor/using_reset_check"
                 }
             }
-        ] 
+        ]
     }
 }
