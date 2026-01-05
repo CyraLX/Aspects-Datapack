@@ -1,0 +1,2 @@
+scoreboard objectives add aspects.rascal.movement_speed_current dummy
+scoreboard objectives add aspects.rascal.movement_speed_target dummy

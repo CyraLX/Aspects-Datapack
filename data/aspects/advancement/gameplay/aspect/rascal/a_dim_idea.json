@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:soul_lantern",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.rascal.a_dim_idea"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.rascal.a_dim_idea.description"
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "place_soul_light": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#aspects:advancement/aspect/rascal/is_soul_light"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "aspects:gameplay/aspect/rascal/root"
+}

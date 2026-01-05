@@ -10,3 +10,4 @@ data modify storage aspects:registry aspect."aspects:rascal" set value {id: 8, n
 function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:rascal"
 
 # Setup scoreboard objectives for the Aspect
+function aspects:aspect/rascal/light_level/initialize_scoreboards

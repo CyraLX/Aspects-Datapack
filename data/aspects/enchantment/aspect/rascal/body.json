@@ -82,13 +82,6 @@
                     "effects": [
                         {
                             "type": "minecraft:attribute",
-                            "attribute": "minecraft:movement_speed",
-                            "id": "aspects:rascal/dark_movement_speed",
-                            "amount": 0.4,
-                            "operation": "add_multiplied_base"
-                        },
-                        {
-                            "type": "minecraft:attribute",
                             "attribute": "minecraft:block_break_speed",
                             "id": "aspects:rascal/dark_block_break_speed",
                             "amount": 0.25,
@@ -135,19 +128,26 @@
                                     "can_see_sky": true
                                 }
                             }
+                        },
+                        {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "location": {
+                                            "dimension": "minecraft:overworld"
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
-                        {
-                            "type": "minecraft:attribute",
-                            "attribute": "minecraft:movement_speed",
-                            "id": "aspects:rascal/light_movement_speed",
-                            "amount": -0.3,
-                            "operation": "add_multiplied_base"
-                        },
                         {
                             "type": "minecraft:attribute",
                             "attribute": "minecraft:attack_damage",
@@ -171,6 +171,12 @@
                         }
                     ]
                 }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/rascal/light_level/set_target_speed"
+                }
             }
         ],
         "minecraft:tick": [
@@ -184,7 +190,20 @@
                 },
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "aspects:aspect/merling/give_night_vision"
+                    "function": "aspects:aspect/rascal/give_night_vision"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 10
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/rascal/light_level/set_current_speed"
                 }
             }
         ]
