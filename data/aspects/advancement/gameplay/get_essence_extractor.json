@@ -4,35 +4,38 @@
             "id": "minecraft:jigsaw",
             "count": 1,
             "components": {
-                "minecraft:item_model": "aspects:essence_cage",
+                "minecraft:item_model": "aspects:essence_extractor",
+                "minecraft:enchantments": {
+                    "aspects:essence_extractor/mainhand": 1
+                },
                 "minecraft:custom_data": {
                     "aspects": {
-                        "essence_cage": {}
+                        "essence_extractor": {}
                     }
                 }
             }
         },
         "title": {
-            "translate": "advancements.aspects.get_essence_cage"
+            "translate": "advancements.aspects.get_essence_extractor"
         },
         "description": [
             {
-                "translate": "advancements.aspects.get_essence_cage.description"
+                "translate": "advancements.aspects.get_essence_extractor.description"
             },
             "\n",
             {
-                "translate": "advancements.aspects.get_essence_cage.lore",
+                "translate": "advancements.aspects.get_essence_extractor.lore",
                 "color": "gray",
                 "italic": true
             }
         ],
-        "frame": "goal",
+        "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
     "criteria": {
-        "picked_up_essence_cage": {
+        "picked_up_essence_extractor": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
@@ -40,7 +43,7 @@
                         "predicates": {
                             "minecraft:custom_data": {
                                 "aspects": {
-                                    "essence_cage": {}
+                                    "essence_extractor": {}
                                 }
                             }
                         }
@@ -51,8 +54,8 @@
     },
     "requirements": [
         [
-            "picked_up_essence_cage"
+            "picked_up_essence_extractor"
         ]
     ],
-    "parent": "aspects:gameplay/get_essence_extractor"
+    "parent": "aspects:gameplay/root"
 }

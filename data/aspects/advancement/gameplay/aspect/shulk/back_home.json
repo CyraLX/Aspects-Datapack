@@ -10,6 +10,12 @@
         "description": [
             {
                 "translate": "advancements.aspects.aspect.shulk.back_home.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.shulk.back_home.lore",
+                "color": "gray",
+                "italic": true
             }
         ],
         "frame": "goal",

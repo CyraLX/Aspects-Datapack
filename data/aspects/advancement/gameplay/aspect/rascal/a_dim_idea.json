@@ -10,6 +10,12 @@
         "description": [
             {
                 "translate": "advancements.aspects.aspect.rascal.a_dim_idea.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.rascal.a_dim_idea.lore",
+                "color": "gray",
+                "italic": true
             }
         ],
         "frame": "task",
@@ -26,7 +32,7 @@
                         "condition": "minecraft:location_check",
                         "predicate": {
                             "block": {
-                                "blocks": "#aspects:advancement/aspect/rascal/is_soul_light"
+                                "blocks": "#aspects:advancement/gameplay/aspect/rascal/is_soul_light"
                             }
                         }
                     }
