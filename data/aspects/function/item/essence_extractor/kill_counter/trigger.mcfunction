@@ -1,7 +1,7 @@
 # Get data from Essence Extractor
-data modify storage aspectlib:dummy essence_extractor set from entity @s SelectedItem.components."minecraft:custom_data".aspects.essence_extractor
-execute store result score @s aspects.essence_extractor.kill_counter run data get storage aspectlib:dummy essence_extractor.kill_counter
-execute store result score @s aspects.essence_extractor.level run data get storage aspectlib:dummy essence_extractor.level
+data modify storage aspectlib:dummy essence_extractor set from entity @s SelectedItem.components
+execute store result score @s aspects.essence_extractor.kill_counter run data get storage aspectlib:dummy essence_extractor."minecraft:custom_data".aspects.essence_extractor.kill_counter
+execute store result score @s aspects.essence_extractor.level run data get storage aspectlib:dummy essence_extractor."minecraft:enchantments"."aspects:essence_extractor/mainhand"
 # Update kill count
 scoreboard players add @s aspects.essence_extractor.kill_counter 1
 # Check for upgrade

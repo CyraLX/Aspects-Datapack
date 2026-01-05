@@ -25,7 +25,7 @@
             "minecraft:custom_data": {
                 "aspects": {
                     "essence_extractor": {
-                        "level": 1
+                        "kill_counter": 0
                     }
                 }
             }

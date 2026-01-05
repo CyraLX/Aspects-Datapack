@@ -1,19 +1,7 @@
-[
-    {
-        "function": "minecraft:set_enchantments",
-        "add": false,
-        "enchantments": {
-            "aspects:essence_extractor/mainhand": 3
-        }
-    },
-    {
-        "function": "minecraft:set_custom_data",
-        "tag": {
-            "aspects": {
-                "essence_extractor": {
-                    "level": 3
-                }
-            }
-        }
+{
+    "function": "minecraft:set_enchantments",
+    "add": false,
+    "enchantments": {
+        "aspects:essence_extractor/mainhand": 3
     }
-]
+}
