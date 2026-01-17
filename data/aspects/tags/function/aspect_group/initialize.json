@@ -54,6 +54,10 @@
             "required": false
         },
         {
+            "id": "aspects:aspect_group/track_hp/initialize",
+            "required": false
+        },
+        {
             "id": "aspects:aspect_group/water_breathing/initialize",
             "required": false
         },

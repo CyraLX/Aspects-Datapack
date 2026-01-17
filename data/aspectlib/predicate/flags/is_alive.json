@@ -19,7 +19,7 @@
                 "condition": "minecraft:entity_scores",
                 "entity": "this",
                 "scores": {
-                    "aspectlib.hp": {
+                    "aspectlib.health": {
                         "max": 0
                     }
                 }
