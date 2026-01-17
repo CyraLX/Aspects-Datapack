@@ -4,10 +4,10 @@
             "id": "minecraft:jigsaw",
             "count": 1,
             "components": {
-                "minecraft:item_model": "aspects:awakened_essence_cage",
+                "minecraft:item_model": "aspects:universal_essence_cage",
                 "minecraft:custom_data": {
                     "aspects": {
-                        "awakened_essence_cage": {}
+                        "universal_essence_cage": {}
                     }
                 }
             }

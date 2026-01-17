@@ -1,0 +1,2 @@
+attribute @s minecraft:movement_speed modifier remove aspects:aspect/rascal/light_level
+$attribute @s minecraft:movement_speed modifier add aspects:aspect/rascal/light_level $(movement_speed) add_multiplied_base

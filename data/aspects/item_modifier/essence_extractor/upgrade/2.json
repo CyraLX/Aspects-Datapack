@@ -1,0 +1,7 @@
+{
+    "function": "minecraft:set_enchantments",
+    "add": false,
+    "enchantments": {
+        "aspects:essence_extractor/mainhand": 2
+    }
+}

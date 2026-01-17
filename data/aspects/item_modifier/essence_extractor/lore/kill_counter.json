@@ -1,0 +1,38 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:essence_extractor/lore/base"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "translate": "item.aspects.essence_extractor.kill_counter",
+                "with": [
+                    {
+                        "score": {
+                            "objective": "aspects.essence_extractor.kill_counter",
+                            "name": "@s"
+                        },
+                        "color": "#20c3ce"
+                    }
+                ],
+                "italic": false,
+                "color": "#9966CC"
+            }
+        ],
+        "mode": "insert",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                    "aspects.essence_extractor.kill_counter": {
+                        "min": 1
+                    }
+                }
+            }
+        ]
+    }
+]

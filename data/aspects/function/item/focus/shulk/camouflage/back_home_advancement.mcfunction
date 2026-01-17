@@ -1,0 +1,2 @@
+execute if entity @s[advancements={aspects:gameplay/aspect/shulk/back_home=true}] run return fail
+execute if predicate aspects:advancement/gameplay/aspect/shulk/back_home run advancement grant @s only aspects:gameplay/aspect/shulk/back_home camouflage_in_end_city

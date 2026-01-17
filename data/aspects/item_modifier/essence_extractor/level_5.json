@@ -15,7 +15,7 @@
         "tag": {
             "aspects": {
                 "essence_extractor": {
-                    "level": 5
+                    "kill_counter": 256
                 }
             }
         }

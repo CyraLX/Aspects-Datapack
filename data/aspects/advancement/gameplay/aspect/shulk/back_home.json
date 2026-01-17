@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:shulker_box",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.shulk.back_home"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.shulk.back_home.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.shulk.back_home.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "camouflage_in_end_city": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "aspects:gameplay/aspect/shulk/root"
+}

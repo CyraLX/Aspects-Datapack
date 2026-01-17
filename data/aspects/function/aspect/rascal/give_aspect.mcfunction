@@ -6,3 +6,6 @@ function aspects:aspect/generic/give_aspect with storage aspects:registry aspect
 # Aspect specific POST-GIVE_ASPECT logic
 ## Give Night Vision
 function aspects:aspect/rascal/give_night_vision
+## Set default values for movement speed
+scoreboard players set @s aspects.rascal.movement_speed_current 0
+scoreboard players set @s aspects.rascal.movement_speed_target 0

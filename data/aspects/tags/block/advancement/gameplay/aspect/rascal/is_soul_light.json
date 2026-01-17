@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "minecraft:soul_torch",
+            "required": false
+        },
+        {
+            "id": "minecraft:soul_wall_torch",
+            "required": false
+        },
+        {
+            "id": "minecraft:soul_lantern",
+            "required": false
+        },
+        {
+            "id": "minecraft:soul_campfire",
+            "required": false
+        },
+        {
+            "id": "minecraft:soul_fire",
+            "required": false
+        }
+    ]
+}

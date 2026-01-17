@@ -4,35 +4,35 @@
             "id": "minecraft:jigsaw",
             "count": 1,
             "components": {
-                "minecraft:item_model": "aspects:essence_cage",
+                "minecraft:item_model": "aspects:awakened_essence_cage",
                 "minecraft:custom_data": {
                     "aspects": {
-                        "essence_cage": {}
+                        "awakened_essence_cage": {}
                     }
                 }
             }
         },
         "title": {
-            "translate": "advancements.aspects.get_essence_cage"
+            "translate": "advancements.aspects.get_awakened_essence_cage"
         },
         "description": [
             {
-                "translate": "advancements.aspects.get_essence_cage.description"
+                "translate": "advancements.aspects.get_awakened_essence_cage.description"
             },
             "\n",
             {
-                "translate": "advancements.aspects.get_essence_cage.lore",
+                "translate": "advancements.aspects.get_awakened_essence_cage.lore",
                 "color": "gray",
                 "italic": true
             }
         ],
-        "frame": "goal",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
     "criteria": {
-        "picked_up_essence_cage": {
+        "picked_up_awakened_essence_cage": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
@@ -40,7 +40,7 @@
                         "predicates": {
                             "minecraft:custom_data": {
                                 "aspects": {
-                                    "essence_cage": {}
+                                    "awakened_essence_cage": {}
                                 }
                             }
                         }
@@ -51,8 +51,8 @@
     },
     "requirements": [
         [
-            "picked_up_essence_cage"
+            "picked_up_awakened_essence_cage"
         ]
     ],
-    "parent": "aspects:gameplay/get_essence_extractor"
+    "parent": "aspects:gameplay/get_essence_cage"
 }
