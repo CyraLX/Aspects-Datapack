@@ -6,7 +6,7 @@
 			"type": "minecraft:boolean",
 			"key": "apex",
 			"label": {
-				"translate": "lore.essence.apex"
+				"translate": "item.aspects.essence_cage.essence.apex"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -16,7 +16,7 @@
 			"type": "minecraft:boolean",
 			"key": "aquatic",
 			"label": {
-				"translate": "lore.essence.aquatic"
+				"translate": "item.aspects.essence_cage.essence.aquatic"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -26,7 +26,7 @@
 			"type": "minecraft:boolean",
 			"key": "beast",
 			"label": {
-				"translate": "lore.essence.beast"
+				"translate": "item.aspects.essence_cage.essence.beast"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -36,7 +36,7 @@
 			"type": "minecraft:boolean",
 			"key": "bug",
 			"label": {
-				"translate": "lore.essence.bug"
+				"translate": "item.aspects.essence_cage.essence.bug"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -46,7 +46,7 @@
 			"type": "minecraft:boolean",
 			"key": "dark",
 			"label": {
-				"translate": "lore.essence.dark"
+				"translate": "item.aspects.essence_cage.essence.dark"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -56,7 +56,7 @@
 			"type": "minecraft:boolean",
 			"key": "ethereal",
 			"label": {
-				"translate": "lore.essence.ethereal"
+				"translate": "item.aspects.essence_cage.essence.ethereal"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -66,7 +66,7 @@
 			"type": "minecraft:boolean",
 			"key": "feline",
 			"label": {
-				"translate": "lore.essence.feline"
+				"translate": "item.aspects.essence_cage.essence.feline"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -76,7 +76,7 @@
 			"type": "minecraft:boolean",
 			"key": "fire",
 			"label": {
-				"translate": "lore.essence.fire"
+				"translate": "item.aspects.essence_cage.essence.fire"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -86,7 +86,7 @@
 			"type": "minecraft:boolean",
 			"key": "flying",
 			"label": {
-				"translate": "lore.essence.flying"
+				"translate": "item.aspects.essence_cage.essence.flying"
 			},
 			"initial": false,
 			"on_true": "1",

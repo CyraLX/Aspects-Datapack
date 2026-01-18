@@ -6,7 +6,7 @@
 			"type": "minecraft:boolean",
 			"key": "humanoid",
 			"label": {
-				"translate": "lore.essence.humanoid"
+				"translate": "item.aspects.essence_cage.essence.humanoid"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -16,7 +16,7 @@
 			"type": "minecraft:boolean",
 			"key": "ice",
 			"label": {
-				"translate": "lore.essence.ice"
+				"translate": "item.aspects.essence_cage.essence.ice"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -26,7 +26,7 @@
 			"type": "minecraft:boolean",
 			"key": "normal",
 			"label": {
-				"translate": "lore.essence.normal"
+				"translate": "item.aspects.essence_cage.essence.normal"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -36,7 +36,7 @@
 			"type": "minecraft:boolean",
 			"key": "ooze",
 			"label": {
-				"translate": "lore.essence.ooze"
+				"translate": "item.aspects.essence_cage.essence.ooze"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -46,7 +46,7 @@
 			"type": "minecraft:boolean",
 			"key": "plant",
 			"label": {
-				"translate": "lore.essence.plant"
+				"translate": "item.aspects.essence_cage.essence.plant"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -56,7 +56,7 @@
 			"type": "minecraft:boolean",
 			"key": "steel",
 			"label": {
-				"translate": "lore.essence.steel"
+				"translate": "item.aspects.essence_cage.essence.steel"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -66,7 +66,7 @@
 			"type": "minecraft:boolean",
 			"key": "undead",
 			"label": {
-				"translate": "lore.essence.undead"
+				"translate": "item.aspects.essence_cage.essence.undead"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -76,7 +76,7 @@
 			"type": "minecraft:boolean",
 			"key": "void",
 			"label": {
-				"translate": "lore.essence.void"
+				"translate": "item.aspects.essence_cage.essence.void"
 			},
 			"initial": false,
 			"on_true": "1",
@@ -86,7 +86,7 @@
 			"type": "minecraft:boolean",
 			"key": "wild",
 			"label": {
-				"translate": "lore.essence.wild"
+				"translate": "item.aspects.essence_cage.essence.wild"
 			},
 			"initial": false,
 			"on_true": "1",
