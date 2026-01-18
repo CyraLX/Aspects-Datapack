@@ -155,14 +155,19 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                         "with": [
-                                                            "1"
+                                                            "2",
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -206,10 +211,15 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.damage_user",
+                                                        "with": [
+                                                            "2"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -299,12 +309,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "-100%",
                                                     {
-                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-100%",
+                                                            {
+                                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.inside",
@@ -392,11 +407,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.remove_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.poison"
+                                                "translate": "badge_details.aspects.effect.remove_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.poison"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
@@ -415,11 +435,16 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.remove_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.infested"
+                                                "translate": "badge_details.aspects.effect.remove_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.infested"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
@@ -438,11 +463,16 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.remove_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.weakness"
+                                                "translate": "badge_details.aspects.effect.remove_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.weakness"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
@@ -584,9 +614,12 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.cooks_food_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
+                                            {
+                                                "translate": "badge_details.aspects.effect.cooks_food"
+                                            },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
                                                 "color": "gray",
@@ -660,12 +693,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.inside",
@@ -687,14 +725,19 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
                                             {
-                                                "translate": "extra.aspects.seconds",
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                 "with": [
-                                                    "1"
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -738,10 +781,15 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user",
+                                                "with": [
+                                                    "2"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",
@@ -777,11 +825,16 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.remove_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.poison"
+                                                "translate": "badge_details.aspects.effect.remove_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.poison"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
@@ -800,11 +853,16 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.remove_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.infested"
+                                                "translate": "badge_details.aspects.effect.remove_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.infested"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
@@ -823,11 +881,16 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.remove_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.weakness"
+                                                "translate": "badge_details.aspects.effect.remove_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.weakness"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
@@ -846,9 +909,12 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.cooks_food_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
+                                            {
+                                                "translate": "badge_details.aspects.effect.cooks_food"
+                                            },
                                             {
                                                 "translate": "badge_details.aspects.modifier.overtime",
                                                 "color": "gray",

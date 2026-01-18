@@ -152,12 +152,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "item.aspects.wings.elytrian",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.aspects.wings.elytrian",
+                                                        "color": "light_purple"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -249,12 +254,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+50%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+50%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_sneaking",
@@ -348,14 +358,19 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_item_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
                                                     {
-                                                        "translate": "item.aspects.wings.elytrian",
-                                                        "color": "light_purple"
+                                                        "translate": "badge_details.aspects.effect.damage_item",
+                                                        "with": [
+                                                            {
+                                                                "translate": "item.aspects.wings.elytrian",
+                                                                "color": "light_purple"
+                                                            },
+                                                            "18"
+                                                        ]
                                                     },
-                                                    "18",
                                                     {
                                                         "translate": "badge_details.aspects.modifier.when_fall_flying",
                                                         "color": "gray",
@@ -393,12 +408,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "item.aspects.wings.elytrian",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.aspects.wings.elytrian",
+                                                        "color": "light_purple"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -471,12 +491,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+50%",
                                             {
-                                                "translate": "attribute.name.gravity"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+50%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_sneaking",
@@ -520,14 +545,19 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_item_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
                                             {
-                                                "translate": "item.aspects.wings.elytrian",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.damage_item",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.aspects.wings.elytrian",
+                                                        "color": "light_purple"
+                                                    },
+                                                    "18"
+                                                ]
                                             },
-                                            "18",
                                             {
                                                 "translate": "badge_details.aspects.modifier.when_fall_flying",
                                                 "color": "gray",

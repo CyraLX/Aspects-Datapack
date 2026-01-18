@@ -177,12 +177,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "item.aspects.wings.honey_bee",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.aspects.wings.honey_bee",
+                                                        "color": "light_purple"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -322,12 +327,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.starting_equipment_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "item.aspects.wings.honey_bee",
-                                                "color": "light_purple"
+                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "with": [
+                                                    {
+                                                        "translate": "item.aspects.wings.honey_bee",
+                                                        "color": "light_purple"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",

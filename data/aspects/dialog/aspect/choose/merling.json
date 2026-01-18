@@ -143,14 +143,19 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                         "with": [
-                                                            "1"
+                                                            "2",
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -173,11 +178,16 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.restore_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                        "translate": "badge_details.aspects.effect.restore",
+                                                        "with": [
+                                                            {
+                                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "text": "",
@@ -219,11 +229,16 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.drain_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
                                                     {
-                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                        "translate": "badge_details.aspects.effect.drain",
+                                                        "with": [
+                                                            {
+                                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "text": "",
@@ -494,11 +509,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.night_vision"
+                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.night_vision"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -573,12 +593,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "+400%",
                                                     {
-                                                        "translate": "attribute.name.submerged_mining_speed"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+400%",
+                                                            {
+                                                                "translate": "attribute.name.submerged_mining_speed"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.stacks_with_not",
@@ -600,22 +625,27 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "-25%",
                                                     {
-                                                        "translate": "attribute.name.block_break_speed"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-25%",
+                                                            {
+                                                                "translate": "attribute.name.block_break_speed"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.removed_by",
+                                                        "color": "gray",
+                                                        "italic": true,
                                                         "with": [
                                                             {
                                                                 "translate": "enchantment.minecraft.aqua_affinity"
                                                             }
-                                                        ],
-                                                        "color": "gray",
-                                                        "italic": true
+                                                        ]
                                                     }
                                                 ]
                                             }
@@ -675,12 +705,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+0.75",
                                             {
-                                                "translate": "attribute.name.attack_damage"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+0.75",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.level_above",
@@ -743,12 +778,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+400%",
                                             {
-                                                "translate": "attribute.name.submerged_mining_speed"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+400%",
+                                                    {
+                                                        "translate": "attribute.name.submerged_mining_speed"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.stacks_with_not",
@@ -785,11 +825,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.night_vision"
+                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.night_vision"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -869,12 +914,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+0.75",
                                             {
-                                                "translate": "attribute.name.attack_damage"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+0.75",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.level_above",
@@ -901,14 +951,19 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
                                             {
-                                                "translate": "extra.aspects.seconds",
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                 "with": [
-                                                    "1"
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -931,11 +986,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.restore_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                "translate": "badge_details.aspects.effect.restore",
+                                                "with": [
+                                                    {
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -977,11 +1037,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.drain_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
                                             {
-                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                "translate": "badge_details.aspects.effect.drain",
+                                                "with": [
+                                                    {
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "text": "",
@@ -1035,22 +1100,27 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "-25%",
                                             {
-                                                "translate": "attribute.name.block_break_speed"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-25%",
+                                                    {
+                                                        "translate": "attribute.name.block_break_speed"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.removed_by",
+                                                "color": "gray",
+                                                "italic": true,
                                                 "with": [
                                                     {
                                                         "translate": "enchantment.minecraft.aqua_affinity"
                                                     }
-                                                ],
-                                                "color": "gray",
-                                                "italic": true
+                                                ]
                                             }
                                         ]
                                     },

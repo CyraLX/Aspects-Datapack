@@ -109,12 +109,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.except",
@@ -188,11 +193,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.night_vision"
+                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.night_vision"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -327,12 +337,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "+1.0",
                                                     {
-                                                        "translate": "attribute.name.movement_efficiency"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+1.0",
+                                                            {
+                                                                "translate": "attribute.name.movement_efficiency"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -351,12 +366,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "+20%",
                                                     {
-                                                        "translate": "attribute.name.movement_speed"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+20%",
+                                                            {
+                                                                "translate": "attribute.name.movement_speed"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -375,12 +395,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
-                                                    "+10%",
                                                     {
-                                                        "translate": "attribute.name.attack_speed"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+10%",
+                                                            {
+                                                                "translate": "attribute.name.attack_speed"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -405,12 +430,17 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "-100%",
                                                     {
-                                                        "translate": "attribute.name.movement_efficiency"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-100%",
+                                                            {
+                                                                "translate": "attribute.name.movement_efficiency"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -429,12 +459,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "-40%",
                                                     {
-                                                        "translate": "attribute.name.movement_speed"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-40%",
+                                                            {
+                                                                "translate": "attribute.name.movement_speed"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -453,12 +488,17 @@
                                             },
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "-20%",
                                                     {
-                                                        "translate": "attribute.name.attack_speed"
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-20%",
+                                                            {
+                                                                "translate": "attribute.name.attack_speed"
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "translate": "badge_details.aspects.modifier.duration",
@@ -591,11 +631,16 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.give_potion_effect_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "effect.minecraft.night_vision"
+                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "with": [
+                                                    {
+                                                        "translate": "effect.minecraft.night_vision"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -611,12 +656,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "-100%",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.except",
@@ -699,12 +749,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+1.0",
                                             {
-                                                "translate": "attribute.name.movement_efficiency"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+1.0",
+                                                    {
+                                                        "translate": "attribute.name.movement_efficiency"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -723,12 +778,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+20%",
                                             {
-                                                "translate": "attribute.name.movement_speed"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -747,12 +807,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "green",
                                         "with": [
-                                            "+10%",
                                             {
-                                                "translate": "attribute.name.attack_speed"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -777,12 +842,17 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "-100%",
                                             {
-                                                "translate": "attribute.name.movement_efficiency"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.movement_efficiency"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -801,12 +871,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "-40%",
                                             {
-                                                "translate": "attribute.name.movement_speed"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-40%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",
@@ -825,12 +900,17 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "-20%",
                                             {
-                                                "translate": "attribute.name.attack_speed"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "translate": "badge_details.aspects.modifier.duration",

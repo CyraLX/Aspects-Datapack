@@ -173,14 +173,19 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                         "with": [
-                                                            "1"
+                                                            "2",
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
@@ -224,10 +229,15 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                                "translate": "badge_details.aspects.modifier_format",
                                                 "color": "red",
                                                 "with": [
-                                                    "2",
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.damage_user",
+                                                        "with": [
+                                                            "2"
+                                                        ]
+                                                    },
                                                     {
                                                         "text": "",
                                                         "color": "gray",
@@ -460,14 +470,19 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_overtime_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
                                             {
-                                                "translate": "extra.aspects.seconds",
+                                                "translate": "badge_details.aspects.effect.damage_user_overtime",
                                                 "with": [
-                                                    "1"
+                                                    "2",
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "1"
+                                                        ]
+                                                    }
                                                 ]
                                             },
                                             {
@@ -511,10 +526,15 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_user_modifiers",
+                                        "translate": "badge_details.aspects.modifier_format",
                                         "color": "red",
                                         "with": [
-                                            "2",
+                                            {
+                                                "translate": "badge_details.aspects.effect.damage_user",
+                                                "with": [
+                                                    "2"
+                                                ]
+                                            },
                                             {
                                                 "text": "",
                                                 "color": "gray",
