@@ -270,10 +270,6 @@
                         {
                             "type": "minecraft:run_function",
                             "function": "aspects:item/essence_extractor/extract"
-                        },
-                        {
-                            "type": "minecraft:change_item_damage",
-                            "amount": 1
                         }
                     ]
                 },
@@ -340,6 +336,10 @@
                     "type": "minecraft:all_of",
                     "effects": [
                         {
+                            "type": "minecraft:change_item_damage",
+                            "amount": 1
+                        },
+                        {
                             "type": "minecraft:run_function",
                             "function": "aspects:item/essence_extractor/kill_counter/trigger"
                         }
@@ -350,6 +350,44 @@
             }
         ],
         "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 10
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "mainhand": {
+                                            "predicates": {
+                                                "minecraft:custom_data": {
+                                                    "aspects": {
+                                                        "essence_extractor": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:item/essence_extractor/remove_enchantment"
+                }
+            },
             {
                 "effect": {
                     "type": "minecraft:run_function",
