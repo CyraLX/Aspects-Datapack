@@ -1,6 +1,52 @@
 {
 	"type": "minecraft:notice",
-	"title": "Whitelist Page 1",
+	"title": {
+		"translate": "dialog.aspects.item.essence_cage.whitelist",
+		"with": [
+			{
+				"translate": "dialog.aspects.item.essence_cage.whitelist.page_format",
+				"with": [
+					"2",
+					"2"
+				]
+			}
+		]
+	},
+	"external_title": {
+		"translate": "dialog.aspects.item.essence_cage.whitelist.external_title",
+		"with": [
+			{
+				"translate": "dialog.aspects.item.essence_cage.whitelist.page_format",
+				"with": [
+					"2",
+					"2"
+				]
+			}
+		]
+	},
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"width": 450,
+			"contents": {
+				"text": "",
+				"extra": [
+					{
+						"translate": "dialog.aspects.item.essence_cage.whitelist.tutorial_1"
+					},
+					"\n",
+					{
+						"translate": "dialog.aspects.item.essence_cage.whitelist.tutorial_2",
+						"with": [
+							{
+								"translate": "item.aspects.essence_cage"
+							}
+						]
+					}
+				]
+			}
+		}
+	],
 	"inputs": [
 		{
 			"type": "minecraft:boolean",
@@ -12,7 +58,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "ice",
 			"label": {
@@ -22,7 +68,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "normal",
 			"label": {
@@ -32,7 +78,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "ooze",
 			"label": {
@@ -42,7 +88,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "plant",
 			"label": {
@@ -52,7 +98,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "steel",
 			"label": {
@@ -62,7 +108,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "undead",
 			"label": {
@@ -72,7 +118,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "void",
 			"label": {
@@ -82,7 +128,7 @@
 			"on_true": "1",
 			"on_false": "0"
 		},
-        {
+		{
 			"type": "minecraft:boolean",
 			"key": "wild",
 			"label": {
@@ -94,7 +140,17 @@
 		}
 	],
 	"action": {
-		"label": "Apply & Finish",
+		"label": {
+			"translate": "gui.aspects.and_format",
+			"with": [
+				{
+					"translate": "gui.aspects.apply"
+				},
+				{
+					"translate": "gui.aspects.finish"
+				}
+			]
+		},
 		"action": {
 			"type": "minecraft:dynamic/run_command",
 			"template": "trigger aspects.essence_cage.whitelist.dialog.page_2 set $(humanoid)$(ice)$(normal)$(ooze)$(plant)$(steel)$(undead)$(void)$(wild)"

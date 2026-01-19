@@ -92,12 +92,11 @@ All recipes are unlocked from the start so check your recipe guide!
 - **Essence Extractor** – Pull Essences from passive mobs without killing them  
 - **Essence Cage** – Store Essences awaken into an **Awakened Essence Cage** once a valid Essence Combination is stored
 - **Awakened Essence Cage** – Use to become the stored Aspect from the Essence Combination  
-- **Aspect Encyclopedia** *(1.21.5 only)* – Learn about Aspects and Essences
 - **Focuses** – Enables Aspect-specific active abilities
 
 </details>
 
-## In-Game Documentation *(1.21.6+)*
+## In-Game Documentation
 
 Access from the Pause Menu → **Aspects**
 
