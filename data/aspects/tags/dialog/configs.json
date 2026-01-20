@@ -32,6 +32,14 @@
         {
             "id": "aspects:config/track_statistics",
             "required": false
+        },
+        {
+            "id": "aspects:config/enderian/teleport_forward_distance",
+            "required": false
+        },
+        {
+            "id": "aspects:config/enderian/teleport_downward_distance",
+            "required": false
         }
     ]
 }

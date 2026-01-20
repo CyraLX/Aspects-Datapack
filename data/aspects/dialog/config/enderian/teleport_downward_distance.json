@@ -1,0 +1,137 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "translate": "dialog.aspects.configs.entry",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue"
+            },
+            {
+                "translate": "config.aspects.enderian.teleport_downward_distance"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.configs.entry.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue"
+            },
+            {
+                "translate": "config.aspects.enderian.teleport_downward_distance"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "config.aspects.enderian.teleport_downward_distance.description",
+                "extra": [
+                    "\n",
+                    {
+                        "translate": "config.aspects.enderian.teleport_downward_distance.note",
+                        "color": "#d6d6d6"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.configs.entry.accepts_values",
+                        "with": [
+                            {
+                                "text": "",
+                                "color": "#d6d6d6",
+                                "extra": [
+                                    {
+                                        "translate": "dialog.aspects.configs.entry.accepts_values.above_equal",
+                                        "color": "blue",
+                                        "with": [
+                                            "0"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.configs.entry.default",
+                        "with": [
+                            {
+                                "text": "100",
+                                "color": "blue"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:number_range",
+            "label": {
+                "translate": "dialog.aspects.configs.entry.change_value"
+            },
+            "key": "value",
+            "width": 225,
+            "start": 0,
+            "end": 512,
+            "initial": 100,
+            "step": 1
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "exit_action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/configs"
+        }
+    },
+    "columns": 2,
+    "actions": [
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.apply_input_value"
+            },
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "scoreboard players set #aspects aspects.config.enderian.teleport_downward_distance $(value)"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.reset_value"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/enderian/teleport_downward_distance/default"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.check_value"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/enderian/teleport_downward_distance/current"
+            }
+        }
+    ]
+}
