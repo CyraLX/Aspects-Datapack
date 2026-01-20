@@ -7,3 +7,4 @@ particle minecraft:reverse_portal ~ ~ ~ 0.5 0.5 0.5 0 1 force
 
 execute unless block ~ ~ ~ #aspectlib:raycast/pass_through positioned ^ ^ ^-0.25 run tp @s ~ ~ ~
 execute if block ~ ~ ~ #aspectlib:raycast/pass_through if score .raycastLimit aspects.focus.enderian.raycast.forward matches 1.. positioned ^ ^ ^0.25 run function aspects:item/focus/enderian/raycast/forward
+execute if block ~ ~ ~ #aspectlib:raycast/pass_through if score .raycastLimit aspects.focus.enderian.raycast.forward matches ..0 positioned ^ ^ ^ run function aspects:item/focus/enderian/raycast/downward
