@@ -39,7 +39,8 @@
 						"translate": "dialog.aspects.item.essence_cage.whitelist.tutorial_2",
 						"with": [
 							{
-								"translate": "item.aspects.essence_cage"
+								"translate": "item.aspects.essence_cage",
+								"color": "#ffff55"
 							}
 						]
 					}

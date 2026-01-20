@@ -9,7 +9,8 @@
         "target": "item_name",
         "name": [
             {
-                "translate": "item.aspects.awakened_essence_cage"
+                "translate": "item.aspects.awakened_essence_cage",
+                "color": "aqua"
             }
         ]
     },
@@ -17,7 +18,7 @@
         "function": "minecraft:set_components",
         "components": {
             "minecraft:rarity": "rare",
-            "minecraft:enchantments":{
+            "minecraft:enchantments": {
                 "aspects:essence_cage_awakened/mainhand": 1,
                 "aspectlib:exclusive_consumable/mainhand": 1
             },

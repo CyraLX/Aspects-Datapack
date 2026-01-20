@@ -27,13 +27,17 @@
             "type": "minecraft:item",
             "width": 18,
             "item": {
-                "id": "minecraft:iron_sword",
-                "count": 1
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:essence_cage"
+                }
             },
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.essences.explanation.how_to_get_essences.direct_damage"
+                "translate": "item.aspects.essence_cage",
+                "color": "#ffff55"
             }
         },
         {
@@ -44,6 +48,10 @@
                 "count": 1,
                 "components": {
                     "minecraft:item_model": "aspects:essence_extractor",
+                    "minecraft:enchantments": {
+                        "aspects:essence_extractor/mainhand": 5
+                    },
+                    "minecraft:enchantment_glint_override": false,
                     "minecraft:custom_data": {
                         "aspects": {
                             "essence_extractor": {}
@@ -54,42 +62,25 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.essences.explanation.how_to_get_essences.essence_extractor",
-                "with": [
-                    {
-                        "translate": "item.aspects.essence_extractor",
-                        "color": "#ffff55"
-                    }
-                ]
+                "translate": "item.aspects.essence_extractor",
+                        "color": "aqua"
             }
         },
         {
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.essences.explanation.where_to_store_essences"
-            }
-        },
-        {
-            "type": "minecraft:item",
-            "width": 18,
-            "item": {
-                "id": "minecraft:jigsaw",
-                "count": 1,
-                "components": {
-                    "minecraft:item_model": "aspects:essence_cage",
-                    "minecraft:custom_data": {
-                        "aspects": {
-                            "essence_cage": {}
-                        }
+                "translate": "dialog.aspects.essences.explanation.how_to_store_essences",
+                "with": [
+                    {
+                        "translate": "item.aspects.essence_cage",
+                        "color": "#ffff55"
+                    },
+                    {
+                        "translate": "item.aspects.essence_extractor",
+                        "color": "aqua"
                     }
-                }
-            },
-            "show_decorations": true,
-            "show_tooltip": false,
-            "description": {
-                "translate": "item.aspects.essence_cage",
-                "color": "#ffff55"
+                ]
             }
         },
         {
@@ -189,39 +180,12 @@
             "width": 450,
             "contents": {
                 "translate": "dialog.aspects.essences.explanation.how_to_remove_essences",
-                "color": "#d6d6d6",
                 "with": [
-                    {
-                        "translate": "item.aspects.awakened_essence_cage",
-                        "color": "aqua"
-                    },
                     {
                         "translate": "item.aspects.essence_cage",
                         "color": "#ffff55"
                     }
                 ]
-            }
-        },
-        {
-            "type": "minecraft:item",
-            "width": 18,
-            "item": {
-                "id": "minecraft:jigsaw",
-                "count": 1,
-                "components": {
-                    "minecraft:item_model": "aspects:essence_cleaner",
-                    "minecraft:custom_data": {
-                        "aspects": {
-                            "essence_cleaner": {}
-                        }
-                    }
-                }
-            },
-            "show_decorations": true,
-            "show_tooltip": false,
-            "description": {
-                "translate": "item.aspects.essence_cleaner",
-                "color": "#ffff55"
             }
         }
     ],

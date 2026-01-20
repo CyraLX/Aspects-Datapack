@@ -13,7 +13,7 @@
                     "essence_cage": {}
                 }
             },
-            "minecraft:enchantments":{
+            "minecraft:enchantments": {
                 "aspects:essence_cage/mainhand": 1,
                 "aspectlib:exclusive_consumable/mainhand": 1
             },
@@ -31,7 +31,8 @@
         "target": "item_name",
         "name": [
             {
-                "translate": "item.aspects.essence_cage"
+                "translate": "item.aspects.essence_cage",
+                "color": "#ffff55"
             }
         ]
     },
@@ -82,7 +83,54 @@
                 "italic": false,
                 "extra": [
                     {
-                        "translate": "item.aspects.essence_cage.awaken_condition"
+                        "translate": "item.aspects.essence_cage.awaken_condition",
+                        "with": [
+                            {
+                                "translate": "item.aspects.awakened_essence_cage"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak_not",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_2",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_3",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
                     }
                 ]
             }
