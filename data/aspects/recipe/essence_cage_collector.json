@@ -1,0 +1,127 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:tinted_glass",
+    "addition": "minecraft:diamond_block",
+    "template": "minecraft:sculk_catalyst",
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:max_stack_size": 1,
+            "minecraft:item_model": "aspects:essence_cage",
+            "minecraft:damage_resistant": {
+                "types": "#aspects:special_item_damage_immune"
+            },
+            "minecraft:enchantments": {
+                "aspects:essence_cage/mainhand": 1,
+                "aspectlib:exclusive_consumable/mainhand": 1
+            },
+            "tooltip_display": {
+                "hidden_components": [
+                    "minecraft:enchantments"
+                ]
+            },
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:custom_data": {
+                "aspects": {
+                    "essence_cage": {
+                        "is_collector": true
+                    }
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.aspects.essence_cage_collector",
+                    "color": "#024050"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "item.aspects.essence_cage.stored_essences",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": " ",
+                    "color": "#757575",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.stored_essences.empty"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.essence_cage_collector.footer",
+                    "color": "light_purple",
+                    "italic": true
+                },
+                "",
+                {
+                    "translate": "item.modifiers.held_offhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.use_result_1",
+                            "with": [
+                                {
+                                    "translate": "item.aspects.essence_extractor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak_not",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.use_result_2",
+                            "with": [
+                                {
+                                    "translate": "item.aspects.essence_extractor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand_sneak",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.essence_cage.use_result_3",
+                            "with": [
+                                {
+                                    "translate": "item.aspects.essence_extractor"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

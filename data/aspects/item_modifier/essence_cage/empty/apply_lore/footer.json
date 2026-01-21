@@ -1,84 +1,176 @@
-{
-    "function": "minecraft:set_lore",
-    "entity": "this",
-    "mode": "append",
-    "lore": [
-        {
-            "translate": "item.modifiers.held_offhand",
-            "color": "gray",
-            "italic": false
-        },
-        {
-            "text": "",
-            "color": "blue",
-            "italic": false,
-            "extra": [
-                {
-                    "translate": "item.aspects.essence_cage.use_result_1",
-                    "with": [
-                        {
-                            "translate": "item.aspects.essence_extractor"
-                        }
-                    ]
+[
+    {
+        "function": "minecraft:set_lore",
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:reference",
+                    "name": "aspects:item/essence_cage_collector/is_held"
                 }
-            ]
-        },
-        {
-            "text": "",
-            "color": "blue",
-            "italic": false,
-            "extra": [
-                {
-                    "translate": "item.aspects.essence_cage.awaken_condition",
-                    "with": [
-                        {
-                            "translate": "item.aspects.awakened_essence_cage"
-                        }
-                    ]
-                }
-            ]
-        },
-        "",
-        {
-            "translate": "item.modifiers.use_mainhand_sneak_not",
-            "color": "gray",
-            "italic": false
-        },
-        {
-            "text": "",
-            "color": "blue",
-            "italic": false,
-            "extra": [
-                {
-                    "translate": "item.aspects.essence_cage.use_result_2",
-                    "with": [
-                        {
-                            "translate": "item.aspects.essence_extractor"
-                        }
-                    ]
-                }
-            ]
-        },
-        "",
-        {
-            "translate": "item.modifiers.use_mainhand_sneak",
-            "color": "gray",
-            "italic": false
-        },
-        {
-            "text": "",
-            "color": "blue",
-            "italic": false,
-            "extra": [
-                {
-                    "translate": "item.aspects.essence_cage.use_result_3",
-                    "with": [
-                        {
-                            "translate": "item.aspects.essence_extractor"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+            }
+        ],
+        "entity": "this",
+        "mode": "append",
+        "lore": [
+            {
+                "translate": "item.modifiers.held_offhand",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_1",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.awaken_condition",
+                        "with": [
+                            {
+                                "translate": "item.aspects.awakened_essence_cage"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak_not",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_2",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_3",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "conditions": [
+            {
+                "condition": "minecraft:reference",
+                "name": "aspects:item/essence_cage_collector/is_held"
+            }
+        ],
+        "entity": "this",
+        "mode": "append",
+        "lore": [
+            {
+                "translate": "item.aspects.essence_cage_collector.footer",
+                "color": "light_purple",
+                "italic": true
+            },
+            "",
+            {
+                "translate": "item.modifiers.held_offhand",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_1",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak_not",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_2",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.essence_cage.use_result_3",
+                        "with": [
+                            {
+                                "translate": "item.aspects.essence_extractor"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
