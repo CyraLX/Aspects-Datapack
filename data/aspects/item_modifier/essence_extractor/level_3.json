@@ -15,9 +15,29 @@
         "tag": {
             "aspects": {
                 "essence_extractor": {
-                        "kill_counter": 64
+                    "kill_counter": 64
                 }
             }
         }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 1,
+        "lore": [
+            {
+                "translate": "item.aspects.essence_extractor.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
+                "with": [
+                    {
+                        "text": "64",
+                        "color": "#20c3ce"
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -6,9 +6,13 @@
     {
         "function": "minecraft:set_lore",
         "entity": "this",
+        "mode": "insert",
+        "offset": 0,
         "lore": [
             {
                 "translate": "item.aspects.essence_extractor.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
                 "with": [
                     {
                         "score": {
@@ -17,12 +21,9 @@
                         },
                         "color": "#20c3ce"
                     }
-                ],
-                "italic": false,
-                "color": "#9966CC"
+                ]
             }
         ],
-        "mode": "insert",
         "conditions": [
             {
                 "condition": "minecraft:entity_scores",

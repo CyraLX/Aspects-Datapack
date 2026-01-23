@@ -11,4 +11,5 @@ execute store result storage aspectlib:dummy essence_extractor.kill_counter int 
 # Update Item
 item modify entity @s weapon.mainhand aspects:essence_extractor/lore/kill_counter
 item modify entity @s weapon.mainhand aspects:essence_extractor/update_data
-
+# Cleanup
+scoreboard players reset @s aspects.essence_extractor.kill_counter

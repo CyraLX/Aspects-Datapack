@@ -4,6 +4,10 @@
         {
             "id": "aspects:wiki/enchantments/water_ward",
             "required": false
+        },
+        {
+            "id": "aspects:wiki/enchantments/essence_harvest",
+            "required": false
         }
     ]
 }

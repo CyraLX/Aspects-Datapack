@@ -33,7 +33,7 @@
             "minecraft:item_name": [
                 {
                     "translate": "item.aspects.essence_cage_collector",
-                    "color": "#024050"
+                    "color": "#ffff55"
                 }
             ],
             "minecraft:lore": [
@@ -51,12 +51,6 @@
                             "translate": "item.aspects.essence_cage.stored_essences.empty"
                         }
                     ]
-                },
-                "",
-                {
-                    "translate": "item.aspects.essence_cage_collector.footer",
-                    "color": "light_purple",
-                    "italic": true
                 },
                 "",
                 {

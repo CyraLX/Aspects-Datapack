@@ -36,21 +36,7 @@
     },
     "criteria": {
         "picked_up_essence_extractor_max": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "predicates": {
-                            "minecraft:enchantments": [
-                                {
-                                    "enchantments": "aspects:essence_extractor/mainhand",
-                                    "levels": 7
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
+            "trigger": "minecraft:impossible"
         }
     },
     "requirements": [

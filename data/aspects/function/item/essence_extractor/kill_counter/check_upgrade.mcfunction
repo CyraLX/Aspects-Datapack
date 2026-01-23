@@ -1,3 +1,6 @@
+# Prepare Scores
+scoreboard players reset #aspects aspects.essence_extractor.level
+
 execute if score @s aspects.essence_extractor.kill_counter matches ..31 run scoreboard players set #aspects aspects.essence_extractor.level 1
 execute if score @s aspects.essence_extractor.kill_counter matches 32..63 run scoreboard players set #aspects aspects.essence_extractor.level 2
 execute if score @s aspects.essence_extractor.kill_counter matches 64..127 run scoreboard players set #aspects aspects.essence_extractor.level 3
@@ -11,3 +14,5 @@ execute if score #aspects aspects.essence_extractor.level = @s aspects.essence_e
 # Otherwise upgrade sword
 execute store result storage aspectlib:dummy essence_extractor.level int 1 run scoreboard players get #aspects aspects.essence_extractor.level
 function aspects:item/essence_extractor/kill_counter/upgrade_macro with storage aspectlib:dummy essence_extractor
+# Grant advancement if maxed (Level 7)
+execute if score #aspects aspects.essence_extractor.level matches 7.. run advancement grant @s only aspects:gameplay/get_essence_extractor_max

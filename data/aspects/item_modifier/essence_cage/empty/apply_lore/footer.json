@@ -103,11 +103,6 @@
         "entity": "this",
         "mode": "append",
         "lore": [
-            {
-                "translate": "item.aspects.essence_cage_collector.footer",
-                "color": "light_purple",
-                "italic": true
-            },
             "",
             {
                 "translate": "item.modifiers.held_offhand",

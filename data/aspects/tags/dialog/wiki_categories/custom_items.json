@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "aspects:wiki/custom_items/collector_essence_cage",
+            "required": false
+        },
+        {
             "id": "aspects:wiki/custom_items/awakened_essence_cage",
             "required": false
         },

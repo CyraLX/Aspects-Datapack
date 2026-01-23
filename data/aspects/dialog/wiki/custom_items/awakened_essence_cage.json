@@ -46,7 +46,15 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.awakened_essence_cage.description"
+                "translate": "dialog.aspects.custom_items.awakened_essence_cage.description",
+                "with": [
+                    {
+                        "translate": "item.aspects.awakened_essence_cage"
+                    },
+                    {
+                        "translate": "item.aspects.essence_cage"
+                    }
+                ]
             }
         },
         {

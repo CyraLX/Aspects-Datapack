@@ -44,5 +44,24 @@
     {
         "function": "minecraft:reference",
         "name": "aspects:essence_extractor/lore/base"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "insert",
+        "offset": 0,
+        "lore": [
+            {
+                "translate": "item.aspects.essence_extractor.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
+                "with": [
+                    {
+                        "text": "0",
+                        "color": "#20c3ce"
+                    }
+                ]
+            }
+        ]
     }
 ]
