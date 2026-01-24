@@ -1,2 +1,2 @@
-$item modify entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..1] weapon.mainhand aspects:focus/honey_bee/honey_bottle/effect/$(stored_effect)
-item modify entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..1] weapon.mainhand aspects:focus/honey_bee/honey_bottle/set_as_not_spiked
+$item modify entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..16] weapon.mainhand aspects:focus/honey_bee/honey_bottle/effect/$(stored_effect)
+item modify entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..16] weapon.mainhand aspects:focus/honey_bee/honey_bottle/set_as_not_spiked

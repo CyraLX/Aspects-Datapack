@@ -7,7 +7,7 @@ $execute if predicate aspectlib:input/sneak unless predicate aspects:item/focus/
 $execute if predicate aspectlib:input/sneak if predicate aspects:item/focus/honey_bee/has_suspicious_honey_offhand run function aspects:item/focus/honey_bee/apply_spiked_fake with storage aspectlib:users player.$(id).aspects.aspect_data."aspects:honey_bee"
 # Give the Suspicious Honey
 summon minecraft:item ~ ~ ~ {Tags: ["suspicious_honey_item"],Item: {id: "minecraft:stick",components:{item_model:"minecraft:air"}}}
-data modify entity @n[type=minecraft:item, tag=suspicious_honey_item, distance=..1] Item set from entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..1] equipment.mainhand
+data modify entity @n[type=minecraft:item, tag=suspicious_honey_item, distance=..16] Item set from entity @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..16] equipment.mainhand
 # Clean up
-tag @n[type=minecraft:item, tag=suspicious_honey_item, distance=..1] remove suspicious_honey_item
-kill @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..1]
+tag @n[type=minecraft:item, tag=suspicious_honey_item, distance=..16] remove suspicious_honey_item
+kill @n[type=minecraft:armor_stand, tag=suspicious_honey_granter, distance=..16]
