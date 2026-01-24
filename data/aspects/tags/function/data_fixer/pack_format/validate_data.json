@@ -24,6 +24,10 @@
         {
             "id": "aspects:aspect/merling/validate/0-3",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/rascal/validate/0-7/run",
+            "required": false
         }
     ]
 }
