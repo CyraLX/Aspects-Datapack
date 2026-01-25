@@ -41,16 +41,7 @@
 				},
 				"min_format": 80,
 				"max_format": 88,
-				"directory": "overlay_f80-f88_1_21_10_new_flags"
-			},
-			{
-				"formats": {
-					"min_inclusive": 80,
-					"max_inclusive": 88
-				},
-				"min_format": 80,
-				"max_format": 88,
-				"directory": "overlay_f80-f88_new_item_ench_tags"
+				"directory": "overlay_f80-f88_1_21_10_backport"
 			}
 		]
 	}

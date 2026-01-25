@@ -1,0 +1,318 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.custom_items.evergrowing_blade",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "item.aspects.evergrowing_blade"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.custom_items.evergrowing_blade.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "item.aspects.evergrowing_blade"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:evergrowing_blade"
+                }
+            },
+            "width": 18,
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.evergrowing_blade.description",
+                "with": [
+                    {
+                        "translate": "item.aspects.evergrowing_blade"
+                    },
+                    {
+                        "translate": "enchantment.level.7"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "color": "gold",
+                "italic": true,
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.custom_items.evergrowing_blade.check_essence_information",
+                        "with": [
+                            {
+                                "text": "",
+                                "color": "#fff349",
+                                "extra": [
+                                    {
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            {
+                                                "translate": "dialog.aspects.essences.explanation.external_title"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "click_event": {
+                                    "action": "show_dialog",
+                                    "dialog": "aspects:wiki/essence/explanation"
+                                },
+                                "hover_event": {
+                                    "action": "show_text",
+                                    "value": {
+                                        "translate": "extra.aspects.redirect_to",
+                                        "with": [
+                                            {
+                                                "translate": "dialog.aspects.essences.explanation.external_title"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.custom_items.evergrowing_blade.check_enchantment_information",
+                        "with": [
+                            {
+                                "text": "",
+                                "color": "#fff349",
+                                "extra": [
+                                    {
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            {
+                                                "translate": "enchantment.aspects.essence_harvest"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "click_event": {
+                                    "action": "show_dialog",
+                                    "dialog": "aspects:wiki/enchantments/essence_harvest"
+                                },
+                                "hover_event": {
+                                    "action": "show_text",
+                                    "value": {
+                                        "translate": "extra.aspects.redirect_to",
+                                        "with": [
+                                            {
+                                                "translate": "enchantment.aspects.essence_harvest"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:crafting_table",
+                "count": 1
+            },
+            "width": 18,
+            "description": {
+                "translate": "dialog.aspects.custom_items.recipe.crafting_shaped",
+                "color": "#d6d6d6"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.recipe.crafting_shaped.1x3",
+                "color": "gold",
+                "with": [
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.amethyst_shard"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:amethyst_shard",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.stick"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:stick",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.amethyst_shard"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:amethyst_shard",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "translate": "dialog.aspects.custom_items.recipe.result",
+                        "with": [
+                            {
+                                "text": "1",
+                                "color": "white"
+                            },
+                            {
+                                "text": "",
+                                "color": "#ffff55",
+                                "extra": [
+                                    {
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            {
+                                                "translate": "item.aspects.evergrowing_blade"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hover_event": {
+                                    "action": "show_item",
+                                    "id": "minecraft:diamond_sword",
+                                    "count": 1,
+                                    "components": {
+                                        "minecraft:rarity": "uncommon",
+                                        "minecraft:item_model": "aspects:evergrowing_blade",
+                                        "minecraft:max_damage": 750,
+                                        "minecraft:consumable": {
+                                            "consume_seconds": 2147483647,
+                                            "animation": "block",
+                                            "has_consume_particles": false
+                                        },
+                                        "minecraft:use_effects": {
+                                            "speed_multiplier": 0.5,
+                                            "can_sprint": true,
+                                            "interact_vibrations": true
+                                        },
+                                        "minecraft:enchantments": {
+                                            "aspects:evergrowing_blade/mainhand": 1
+                                        },
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "evergrowing_blade": {
+                                                    "kill_counter": 0
+                                                }
+                                            }
+                                        },
+                                        "minecraft:item_name": {
+                                            "translate": "item.aspects.evergrowing_blade"
+                                        },
+                                        "minecraft:lore": [
+                                            {
+                                                "translate": "item.aspects.evergrowing_blade.kill_counter",
+                                                "italic": false,
+                                                "color": "#9966CC",
+                                                "with": [
+                                                    {
+                                                        "text": "0",
+                                                        "color": "#20c3ce"
+                                                    }
+                                                ]
+                                            },
+                                            "",
+                                            {
+                                                "translate": "item.modifiers.use_mainhand",
+                                                "color": "gray",
+                                                "italic": false
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "blue",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.evergrowing_blade.use_result_1"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/custom_items"
+        }
+    }
+}

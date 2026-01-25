@@ -67,7 +67,7 @@
                             "translate": "item.aspects.essence_cage.use_result_1",
                             "with": [
                                 {
-                                    "translate": "item.aspects.essence_extractor"
+                                    "translate": "item.aspects.evergrowing_blade"
                                 }
                             ]
                         }
@@ -88,7 +88,7 @@
                             "translate": "item.aspects.essence_cage.use_result_2",
                             "with": [
                                 {
-                                    "translate": "item.aspects.essence_extractor"
+                                    "translate": "item.aspects.evergrowing_blade"
                                 }
                             ]
                         }
@@ -109,7 +109,7 @@
                             "translate": "item.aspects.essence_cage.use_result_3",
                             "with": [
                                 {
-                                    "translate": "item.aspects.essence_extractor"
+                                    "translate": "item.aspects.evergrowing_blade"
                                 }
                             ]
                         }

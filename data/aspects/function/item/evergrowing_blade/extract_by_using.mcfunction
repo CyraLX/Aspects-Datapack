@@ -1,0 +1,3 @@
+function aspects:item/evergrowing_blade/raycast/start
+function aspects:item/evergrowing_blade/extract_from_victim
+function aspects:item/evergrowing_blade/tag/remove_all

@@ -1,3 +1,0 @@
-function aspects:item/essence_extractor/raycast/start
-function aspects:item/essence_extractor/extract_from_victim
-function aspects:item/essence_extractor/tag/remove_all

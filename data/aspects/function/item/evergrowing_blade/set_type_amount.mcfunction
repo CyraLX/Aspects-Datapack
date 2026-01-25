@@ -1,0 +1,20 @@
+scoreboard players set @s aspects.evergrowing_blade.has_extracted_any_essence 0
+
+execute if entity @s[type=#aspects:essence/type/apex] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/apex with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/aquatic] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/aquatic with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/beast] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/beast with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/bug] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/bug with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/dark] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/dark with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/ethereal] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/ethereal with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/feline] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/feline with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/fire] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/fire with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/flying] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/flying with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/humanoid] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/humanoid with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/ice] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/ice with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/normal] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/normal with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/ooze] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/ooze with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/plant] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/plant with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/steel] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/steel with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/undead] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/undead with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/void] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/void with storage aspectlib:dummy
+execute if entity @s[type=#aspects:essence/type/wild] if entity @p[tag=evergrowing_blade_attacker,distance=..32] run function aspects:item/evergrowing_blade/set_amount/wild with storage aspectlib:dummy

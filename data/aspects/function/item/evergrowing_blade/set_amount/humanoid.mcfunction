@@ -1,0 +1,2 @@
+$execute if entity @p[tag=evergrowing_blade_attacker,distance=..32] store result storage aspectlib:dummy stored_essences.humanoid int 1 run scoreboard players add #aspects aspects.essence.humanoid $(essence_amount)
+execute if entity @p[tag=evergrowing_blade_attacker,distance=..32] run scoreboard players set @s aspects.evergrowing_blade.has_extracted_any_essence 1

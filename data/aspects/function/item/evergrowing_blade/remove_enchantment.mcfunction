@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand {function:"minecraft:set_enchantments",add:false,enchantments:{"aspects:evergrowing_blade/mainhand":0}}

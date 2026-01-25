@@ -1,0 +1,87 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "aspects:evergrowing_blade",
+    "category": "equipment",
+    "pattern": [
+        " i ",
+        "viv",
+        "sas"
+    ],
+    "key": {
+        "i": [
+            "minecraft:iron_ingot"
+        ],
+        "v": [
+            "minecraft:sculk_vein"
+        ],
+        "s": [
+            "minecraft:sculk"
+        ],
+        "a": [
+            "minecraft:amethyst_shard"
+        ]
+    },
+    "result": {
+        "id": "minecraft:diamond_sword",
+        "count": 1,
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:item_model": "aspects:evergrowing_blade",
+            "minecraft:max_damage": 750,
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "block",
+                "has_consume_particles": false
+            },
+            "minecraft:use_effects": {
+                "speed_multiplier": 0.5,
+                "can_sprint": true,
+                "interact_vibrations": true
+            },
+            "minecraft:enchantments": {
+                "aspects:evergrowing_blade/mainhand": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "evergrowing_blade": {
+                        "kill_counter": 0
+                    }
+                }
+            },
+            "minecraft:item_name": [
+                {
+                    "translate": "item.aspects.evergrowing_blade"
+                }
+            ],
+            "minecraft:lore": [
+                {
+                    "translate": "item.aspects.evergrowing_blade.kill_counter",
+                    "italic": false,
+                    "color": "#9966CC",
+                    "with": [
+                        {
+                            "text": "0",
+                            "color": "#20c3ce"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use_mainhand",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.evergrowing_blade.use_result_1"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

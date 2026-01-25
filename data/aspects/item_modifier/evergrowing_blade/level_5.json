@@ -1,0 +1,43 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:evergrowing_blade/level_1"
+    },
+    {
+        "function": "minecraft:set_enchantments",
+        "add": false,
+        "enchantments": {
+            "aspects:evergrowing_blade/mainhand": 5
+        }
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "evergrowing_blade": {
+                    "kill_counter": 256
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 1,
+        "lore": [
+            {
+                "translate": "item.aspects.evergrowing_blade.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
+                "with": [
+                    {
+                        "text": "256",
+                        "color": "#20c3ce"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -12,7 +12,7 @@
                 "entity": [
                     {
                         "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_on_fire_with_visual"
+                        "name": "aspectlib:flags/is_on_fire"
                     }
                 ],
                 "damage": {

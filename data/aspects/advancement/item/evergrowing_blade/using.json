@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "consume_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "evergrowing_blade": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:item/evergrowing_blade/using"
+    },
+    "parent": "aspects:root"
+}

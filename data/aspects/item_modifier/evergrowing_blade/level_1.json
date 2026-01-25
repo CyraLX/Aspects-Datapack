@@ -1,0 +1,67 @@
+[
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:diamond_sword"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:item_model": "aspects:evergrowing_blade",
+            "minecraft:max_damage": 750,
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "block",
+                "has_consume_particles": false
+            },
+            "minecraft:use_effects": {
+                "speed_multiplier": 0.5,
+                "can_sprint": true,
+                "interact_vibrations": true
+            },
+            "minecraft:enchantments": {
+                "aspects:evergrowing_blade/mainhand": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "evergrowing_blade": {
+                        "kill_counter": 0
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.aspects.evergrowing_blade"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:evergrowing_blade/lore/base"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "insert",
+        "offset": 0,
+        "lore": [
+            {
+                "translate": "item.aspects.evergrowing_blade.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
+                "with": [
+                    {
+                        "text": "0",
+                        "color": "#20c3ce"
+                    }
+                ]
+            }
+        ]
+    }
+]

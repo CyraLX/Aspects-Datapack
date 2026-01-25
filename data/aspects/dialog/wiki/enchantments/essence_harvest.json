@@ -58,7 +58,7 @@
                         "translate": "enchantment.level.1"
                     },
                     {
-                        "translate": "item.aspects.essence_extractor"
+                        "translate": "item.aspects.evergrowing_blade"
                     },
                     {
                         "text": "",
@@ -105,7 +105,7 @@
                 "count": 1,
                 "components": {
                     "minecraft:stored_enchantments": {
-                        "aspects:essence_extractor/mainhand": 7
+                        "aspects:evergrowing_blade/mainhand": 7
                     }
                 }
             },
@@ -139,9 +139,9 @@
                 "id": "minecraft:diamond_sword",
                 "count": 1,
                 "components": {
-                    "minecraft:item_model": "aspects:essence_extractor",
+                    "minecraft:item_model": "aspects:evergrowing_blade",
                     "minecraft:enchantments": {
-                        "aspects:essence_extractor/mainhand": 5
+                        "aspects:evergrowing_blade/mainhand": 5
                     }
                 }
             },
@@ -161,7 +161,7 @@
                 "color": "#d6d6d6",
                 "extra": [
                     {
-                        "translate": "item.aspects.essence_extractor"
+                        "translate": "item.aspects.evergrowing_blade"
                     }
                 ]
             }

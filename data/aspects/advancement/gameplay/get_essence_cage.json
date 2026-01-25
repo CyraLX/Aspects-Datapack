@@ -54,5 +54,5 @@
             "picked_up_essence_cage"
         ]
     ],
-    "parent": "aspects:gameplay/get_essence_extractor"
+    "parent": "aspects:gameplay/get_evergrowing_blade"
 }

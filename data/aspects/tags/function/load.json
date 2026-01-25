@@ -34,7 +34,7 @@
             "required": false
         },
         {
-            "id": "aspects:item/essence_extractor/scoreboard/initialize",
+            "id": "aspects:item/evergrowing_blade/scoreboard/initialize",
             "required": false
         }
     ]
