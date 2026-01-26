@@ -9,4 +9,4 @@ execute if data storage aspectlib:dummy aspect_item.namespace run return fail
 execute unless data storage aspectlib:dummy aspect_item run return fail
 
 # Fix Aspect Item
-function aspects:data_fixer/aspect_item/fix with storage aspectlib:dummy
+function aspects:data_fixer/item/aspect/fix with storage aspectlib:dummy

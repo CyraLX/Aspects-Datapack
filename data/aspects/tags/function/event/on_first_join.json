@@ -10,7 +10,7 @@
             "required": false
         },
         {
-            "id": "aspects:data_fixer/aspect_item/check",
+            "id": "aspects:data_fixer/item/aspect/check",
             "required": false
         },
         {

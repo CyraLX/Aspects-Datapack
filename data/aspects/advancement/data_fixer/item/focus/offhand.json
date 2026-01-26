@@ -9,7 +9,7 @@
                         "entity": "this",
                         "predicate": {
                             "equipment": {
-                                "mainhand": {
+                                "offhand": {
                                     "predicates": {
                                         "minecraft:custom_data": {
                                             "aspects": {
@@ -28,7 +28,7 @@
                             "entity": "this",
                             "predicate": {
                                 "equipment": {
-                                    "mainhand": {
+                                    "offhand": {
                                         "predicates": {
                                             "minecraft:custom_data": {
                                                 "aspects": {
@@ -48,7 +48,7 @@
         }
     },
     "rewards": {
-        "function": "aspects:data_fixer/focus_item/modify_mainhand"
+        "function": "aspects:data_fixer/item/focus/modify_offhand"
     },
     "parent": "aspects:root"
 }

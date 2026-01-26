@@ -1,0 +1,66 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:enchantments": {
+                "aspects:essence_cage_awakened/mainhand": 1,
+                "aspectlib:exclusive_consumable/mainhand": 1
+            },
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:enchantments"
+                ]
+            },
+            "!minecraft:consumable": {}
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "translate": "item.aspects.awakened_essence_cage",
+                "color": "aqua"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 1,
+        "lore": [
+            {
+                "translate": "item.modifiers.use_mainhand_sneak_not",
+                "color": "gray",
+                "italic": false
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "append",
+        "lore": [
+            "",
+            {
+                "translate": "item.modifiers.use_mainhand_sneak",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.awakened_essence_cage.use_result_2"
+                    }
+                ]
+            }
+        ]
+    }
+]
