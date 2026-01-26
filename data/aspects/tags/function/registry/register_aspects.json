@@ -36,6 +36,10 @@
         {
             "id": "aspects:aspect/shulk/register_aspect",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/undead/register_aspect",
+            "required": false
         }
     ]
 }

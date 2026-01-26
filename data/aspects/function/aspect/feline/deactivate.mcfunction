@@ -1,5 +1,6 @@
 # Aspect specific PRE-DEACTIVATE logic
 ## Deactivate Predator Aspect Effect
+function aspectlib:player/id/expose
 function aspects:aspect/feline/predator/bossbar/destroy with storage aspectlib:dummy
 function aspects:aspect/feline/predator/scoreboard/reset
 ## Clear Night Vision Effect

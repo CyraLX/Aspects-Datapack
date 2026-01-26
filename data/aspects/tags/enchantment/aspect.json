@@ -36,6 +36,10 @@
         {
             "id": "aspects:aspect/shulk/body",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/undead/body",
+            "required": false
         }
     ]
 }
