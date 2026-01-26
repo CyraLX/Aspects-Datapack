@@ -520,7 +520,7 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.ignite_self",
+                                                "translate": "badge_details.aspects.effect.ignite_user",
                                                 "color": "green",
                                                 "with": [
                                                     {
@@ -939,7 +939,7 @@
                                 "extra": [
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.ignite_self",
+                                        "translate": "badge_details.aspects.effect.ignite_user",
                                         "color": "green",
                                         "with": [
                                             {
