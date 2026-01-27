@@ -3,23 +3,21 @@
     "terms": [
         {
             "condition": "minecraft:reference",
-            "name":"aspectlib:flags/is_raining"
+            "name": "aspectlib:flags/is_exposed_to_sky"
         },
         {
             "condition": "minecraft:reference",
-            "name":"aspectlib:flags/is_exposed_to_sky"
+            "name": "aspectlib:flags/is_daytime"
         },
         {
             "condition": "minecraft:reference",
-            "name":"aspectlib:dimension/flags/has_weather_cycle"
+            "name": "aspectlib:dimension/flags/has_sun"
         },
         {
             "condition": "minecraft:inverted",
             "term": {
-                "condition": "minecraft:location_check",
-                "predicate": {
-                    "biomes": "#aspectlib:no_rain"
-                }
+                "condition": "minecraft:reference",
+                "name": "aspectlib:flags/is_raining"
             }
         }
     ]

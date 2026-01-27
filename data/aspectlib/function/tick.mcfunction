@@ -1,7 +1,3 @@
-# Run Player Stats logic
-## Health
-function aspectlib:player/stats/health/tick
-
 # Run Predicate logic
 ## Submerged
 function aspectlib:predicate/submerged/tick

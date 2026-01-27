@@ -118,7 +118,7 @@
                         },
                         {
                             "condition": "minecraft:weather_check",
-                            "thundering": false
+                            "raining": false
                         },
                         {
                             "condition": "minecraft:entity_properties",
