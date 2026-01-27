@@ -769,10 +769,6 @@
         },
         {
             "type": "minecraft:plain_message",
-            "contents": ""
-        },
-        {
-            "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
                 "translate": "dialog.aspects.chosen_aspect.confirmation",
