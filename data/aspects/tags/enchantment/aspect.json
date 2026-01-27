@@ -38,7 +38,7 @@
             "required": false
         },
         {
-            "id": "aspects:aspect/undead/body",
+            "id": "aspects:aspect/rotten/body",
             "required": false
         }
     ]

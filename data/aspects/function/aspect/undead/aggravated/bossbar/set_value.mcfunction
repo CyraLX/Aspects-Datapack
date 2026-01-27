@@ -1,1 +1,0 @@
-$execute store result bossbar aspects:undead/aggravated/player_$(id) value run scoreboard players get @s aspects.aspect.undead.aggravated_timer

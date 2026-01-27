@@ -1,0 +1,2 @@
+attribute @s minecraft:movement_speed modifier remove aspects:rotten/aggravated_movement_speed
+attribute @s minecraft:attack_damage modifier remove aspects:rotten/not_aggravated_attack_damage

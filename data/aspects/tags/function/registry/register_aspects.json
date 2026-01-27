@@ -38,7 +38,7 @@
             "required": false
         },
         {
-            "id": "aspects:aspect/undead/register_aspect",
+            "id": "aspects:aspect/rotten/register_aspect",
             "required": false
         }
     ]
