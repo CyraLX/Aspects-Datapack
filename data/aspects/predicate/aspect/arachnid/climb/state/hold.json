@@ -17,7 +17,7 @@
                 },
                 {
                     "condition": "minecraft:reference",
-                    "name": "aspectlib:flags/is_sneaking"
+                    "name": "aspectlib:input/sneak"
                 }
             ]
         }

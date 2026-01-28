@@ -3,6 +3,7 @@ function aspects:aspect/arachnid/climb/remove_effects
 function aspects:aspect/arachnid/climb/set_flags/all
 function aspects:aspect/arachnid/climb/attribute/remove
 
+
 # Return early if not touching wall or ceiling
 execute unless predicate aspects:aspect/arachnid/climb/is_touching_any run return fail
 

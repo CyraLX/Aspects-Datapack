@@ -19,7 +19,7 @@
                     "condition": "minecraft:inverted",
                     "term": {
                         "condition": "minecraft:reference",
-                        "name": "aspectlib:flags/is_sneaking"
+                        "name": "aspectlib:input/sneak"
                     }
                 }
             ]
