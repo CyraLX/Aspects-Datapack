@@ -1,0 +1,64 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:all_of",
+            "terms": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "effects": {
+                            "minecraft:levitation": {
+                                "duration": {
+                                    "max": 20
+                                },
+                                "amplifier": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "effects": {
+                                        "minecraft:levitation": {
+                                            "duration": {
+                                                "min": 21
+                                            },
+                                            "amplifier": {
+                                                "max": 0
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "effects": {
+                                        "minecraft:levitation": {
+                                            "duration": {
+                                                "min": 21
+                                            },
+                                            "amplifier": {
+                                                "min": 2
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

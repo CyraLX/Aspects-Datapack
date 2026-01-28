@@ -1,0 +1,1 @@
+$execute if block ~ ~ ~-$(half_of_hitbox_width) #aspects:aspect/arachnid/climb/wall run scoreboard players set @s aspects.aspect.arachnid.is_touching_wall.north 1

@@ -1,0 +1,1 @@
+attribute @s minecraft:gravity modifier remove aspects:arachnid/climb_gravity

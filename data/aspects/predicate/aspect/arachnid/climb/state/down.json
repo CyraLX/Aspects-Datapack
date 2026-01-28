@@ -1,0 +1,28 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:reference",
+                "name": "aspects:aspect/arachnid/climb/state/up"
+            }
+        },
+        {
+            "condition": "minecraft:all_of",
+            "terms": [
+                {
+                    "condition": "minecraft:reference",
+                    "name": "aspects:aspect/arachnid/climb/is_touching_wall/any"
+                },
+                {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:reference",
+                        "name": "aspectlib:flags/is_sneaking"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.aspect.arachnid.is_touching_wall.north": {
+            "min": 1
+        }
+    }
+}

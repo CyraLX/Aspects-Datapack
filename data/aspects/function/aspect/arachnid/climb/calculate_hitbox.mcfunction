@@ -1,0 +1,2 @@
+execute store result storage aspectlib:dummy half_of_hitbox_width double 0.000301 run attribute @s minecraft:scale get 1000
+execute store result storage aspectlib:dummy crouched_hitbox_height double 0.001501 run attribute @s minecraft:scale get 1000

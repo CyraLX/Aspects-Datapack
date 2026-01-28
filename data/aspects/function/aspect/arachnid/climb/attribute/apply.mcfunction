@@ -1,0 +1,1 @@
+attribute @s minecraft:gravity modifier add aspects:arachnid/climb_gravity -1 add_multiplied_total

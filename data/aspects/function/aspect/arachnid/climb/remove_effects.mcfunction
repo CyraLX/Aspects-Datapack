@@ -1,0 +1,2 @@
+execute if predicate aspects:aspect/arachnid/climb/should_remove_effect/levitation run effect clear @s minecraft:levitation
+execute if predicate aspects:aspect/arachnid/climb/should_remove_effect/slow_falling run effect clear @s minecraft:slow_falling

@@ -1,0 +1,1 @@
+execute if entity @s[y_rotation=0.0..90.0] run scoreboard players set @s aspectlib.rotation.is_south-west 1

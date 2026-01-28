@@ -1,0 +1,1 @@
+$execute if block ~ ~$(crouched_hitbox_height) ~ #aspects:aspect/arachnid/climb/ceiling run scoreboard players set @s aspects.aspect.arachnid.is_touching_ceiling 1

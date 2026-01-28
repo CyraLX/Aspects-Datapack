@@ -1,0 +1,66 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:input/left"
+        },
+        {
+            "condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:flags/is_rotated/cardinal/north"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspects:aspect/arachnid/climb/is_touching_wall/west"
+                        }
+                    ]
+                },
+                {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:flags/is_rotated/cardinal/east"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspects:aspect/arachnid/climb/is_touching_wall/north"
+                        }
+                    ]
+                },
+                {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:flags/is_rotated/cardinal/south"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspects:aspect/arachnid/climb/is_touching_wall/east"
+                        }
+                    ]
+                },
+                {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:flags/is_rotated/cardinal/west"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspects:aspect/arachnid/climb/is_touching_wall/south"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
