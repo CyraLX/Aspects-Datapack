@@ -12,3 +12,4 @@ function aspects:aspect/generic/register_aspect with storage aspects:registry as
 # Setup scoreboard objectives for the Aspect
 function aspects:aspect/rotten/aggravated/scoreboard/initialize
 scoreboard objectives add aspects.aspect.rotten.summon_owner_id dummy
+scoreboard objectives add aspects.aspect.rotten.summon_variant dummy

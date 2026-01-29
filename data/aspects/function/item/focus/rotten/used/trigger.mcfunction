@@ -5,8 +5,12 @@ tag @s add aspects.rotten.focus_user
 # Store owner data
 data remove storage aspectlib:dummy id
 data remove storage aspectlib:dummy uuid
+data remove storage aspectlib:dummy username
+data remove storage aspectlib:dummy rotten_color
 function aspectlib:player/id/expose
 function aspectlib:player/uuid/expose
+function aspectlib:player/username/expose with storage aspectlib:dummy
+data modify storage aspectlib:dummy rotten_color set from storage aspects:registry aspect."aspects:rotten".color
 
 # Make the attacker a summon target
 execute on attacker if loaded ~ ~ ~ run tag @s add aspects.rotten.summon_target

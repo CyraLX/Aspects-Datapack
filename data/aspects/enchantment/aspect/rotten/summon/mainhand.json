@@ -1,0 +1,316 @@
+{
+    "description": {
+        "text": "",
+        "extra": [
+            {
+                "translate": "aspect.aspects.rotten"
+            },
+            " ",
+            {
+                "translate": "extra.aspects.summons"
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:post_attack": [
+            {
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Health: 0.0f}"
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/rotten/advancement/summon_killed_target"
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 20
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "aspects.aspect.rotten.summon_owner_id": {
+                                        "min": 0
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/rotten/summons/remove_held_item"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspects.aspect.rotten.summon_variant": 1
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:block_crumble",
+                        "block_state": "minecraft:rooted_dirt"
+                    },
+                    "speed": 1.0,
+                    "horizontal_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "horizontal_velocity": {
+                        "movement_scale": 0.5
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "vertical_velocity": {
+                        "base": 0.02
+                    }
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspects.aspect.rotten.summon_variant": 2
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:block_crumble",
+                        "block_state": "minecraft:netherrack"
+                    },
+                    "speed": 1.0,
+                    "horizontal_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "horizontal_velocity": {
+                        "movement_scale": 0.5
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "vertical_velocity": {
+                        "base": 0.02
+                    }
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspects.aspect.rotten.summon_variant": 3
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:block_crumble",
+                        "block_state": "minecraft:end_stone"
+                    },
+                    "speed": 1.0,
+                    "horizontal_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "horizontal_velocity": {
+                        "movement_scale": 0.5
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "vertical_velocity": {
+                        "base": 0.02
+                    }
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 10
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspects.aspect.rotten.summon_variant": 3
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:reverse_portal"
+                            },
+                            "speed": 0.3,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        },
+                        {
+                            "type": "minecraft:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:witch"
+                            },
+                            "speed": 0.0,
+                            "horizontal_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "horizontal_velocity": {
+                                "movement_scale": 0.5
+                            },
+                            "vertical_position": {
+                                "type": "in_bounding_box"
+                            },
+                            "vertical_velocity": {
+                                "base": 0.02
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 2
+                            }
+                        },
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "aspects.aspect.rotten.summon_variant": {
+                                        "min": 1,
+                                        "max": 3
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:block_crumble",
+                        "block_state": "minecraft:end_stone"
+                    },
+                    "speed": 1.0,
+                    "horizontal_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "horizontal_velocity": {
+                        "movement_scale": 0.5
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box"
+                    },
+                    "vertical_velocity": {
+                        "base": 0.02
+                    }
+                }
+            }
+        ]
+    }
+}

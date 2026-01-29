@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "#aspects:aspect/rotten/summons"
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "aspects.aspect.rotten.summon_owner_id": {
+                    "min": 0
+                }
+            }
+        }
+    ]
+}

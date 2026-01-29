@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:zombified_piglin_spawn_egg",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.rotten.mass_hysteria"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.rotten.mass_hysteria.description",
+                "with": [
+                    {
+                        "translate": "aspect.aspects.rotten"
+                    }
+                ]
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.rotten.mass_hysteria.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "summon_kills_summon": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "aspects:gameplay/aspect/rotten/undead_horde"
+}

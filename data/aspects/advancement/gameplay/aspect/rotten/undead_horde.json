@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_sword",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.rotten.undead_horde"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.rotten.undead_horde.description"
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "summon_killed_entity": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "aspects:gameplay/aspect/rotten/root"
+}
