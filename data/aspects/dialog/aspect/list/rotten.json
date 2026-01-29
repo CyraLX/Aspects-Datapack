@@ -419,35 +419,6 @@
                                                         ]
                                                     }
                                                 ]
-                                            },
-                                            "\n",
-                                            {
-                                                "translate": "badge_details.aspects.modifier_format",
-                                                "color": "green",
-                                                "with": [
-                                                    {
-                                                        "translate": "badge_details.aspects.effect.attribute",
-                                                        "with": [
-                                                            "+10%",
-                                                            {
-                                                                "translate": "attribute.name.movement_speed"
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.duration",
-                                                        "color": "gray",
-                                                        "italic": true,
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "5"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
                                             }
                                         ]
                                     }
@@ -617,35 +588,6 @@
                                                     "+20%",
                                                     {
                                                         "translate": "attribute.name.attack_damage"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "translate": "badge_details.aspects.modifier.duration",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "with": [
-                                                    {
-                                                        "translate": "extra.aspects.seconds",
-                                                        "with": [
-                                                            "5"
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "with": [
-                                                    "+10%",
-                                                    {
-                                                        "translate": "attribute.name.movement_speed"
                                                     }
                                                 ]
                                             },
