@@ -1,0 +1,139 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:focus_dummy"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:item_model": "aspects:focus/rotten",
+            "minecraft:consumable": {
+                "consume_seconds": 1.5,
+                "animation": "bow",
+                "sound": "minecraft:block.amethyst_block.resonate",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 90,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.aspects.focus.rotten",
+                        "color": "#ffff55"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:item_model": "aspects:focus/rotten",
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
+                    "minecraft:enchantments": {
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "focus": {
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "rotten"
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "focus": {
+                        "aspect": {
+                            "namespace": "aspects",
+                            "name": "rotten"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.aspects.focus.rotten",
+                "color": "#ffff55"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "replace_all",
+        "lore": [
+            {
+                "translate": "lore.equipment.use_time_format",
+                "color": "gray",
+                "italic": false,
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_time"
+                    },
+                    {
+                        "translate": "lore.equipment.use_time.seconds",
+                        "color": "#757575",
+                        "with": [
+                            "1.5"
+                        ]
+                    }
+                ]
+            },
+            {
+                "translate": "lore.equipment.use_cooldown_format",
+                "color": "gray",
+                "italic": false,
+                "with": [
+                    {
+                        "translate": "lore.equipment.use_cooldown"
+                    },
+                    {
+                        "translate": "lore.equipment.use_cooldown.seconds",
+                        "color": "#757575",
+                        "with": [
+                            "90"
+                        ]
+                    }
+                ]
+            },
+            "",
+            {
+                "translate": "item.modifiers.use",
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "translate": "item.aspects.focus.rotten.use_result_1",
+                        "with": [
+                            "4",
+                            {
+                                "translate": "entity.minecraft.zombified_piglin"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

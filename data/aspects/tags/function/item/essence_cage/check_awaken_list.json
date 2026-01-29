@@ -34,6 +34,10 @@
             "required": false
         },
         {
+            "id": "aspects:item/essence_cage/check_awaken_list/rotten",
+            "required": false
+        },
+        {
             "id": "aspects:item/essence_cage/check_awaken_list/human",
             "required": false
         }

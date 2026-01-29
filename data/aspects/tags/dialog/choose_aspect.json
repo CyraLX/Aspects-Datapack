@@ -36,6 +36,10 @@
         {
             "id": "aspects:aspect/choose/rascal",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/rotten",
+            "required": false
         }
     ]
 }

@@ -27,6 +27,14 @@
     "effects": {
         "minecraft:prevent_equipment_drop": {},
         "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:armor",
+                "id": "aspects:rotten/armor",
+                "operation": "add_value",
+                "amount": 2
+            }
+        ],
         "minecraft:damage_immunity": [
             {
                 "requirements": {
@@ -49,12 +57,27 @@
                     "condition": "minecraft:all_of",
                     "terms": [
                         {
+                            "condition": "minecraft:any_of",
+                            "terms": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "location": {
+                                            "dimension": "minecraft:overworld"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
                             "condition": "minecraft:time_check",
+                            "clock": "minecraft:overworld",
+                            "period": 24000,
                             "value": {
                                 "min": 0,
                                 "max": 12000
-                            },
-                            "period": 24000
+                            }
                         },
                         {
                             "condition": "minecraft:weather_check",
@@ -68,20 +91,6 @@
                                     "can_see_sky": true
                                 }
                             }
-                        },
-                        {
-                            "condition": "minecraft:any_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "location": {
-                                            "dimension": "minecraft:overworld"
-                                        }
-                                    }
-                                }
-                            ]
                         }
                     ]
                 },
@@ -92,8 +101,8 @@
                             "type": "minecraft:attribute",
                             "attribute": "minecraft:attack_damage",
                             "id": "aspects:rotten/sun_attack_damage",
-                            "amount": -0.1,
-                            "operation": "add_multiplied_base"
+                            "operation": "add_multiplied_base",
+                            "amount": -0.1
                         }
                     ]
                 }
@@ -117,8 +126,8 @@
                     "type": "minecraft:attribute",
                     "attribute": "minecraft:movement_speed",
                     "id": "aspects:rotten/water_movement_speed",
-                    "amount": -0.3,
-                    "operation": "add_multiplied_base"
+                    "operation": "add_multiplied_base",
+                    "amount": -0.5
                 }
             }
         ],

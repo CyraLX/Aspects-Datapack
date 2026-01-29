@@ -303,7 +303,7 @@
                                                 "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "block.minecraft.magma_block"
+                                                        "translate": "damage_types.minecraft.hot_floor"
                                                     }
                                                 ]
                                             },
@@ -687,7 +687,7 @@
                                         "color": "green",
                                         "with": [
                                             {
-                                                "translate": "block.minecraft.magma_block"
+                                                "translate": "damage_types.minecraft.hot_floor"
                                             }
                                         ]
                                     },

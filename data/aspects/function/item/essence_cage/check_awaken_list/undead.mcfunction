@@ -1,1 +1,0 @@
-execute if score #aspects aspects.essence.undead matches 60.. if score #aspects aspects.essence.normal matches 60.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect."aspects:rotten"

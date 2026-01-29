@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "consume_item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/rotten/is_active"
+                    }
+                ],
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "aspects": {
+                                "focus": {
+                                    "aspect": {
+                                        "namespace": "aspects",
+                                        "name": "rotten"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "aspects:item/focus/rotten/used/trigger"
+    },
+    "parent": "aspects:root"
+}

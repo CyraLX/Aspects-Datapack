@@ -32,6 +32,14 @@
         {
             "id": "aspects:config/aspectless_players_negative_effects/default",
             "required": false
+        },
+        {
+            "id": "aspects:config/enderian/teleport_downward_distance/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/enderian/teleport_forward_distance/default",
+            "required": false
         }
     ]
 }
