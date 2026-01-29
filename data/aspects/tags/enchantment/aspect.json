@@ -40,6 +40,10 @@
         {
             "id": "aspects:aspect/rotten/body",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/arachnid/body",
+            "required": false
         }
     ]
 }

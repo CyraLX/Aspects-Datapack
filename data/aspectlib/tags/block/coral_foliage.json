@@ -1,0 +1,12 @@
+{
+    "values": [
+        {
+            "id": "#aspectlib:alive_coral_foliage",
+            "required": false
+        },
+        {
+            "id": "#aspectlib:dead_coral_foliage",
+            "required": false
+        }
+    ]
+}

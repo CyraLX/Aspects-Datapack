@@ -1,0 +1,1 @@
+$give @s minecraft:cobweb $(cobweb_amount)

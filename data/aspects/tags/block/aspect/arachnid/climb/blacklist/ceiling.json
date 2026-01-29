@@ -1,7 +1,7 @@
 {
     "values": [
         {
-            "id": "#aspectlib:is_whole"
+            "id": "#aspectlib:no_collision"
         }
     ]
 }
