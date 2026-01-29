@@ -1,5 +1,7 @@
 advancement revoke @s only aspects:item/focus/rotten/use
 
+execute unless predicate aspectlib:flags/is_alive run return fail
+
 tag @s add aspects.rotten.focus_user
 
 # Store owner data

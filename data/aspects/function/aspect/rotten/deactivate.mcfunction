@@ -9,4 +9,6 @@ function aspects:aspect/rotten/aggravated/attribute/revokeall
 function aspects:aspect/generic/deactivate with storage aspects:registry aspect."aspects:rotten"
 
 # Aspect specific POST-DEACTIVATE logic
-
+## Kill existing summons
+function aspectlib:player/id/expose
+function aspects:aspect/rotten/summons/death_kills with storage aspectlib:dummy
