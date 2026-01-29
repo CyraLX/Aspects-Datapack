@@ -6,19 +6,29 @@
             "name": "aspectlib:flags/is_exposed_to_sky"
         },
         {
-            "condition": "minecraft:reference",
-            "name": "aspectlib:flags/is_daytime"
-        },
-        {
-            "condition": "minecraft:reference",
-            "name": "aspectlib:dimension/flags/has_sun"
-        },
-        {
             "condition": "minecraft:inverted",
             "term": {
                 "condition": "minecraft:reference",
                 "name": "aspectlib:flags/is_raining"
             }
+        },
+        {
+            "condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:dimension/overworld/is_located"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspectlib:dimension/overworld/is_daytime"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
