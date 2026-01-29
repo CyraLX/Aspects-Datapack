@@ -40,6 +40,10 @@
         {
             "id": "aspects:aspect/rotten/activate_from_trigger",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/arachnid/activate_from_trigger",
+            "required": false
         }
     ]
 }

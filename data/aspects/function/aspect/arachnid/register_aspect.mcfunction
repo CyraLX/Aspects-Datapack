@@ -4,7 +4,7 @@
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
 ## sound = Sound Event for your Aspect
-data modify storage aspects:registry aspect."aspects:arachnid" set value {id: 10, namespace: "aspects", name: "arachnid", color: "#d5d5d5", sound: "minecraft:entity.spider.ambient"}
+data modify storage aspects:registry aspect."aspects:arachnid" set value {id: 10, namespace: "aspects", name: "arachnid", color: "#3b250d", sound: "minecraft:entity.spider.ambient"}
 
 # Generic REGISTER_ASPECT logic
 function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:arachnid"

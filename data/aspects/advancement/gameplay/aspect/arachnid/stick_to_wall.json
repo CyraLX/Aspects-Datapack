@@ -10,6 +10,12 @@
         "description": [
             {
                 "translate": "advancements.aspects.aspect.arachnid.stick_to_wall.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.arachnid.stick_to_wall.lore",
+                "color": "gray",
+                "italic": true
             }
         ],
         "frame": "task",
