@@ -644,10 +644,6 @@
         {
             "id": "minecraft:test_instance_block",
             "required": false
-        },
-        {
-            "id": "minecraft:dried_ghast",
-            "required": false
         }
     ]
 }
