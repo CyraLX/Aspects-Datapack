@@ -1,7 +1,7 @@
 # Get random number
 execute store result score #aspects aspectlib.dummy run random value 1..1000 aspects:rotten/zombie_summon_weapon
 # Give base jigsaw weapon
-item replace entity @s weapon.mainhand with minecraft:jigsaw[minecraft:enchantments={"aspects:aspect/rotten/summon/mainhand":1,"minecraft:smite":2,"minecraft:bane_of_arthropods":1},minecraft:enchantment_glint_override=false,minecraft:item_model="minecraft:golden_sword"]
+item replace entity @s weapon.mainhand with minecraft:jigsaw[minecraft:enchantments={"aspects:aspect/rotten/summon/mainhand":1,"minecraft:smite":1,"minecraft:bane_of_arthropods":1},minecraft:enchantment_glint_override=false,minecraft:item_model="minecraft:golden_sword"]
 
 # Change item model based on random number
 ## Weapons
