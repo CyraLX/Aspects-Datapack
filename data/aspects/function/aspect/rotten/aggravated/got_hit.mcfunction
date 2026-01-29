@@ -12,9 +12,13 @@ function aspects:aspect/rotten/aggravated/bossbar/update
 # Activate Attributes
 function aspects:aspect/rotten/aggravated/attribute/activated
 # Alert nearby summons
+## Make sure summons don't aggro themselves (unused)
 # execute on attacker if entity @s[type=#aspects:aspect/rotten/summons] run return fail
-data remove storage aspectlib:dummy owner_UUID
+## Reset data
+data remove storage aspectlib:dummy id
 data remove storage aspectlib:dummy target_UUID
-data modify storage aspectlib:dummy owner_UUID set from entity @s UUID
+## Store data
+function aspectlib:player/id/expose
 execute on attacker if loaded ~ ~ ~ run data modify storage aspectlib:dummy target_UUID set from entity @s UUID
-execute if data storage aspectlib:dummy target_UUID as @e[type=#aspects:aspect/rotten/summons,distance=..32] run function aspects:aspect/rotten/aggravated/prepare_to_anger_summons with storage aspectlib:dummy
+## Run anger macro on owned summons
+execute if data storage aspectlib:dummy target_UUID run function aspects:aspect/rotten/summons/prepare_to_anger with storage aspectlib:dummy

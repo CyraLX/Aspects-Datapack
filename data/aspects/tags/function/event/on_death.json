@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        
+        {
+            "id": "aspects:aspect/rotten/on_death",
+            "required": false
+        }
     ]
 }

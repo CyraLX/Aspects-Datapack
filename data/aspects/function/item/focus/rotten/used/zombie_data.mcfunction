@@ -12,7 +12,9 @@ data modify entity @s equipment set value {}
 data modify entity @s active_effects set value [{id:"minecraft:slowness",amplifier:9,duration:10,show_particles:false,show_icon:false},{id:"minecraft:instant_damage",amplifier:9,duration:10,show_particles:false,show_icon:false}]
 # data modify entity @s home_pos set from entity @s Pos
 # data modify entity @s home_radius set value 16
-data modify entity @s data.aspects.owner set from storage aspectlib:dummy owner_UUID
+data modify entity @s data.aspects.owner.UUID set from storage aspectlib:dummy uuid
+data modify entity @s data.aspects.owner.ID set from storage aspectlib:dummy id
+execute store result score @s aspects.aspect.rotten.summon_owner_id run data get storage aspectlib:dummy id
 
 # Set aggro to target
 execute if data storage aspectlib:dummy target_UUID run function aspects:item/focus/rotten/used/zombie_make_angry

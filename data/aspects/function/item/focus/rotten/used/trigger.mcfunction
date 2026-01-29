@@ -1,8 +1,12 @@
 advancement revoke @s only aspects:item/focus/rotten/use
 
 tag @s add aspects.rotten.focus_user
-data remove storage aspectlib:dummy owner_UUID
-data modify storage aspectlib:dummy owner_UUID set from entity @s UUID
+
+# Store owner data
+data remove storage aspectlib:dummy id
+data remove storage aspectlib:dummy uuid
+function aspectlib:player/id/expose
+function aspectlib:player/uuid/expose
 
 # Make the attacker a summon target
 execute on attacker if loaded ~ ~ ~ run tag @s add aspects.rotten.summon_target
