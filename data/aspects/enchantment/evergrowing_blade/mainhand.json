@@ -126,33 +126,21 @@
             {
                 "requirements": [
                     {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "attacker",
-                                "predicate": {
-                                    "equipment": {
-                                        "offhand": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "essence_cage": {}
-                                                    }
-                                                }
+                        "condition": "minecraft:entity_properties",
+                        "entity": "attacker",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "essence_cage": {}
                                             }
                                         }
                                     }
                                 }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "attacker",
-                                "scores": {
-                                    "aspects.evergrowing_blade.has_extracted_this_tick": 0
-                                }
                             }
-                        ]
+                        }
                     },
                     {
                         "condition": "minecraft:all_of",
@@ -242,33 +230,21 @@
             {
                 "requirements": [
                     {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "attacker",
-                                "predicate": {
-                                    "equipment": {
-                                        "offhand": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "essence_cage": {}
-                                                    }
-                                                }
+                        "condition": "minecraft:entity_properties",
+                        "entity": "attacker",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "predicates": {
+                                        "minecraft:custom_data": {
+                                            "aspects": {
+                                                "essence_cage": {}
                                             }
                                         }
                                     }
                                 }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "attacker",
-                                "scores": {
-                                    "aspects.evergrowing_blade.has_extracted_this_tick": 0
-                                }
                             }
-                        ]
+                        }
                     },
                     {
                         "condition": "minecraft:all_of",
@@ -359,122 +335,6 @@
                 },
                 "enchanted": "attacker",
                 "affected": "victim"
-            },
-            {
-                "requirements": [
-                    {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "attacker",
-                                "predicate": {
-                                    "equipment": {
-                                        "offhand": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "essence_cage": {}
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "minecraft:entity_scores",
-                                "entity": "attacker",
-                                "scores": {
-                                    "aspects.evergrowing_blade.has_extracted_this_tick": 0
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "nbt": "{Health: 0.0f}"
-                                }
-                            },
-                            {
-                                "condition": "minecraft:any_of",
-                                "terms": [
-                                    {
-                                        "condition": "minecraft:entity_properties",
-                                        "entity": "this",
-                                        "predicate": {
-                                            "type": "#aspects:essence/has_any"
-                                        }
-                                    },
-                                    {
-                                        "condition": "minecraft:all_of",
-                                        "terms": [
-                                            {
-                                                "condition": "minecraft:inverted",
-                                                "term": {
-                                                    "condition": "minecraft:entity_properties",
-                                                    "entity": "this",
-                                                    "predicate": {
-                                                        "type": "minecraft:player"
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "condition": "minecraft:entity_properties",
-                                                "entity": "this",
-                                                "predicate": {
-                                                    "equipment": {
-                                                        "body": {
-                                                            "predicates": {
-                                                                "minecraft:enchantments": [
-                                                                    {
-                                                                        "enchantments": "#aspects:aspect"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "condition": "minecraft:all_of",
-                                        "terms": [
-                                            {
-                                                "condition": "minecraft:entity_properties",
-                                                "entity": "this",
-                                                "predicate": {
-                                                    "type": "minecraft:player"
-                                                }
-                                            },
-                                            {
-                                                "condition": "minecraft:entity_scores",
-                                                "entity": "this",
-                                                "scores": {
-                                                    "aspects.aspect_id": {
-                                                        "min": 0
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "aspects:item/evergrowing_blade/set_has_extracted_this_tick/true"
-                },
-                "enchanted": "attacker",
-                "affected": "attacker"
             }
         ],
         "minecraft:tick": [
@@ -482,12 +342,6 @@
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "aspects:item/evergrowing_blade/using_reset_check"
-                }
-            },
-            {
-                "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "aspects:item/evergrowing_blade/set_has_extracted_this_tick/false"
                 }
             }
         ]
