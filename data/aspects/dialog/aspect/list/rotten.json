@@ -365,34 +365,6 @@
                                         "extra": [
                                             "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.anger_thing_in_range_to_attacker",
-                                                "color": "green",
-                                                "with": [
-                                                    {
-                                                        "text": "",
-                                                        "extra": [
-                                                            {
-                                                                "translate": "extra.aspects.summoned"
-                                                            },
-                                                            " ",
-                                                            {
-                                                                "translate": "entity.minecraft.zombified_piglin"
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "text": "",
-                                                        "extra": [
-                                                            "32 ",
-                                                            {
-                                                                "translate": "extra.aspects.block"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            "\n",
-                                            {
                                                 "translate": "badge_details.aspects.modifier_format",
                                                 "color": "green",
                                                 "with": [
@@ -415,6 +387,34 @@
                                                                 "with": [
                                                                     "5"
                                                                 ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.anger_thing_in_range_to_attacker",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "text": "",
+                                                        "extra": [
+                                                            {
+                                                                "translate": "extra.aspects.summoned"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "entity.minecraft.zombified_piglin"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "extra": [
+                                                            "32 ",
+                                                            {
+                                                                "translate": "extra.aspects.block"
                                                             }
                                                         ]
                                                     }
@@ -494,6 +494,83 @@
                             },
                             "\n\n",
                             {
+                                "translate": "badge_details.aspects.trigger.damaged_by",
+                                "with": [
+                                    {
+                                        "text": "",
+                                        "extra": [
+                                            {
+                                                "translate": "extra.aspects.mobs"
+                                            },
+                                            "/",
+                                            {
+                                                "translate": "entity.minecraft.player"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "extra": [
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.modifier_format",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.duration",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "extra.aspects.seconds",
+                                                        "with": [
+                                                            "5"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.effect.anger_thing_in_range_to_attacker",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "text": "",
+                                                "extra": [
+                                                    {
+                                                        "translate": "extra.aspects.summoned"
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "entity.minecraft.zombified_piglin"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "extra": [
+                                                    "32 ",
+                                                    {
+                                                        "translate": "extra.aspects.block"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "\n\n",
+                            {
                                 "translate": "badge_details.aspects.trigger.inside",
                                 "with": [
                                     {
@@ -526,83 +603,6 @@
                                             "-10%",
                                             {
                                                 "translate": "attribute.name.attack_damage"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.damaged_by",
-                                "with": [
-                                    {
-                                        "text": "",
-                                        "extra": [
-                                            {
-                                                "translate": "extra.aspects.mobs"
-                                            },
-                                            "/",
-                                            {
-                                                "translate": "entity.minecraft.player"
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.anger_thing_in_range_to_attacker",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "text": "",
-                                                "extra": [
-                                                    {
-                                                        "translate": "extra.aspects.summoned"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "entity.minecraft.zombified_piglin"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "extra": [
-                                                    "32 ",
-                                                    {
-                                                        "translate": "extra.aspects.block"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "with": [
-                                                    "+20%",
-                                                    {
-                                                        "translate": "attribute.name.attack_damage"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "translate": "badge_details.aspects.modifier.duration",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "with": [
-                                                    {
-                                                        "translate": "extra.aspects.seconds",
-                                                        "with": [
-                                                            "5"
-                                                        ]
-                                                    }
-                                                ]
                                             }
                                         ]
                                     }
