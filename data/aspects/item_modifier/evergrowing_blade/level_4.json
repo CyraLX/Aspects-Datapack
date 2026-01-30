@@ -4,10 +4,19 @@
         "name": "aspects:evergrowing_blade/level_1"
     },
     {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:max_damage": 425
+        }
+    },
+    {
         "function": "minecraft:set_enchantments",
         "add": false,
         "enchantments": {
-            "aspects:evergrowing_blade/mainhand": 4
+            "aspects:evergrowing_blade/mainhand": 4,
+            "minecraft:mending": 1,
+            "minecraft:looting": 1,
+            "minecraft:unbreaking": 1
         }
     },
     {

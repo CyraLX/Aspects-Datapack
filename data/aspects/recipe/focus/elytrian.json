@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "aspects:focus/elytrian",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "aspects:focus/elytrian",
             "minecraft:consumable": {
                 "consume_seconds": 1,
                 "animation": "bow",

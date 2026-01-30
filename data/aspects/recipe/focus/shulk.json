@@ -33,6 +33,7 @@
                     "minecraft:enchantments"
                 ]
             },
+            "!minecraft:enchantments": {},
             "minecraft:item_model": "aspects:focus/shulk",
             "minecraft:consumable": {
                 "consume_seconds": 0.3,

@@ -2,7 +2,7 @@
     "description": {
         "translate": "enchantment.aspects.essence_harvest"
     },
-    "supported_items": "#minecraft:enchantable/weapon",
+    "supported_items": "minecraft:jigsaw",
     "weight": 1,
     "max_level": 7,
     "min_cost": {
@@ -18,14 +18,6 @@
         "mainhand"
     ],
     "effects": {
-        "minecraft:attributes": [
-            {
-                "attribute": "minecraft:attack_speed",
-                "id": "aspects:evergrowing_blade/attack_speed",
-                "operation": "add_value",
-                "amount": -0.1
-            }
-        ],
         "minecraft:damage": [
             {
                 "requirements": {
@@ -125,81 +117,6 @@
                         {
                             "type": "minecraft:run_function",
                             "function": "aspects:item/evergrowing_blade/kill_counter/trigger"
-                        }
-                    ]
-                },
-                "enchanted": "attacker",
-                "affected": "attacker"
-            },
-            {
-                "requirements": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "attacker",
-                        "predicate": {
-                            "equipment": {
-                                "mainhand": {
-                                    "predicates": {
-                                        "minecraft:custom_data": {
-                                            "aspects": {
-                                                "evergrowing_blade": {}
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "attacker",
-                        "scores": {
-                            "aspects.evergrowing_blade.has_extracted_this_tick": 0
-                        }
-                    },
-                    {
-                        "condition": "minecraft:all_of",
-                        "terms": [
-                            {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "nbt": "{Health: 0.0f}"
-                                }
-                            },
-                            {
-                                "condition": "minecraft:all_of",
-                                "terms": [
-                                    {
-                                        "condition": "minecraft:entity_properties",
-                                        "entity": "this",
-                                        "predicate": {
-                                            "type": "#aspects:essence/has_any"
-                                        }
-                                    },
-                                    {
-                                        "condition": "minecraft:inverted",
-                                        "term": {
-                                            "condition": "minecraft:entity_scores",
-                                            "entity": "this",
-                                            "scores": {
-                                                "aspects.essence.exhausted": {
-                                                    "min": 1
-                                                }
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                "effect": {
-                    "type": "minecraft:all_of",
-                    "effects": [
-                        {
-                            "type": "minecraft:change_item_damage",
-                            "amount": 1
                         }
                     ]
                 },
@@ -561,44 +478,6 @@
             }
         ],
         "minecraft:tick": [
-            {
-                "requirements": {
-                    "condition": "minecraft:all_of",
-                    "terms": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "periodic_tick": 10
-                            }
-                        },
-                        {
-                            "condition": "minecraft:inverted",
-                            "term": {
-                                "condition": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "equipment": {
-                                        "mainhand": {
-                                            "predicates": {
-                                                "minecraft:custom_data": {
-                                                    "aspects": {
-                                                        "evergrowing_blade": {}
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "aspects:item/evergrowing_blade/remove_enchantment"
-                }
-            },
             {
                 "effect": {
                     "type": "minecraft:run_function",

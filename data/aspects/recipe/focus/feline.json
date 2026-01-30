@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "aspects:focus/feline",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "aspects:focus/feline",
             "minecraft:consumable": {
                 "consume_seconds": 0.3,
                 "animation": "bow",

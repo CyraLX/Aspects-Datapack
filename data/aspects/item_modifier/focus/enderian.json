@@ -127,7 +127,13 @@
                         "translate": "item.aspects.focus.enderian.use_result_1",
                         "with": [
                             {
-                                "text": "25"
+                                "score": {
+                                    "name": "#aspects",
+                                    "objective": "aspects.config.enderian.teleport_forward_distance"
+                                },
+                                "extra": [
+                                    "/4"
+                                ]
                             }
                         ]
                     }

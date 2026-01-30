@@ -32,8 +32,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "aspects:focus/merling",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "aspects:focus/merling",
             "minecraft:consumable": {
                 "consume_seconds": 0.3,
                 "animation": "bow",

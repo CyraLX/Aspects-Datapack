@@ -3,13 +3,13 @@
     "group": "aspects:evergrowing_blade",
     "category": "equipment",
     "pattern": [
-        " i ",
-        "viv",
+        " d ",
+        "vdv",
         "sas"
     ],
     "key": {
-        "i": [
-            "minecraft:iron_ingot"
+        "d": [
+            "minecraft:diamond"
         ],
         "v": [
             "minecraft:sculk_vein"
@@ -22,12 +22,17 @@
         ]
     },
     "result": {
-        "id": "minecraft:diamond_sword",
+        "id": "minecraft:jigsaw",
         "count": 1,
         "components": {
             "minecraft:rarity": "uncommon",
+            "minecraft:max_stack_size": 1,
             "minecraft:item_model": "aspects:evergrowing_blade",
-            "minecraft:max_damage": 750,
+            "minecraft:max_damage": 500,
+            "minecraft:damage": 0,
+            "minecraft:weapon": {
+                "item_damage_per_attack": 1
+            },
             "minecraft:consumable": {
                 "consume_seconds": 2147483647,
                 "animation": "block",
@@ -41,6 +46,46 @@
             "minecraft:enchantments": {
                 "aspects:evergrowing_blade/mainhand": 1
             },
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:attack_damage",
+                    "id": "aspects:evergrowing_blade/attack_damage",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": 6,
+                    "display": {
+                        "type": "override",
+                        "value": {
+                            "text": " 7 ",
+                            "color": "dark_green",
+                            "extra": [
+                                {
+                                    "translate": "attribute.name.attack_damage"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:attack_speed",
+                    "id": "aspects:evergrowing_blade/attack_speed",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": -2.5,
+                    "display": {
+                        "type": "override",
+                        "value": {
+                            "text": " 1.5 ",
+                            "color": "dark_green",
+                            "extra": [
+                                {
+                                    "translate": "attribute.name.attack_speed"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
             "minecraft:custom_data": {
                 "aspects": {
                     "evergrowing_blade": {

@@ -1,7 +1,17 @@
-{
-    "function": "minecraft:set_enchantments",
-    "add": false,
-    "enchantments": {
-        "aspects:evergrowing_blade/mainhand": 3
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:max_damage": 450
+        }
+    },
+    {
+        "function": "minecraft:set_enchantments",
+        "add": false,
+        "enchantments": {
+            "aspects:evergrowing_blade/mainhand": 3,
+            "minecraft:mending": 1,
+            "minecraft:looting": 1
+        }
     }
-}
+]

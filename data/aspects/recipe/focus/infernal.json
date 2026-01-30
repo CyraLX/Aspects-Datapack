@@ -34,8 +34,8 @@
                     "minecraft:enchantments"
                 ]
             },
-            "minecraft:item_model": "aspects:focus/infernal",
             "!minecraft:enchantments": {},
+            "minecraft:item_model": "aspects:focus/infernal",
             "minecraft:consumable": {
                 "consume_seconds": 1.0,
                 "animation": "bow",

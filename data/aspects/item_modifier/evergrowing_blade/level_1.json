@@ -1,14 +1,19 @@
 [
     {
         "function": "minecraft:set_item",
-        "item": "minecraft:diamond_sword"
+        "item": "minecraft:jigsaw"
     },
     {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:rarity": "uncommon",
+            "minecraft:max_stack_size": 1,
             "minecraft:item_model": "aspects:evergrowing_blade",
-            "minecraft:max_damage": 750,
+            "minecraft:max_damage": 500,
+            "minecraft:damage": 0,
+            "minecraft:weapon": {
+                "item_damage_per_attack": 1
+            },
             "minecraft:consumable": {
                 "consume_seconds": 2147483647,
                 "animation": "block",
@@ -28,7 +33,47 @@
                         "kill_counter": 0
                     }
                 }
-            }
+            },
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:attack_damage",
+                    "id": "aspects:evergrowing_blade/attack_damage",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": 6,
+                    "display": {
+                        "type": "override",
+                        "value": {
+                            "text": " 7 ",
+                            "color": "dark_green",
+                            "extra": [
+                                {
+                                    "translate": "attribute.name.attack_damage"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:attack_speed",
+                    "id": "aspects:evergrowing_blade/attack_speed",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": -2.5,
+                    "display": {
+                        "type": "override",
+                        "value": {
+                            "text": " 1.5 ",
+                            "color": "dark_green",
+                            "extra": [
+                                {
+                                    "translate": "attribute.name.attack_speed"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
         }
     },
     {
