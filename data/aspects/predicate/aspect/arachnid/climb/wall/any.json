@@ -16,6 +16,10 @@
         {
             "condition": "minecraft:reference",
             "name": "aspects:aspect/arachnid/climb/wall/leftward"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "aspects:aspect/arachnid/climb/wall/jump"
         }
     ]
 }

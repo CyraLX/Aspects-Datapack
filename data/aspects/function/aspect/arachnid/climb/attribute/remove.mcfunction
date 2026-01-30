@@ -1,2 +1,0 @@
-attribute @s minecraft:gravity modifier remove aspects:arachnid/climb_gravity
-execute unless predicate aspects:aspect/arachnid/climb/state/hold run scoreboard players set @s aspects.aspect.arachnid.was_holding_wall 0

@@ -43,7 +43,7 @@
             {
                 "attribute": "minecraft:safe_fall_distance",
                 "id": "aspects:arachnid/safe_fall_distance",
-                "amount": 2,
+                "amount": 1,
                 "operation": "add_multiplied_base"
             }
         ],
@@ -56,6 +56,13 @@
             },
             {
                 "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "periodic_tick": 5
+                        }
+                    },
                     {
                         "condition": "minecraft:any_of",
                         "terms": [

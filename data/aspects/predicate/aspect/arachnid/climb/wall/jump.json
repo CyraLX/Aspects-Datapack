@@ -1,0 +1,23 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "aspectlib:input/jump"
+        },
+        {
+            "condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "aspects:aspect/arachnid/climb/is_touching_wall/any"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
