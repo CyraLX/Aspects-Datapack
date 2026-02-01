@@ -253,11 +253,6 @@
                                             "animation": "block",
                                             "has_consume_particles": false
                                         },
-                                        "minecraft:use_effects": {
-                                            "speed_multiplier": 0.5,
-                                            "can_sprint": true,
-                                            "interact_vibrations": true
-                                        },
                                         "minecraft:enchantments": {
                                             "aspects:evergrowing_blade/mainhand": 1
                                         },
