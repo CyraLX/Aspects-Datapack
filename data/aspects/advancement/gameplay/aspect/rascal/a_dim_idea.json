@@ -27,6 +27,12 @@
         "place_soul_light": {
             "trigger": "minecraft:placed_block",
             "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/rascal/is_active"
+                    }
+                ],
                 "location": [
                     {
                         "condition": "minecraft:location_check",

@@ -41,7 +41,7 @@
 				},
 				"min_format": 80,
 				"max_format": 88,
-				"directory": "overlay_f80-f88_1_21_10_backport"
+				"directory": "overlay_21_10_backport"
 			}
 		]
 	}
