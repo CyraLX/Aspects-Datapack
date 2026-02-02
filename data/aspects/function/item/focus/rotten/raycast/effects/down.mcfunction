@@ -2,8 +2,8 @@
 execute if score .raycastLimit aspects.item.focus.rotten.raycast_limit matches ..0 run return run function aspects:item/focus/rotten/using/effects
 
 # Finish Raycast if empty spot found
-execute unless block ~ ~ ~ #aspectlib:no_collision positioned ~ ~0.25 ~ run return run function aspects:item/focus/rotten/using/effects
+execute unless block ~ ~ ~ #aspectlib:no_collision positioned ~ ~1 ~ run return run function aspects:item/focus/rotten/using/effects
 
 # Recurse Raycast 
 scoreboard players remove .raycastLimit aspects.item.focus.rotten.raycast_limit 1
-execute if block ~ ~ ~ #aspectlib:no_collision positioned ~ ~-0.25 ~ run return run function aspects:item/focus/rotten/raycast/effects/down
+execute if block ~ ~ ~ #aspectlib:no_collision positioned ~ ~-1 ~ run return run function aspects:item/focus/rotten/raycast/effects/down
