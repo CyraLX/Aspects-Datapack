@@ -1,0 +1,333 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.aspect_info",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.arachnid",
+                "color": "#3b250d",
+                "shadow_color": -1
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.aspect_info.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.arachnid",
+                "color": "#3b250d",
+                "shadow_color": -1
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.arachnid",
+                        "color": "#3b250d",
+                        "shadow_color": -1
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.arachnid.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "arachnid"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination",
+                "color": "#c7ffe8"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                "color": "#d6d6d6",
+                "with": [
+                    {
+                        "text": "120"
+                    },
+                    {
+                        "translate": "lore.essence.bug"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/arachnid",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/arachnid/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.effects",
+                "color": "#f6c7ff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.aspect_effects"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 490,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.arachnid.arthropod",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.arachnid.arthropod.description",
+                                "italic": true,
+                                "with": [
+                                    {
+                                        "translate": "enchantment.minecraft.bane_of_arthropods"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.arachnid.climbing",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.arachnid.climbing.description",
+                                "italic": true
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.arachnid.cobweb_mastery",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.arachnid.cobweb_mastery.description",
+                                "italic": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/arachnid",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.focus",
+                "color": "#c7fdff"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.arachnid.use_name_1"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.arachnid.use_condition_1",
+                                    "with": [
+                                        {
+                                            "translate": "block.minecraft.cobweb"
+                                        }
+                                    ],
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.arachnid.use_result_1",
+                                            "with": [
+                                                "2",
+                                                {
+                                                    "translate": "block.minecraft.cobweb"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.arachnid.use_name_2"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.arachnid.use_condition_2",
+                                    "with": [
+                                        {
+                                            "translate": "block.minecraft.cobweb"
+                                        }
+                                    ],
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.arachnid.use_result_2_1",
+                                            "with": [
+                                                {
+                                                    "translate": "block.minecraft.cobweb"
+                                                }
+                                            ]
+                                        },
+                                        "\n",
+                                        {
+                                            "translate": "item.aspects.focus.arachnid.use_result_2_2",
+                                            "with": [
+                                                {
+                                                    "translate": "effect.minecraft.resistance"
+                                                },
+                                                {
+                                                    "translate": "potion.potency.2"
+                                                },
+                                                {
+                                                    "translate": "extra.aspects.seconds",
+                                                    "with": [
+                                                        "3"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "\n",
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "item.aspects.focus.arachnid.use_name_3"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "translate": "item.aspects.focus.arachnid.use_condition_3",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                "\n",
+                                {
+                                    "text": "",
+                                    "color": "blue",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.aspects.focus.arachnid.use_result_3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true
+}

@@ -127,7 +127,12 @@
             "show_tooltip": false,
             "description": {
                 "translate": "dialog.aspects.aspect_info.effects",
-                "color": "#f6c7ff"
+                "color": "#f6c7ff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.aspect_effects"
+                    }
+                ]
             }
         },
         {

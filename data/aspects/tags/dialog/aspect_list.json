@@ -40,6 +40,10 @@
         {
             "id": "aspects:aspect/list/rotten",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/list/arachnid",
+            "required": false
         }
     ]
 }

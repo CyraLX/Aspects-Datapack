@@ -87,7 +87,12 @@
                                     "value": {
                                         "translate": "dialog.aspects.chosen_aspect.effects.none.description",
                                         "color": "white",
-                                        "italic": true
+                                        "italic": true,
+                                        "with": [
+                                            {
+                                                "translate": "extra.aspects.aspect_effects"
+                                            }
+                                        ]
                                     }
                                 }
                             }
