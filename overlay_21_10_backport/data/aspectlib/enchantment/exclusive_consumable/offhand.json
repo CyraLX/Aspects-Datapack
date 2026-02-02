@@ -1,0 +1,124 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "components": {
+                                            "minecraft:consumable": {
+                                                "consume_seconds": 2147483647,
+                                                "animation": "block",
+                                                "has_consume_particles": false
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "aspectlib:exclusive_consumable/offhand",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspectlib:enchantment/exclusive_consumable/mainhand/remove"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "offhand": {
+                                            "components": {
+                                                "minecraft:consumable": {
+                                                    "consume_seconds": 2147483647,
+                                                    "animation": "block",
+                                                    "has_consume_particles": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "aspectlib:exclusive_consumable/offhand",
+                                                    "levels": {
+                                                        "min": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspectlib:enchantment/exclusive_consumable/offhand/apply"
+                }
+            }
+        ]
+    }
+}

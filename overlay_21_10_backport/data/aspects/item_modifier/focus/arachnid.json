@@ -115,7 +115,7 @@
             },
             "",
             {
-                "translate": "item.aspects.focus.arachnid.use_condition_1",
+                "translate": "item.aspects.focus.arachnid.use_condition_1.overlay",
                 "with": [
                     {
                         "translate": "block.minecraft.cobweb"
@@ -142,7 +142,7 @@
             },
             "",
             {
-                "translate": "item.aspects.focus.arachnid.use_condition_2",
+                "translate": "item.aspects.focus.arachnid.use_condition_2.overlay",
                 "with": [
                     {
                         "translate": "block.minecraft.cobweb"
@@ -187,22 +187,6 @@
                                 ]
                             }
                         ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.aspects.focus.arachnid.use_condition_3",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.arachnid.use_result_3"
                     }
                 ]
             }
