@@ -518,6 +518,11 @@
             "description": {
                 "translate": "dialog.aspects.chosen_aspect.focus",
                 "color": "#c7fdff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.aspect_effect"
+                    }
+                ],
                 "extra": [
                     " ",
                     {

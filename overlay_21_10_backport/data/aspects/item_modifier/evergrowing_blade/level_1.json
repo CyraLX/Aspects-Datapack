@@ -1,0 +1,107 @@
+[
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:jigsaw"
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "uncommon",
+            "minecraft:max_stack_size": 1,
+            "minecraft:item_model": "aspects:evergrowing_blade",
+            "minecraft:max_damage": 500,
+            "minecraft:damage": 0,
+            "minecraft:weapon": {
+                "item_damage_per_attack": 1
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "block",
+                "has_consume_particles": false
+            },
+            "minecraft:enchantments": {
+                "aspects:evergrowing_blade/mainhand": 1
+            },
+            "minecraft:custom_data": {
+                "aspects": {
+                    "evergrowing_blade": {
+                        "kill_counter": 0
+                    }
+                }
+            },
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:attack_damage",
+                    "id": "aspects:evergrowing_blade/attack_damage",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": 6,
+                    "display": {
+                        "type": "override",
+                        "value": {
+                            "text": " 7 ",
+                            "color": "dark_green",
+                            "extra": [
+                                {
+                                    "translate": "attribute.name.attack_damage"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:attack_speed",
+                    "id": "aspects:evergrowing_blade/attack_speed",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": -2.5,
+                    "display": {
+                        "type": "override",
+                        "value": {
+                            "text": " 1.5 ",
+                            "color": "dark_green",
+                            "extra": [
+                                {
+                                    "translate": "attribute.name.attack_speed"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "function": "minecraft:set_name",
+        "target": "item_name",
+        "entity": "this",
+        "name": [
+            {
+                "translate": "item.aspects.evergrowing_blade"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:evergrowing_blade/lore/base"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "insert",
+        "offset": 0,
+        "lore": [
+            {
+                "translate": "item.aspects.evergrowing_blade.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
+                "with": [
+                    {
+                        "text": "0",
+                        "color": "#20c3ce"
+                    }
+                ]
+            }
+        ]
+    }
+]
