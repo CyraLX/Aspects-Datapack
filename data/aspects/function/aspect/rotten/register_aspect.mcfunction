@@ -13,3 +13,4 @@ function aspects:aspect/generic/register_aspect with storage aspects:registry as
 function aspects:aspect/rotten/aggravated/scoreboard/initialize
 scoreboard objectives add aspects.aspect.rotten.summon_owner_id dummy
 scoreboard objectives add aspects.aspect.rotten.summon_variant dummy
+scoreboard objectives add aspects.item.focus.rotten.raycast_limit dummy
