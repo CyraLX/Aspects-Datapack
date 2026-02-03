@@ -3,7 +3,7 @@ tag @s add aspects.rotten.summon
 tag @s add aspects.rotten.summoned_temp
 tag @s add aspects.rotten.summon_recent
 # Apply NBT data
-$data modify entity @s CustomName set value {translate:"entity.aspects.rotten_summon",color:"$(rotten_color)",with:["$(username)",{translate:"entity.minecraft.zombified_piglin"}]}
+$data modify entity @s CustomName set value {translate:"entity.aspects.rotten_summon",color:"$(rotten_color)",shadow_color:$(rotten_shadow_color),with:["$(username)",{translate:"entity.minecraft.zombified_piglin"}]}
 data modify entity @s CustomNameVisible set value false
 data modify entity @s DeathLootTable set value "aspects:entity/rotten_summon"
 data modify entity @s drop_chances set value {body:0,chest:0,feet:0,head:0,legs:0,mainhand:0,offhand:0,saddle:0}

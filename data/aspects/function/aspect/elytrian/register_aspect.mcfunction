@@ -3,8 +3,9 @@
 ## namespace = Namespace string of your project
 ## name = Name string of your Aspect
 ## color = Hexidecimal color value for your Aspect
+## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
-data modify storage aspects:registry aspect."aspects:elytrian" set value {id: 6, namespace: "aspects", name: "elytrian", color: "#f2f10d", sound: "minecraft:entity.parrot.ambient"}
+data modify storage aspects:registry aspect."aspects:elytrian" set value {id: 6, namespace: "aspects", name: "elytrian", color: "#f2f10d", shadow_color: -12829693, sound: "minecraft:entity.parrot.ambient"}
 
 # Generic REGISTER_ASPECT logic
 function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:elytrian"

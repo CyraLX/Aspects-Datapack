@@ -10,7 +10,8 @@
             },
             {
                 "translate": "aspect.aspects.enderian",
-                "color": "#7749cb"
+                "color": "#7749cb",
+                "shadow_color": -14872014
             }
         ]
     },
@@ -24,7 +25,8 @@
             },
             {
                 "translate": "aspect.aspects.enderian",
-                "color": "#7749cb"
+                "color": "#7749cb",
+                "shadow_color": -14872014
             }
         ]
     },
@@ -37,7 +39,8 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.enderian",
-                        "color": "#7749cb"
+                        "color": "#7749cb",
+                        "shadow_color": -14872014
                     },
                     "\n",
                     {
@@ -194,7 +197,12 @@
             "show_tooltip": false,
             "description": {
                 "translate": "dialog.aspects.aspect_info.focus",
-                "color": "#c7fdff"
+                "color": "#c7fdff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.focus_powers"
+                    }
+                ]
             }
         },
         {

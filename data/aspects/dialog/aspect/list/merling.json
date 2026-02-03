@@ -11,7 +11,8 @@
             },
             {
                 "translate": "aspect.aspects.merling",
-                "color": "#2e89f1"
+                "color": "#2e89f1",
+                "shadow_color": -16047556
             }
         ]
     },
@@ -26,7 +27,8 @@
             },
             {
                 "translate": "aspect.aspects.merling",
-                "color": "#2e89f1"
+                "color": "#2e89f1",
+                "shadow_color": -16047556
             }
         ]
     },
@@ -1289,6 +1291,11 @@
             "description": {
                 "translate": "dialog.aspects.aspect_info.focus",
                 "color": "#c7fdff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.focus_powers"
+                    }
+                ],
                 "extra": [
                     " ",
                     {

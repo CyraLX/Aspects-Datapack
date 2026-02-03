@@ -9,10 +9,12 @@ data remove storage aspectlib:dummy id
 data remove storage aspectlib:dummy uuid
 data remove storage aspectlib:dummy username
 data remove storage aspectlib:dummy rotten_color
+data remove storage aspectlib:dummy rotten_shadow_color
 function aspectlib:player/id/expose
 function aspectlib:player/uuid/expose
 function aspectlib:player/username/expose with storage aspectlib:dummy
 data modify storage aspectlib:dummy rotten_color set from storage aspects:registry aspect."aspects:rotten".color
+data modify storage aspectlib:dummy rotten_shadow_color set from storage aspects:registry aspect."aspects:rotten".shadow_color
 
 # Make the attacker a summon target
 execute on attacker if loaded ~ ~ ~ run tag @s add aspects.rotten.summon_target

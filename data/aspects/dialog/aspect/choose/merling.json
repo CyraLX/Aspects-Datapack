@@ -11,7 +11,8 @@
             },
             {
                 "translate": "aspect.aspects.merling",
-                "color": "#2e89f1"
+                "color": "#2e89f1",
+                "shadow_color": -16047556
             }
         ]
     },
@@ -26,7 +27,8 @@
             },
             {
                 "translate": "aspect.aspects.merling",
-                "color": "#2e89f1"
+                "color": "#2e89f1",
+                "shadow_color": -16047556
             }
         ]
     },
@@ -1248,7 +1250,7 @@
                 "color": "#c7fdff",
                 "with": [
                     {
-                        "translate": "extra.aspects.aspect_effect"
+                        "translate": "extra.aspects.focus_powers"
                     }
                 ],
                 "extra": [
@@ -1328,7 +1330,8 @@
                     {
                         "translate": "aspect.aspects.merling",
                         "italic": true,
-                        "color": "#2e89f1"
+                        "color": "#2e89f1",
+                        "shadow_color": -16047556
                     }
                 ]
             }

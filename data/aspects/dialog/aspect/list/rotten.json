@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -11,12 +11,13 @@
             },
             {
                 "translate": "aspect.aspects.rotten",
-                "color": "#3e692d"
+                "color": "#3e692d",
+                "shadow_color": -15787509
             }
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -26,7 +27,8 @@
             },
             {
                 "translate": "aspect.aspects.rotten",
-                "color": "#3e692d"
+                "color": "#3e692d",
+                "shadow_color": -15787509
             }
         ]
     },
@@ -110,7 +112,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
                 "italic": true,
                 "color": "gold"
             }
@@ -632,11 +634,11 @@
             "show_decorations": true,
             "show_tooltip": false,
             "description": {
-                "translate": "dialog.aspects.chosen_aspect.focus",
+                "translate": "dialog.aspects.aspect_info.focus",
                 "color": "#c7fdff",
                 "with": [
                     {
-                        "translate": "extra.aspects.aspect_effect"
+                        "translate": "extra.aspects.focus_powers"
                     }
                 ],
                 "extra": [
@@ -652,7 +654,7 @@
                         "hover_event": {
                             "action": "show_text",
                             "value": {
-                                "translate": "dialog.aspects.chosen_aspect.focus.hover"
+                                "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
                     }
