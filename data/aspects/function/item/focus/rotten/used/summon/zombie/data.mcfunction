@@ -21,17 +21,19 @@ data modify entity @s data.aspects.owner.ID set from storage aspectlib:dummy id
 execute store result score @s aspects.aspect.rotten.summon_owner_id run data get storage aspectlib:dummy id
 
 # Set aggro to target
-execute if data storage aspectlib:dummy target_UUID run function aspects:item/focus/rotten/used/zombie_make_angry
+execute if data storage aspectlib:dummy target_UUID run function aspects:item/focus/rotten/used/summon/zombie/make_angry
 
 # Random chance baby
-execute store result score #aspects aspectlib.dummy run random value 1..100 aspects:rotten/zombie_summon_baby
-execute if score #aspects aspectlib.dummy matches 1 run function aspects:item/focus/rotten/used/zombie_baby
+execute store result score #aspects aspectlib.dummy run random value 1..100 aspects:rotten/summon/zombie/summon_baby
+execute if score #aspects aspectlib.dummy matches 1 run function aspects:item/focus/rotten/used/summon/zombie/baby
 # Give random weapon
-function aspects:item/focus/rotten/used/zombie_random_weapon
+function aspects:item/focus/rotten/used/summon/zombie/random_weapon
 
 # Change attributes
-attribute @s minecraft:movement_speed modifier add aspects:rotten/summon_movement_speed 0.1 add_multiplied_base
-attribute @s minecraft:attack_damage modifier add aspects:rotten/summon_attack_damage 4 add_value
-attribute @s minecraft:step_height modifier add aspects:rotten/summon_step_height 0.5 add_value
-attribute @s minecraft:jump_strength modifier add aspects:rotten/summon_jump_strength 0.5 add_multiplied_base
-attribute @s minecraft:safe_fall_distance modifier add aspects:rotten/summon_safe_fall_distance 0.5 add_multiplied_base
+attribute @s minecraft:max_health modifier add aspects:rotten/summon/max_health -0.2 add_multiplied_base
+attribute @s minecraft:armor_toughness modifier add aspects:rotten/summon/armor_toughness 8 add_value
+attribute @s minecraft:movement_speed modifier add aspects:rotten/summon/movement_speed 0.1 add_multiplied_base
+attribute @s minecraft:attack_damage modifier add aspects:rotten/summon/attack_damage 4 add_value
+attribute @s minecraft:step_height modifier add aspects:rotten/summon/step_height 0.5 add_value
+attribute @s minecraft:jump_strength modifier add aspects:rotten/summon/jump_strength 0.5 add_multiplied_base
+attribute @s minecraft:safe_fall_distance modifier add aspects:rotten/summon/safe_fall_distance 0.5 add_multiplied_base

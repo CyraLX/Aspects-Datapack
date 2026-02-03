@@ -8,10 +8,10 @@ execute unless entity @s[tag=aspects.rotten.focus_user] run data modify storage 
 
 # Summon
 # EFIMITY RAYCAST
-execute positioned ~2 ~ ~2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/raycast/summon/trigger
-execute positioned ~2 ~ ~-2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/raycast/summon/trigger
-execute positioned ~-2 ~ ~2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/raycast/summon/trigger
-execute positioned ~-2 ~ ~-2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/raycast/summon/trigger
+execute positioned ~2 ~ ~2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/used/raycast/run
+execute positioned ~2 ~ ~-2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/used/raycast/run
+execute positioned ~-2 ~ ~2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/used/raycast/run
+execute positioned ~-2 ~ ~-2 align xyz positioned ~.5 ~ ~.5 run function aspects:item/focus/rotten/used/raycast/run
 
 # Make target damage summons
 # execute as @e[type=#aspects:aspect/rotten/summons,type=!#aspects:aspect/rotten/summon_target_does_not_damage,distance=..16] at @s run damage @s 0.0001 minecraft:player_attack by @n[tag=aspects.rotten.summon_target,distance=..16]

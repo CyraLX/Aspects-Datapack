@@ -8,4 +8,4 @@ playsound minecraft:entity.zombified_piglin.ambient hostile @a[distance=..16] ~ 
 playsound minecraft:entity.enderman.teleport hostile @a[distance=..16] ~ ~ ~ 1 1
 
 scoreboard players set #aspects aspectlib.dummy 3
-execute summon minecraft:zombified_piglin run function aspects:item/focus/rotten/used/zombie_data with storage aspectlib:dummy
+execute summon minecraft:zombified_piglin run function aspects:item/focus/rotten/used/summon/zombie/data with storage aspectlib:dummy

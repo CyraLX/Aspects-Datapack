@@ -78,6 +78,12 @@
                 }
             },
             {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:item/focus/rotten/used/summon/zombie/expire"
+                }
+            },
+            {
                 "requirements": {
                     "condition": "minecraft:all_of",
                     "terms": [

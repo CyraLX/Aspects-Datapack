@@ -17,5 +17,3 @@ execute as @a[predicate=aspectlib:periodic_tick/20, predicate=aspects:item/essen
 # Aspects
 ## Generic Powers
 execute as @a[predicate=aspectlib:flags/is_alive] at @s run function aspects:tick/aspect_groups
-## Rotten Summons
-execute as @e[type=#aspects:aspect/rotten/summons, tag=aspects.rotten.summon] run function aspects:item/focus/rotten/used/zombie_expire

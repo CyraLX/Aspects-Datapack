@@ -20,7 +20,7 @@ execute on attacker if loaded ~ ~ ~ run tag @s add aspects.rotten.summon_target
 execute unless entity @n[tag=aspects.rotten.summon_target, distance=..32] run tag @s add aspects.rotten.summon_target
 
 # Start summoning
-execute as @n[tag=aspects.rotten.summon_target, distance=..32] at @s run function aspects:item/focus/rotten/used/prepare_summons
+execute as @n[tag=aspects.rotten.summon_target, distance=..32] at @s run function aspects:item/focus/rotten/used/target
 
 # Cleanup
 tag @e[tag=aspects.rotten.summon_target, distance=..32] remove aspects.rotten.summon_target

@@ -1,1 +1,0 @@
-scoreboard objectives add aspects.item.focus.rotten.raycast_limit dummy
