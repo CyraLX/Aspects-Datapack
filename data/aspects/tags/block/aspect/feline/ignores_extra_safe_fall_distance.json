@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "minecraft:fall",
+            "id": "minecraft:pointed_dripstone",
             "required": false
         }
     ]

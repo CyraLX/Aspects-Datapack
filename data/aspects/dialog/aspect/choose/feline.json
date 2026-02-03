@@ -120,9 +120,35 @@
                                             {
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "with": [
-                                                    "-100%",
+                                                    "+100%",
                                                     {
-                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                        "translate": "attribute.name.safe_fall_distance"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.except",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.pointed_dripstone"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.modifier_format",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+9",
+                                                    {
+                                                        "translate": "attribute.name.safe_fall_distance"
                                                     }
                                                 ]
                                             },
@@ -667,9 +693,35 @@
                                             {
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "with": [
-                                                    "-100%",
+                                                    "+100%",
                                                     {
-                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                        "translate": "attribute.name.safe_fall_distance"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "badge_details.aspects.modifier.except",
+                                                "color": "gray",
+                                                "italic": true,
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.pointed_dripstone"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "badge_details.aspects.modifier_format",
+                                        "color": "green",
+                                        "with": [
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "with": [
+                                                    "+9",
+                                                    {
+                                                        "translate": "attribute.name.safe_fall_distance"
                                                     }
                                                 ]
                                             },

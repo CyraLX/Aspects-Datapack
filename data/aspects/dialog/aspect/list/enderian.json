@@ -630,9 +630,13 @@
                                         {
                                             "translate": "item.aspects.focus.enderian.use_result_1",
                                             "with": [
-                                                "25",
                                                 {
-                                                    "translate": "extra.aspects.blocks"
+                                                    "text": "25 ",
+                                                    "extra": [
+                                                        {
+                                                            "translate": "extra.aspects.blocks"
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }

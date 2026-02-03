@@ -50,6 +50,46 @@
         "minecraft:location_changed": [
             {
                 "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#aspects:aspect/feline/ignores_extra_safe_fall_distance"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "id": "aspects:feline/falling_safe_fall_distance_base",
+                    "attribute": "minecraft:safe_fall_distance",
+                    "operation": "add_value",
+                    "amount": 9
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#aspects:aspect/feline/ignores_extra_safe_fall_distance"
+                            }
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "id": "aspects:feline/falling_safe_fall_distance_multiplier",
+                    "attribute": "minecraft:safe_fall_distance",
+                    "operation": "add_multiplied_base",
+                    "amount": 1
+                }
+            },
+            {
+                "requirements": {
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
@@ -153,22 +193,6 @@
                     "amount": -0.4,
                     "operation": "add_multiplied_base"
                 }
-            }
-        ],
-        "minecraft:damage_immunity": [
-            {
-                "requirements": {
-                    "condition": "minecraft:damage_source_properties",
-                    "predicate": {
-                        "tags": [
-                            {
-                                "id": "aspects:aspect/feline/fall_immune",
-                                "expected": true
-                            }
-                        ]
-                    }
-                },
-                "effect": {}
             }
         ],
         "minecraft:tick": [
