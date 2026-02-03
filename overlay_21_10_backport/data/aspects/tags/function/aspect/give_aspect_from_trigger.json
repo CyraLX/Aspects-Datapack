@@ -1,0 +1,45 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:aspect/elytrian/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/enderian/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/feline/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/human/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/infernal/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/merling/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/rascal/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/shulk/activate_from_trigger",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/arachnid/activate_from_trigger",
+            "required": false
+        }
+    ]
+}

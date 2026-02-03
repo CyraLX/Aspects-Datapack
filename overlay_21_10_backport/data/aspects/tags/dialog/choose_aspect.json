@@ -1,0 +1,45 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:aspect/choose/human",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/merling",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/enderian",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/shulk",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/feline",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/infernal",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/elytrian",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/honey_bee",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/rascal",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/arachnid",
+            "required": false
+        }
+    ]
+}
