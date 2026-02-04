@@ -60,80 +60,68 @@
                         }
                     }
                 }
-            }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "target": "item_name",
-        "entity": "this",
-        "name": [
-            {
+            },
+            "minecraft:item_name": {
                 "translate": "item.aspects.focus.infernal",
                 "color": "#ffff55"
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            {
-                "translate": "lore.equipment.use_time_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_time"
-                    },
-                    {
-                        "translate": "lore.equipment.use_time.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "1"
-                        ]
-                    }
-                ]
             },
-            {
-                "translate": "lore.equipment.use_cooldown_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "12"
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.infernal.use_result_1",
-                        "with": [
-                            {
-                                "text": "16"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "12"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.infernal.use_result_1",
+                            "with": [
+                                {
+                                    "text": "16"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]

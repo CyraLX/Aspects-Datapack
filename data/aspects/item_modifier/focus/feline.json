@@ -60,75 +60,63 @@
                         }
                     }
                 }
-            }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "target": "item_name",
-        "entity": "this",
-        "name": [
-            {
+            },
+            "minecraft:item_name": {
                 "translate": "item.aspects.focus.feline",
                 "color": "#ffff55"
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            {
-                "translate": "lore.equipment.use_time_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_time"
-                    },
-                    {
-                        "translate": "lore.equipment.use_time.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "0.3"
-                        ]
-                    }
-                ]
             },
-            {
-                "translate": "lore.equipment.use_cooldown_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "5"
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.modifiers.use",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.feline.use_result_1"
-                    }
-                ]
-            }
-        ]
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "0.3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.feline.use_result_1"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]

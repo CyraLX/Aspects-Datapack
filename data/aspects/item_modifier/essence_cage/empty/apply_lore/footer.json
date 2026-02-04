@@ -103,7 +103,6 @@
         "entity": "this",
         "mode": "append",
         "lore": [
-            "",
             {
                 "translate": "item.modifiers.held_offhand",
                 "color": "gray",

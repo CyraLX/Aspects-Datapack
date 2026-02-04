@@ -59,123 +59,111 @@
                         }
                     }
                 }
-            }
-        }
-    },
-    {
-        "function": "minecraft:set_name",
-        "target": "item_name",
-        "entity": "this",
-        "name": [
-            {
+            },
+            "minecraft:item_name": {
                 "translate": "item.aspects.focus.rascal",
                 "color": "#ffff55"
-            }
-        ]
-    },
-    {
-        "function": "minecraft:set_lore",
-        "entity": "this",
-        "mode": "replace_all",
-        "lore": [
-            {
-                "translate": "lore.equipment.use_time_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_time"
-                    },
-                    {
-                        "translate": "lore.equipment.use_time.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "10"
-                        ]
-                    }
-                ]
             },
-            {
-                "translate": "lore.equipment.use_cooldown_format",
-                "color": "gray",
-                "italic": false,
-                "with": [
-                    {
-                        "translate": "lore.equipment.use_cooldown"
-                    },
-                    {
-                        "translate": "lore.equipment.use_cooldown.seconds",
-                        "color": "#757575",
-                        "with": [
-                            "90"
-                        ]
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.aspects.focus.rascal.use_condition_1",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.rascal.use_result_1"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.aspects.focus.rascal.use_condition_2",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.rascal.use_result_2"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.aspects.focus.rascal.use_condition_3",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.rascal.use_result_3"
-                    }
-                ]
-            },
-            "",
-            {
-                "translate": "item.aspects.focus.rascal.use_condition_4",
-                "color": "gray",
-                "italic": false
-            },
-            {
-                "text": "",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "translate": "item.aspects.focus.rascal.use_result_4"
-                    }
-                ]
-            }
-        ]
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "10"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "90"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.rascal.use_condition_1",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.rascal.use_result_1"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.rascal.use_condition_2",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.rascal.use_result_2"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.rascal.use_condition_3",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.rascal.use_result_3"
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.rascal.use_condition_4",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.rascal.use_result_4"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]
