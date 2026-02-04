@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.custom_items.awakened_essence_cage",
+        "translate": "dialog.aspects.custom_items.essence_cage.awakened",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -15,7 +15,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.custom_items.awakened_essence_cage.external_title",
+        "translate": "dialog.aspects.custom_items.essence_cage.awakened.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -46,7 +46,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.awakened_essence_cage.description",
+                "translate": "dialog.aspects.custom_items.essence_cage.awakened.description",
                 "with": [
                     {
                         "translate": "item.aspects.awakened_essence_cage"
@@ -78,7 +78,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.awakened_essence_cage.check_essence_information",
+                "translate": "dialog.aspects.custom_items.essence_cage.awakened.check_essence_information",
                 "color": "gold",
                 "italic": true,
                 "with": [

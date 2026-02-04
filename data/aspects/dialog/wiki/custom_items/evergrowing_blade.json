@@ -53,6 +53,9 @@
                     },
                     {
                         "translate": "enchantment.level.7"
+                    },
+                    {
+                        "translate": "item.aspects.essence_cage"
                     }
                 ]
             }
@@ -155,7 +158,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.recipe.crafting_shaped.1x3",
+                "translate": "dialog.aspects.custom_items.recipe.crafting_shaped.3x3",
                 "color": "gold",
                 "with": [
                     {
@@ -165,6 +168,137 @@
                             {
                                 "translate": "extra.aspects.hover_context",
                                 "with": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.custom_items.recipe.empty"
+                            }
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.diamond"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:diamond",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "dialog.aspects.custom_items.recipe.empty"
+                            }
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.sculk_vein"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:sculk_vein",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "item.minecraft.diamond"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:diamond",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.sculk_vein"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:sculk_vein",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
+                                    {
+                                        "translate": "block.minecraft.sculk"
+                                    }
+                                ]
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_item",
+                            "id": "minecraft:sculk",
+                            "count": 1
+                        }
+                    },
+                    {
+                        "text": "",
+                        "color": "white",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.hover_context",
+                                "with": [
                                     {
                                         "translate": "item.minecraft.amethyst_shard"
                                     }
@@ -185,33 +319,14 @@
                                 "translate": "extra.aspects.hover_context",
                                 "with": [
                                     {
-                                        "translate": "item.minecraft.stick"
+                                        "translate": "block.minecraft.sculk"
                                     }
                                 ]
                             }
                         ],
                         "hover_event": {
                             "action": "show_item",
-                            "id": "minecraft:stick",
-                            "count": 1
-                        }
-                    },
-                    {
-                        "text": "",
-                        "color": "white",
-                        "extra": [
-                            {
-                                "translate": "extra.aspects.hover_context",
-                                "with": [
-                                    {
-                                        "translate": "item.minecraft.amethyst_shard"
-                                    }
-                                ]
-                            }
-                        ],
-                        "hover_event": {
-                            "action": "show_item",
-                            "id": "minecraft:amethyst_shard",
+                            "id": "minecraft:sculk",
                             "count": 1
                         }
                     },
