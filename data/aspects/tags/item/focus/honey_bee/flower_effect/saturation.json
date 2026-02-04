@@ -8,6 +8,10 @@
         {
             "id": "minecraft:blue_orchid",
             "required": false
+        },
+        {
+            "id": "minecraft:golden_dandelion",
+            "required": false
         }
     ]
 }
