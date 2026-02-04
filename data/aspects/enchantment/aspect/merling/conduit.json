@@ -1,0 +1,78 @@
+{
+    "description": {
+        "translate": "enchantment.aspects.unobtainable"
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "chest"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 100
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/merling/conduit/trigger"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 10
+                            }
+                        }
+                    ]
+                },
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:trial_spawner_detection_ominous"
+                    },
+                    "speed": 1.0,
+                    "horizontal_position": {
+                        "type": "entity_position",
+                        "scale": 1
+                    },
+                    "horizontal_velocity": {
+                        "base": 0.02
+                    },
+                    "vertical_position": {
+                        "type": "entity_position",
+                        "scale": 1
+                    },
+                    "vertical_velocity": {
+                        "base": 0.02
+                    }
+
+                }
+            }
+        ]
+    }
+}

@@ -2,10 +2,6 @@
     "replace": false,
     "values": [
         {
-            "id": "#aspectlib:contains_water",
-            "required": false
-        },
-        {
             "id": "minecraft:water",
             "required": false
         },

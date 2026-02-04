@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspectlib:contains_water",
+            "required": false
+        },
+        {
+            "id": "#aspectlib:is_water",
+            "required": false
+        }
+    ]
+}

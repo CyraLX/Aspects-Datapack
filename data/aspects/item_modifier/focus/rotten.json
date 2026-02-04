@@ -9,7 +9,7 @@
             "minecraft:item_model": "aspects:focus/rotten",
             "minecraft:consumable": {
                 "consume_seconds": 1.5,
-                "animation": "bow",
+                "animation": "bundle",
                 "sound": "minecraft:block.amethyst_block.resonate",
                 "has_consume_particles": false
             },

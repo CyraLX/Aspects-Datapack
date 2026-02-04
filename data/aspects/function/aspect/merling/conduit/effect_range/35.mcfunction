@@ -1,0 +1,1 @@
+effect give @a[distance=..40, predicate=aspects:aspect_group/is_moisture_dependant, predicate=!aspectlib:flags/is_wet] minecraft:conduit_power 13 0 false

@@ -11,3 +11,4 @@ data modify storage aspects:registry aspect."aspects:merling" set value {id: 1, 
 function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:merling"
 
 # Setup scoreboard objectives for the Aspect
+function aspects:aspect/merling/conduit/scoreboard/initialize
