@@ -1,8 +1,8 @@
 # If the player is exposed to water, increment scores and return
 execute if predicate aspectlib:flags/is_wet run return run function aspects:aspect_group/moisture_dependant/logic/scoreboard/increase
 
-# If user has normal water breathing, do not do anything else
-execute if predicate aspectlib:status_effect/water_breathing/normal run return fail
+# If user has normal water breathing, end early by damaging the player if they also have no moisture
+execute if predicate aspectlib:status_effect/water_breathing/normal run return run execute if score @s aspects.aspect_group.moisture_dependant.current matches ..0 run function aspects:aspect_group/moisture_dependant/logic/damage_user
 # Otherwise if they are at 10 seconds left of Water Breathing, decrease the score of the turtle helmet timer until 0
 execute if score @s aspects.aspect_group.moisture_dependant.turtle_helmet matches 1.. if predicate aspectlib:status_effect/water_breathing/turtle_helmet run return run function aspects:aspect_group/moisture_dependant/logic/scoreboard/decrease_turtle_helmet
 
