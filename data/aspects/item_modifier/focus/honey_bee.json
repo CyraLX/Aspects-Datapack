@@ -62,7 +62,8 @@
                 }
             },
             "minecraft:item_name": {
-                "translate": "item.aspects.focus.honey_bee"
+                "translate": "item.aspects.focus.honey_bee",
+                "color": "#ffff55"
             },
             "minecraft:lore": [
                 {

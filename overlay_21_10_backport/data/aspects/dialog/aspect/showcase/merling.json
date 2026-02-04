@@ -184,28 +184,6 @@
                                 "italic": true
                             }
                         ]
-                    },
-                    "\n\n",
-                    {
-                        "translate": "aspect.aspects.merling.nautilus_synergy",
-                        "color": "#d6d6d6",
-                        "with": [
-                            {
-                                "translate": "entity.minecraft.nautilus"
-                            }
-                        ],
-                        "extra": [
-                            "\n",
-                            {
-                                "translate": "aspect.aspects.merling.nautilus_synergy.description",
-                                "italic": true,
-                                "with": [
-                                    {
-                                        "translate": "entity.minecraft.nautilus"
-                                    }
-                                ]
-                            }
-                        ]
                     }
                 ]
             }

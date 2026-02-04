@@ -153,6 +153,58 @@
                             ]
                         }
                     ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.merling.use_condition_2",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "block.minecraft.conduit"
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.merling.use_result_2",
+                            "with": [
+                                {
+                                    "translate": "block.minecraft.conduit"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.aspects.focus.merling.use_condition_3",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "block.minecraft.conduit"
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.merling.use_result_3",
+                            "with": [
+                                {
+                                    "translate": "block.minecraft.conduit"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

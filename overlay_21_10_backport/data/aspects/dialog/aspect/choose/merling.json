@@ -747,68 +747,6 @@
                                 ]
                             }
                         }
-                    },
-                    "\n",
-                    {
-                        "translate": "extra.aspects.hover_context",
-                        "color": "#d6d6d6",
-                        "with": [
-                            {
-                                "translate": "aspect.aspects.merling.nautilus_synergy",
-                                "with": [
-                                    {
-                                        "translate": "entity.minecraft.nautilus"
-                                    }
-                                ]
-                            }
-                        ],
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "aspect.aspects.merling.nautilus_synergy.description",
-                                "color": "white",
-                                "italic": true,
-                                "with": [
-                                    {
-                                        "translate": "entity.minecraft.nautilus"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    " ",
-                    {
-                        "translate": "extra.aspects.hover_context",
-                        "color": "green",
-                        "with": [
-                            {
-                                "translate": "badge_details.aspects.hover"
-                            }
-                        ],
-                        "hover_event": {
-                            "action": "show_text",
-                            "value": {
-                                "translate": "badge_details.aspects.trigger.mounting_thing",
-                                "with": [
-                                    {
-                                        "translate": "entity.minecraft.nautilus"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+400%",
-                                            {
-                                                "translate": "attribute.name.submerged_mining_speed"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        }
                     }
                 ]
             }
@@ -1012,28 +950,6 @@
                                                         "translate": "enchantment.level.1"
                                                     }
                                                 ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.mounting_thing",
-                                "with": [
-                                    {
-                                        "translate": "entity.minecraft.nautilus"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+400%",
-                                            {
-                                                "translate": "attribute.name.submerged_mining_speed"
                                             }
                                         ]
                                     }
