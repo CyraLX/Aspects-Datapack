@@ -1,11 +1,40 @@
-[
-    {
-        "function": "minecraft:reference",
-        "name": "aspects:focus_dummy"
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "aspects:focus/arachnid",
+    "category": "equipment",
+    "pattern": [
+        "aXa",
+        "qiq",
+        " q "
+    ],
+    "key": {
+        "X": [
+            "minecraft:cobweb"
+        ],
+        "a": [
+            "minecraft:amethyst_shard"
+        ],
+        "i": [
+            "minecraft:iron_ingot"
+        ],
+        "q": [
+            "minecraft:quartz"
+        ]
     },
-    {
-        "function": "minecraft:set_components",
+    "result": {
+        "id": "minecraft:jigsaw",
+        "count": 1,
         "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:rarity": "uncommon",
+            "minecraft:enchantment_glint_override": false,
+            "minecraft:tooltip_display": {
+                "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:enchantments"
+                ]
+            },
+            "!minecraft:enchantments": {},
             "minecraft:item_model": "aspects:focus/arachnid",
             "minecraft:consumable": {
                 "consume_seconds": 0.3,
@@ -180,4 +209,4 @@
             ]
         }
     }
-]
+}
