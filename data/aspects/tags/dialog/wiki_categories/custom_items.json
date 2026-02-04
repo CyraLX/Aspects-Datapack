@@ -2,19 +2,27 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:wiki/custom_items/essence_cage",
+            "id": "aspects:wiki/custom_items/essence_cage/normal",
             "required": false
         },
         {
-            "id": "aspects:wiki/custom_items/collector_essence_cage",
+            "id": "aspects:wiki/custom_items/essence_cage/collector",
             "required": false
         },
         {
-            "id": "aspects:wiki/custom_items/awakened_essence_cage",
+            "id": "aspects:wiki/custom_items/essence_cage/awakened",
             "required": false
         },
         {
             "id": "aspects:wiki/custom_items/evergrowing_blade",
+            "required": false
+        },
+        {
+            "id": "aspects:wiki/custom_items/relic/faded",
+            "required": false
+        },
+        {
+            "id": "aspects:wiki/custom_items/relic/shattered",
             "required": false
         },
         {

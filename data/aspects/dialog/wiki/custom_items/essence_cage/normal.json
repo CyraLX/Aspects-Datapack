@@ -1,7 +1,7 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.custom_items.collector_essence_cage",
+        "translate": "dialog.aspects.custom_items.essence_cage.normal",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -10,12 +10,12 @@
                 "italic": true
             },
             {
-                "translate": "item.aspects.essence_cage_collector"
+                "translate": "item.aspects.essence_cage"
             }
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.custom_items.collector_essence_cage.external_title",
+        "translate": "dialog.aspects.custom_items.essence_cage.normal.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -24,7 +24,7 @@
                 "italic": true
             },
             {
-                "translate": "item.aspects.essence_cage_collector"
+                "translate": "item.aspects.essence_cage"
             }
         ]
     },
@@ -46,13 +46,13 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.collector_essence_cage.description",
+                "translate": "dialog.aspects.custom_items.essence_cage.normal.description",
                 "with": [
                     {
-                        "translate": "item.aspects.essence_cage_collector"
+                        "translate": "item.aspects.essence_cage"
                     },
                     {
-                        "translate": "item.aspects.essence_cage"
+                        "translate": "item.aspects.awakened_essence_cage"
                     }
                 ]
             }
@@ -61,7 +61,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.custom_items.collector_essence_cage.check_essence_information",
+                "translate": "dialog.aspects.custom_items.essence_cage.normal.check_essence_information",
                 "color": "gold",
                 "italic": true,
                 "with": [
@@ -164,14 +164,14 @@
                                 "translate": "extra.aspects.hover_context",
                                 "with": [
                                     {
-                                        "translate": "block.minecraft.diamond_block"
+                                        "translate": "block.minecraft.iron_block"
                                     }
                                 ]
                             }
                         ],
                         "hover_event": {
                             "action": "show_item",
-                            "id": "minecraft:diamond_block",
+                            "id": "minecraft:iron_block",
                             "count": 1
                         }
                     },
@@ -208,14 +208,12 @@
                                         },
                                         "minecraft:custom_data": {
                                             "aspects": {
-                                                "essence_cage": {
-                                                    "is_collector": true
-                                                }
+                                                "essence_cage": {}
                                             }
                                         },
                                         "minecraft:item_name": [
                                             {
-                                                "translate": "item.aspects.essence_cage_collector",
+                                                "translate": "item.aspects.essence_cage",
                                                 "color": "#ffff55"
                                             }
                                         ],
@@ -251,6 +249,21 @@
                                                         "with": [
                                                             {
                                                                 "translate": "item.aspects.evergrowing_blade"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "",
+                                                "color": "blue",
+                                                "italic": false,
+                                                "extra": [
+                                                    {
+                                                        "translate": "item.aspects.essence_cage.awaken_condition",
+                                                        "with": [
+                                                            {
+                                                                "translate": "item.aspects.awakened_essence_cage"
                                                             }
                                                         ]
                                                     }

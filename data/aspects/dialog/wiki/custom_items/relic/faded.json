@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.custom_items.relic.faded",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.custom_items.relic.faded.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:relic/faded/human"
+                }
+            },
+            "width": 18,
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.custom_items.relic.faded.description"
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/custom_items"
+        }
+    }
+}
