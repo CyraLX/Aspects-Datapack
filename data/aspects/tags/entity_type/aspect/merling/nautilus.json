@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#minecraft:can_wear_nautilus_armor",
+            "required": false
+        }
+    ]
+}

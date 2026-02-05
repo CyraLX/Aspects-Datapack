@@ -34,7 +34,7 @@
                     "entity": "this",
                     "predicate": {
                         "vehicle": {
-                            "type": "#minecraft:can_wear_nautilus_armor"
+                            "type": "#aspects:aspect/merling/nautilus"
                         }
                     }
                 },
