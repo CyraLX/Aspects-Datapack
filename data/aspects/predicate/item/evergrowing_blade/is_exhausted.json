@@ -1,24 +1,9 @@
 {
-    "condition": "minecraft:all_of",
-    "terms": [
-        {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-                "aspects.essence.exhausted": {
-                    "min": 1
-                }
-            }
-        },
-        {
-            "condition": "minecraft:inverted",
-            "term": {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "type": "minecraft:ender_dragon"
-                }
-            }
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.essence.exhausted": {
+            "min": 1
         }
-    ]
+    }
 }

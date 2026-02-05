@@ -8,4 +8,4 @@ scoreboard objectives add aspects.evergrowing_blade.has_extracted_any_essence du
 scoreboard objectives add aspects.evergrowing_blade.kill_counter dummy
 scoreboard objectives add aspects.evergrowing_blade.level dummy
 
-scoreboard objectives add aspects.evergrowing_blade.has_extracted_this_tick dummy
+scoreboard objectives add aspects.evergrowing_blade.exception.ender_dragon minecraft.killed:minecraft.ender_dragon
