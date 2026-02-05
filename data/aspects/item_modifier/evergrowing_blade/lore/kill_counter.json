@@ -15,11 +15,22 @@
                 "color": "#9966CC",
                 "with": [
                     {
-                        "score": {
-                            "objective": "aspects.evergrowing_blade.kill_counter",
-                            "name": "@s"
-                        },
-                        "color": "#20c3ce"
+                        "translate": "item.aspects.evergrowing_blade.kill_counter.format_progress",
+                        "color": "#20c3ce",
+                        "with": [
+                            {
+                                "score": {
+                                    "objective": "aspects.evergrowing_blade.kill_counter",
+                                    "name": "@s"
+                                }
+                            },
+                            {
+                                "score": {
+                                    "objective": "aspectlib.dummy",
+                                    "name": "@s"
+                                }
+                            }
+                        ]
                     }
                 ]
             }
@@ -31,8 +42,66 @@
                 "scores": {
                     "aspects.evergrowing_blade.kill_counter": {
                         "min": 1
+                    },
+                    "aspectlib.dummy": {
+                        "min": 1
                     }
                 }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "mode": "insert",
+        "offset": 0,
+        "lore": [
+            {
+                "translate": "item.aspects.evergrowing_blade.kill_counter",
+                "italic": false,
+                "color": "#9966CC",
+                "with": [
+                    {
+                        "translate": "item.aspects.evergrowing_blade.kill_counter.format_max",
+                        "color": "#20c3ce",
+                        "with": [
+                            {
+                                "score": {
+                                    "objective": "aspects.evergrowing_blade.kill_counter",
+                                    "name": "@s"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:all_of",
+                "terms": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "aspects.evergrowing_blade.kill_counter": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "aspectlib.dummy": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         ]
     }

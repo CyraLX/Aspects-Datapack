@@ -14,7 +14,6 @@
         "add": false,
         "enchantments": {
             "aspects:evergrowing_blade/mainhand": 5,
-            "minecraft:mending": 1,
             "minecraft:looting": 2,
             "minecraft:unbreaking": 1
         }
@@ -42,8 +41,12 @@
                 "color": "#9966CC",
                 "with": [
                     {
-                        "text": "256",
-                        "color": "#20c3ce"
+                        "translate": "item.aspects.evergrowing_blade.kill_counter.format_progress",
+                        "color": "#20c3ce",
+                        "with": [
+                            "256",
+                            "512"
+                        ]
                     }
                 ]
             }

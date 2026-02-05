@@ -2,6 +2,7 @@
 scoreboard players reset #aspects aspectlib.dummy
 scoreboard players reset #aspects aspects.evergrowing_blade.level
 
+# Store expected level based on the kill counter
 execute if score @s aspects.evergrowing_blade.kill_counter matches ..31 run scoreboard players set #aspects aspects.evergrowing_blade.level 1
 execute if score @s aspects.evergrowing_blade.kill_counter matches 32..63 run scoreboard players set #aspects aspects.evergrowing_blade.level 2
 execute if score @s aspects.evergrowing_blade.kill_counter matches 64..127 run scoreboard players set #aspects aspects.evergrowing_blade.level 3
@@ -9,6 +10,14 @@ execute if score @s aspects.evergrowing_blade.kill_counter matches 128..255 run 
 execute if score @s aspects.evergrowing_blade.kill_counter matches 256..511 run scoreboard players set #aspects aspects.evergrowing_blade.level 5
 execute if score @s aspects.evergrowing_blade.kill_counter matches 512..1023 run scoreboard players set #aspects aspects.evergrowing_blade.level 6
 execute if score @s aspects.evergrowing_blade.kill_counter matches 1024.. run scoreboard players set #aspects aspects.evergrowing_blade.level 7
+# Store needed upgrade amount based on kill counter
+execute if score @s aspects.evergrowing_blade.kill_counter matches ..31 run scoreboard players set @s aspectlib.dummy 32
+execute if score @s aspects.evergrowing_blade.kill_counter matches 32..63 run scoreboard players set @s aspectlib.dummy 64
+execute if score @s aspects.evergrowing_blade.kill_counter matches 64..127 run scoreboard players set @s aspectlib.dummy 128
+execute if score @s aspects.evergrowing_blade.kill_counter matches 128..255 run scoreboard players set @s aspectlib.dummy 256
+execute if score @s aspects.evergrowing_blade.kill_counter matches 256..511 run scoreboard players set @s aspectlib.dummy 512
+execute if score @s aspects.evergrowing_blade.kill_counter matches 512..1023 run scoreboard players set @s aspectlib.dummy 1024
+execute if score @s aspects.evergrowing_blade.kill_counter matches 1024.. run scoreboard players set @s aspectlib.dummy 0
 
 # If level did not change return early
 execute if score #aspects aspects.evergrowing_blade.level = @s aspects.evergrowing_blade.level run return fail

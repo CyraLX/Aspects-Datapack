@@ -455,8 +455,12 @@
                                                 "color": "#9966CC",
                                                 "with": [
                                                     {
-                                                        "text": "0",
-                                                        "color": "#20c3ce"
+                                                        "translate": "item.aspects.evergrowing_blade.kill_counter.format_progress",
+                                                        "color": "#20c3ce",
+                                                        "with": [
+                                                            "0",
+                                                            "32"
+                                                        ]
                                                     }
                                                 ]
                                             },

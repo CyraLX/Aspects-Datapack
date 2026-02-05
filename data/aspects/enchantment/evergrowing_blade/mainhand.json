@@ -347,6 +347,19 @@
         ],
         "minecraft:tick": [
             {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 100
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:item/evergrowing_blade/reset_repair_cost"
+                }
+            },
+            {
                 "effect": {
                     "type": "minecraft:run_function",
                     "function": "aspects:item/evergrowing_blade/using_reset_check"

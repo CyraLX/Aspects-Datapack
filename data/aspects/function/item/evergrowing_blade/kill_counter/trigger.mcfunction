@@ -1,5 +1,6 @@
 # Reset data
 data remove storage aspectlib:dummy evergrowing_blade
+scoreboard players reset @s aspectlib.dummy
 scoreboard players reset @s aspects.evergrowing_blade.kill_counter
 scoreboard players reset @s aspects.evergrowing_blade.level
 
