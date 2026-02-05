@@ -2,7 +2,7 @@
     "description": {
         "translate": "enchantment.aspects.essence_harvest"
     },
-    "supported_items": "minecraft:jigsaw",
+    "supported_items": "minecraft:air",
     "weight": 1,
     "max_level": 7,
     "min_cost": {
