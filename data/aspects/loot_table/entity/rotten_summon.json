@@ -1,6 +1,6 @@
 {
     "type": "minecraft:entity",
-    "random_sequence": "aspects:rotten/zombie_summon",
+    "random_sequence": "aspects:aspect/rotten/summon",
     "pools": [
         {
             "rolls": 1,

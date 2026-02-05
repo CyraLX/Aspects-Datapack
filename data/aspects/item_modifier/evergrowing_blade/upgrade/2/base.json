@@ -2,15 +2,15 @@
     {
         "function": "minecraft:set_components",
         "components": {
-            "minecraft:max_damage": 475
+            "minecraft:max_damage": 384,
+            "minecraft:enchantment_glint_override": true
         }
     },
     {
         "function": "minecraft:set_enchantments",
         "add": false,
         "enchantments": {
-            "aspects:evergrowing_blade/mainhand": 2,
-            "minecraft:mending": 1
+            "aspects:evergrowing_blade/mainhand": 2
         }
     }
 ]

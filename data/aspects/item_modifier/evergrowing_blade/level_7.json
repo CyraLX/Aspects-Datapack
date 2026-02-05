@@ -27,7 +27,7 @@
         "function": "minecraft:set_components",
         "components": {
             "minecraft:rarity": "rare",
-            "minecraft:max_damage": 350,
+            "minecraft:max_damage": 300,
             "minecraft:damage_resistant": {
                 "types": "#aspects:special_item_damage_immune"
             },

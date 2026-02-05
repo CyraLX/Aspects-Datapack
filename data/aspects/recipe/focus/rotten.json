@@ -9,7 +9,7 @@
     ],
     "key": {
         "X": [
-            "minecraft:golden_sword"
+            "minecraft:gold_ingot"
         ],
         "a": [
             "minecraft:amethyst_shard"
@@ -38,8 +38,8 @@
             "minecraft:item_model": "aspects:focus/rotten",
             "minecraft:consumable": {
                 "consume_seconds": 1.5,
-                "animation": "bundle",
-                "sound": "minecraft:block.amethyst_block.resonate",
+                "animation": "block",
+                "sound": "minecraft:item.shovel.flatten",
                 "has_consume_particles": false
             },
             "minecraft:use_cooldown": {

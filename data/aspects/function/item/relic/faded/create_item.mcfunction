@@ -4,8 +4,8 @@ $item modify entity @n[type=minecraft:armor_stand, tag=aspects_item_granter, dis
 $data modify storage aspectlib:dummy aspect set from storage aspects:registry aspect."$(namespace):$(name)"
 data modify storage aspectlib:dummy aspect_namespace set from storage aspectlib:dummy aspect.namespace
 data modify storage aspectlib:dummy aspect_name set from storage aspectlib:dummy aspect.name
-execute store result storage aspectlib:dummy random_1 short 1 run random value 1..11 aspects:faded_relic
-execute store result storage aspectlib:dummy random_2 short 1 run random value 1..4 aspects:faded_relic
+execute store result storage aspectlib:dummy random_1 short 1 run random value 1..11 aspects:item/relic/faded
+execute store result storage aspectlib:dummy random_2 short 1 run random value 1..4 aspects:item/relic/faded
 execute as @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..16] run function aspects:item/relic/faded/apply_random_lore with storage aspectlib:dummy
 # Give the specified Relic
 summon minecraft:item ~ ~ ~ {Tags: ["aspects_item"],Item: {id: "minecraft:stick",components:{item_model:"minecraft:air"}}}

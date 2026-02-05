@@ -6,7 +6,7 @@
     {
         "function": "minecraft:set_components",
         "components": {
-            "minecraft:max_damage": 450
+            "minecraft:max_damage": 367
         }
     },
     {

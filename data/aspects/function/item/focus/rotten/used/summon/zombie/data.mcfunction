@@ -24,7 +24,7 @@ execute store result score @s aspects.aspect.rotten.summon_owner_id run data get
 execute if data storage aspectlib:dummy target_UUID run function aspects:item/focus/rotten/used/summon/zombie/make_angry
 
 # Random chance baby
-execute store result score #aspects aspectlib.dummy run random value 1..100 aspects:rotten/summon/zombie/summon_baby
+execute store result score #aspects aspectlib.dummy run random value 1..100 aspects:aspect/rotten/summon/baby
 execute if score #aspects aspectlib.dummy matches 1 run function aspects:item/focus/rotten/used/summon/zombie/baby
 # Give random weapon
 function aspects:item/focus/rotten/used/summon/zombie/random_weapon

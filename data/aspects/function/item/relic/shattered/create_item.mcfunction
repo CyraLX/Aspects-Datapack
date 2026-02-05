@@ -5,8 +5,8 @@ $data modify storage aspectlib:dummy aspect set from storage aspects:registry as
 data modify storage aspectlib:dummy aspect_namespace set from storage aspectlib:dummy aspect.namespace
 data modify storage aspectlib:dummy aspect_name set from storage aspectlib:dummy aspect.name
 execute on attacker run item modify entity @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..16] weapon.mainhand {function:"minecraft:set_lore",entity:"this",mode:"append",lore:[{translate:"item.aspects.shattered_relic.generic.killer",with:[{selector:"@s",color:"red"}],color:"gray",italic:0b}]}
-execute store result storage aspectlib:dummy random_1 short 1 run random value 1..11 aspects:shattered_relic
-execute store result storage aspectlib:dummy random_2 short 1 run random value 1..4 aspects:shattered_relic
+execute store result storage aspectlib:dummy random_1 short 1 run random value 1..11 aspects:item/relic/shattered
+execute store result storage aspectlib:dummy random_2 short 1 run random value 1..4 aspects:item/relic/shattered
 execute as @n[type=minecraft:armor_stand, tag=aspects_item_granter, distance=..16] run function aspects:item/relic/shattered/apply_random_lore with storage aspectlib:dummy
 # Give the specified Shattered Aspect
 summon minecraft:item ~ ~ ~ {Tags: ["aspects_item"],Item: {id: "minecraft:stick",components:{item_model:"minecraft:air"}}}
