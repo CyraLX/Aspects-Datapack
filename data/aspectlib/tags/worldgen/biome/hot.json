@@ -50,6 +50,10 @@
             "required": false
         },
         {
+            "id": "#c:is_hot",
+            "required": false
+        },
+        {
             "id": "minecraft:wooded_badlands",
             "required": false
         },

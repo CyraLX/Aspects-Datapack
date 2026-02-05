@@ -42,6 +42,10 @@
             "required": false
         },
         {
+            "id": "#c:is_cold",
+            "required": false
+        },
+        {
             "id": "biomesoplenty:auroral_garden",
             "required": false
         },
