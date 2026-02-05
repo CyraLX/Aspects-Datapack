@@ -1,7 +1,7 @@
 [
     {
         "function": "minecraft:set_item",
-        "item": "minecraft:jigsaw"
+        "item": "minecraft:test_instance_block"
     },
     {
         "function": "minecraft:set_components",

@@ -32,7 +32,7 @@
         {
             "type": "minecraft:item",
             "item": {
-                "id": "minecraft:jigsaw",
+                "id": "minecraft:test_instance_block",
                 "count": 1,
                 "components": {
                     "minecraft:item_model": "aspects:evergrowing_blade"
@@ -352,7 +352,7 @@
                                 ],
                                 "hover_event": {
                                     "action": "show_item",
-                                    "id": "minecraft:jigsaw",
+                                    "id": "minecraft:test_instance_block",
                                     "count": 1,
                                     "components": {
                                         "minecraft:rarity": "uncommon",

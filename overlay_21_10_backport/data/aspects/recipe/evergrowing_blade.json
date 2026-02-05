@@ -22,7 +22,7 @@
         ]
     },
     "result": {
-        "id": "minecraft:jigsaw",
+        "id": "minecraft:test_instance_block",
         "count": 1,
         "components": {
             "minecraft:rarity": "uncommon",
