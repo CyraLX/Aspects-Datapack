@@ -10,11 +10,19 @@
             "required": false
         },
         {
+            "id": "#c:drinks/ominous",
+            "required": false
+        },
+        {
             "id": "#c:drinks/water",
             "required": false
         },
         {
             "id": "#c:drinks/watery",
+            "required": false
+        },
+        {
+            "id": "#c:drinks/soda",
             "required": false
         },
         {
