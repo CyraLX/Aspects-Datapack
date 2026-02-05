@@ -585,14 +585,26 @@
                                                 "translate": "badge_details.aspects.effect.cooks_food"
                                             },
                                             {
-                                                "translate": "badge_details.aspects.modifier.overtime",
+                                                "text": "",
                                                 "color": "gray",
                                                 "italic": true,
-                                                "with": [
+                                                "extra": [
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
-                                                            "12"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "12"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.up_to",
+                                                        "with": [
+                                                            "16"
                                                         ]
                                                     }
                                                 ]
@@ -880,14 +892,26 @@
                                                 "translate": "badge_details.aspects.effect.cooks_food"
                                             },
                                             {
-                                                "translate": "badge_details.aspects.modifier.overtime",
+                                                "text": "",
                                                 "color": "gray",
                                                 "italic": true,
-                                                "with": [
+                                                "extra": [
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.modifier.overtime",
                                                         "with": [
-                                                            "12"
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "12"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    " ",
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.up_to",
+                                                        "with": [
+                                                            "16"
                                                         ]
                                                     }
                                                 ]

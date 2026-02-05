@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:smoker",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.infernal.top_chef"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.infernal.top_chef.description"
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.infernal.top_chef.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cook_raw_food_with_both_hands": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "aspects:gameplay/aspect/infernal/root"
+}
