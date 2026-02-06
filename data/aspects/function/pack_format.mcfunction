@@ -8,8 +8,6 @@ scoreboard players set #aspects aspects.version.release 1
 scoreboard players set #aspects aspects.version.major 3
 scoreboard players set #aspects aspects.version.minor 0
 scoreboard players set #aspects aspects.version.is_dev 1
-# Initialize trigger to get current version
-function aspects:trigger/version/initialize
 
 # Initialize our own pack format
 scoreboard objectives add aspects.pack_format dummy

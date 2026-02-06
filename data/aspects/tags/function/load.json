@@ -6,6 +6,10 @@
             "required": false
         },
         {
+            "id": "aspects:trigger/initialize",
+            "required": false
+        },
+        {
             "id": "aspects:registry/aspect/initialize",
             "required": false
         },
