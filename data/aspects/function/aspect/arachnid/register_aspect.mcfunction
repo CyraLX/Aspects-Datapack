@@ -5,6 +5,7 @@
 ## color = Hexidecimal color value for your Aspect
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
+## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned; defaults to false
 data modify storage aspects:registry aspect."aspects:arachnid" set value {id: 10, namespace: "aspects", name: "arachnid", color: "#3b250d", shadow_color: -2565928, sound: "minecraft:entity.spider.ambient"}
 
 # Generic REGISTER_ASPECT logic
