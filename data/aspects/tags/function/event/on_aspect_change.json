@@ -2,7 +2,11 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:advancement/become_any/trigger",
+            "id": "aspects:introduction/on_aspect_change",
+            "required": false
+        },
+        {
+            "id": "aspects:advancement/become_any/on_aspect_change",
             "required": false
         }
     ]

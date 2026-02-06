@@ -9,3 +9,5 @@ data modify storage aspectlib:dummy aspect_id set from storage aspectlib:dummy a
 function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-REACTIVATE logic
+## Create Bossbar
+function aspects:aspect/rotten/aggravated/bossbar/initialize
