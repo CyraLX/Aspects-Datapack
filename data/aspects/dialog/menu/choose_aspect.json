@@ -18,6 +18,16 @@
             }
         }
     ],
+    "exit_action": {
+        "label": {
+            "translate": "dialog.aspects.chosen_aspect.random.external_title",
+            "fallback": "!! Missing Resource Pack for Aspects !!"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:aspect/choose/random"
+        }
+    },
     "can_close_with_escape": false,
     "pause": true,
     "columns": 3,

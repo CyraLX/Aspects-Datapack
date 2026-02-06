@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "aspects:aspect/random/activate_from_trigger",
+            "required": false
+        },
+        {
             "id": "aspects:aspect/elytrian/activate_from_trigger",
             "required": false
         },

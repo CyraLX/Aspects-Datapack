@@ -1,0 +1,78 @@
+{
+    "type": "minecraft:confirmation",
+    "title": {
+        "translate": "dialog.aspects.chosen_aspect.random",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.chosen_aspect.random.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.random.description",
+                "italic": true,
+                "color": "#d6d6d6",
+                "with": [
+                    {
+                        "translate": "aspect.aspects.human",
+                        "color": "#8b7e77",
+                        "shadow_color": -14541027
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/human",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/human/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "aspect.aspects.human",
+                "color": "#8b7e77",
+                "shadow_color": -14541027
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.chosen_aspect.random.confirmation"
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "yes": {
+        "label": {
+            "translate": "gui.yes"
+        },
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "trigger aspects.choose_aspect set -1"
+        }
+    },
+    "no": {
+        "label": {
+            "translate": "gui.no"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/choose_aspect"
+        }
+    }
+}
