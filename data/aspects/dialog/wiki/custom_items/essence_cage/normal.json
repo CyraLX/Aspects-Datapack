@@ -106,7 +106,7 @@
             "width": 18,
             "description": {
                 "translate": "dialog.aspects.custom_items.recipe.smithing",
-                "color": "#d6d6d6"
+                "color": "#c0e6c5"
             },
             "show_decorations": false,
             "show_tooltip": false

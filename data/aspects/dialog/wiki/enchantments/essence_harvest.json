@@ -125,9 +125,16 @@
                 "color": "#d6d6d6",
                 "extra": [
                     {
-                        "translate": "dialog.aspects.enchantments.essence_harvest.at_higher_levels",
+                        "translate": "dialog.aspects.enchantments.essence_harvest.at_higher_levels.mobs",
                         "with": [
                             "+0.5"
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.enchantments.essence_harvest.at_higher_levels.aspects",
+                        "with": [
+                            "+0.333334"
                         ]
                     }
                 ]
