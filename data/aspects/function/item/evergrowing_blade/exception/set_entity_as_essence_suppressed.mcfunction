@@ -1,0 +1,1 @@
+scoreboard players set @s aspects.evergrowing_blade.exception.essence_suppressed 1

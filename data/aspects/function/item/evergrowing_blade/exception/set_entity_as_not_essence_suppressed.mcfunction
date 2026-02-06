@@ -1,0 +1,1 @@
+scoreboard players reset @s aspects.evergrowing_blade.exception.essence_suppressed

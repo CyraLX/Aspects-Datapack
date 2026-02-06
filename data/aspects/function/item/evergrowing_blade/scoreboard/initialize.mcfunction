@@ -9,3 +9,4 @@ scoreboard objectives add aspects.evergrowing_blade.kill_counter dummy
 scoreboard objectives add aspects.evergrowing_blade.level dummy
 
 scoreboard objectives add aspects.evergrowing_blade.exception.ender_dragon minecraft.killed:minecraft.ender_dragon
+scoreboard objectives add aspects.evergrowing_blade.exception.essence_suppressed dummy
