@@ -1,0 +1,1 @@
+$data modify storage aspectlib:dummy randomly_chosen_aspect_registry set from storage aspects:registry aspect."$(namespace):$(name)"

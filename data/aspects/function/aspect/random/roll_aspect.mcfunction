@@ -1,0 +1,1 @@
+$execute store result storage aspectlib:dummy randomly_chosen_aspect_index int 1 run random roll 0..$(random_aspect_list_length) aspects:aspect/randomize
