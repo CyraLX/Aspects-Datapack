@@ -9,5 +9,8 @@ data modify storage aspectlib:dummy aspect_id set from storage aspectlib:dummy a
 function aspects:aspect/generic/reactivate with storage aspectlib:dummy
 
 # Aspect specific POST-REACTIVATE logic
+## Set Aspect Groups
+function aspects:aspect_group/sensitive_to_smite/activate
+function aspects:aspect_group/water_breathing/activate
 ## Create Bossbar
 function aspects:aspect/rotten/aggravated/bossbar/initialize

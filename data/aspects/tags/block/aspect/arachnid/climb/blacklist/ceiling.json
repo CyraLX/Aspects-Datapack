@@ -1,7 +1,8 @@
 {
     "values": [
         {
-            "id": "#aspectlib:no_collision"
+            "id": "#aspectlib:no_collision",
+            "required": false
         }
     ]
 }
