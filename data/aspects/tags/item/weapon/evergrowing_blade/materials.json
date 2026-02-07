@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        "minecraft:amethyst_shard"
+        {
+            "id": "minecraft:amethyst_shard",
+            "required": false
+        }
     ]
 }
