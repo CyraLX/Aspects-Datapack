@@ -1,42 +1,84 @@
-# Aspects 1.2.0
+# Aspects 1.3.0
+
+## Overview
+- Removed Minecraft 21.5 support due to the lack of Dialogs.
+- Updated to support up to 26.1 snapshot 7.
+- Added Rotten and Arachnid Aspects.
+- Revoked the Essence system.
+- > Essence Cleaner is now part of Essence Cages.
+- > Essence Extractor is redone into an Evergrowing Blade.
+- On the Aspect Picking screen you can now select to become a Random Aspect (Except Human).
+- Modification Configurations are now visible in the Pause Menu.
 
 ## General Changes
-- Updated to support 1.21.11 fully
-- (1.21.6+) More improvements to Aspect Dialogs to make the text more clearer
-- Added an unobtainable Universal Essence Cage which allows to pick any aspect when used, it is considered a creative item and requires a recipe datapack to become obtainable
-- Version triggers changed from `<namespace>.version.get` to `version.<namespace>`
-- Faded Aspect relic's textures have been remade
+- Updated Lithuanian Translations
+- Added more Aspect Advancements.
+- Retouched somm colors of Aspects for readability.
+- The modification now will introduce the player to the Pause Menu when an Aspect is selected once.
+- Added a new trigger command `/trigger aspect.check`, which will tell you what Aspect you are.
+
+## Item Changes
+- Essence Cleaner has been combined with Essence Cages (Existing items will become invalid).
+- Essence Extractor has been redone into an Evergrowing Blade (Existing items will become invalid).
+- Evergrowing Blade has been added that will act as the Essence Extractor did.
+- > This weapon can also evolve with kills, gaining damage, enchantments and visually change.
+- > Can be repaired using Amethyst Shards
+- Essence Cages no longer can store essences by themselves, kills or uses MUST come from the Evergrowing Blade.
+- Essence Cage (Collector) was added that also stores Essences, but cannot evolve into an Aspect.
+- Essence Cage (Normal and Collector) can now have a Whitelist of Essences be applied to them, restringing certain Essence combos from being allowed to be stored.
+- Essence Cage (Chaotic) was added that grants a random Aspect.
+- > This is a creative only item and cannot be obtained.
+- All Essence Cage textures have been redone or adjusted.
+
+## Aspect Additions
+### Rotten
+> Undead and rotten to the core, they are more docile and command Zombified Piglin, causing confusion among their hivemind.
+- Is vulnerable to Smite, but cannot drown.
+- Weaker in sunlight and when unprovoked.
+- Much slower in water.
+- Focus can summon multiple Zombified Piglin, which will die trying to protect you, even if the target is themselves...
+### Arachnid
+> The agile arthropods that are masters of climbing and weaving. Do not forget to look up, who knows what might be lurking there...
+- Is vulnerable to Bane of Arthropods and has less health.
+- Jumps higher and can land safely from higher distances.
+- Can climb almost any surface as if it was a ladder.
+- Can also climb across ceilings.
+- Gains resistance while inside cobwebs.
+- Focus can create/remove a set of cobwebs on you.
+- (26.1+) Focus can also launch you from scaled walls in a viewing direction.
 
 ## Aspect Changes
-### Elytrian
-- Thanks to `maskedwatercress` for contributing to redoing 5 wing designs, along with 11 new ones!
-- This Aspect now has 16 unique wing patterns to match dye. Existing users can use dyes to swap out their natural pattern
+### Merling
+- (21.11+) Mounting Nautilus now removes mining speed penalty when in water, floating.
+- (21.10 and below) Fixed Focus doing nothing.
+- Their Focus can now reatune Conduits to work on land.
+- Water Breathing no longer stops damage when Moisture is empty.
+- > Water Breathing still prevents natural reduction of Moisture, but does not help against fire or sponges.
+- Conduit Power now acts like Water Breathing for them.
 ### Feline
-- (1.21.11+) Focus has been remade so it can also be used mid-air and properls you in a direction you are looking
+- No longer has Fall Damage immunity.
+- > Instead it now has a 24 Block Safe Fall Distance.
+- > This new mechanic still is vulnerable to Pointed Dripstone.
+### Rascal
+- Light buff/debuff now is applied and removed more smoothly.
 ### Infernal
-- Now uses `damage_immune` instead of `location_changed` along with attributes to nulify fall damage in lava for better consistency
+- No longer cooks raw food in full stacks, instead it is limited to 16 at most.
+- Can now cook raw food using both hands.
+### Honey Bee
+- (26.1+) Golden Dandelion is a Golden Dandelion that provides saturation just like a normal Dandelion, which is not golden.
 
 ## Technical Changes
-- Increased Pack Format to `7`
-- 1.21.11 uses the more efficient `is_in_water` predicate flag for water detection along with hard-coded blocks like the `water_cauldron`
-- Following systems were redone: Aspect Groups, Configs, Aspect Registry, Player Storage Data
-- Refractored `player_kills_reward_shattered_relic`, `fire_based` and `ice_based` Aspect Groups into `reward_shattered_relic`, `fire_natural` and `cold_natural` respectively
-- Added `winged`, `coldproof`, `inverted_breathing` Aspect Groups
-- Added `extreme_hydrophobia` and `extreme_dehydration` Aspect Groups that double the amount of damage their respective groups will do
-- Added more and improved existing loggers
-- Added `has_passenger_or_vehicle` predicate to `aspectlib`
-- Added `is_sleeping` predicate flag to `aspectlib`
-- Added `debug/swap_to_previous_aspect` function to `aspects`
-- Added `aspect_unique` enchantment tag to `aspects`
-- Added `consume/16` to `aspectlib` item modifiers
-- Added dimension predicates to `aspectlib`
-- `aspectlib:equipment/has_elytra` predicate uses `#aspectlib:equipment/elytra` now
-- Added `is_fall_flying`, `is_in_rain`, `is_in_water`, `is_invincible`, `is_invulnerable` and `is_wet` to `aspectlib` predicates
-- Added `fire_resistance` and `resistance` status effect predicates to `aspectlib`
-- Added `contains_water` block tag in `aspectlib` which is used in `is_water` block tag
-- Added `is_water` damage type tag to `aspects`
-- Fixed many scoreboard based predicates not reseting on death
-- Fixed username changes breaking everything
-- Fixed `is_alive` predicate flag being true before `ON_RESPAWN` event is called
-- Unique Aspect items are now deleted from player hands if in survival scenarios
-- All technical advancements now have a root parent for each namespace to link them all together 
+- Increased Pack Format to `8`.
+- Moisture no longer ticks when in Creative.
+- Rewriten configs to use Dialogs instead.
+- Reverted Health trackers to the old scoreboard system.
+- > The more advanced one can still be used, but only per-Aspect basis via `track_hp` Aspect Group.
+- Removed `aspectlib:is_on_fire_with_visual` Entity Predicate Flag.
+- Changed most distance checks to be 16 block in radius for consistency.
+- Hardened Datapack validation.
+- > It will no longer apply datafixers if dependancies are missing or wrong versions.
+- Added a lot of dimension specific flags to `aspectlib`.
+- Added a lot of block tags to `aspectlib`.
+- Username datafixer now clears critical scores of the old username.
+- Better support for the `c` namespace.
+- Removed `force_aspect_on_aspectless_players` and `kill_dropped_aspect_item` configs as they were there for legacy reasons and no longer serve a purpose and will actively damage the modification.
