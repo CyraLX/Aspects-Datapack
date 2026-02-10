@@ -14,14 +14,6 @@
             "required": false
         },
         {
-            "id": "aspects:config/force_aspect_on_aspectless_players",
-            "required": false
-        },
-        {
-            "id": "aspects:config/kill_dropped_aspect_item",
-            "required": false
-        },
-        {
             "id": "aspects:config/reward_faded_relic",
             "required": false
         },
