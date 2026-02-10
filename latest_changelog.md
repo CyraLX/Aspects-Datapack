@@ -2,7 +2,7 @@
 
 ## Overview
 - Removed Minecraft 1.21.5 support due to the lack of Dialogs.
-- Updated to support up to 26.1 snapshot 7.
+- Updated to support up to 26.1 snapshot 6.
 - Added Rotten and Arachnid Aspects.
 - Reworked the Essence system.
 - > Essence Cleaner is now built into Essence Cages.
