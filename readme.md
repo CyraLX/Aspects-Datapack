@@ -52,6 +52,8 @@ Each Aspect grants:
 | **Elytrian** | - Starts with a unique Elytra<br>- Elytra flight gives more damage<br>- Can control descending speed<br>- Takes double fall damage | - Launch into the air |
 | **Honey Bee** | - Starts with a unique Elytra<br>- Smaller with less health, but has natural armor<br>- Elytra cannot be damaged, but flies slower with grace | - Store potion effects from flowers<br>- Create unique Honey Bottles with stored potion effects |
 | **Rascal** | - Much smaller, around 1.2 Blocks, but has less health<br>- Less attack reach, more block reach<br>- Stronger and faster in the dark, but reverse in the light | - Teleport down to below underground cave |
+| **Rotten** | - Cannot drown, but is vulnerable to Smite<br>- Weaker in sunlight and when unprovoked <br>- Much slower in water, but has natural armor | - Summon multiple Zombified Piglin for protection |
+| **Arachnid** | - Vulnerable to Bane of Arthropods and has less health<br>- Jumps higher and can land safely from higher distances <br>- Can climb almost any surface as if it was a ladder <br>- Can also climb across ceilings <br>- Gains resistance while inside cobwebs | - Create/remove a set of cobwebs on themselves <br>- Launch self from scaled walls in a viewing direction |
 
 *... and potentially more in future updates!*
 
@@ -60,10 +62,10 @@ Each Aspect grants:
 ## Essence System
 
 Harness the **Essences** of mobs to forge a new **Aspect**:
-- Each mob has 1–3 Essences (like `Aquatic`, `Fire`, `Undead`, etc.)
-- Use the **Essence Extractor** to collect them, or just kill them, that works too
-- Store them in an **Essence Cage**
-- Combine specific Essences to awaken an **Aspect**
+- Each mob has up to 3 Essences (like `Aquatic`, `Fire`, `Undead`, etc.)
+- Use the **Evergrowing Blade** to collect them by killing or using the weapon on passive mobs
+- Store them in a held **Essence Cage** in the Off Hand
+- Automatically combines specific Essences to awaken an **Aspect**
 
 <details>
 <summary>Essence Combinations</summary>
@@ -78,7 +80,7 @@ Harness the **Essences** of mobs to forge a new **Aspect**:
 - `Bug` + `Plant` → **Honey Bee**
 - ...
 
-*(Full combination list available in-game or on the Wiki soon)*
+*(Full combination list available in-game)*
 
 </details>
 
@@ -89,16 +91,17 @@ All recipes are unlocked from the start so check your recipe guide!
 <details>
 <summary>List of Custom Items</summary>
 
-- **Essence Extractor** – Pull Essences from passive mobs without killing them  
+- **Evergrowing Blade** – Gather Essences by killing mobs or from passive mobs without killing. It also increases in power via kills
 - **Essence Cage** – Store Essences awaken into an **Awakened Essence Cage** once a valid Essence Combination is stored
 - **Awakened Essence Cage** – Use to become the stored Aspect from the Essence Combination  
 - **Focuses** – Enables Aspect-specific active abilities
+- **Relics** – Aspect specific Faded and Shattered trophy items earnable via gameplay
 
 </details>
 
 ## In-Game Documentation
 
-Access from the Pause Menu → **Aspects**
+Access from the Pause Menu → **Aspects Menu**
 
 Includes:
 - List of Aspects and their information
@@ -106,23 +109,42 @@ Includes:
 - List of all Essence Types
 - List of all Custom Items
 - List of all Custom Enchantments
+- Modification Configuration
+
+## Endorsed Addons
+- [Filcher's Limbo](https://github.com/CyraLX/Aspects-Filchers-Limbo) - Aspects addon adding a new Aspect capable of going into a new dimension to "safely" store anything you desire.
+- [Reclaimed](https://github.com/CyraLX/Aspects-Reclaimed) - Aspects addon adding 7 new Aspects that didn't make the cut to the original modification.
+
+## Extra Credit
+
+- Maskedwatercress | [Instagram](https://www.instagram.com/maskedwatercress?igsh=MXB4ZmZ6dHh3bWFwcA==)
+> They've provided us with updated and extended wing designs for the Elytrian which look incredible and we are very thankful for their contribution. Please check out their other works!
 
 ## FAQ
 
-### How to change my Aspect after the first one?
+> *Why is there a missing Resource Pack?*
 
-1. Craft an **Essence Cage** (optionally an **Essence Extractor** too)
-2. Kill or extract mobs to gather Essences
-3. Store enough Essences to create an **Awakened Essence Cage**
-4. Consume the **Awakened Essence Cage** to choose your new Aspect
+Likely due to the downloaded Datapack version. You **need** to download the bundled Resource Pack from the same download location where you got the Datapack.
 
-### My Mods button is overlapping the Aspects button in the Pause Menu!
+The download for it can be found always on the version page directly, not on the main page of this modification.
 
-This issue can be the fault of the Mod Menu (Fabric) mod itself, you can fix it by going into the Mod Menu settings and changing **Game Menu** option to anything else, except for **insert**.
+Below is an example what the Datapack (top) and Resource Pack (bottom) downloads look like on Modrinth:
+![Datapack and Resource Pack download examples](https://cdn.modrinth.com/data/bEoCkEKm/images/d6fecb01cd0e74d4bea75dcfc462d500d42cf068.png)
 
-### Can I add new Aspects myself?
+> *My Mods button is overlapping the Aspects button in the Pause Menu!*
 
-Yes, the datapack allows new Aspects via add-on datapacks, although it’s not as easy as we’d like.
+This issue can be the fault of the Mod Menu (Fabric) mod itself. Make sure that in the Mod Menu settings the **Game Menu** option is **NOT** set to **insert**, if it is, set it to anything else.
 
-A guide will be made available soon on the project’s GitHub page.
+> *How to change my Aspect after the first one?*
 
+First craft an **Essence Cage** and an **Evergrowing Blade**, then use the crafted items to capture essences from mobs (how to use them is described on the item itself or the in-game wiki). After you store enough essences for an Aspect, it will become an **Awakened Essence Cage** and is ready to be used to change your Aspect!
+
+> *Are there any alternatives for changing my Aspect?*
+
+There is, but it requires commands and OP permissions. There is a debug command `/function aspects:debug/repick_aspect` that allows the person executing that command to repick their Aspect again. If you want another player to repick instead without giving them OP permissions, you can start the command with this instead:<br>`/execute as <player_name> at @s run function aspects:debug/repick_aspect`.
+
+> *Can I add an Aspect myself?*
+
+While this datapack allows addons to be made to add more, it isn't beginner friendly and requires decent knowledge of Minecraft's Datapack system and commands.
+
+A guide is currently not being made, but you can reference the **Endorsed Addons** above for how it can be done.

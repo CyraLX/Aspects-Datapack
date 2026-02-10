@@ -35,7 +35,7 @@
 > Undead and rotten to the core, they are more docile and command Zombified Piglin, causing confusion among their hivemind.
 - Cannot drown, but is vulnerable to Smite.
 - Weaker in sunlight and when unprovoked.
-- Much slower in water.
+- Much slower in water, but has natural armor.
 - Focus can summon multiple Zombified Piglin, which will die trying to protect you, even if the target is themselves...
 ### Arachnid
 > The agile arthropods that are masters of climbing and weaving. Do not forget to look up, who knows what might be lurking there...
