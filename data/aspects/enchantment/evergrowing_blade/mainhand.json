@@ -61,7 +61,7 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "type": "minecraft:player"
+                                "type": "#aspectlib:player-like"
                             }
                         },
                         {
