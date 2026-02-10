@@ -153,13 +153,12 @@
                 "translate": "dialog.aspects.configs.entry.toggle_value",
                 "with": [
                     {
-                        "text": "",
-                        "extra": [
+                        "translate": "extra.aspects.and",
+                        "with": [
                             {
                                 "translate": "options.on",
                                 "color": "green"
                             },
-                            " & ",
                             {
                                 "translate": "options.off",
                                 "color": "red"
