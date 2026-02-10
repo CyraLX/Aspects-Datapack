@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.shulk",
-                "color": "#b953bd"
+                "color": "#b953bd",
+                "shadow_color": -13757393
             }
         ]
     },

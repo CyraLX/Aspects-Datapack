@@ -11,7 +11,7 @@
             },
             {
                 "translate": "aspect.aspects.rascal",
-                "color": "#3A3B3C",
+                "color": "#4d4f52",
                 "shadow_color": -15856113
             }
         ]
@@ -27,7 +27,7 @@
             },
             {
                 "translate": "aspect.aspects.rascal",
-                "color": "#3A3B3C",
+                "color": "#4d4f52",
                 "shadow_color": -15856113
             }
         ]
@@ -789,7 +789,7 @@
                     {
                         "translate": "aspect.aspects.rascal",
                         "italic": true,
-                        "color": "#3A3B3C",
+                        "color": "#4d4f52",
                         "shadow_color": -15856113
                     }
                 ]

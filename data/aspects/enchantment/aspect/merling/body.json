@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.merling",
-                "color": "#2e89f1"
+                "color": "#2e89f1",
+                "shadow_color": -16047556
             }
         ]
     },

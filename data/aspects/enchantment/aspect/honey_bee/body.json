@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.honey_bee",
-                "color": "#ffa41c"
+                "color": "#ffa41c",
+                "shadow_color": -12637945
             }
         ]
     },

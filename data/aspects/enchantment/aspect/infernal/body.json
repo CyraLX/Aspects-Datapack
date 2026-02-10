@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.infernal",
-                "color": "#ac2525"
+                "color": "#ac2525",
+                "shadow_color": -13956855
             }
         ]
     },

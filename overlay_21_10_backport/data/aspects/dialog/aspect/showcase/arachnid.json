@@ -10,8 +10,8 @@
             },
             {
                 "translate": "aspect.aspects.arachnid",
-                "color": "#3b250d",
-                "shadow_color": -1
+                "color": "#c5c5c5",
+                "shadow_color": -10733556
             }
         ]
     },
@@ -25,8 +25,8 @@
             },
             {
                 "translate": "aspect.aspects.arachnid",
-                "color": "#3b250d",
-                "shadow_color": -1
+                "color": "#c5c5c5",
+                "shadow_color": -10733556
             }
         ]
     },
@@ -39,8 +39,8 @@
                 "extra": [
                     {
                         "translate": "aspect.aspects.arachnid",
-                        "color": "#3b250d",
-                        "shadow_color": -1
+                        "color": "#c5c5c5",
+                        "shadow_color": -10733556
                     },
                     "\n",
                     {

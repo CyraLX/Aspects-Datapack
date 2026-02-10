@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.enderian",
-                "color": "#7749cb"
+                "color": "#7749cb",
+                "shadow_color": -14872014
             }
         ]
     },

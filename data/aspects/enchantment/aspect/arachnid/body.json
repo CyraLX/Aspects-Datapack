@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.arachnid",
-                "color": "#3b250d"
+                "color": "#c5c5c5",
+                "shadow_color": -10733556
             }
         ]
     },

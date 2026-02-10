@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.rotten",
-                "color": "#8b7e77"
+                "color": "#3e692d",
+                "shadow_color": -15787509
             }
         ]
     },

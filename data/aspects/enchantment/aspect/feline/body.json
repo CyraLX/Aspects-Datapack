@@ -5,7 +5,8 @@
             ": ",
             {
                 "translate": "aspect.aspects.feline",
-                "color": "#f96600"
+                "color": "#f96600",
+                "shadow_color": -12707584
             }
         ]
     },
