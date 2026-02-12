@@ -7,7 +7,7 @@ scoreboard objectives add aspects.version.is_dev dummy
 scoreboard players set #aspects aspects.version.release 1
 scoreboard players set #aspects aspects.version.major 3
 scoreboard players set #aspects aspects.version.minor 0
-scoreboard players set #aspects aspects.version.is_dev 1
+scoreboard players set #aspects aspects.version.is_dev 0
 
 # Initialize our own pack format
 scoreboard objectives add aspects.pack_format dummy
