@@ -90,7 +90,7 @@
             "start": 0,
             "end": 512,
             "initial": 100,
-            "step": 1
+            "step": 4
         }
     ],
     "can_close_with_escape": true,
