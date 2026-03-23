@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "#aspects:wiki_categories/essence",
+            "id": "#aspects:wiki/essence",
             "required": false
         },
         {

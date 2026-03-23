@@ -1,0 +1,85 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "translate": "aspects",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "aspects.description",
+                "fallback": "!! Missing Resource Pack for Aspects !!"
+            },
+            "width": 300
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "menu.aspects.about.version_author_format",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "aspects.version"
+                    },
+                    {
+                        "translate": "aspects.authors_format",
+                        "with": [
+                            {
+                                "translate": "aspects.authors"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "width": 300
+        }
+    ],
+    "actions": [
+        {
+            "label": {
+                "translate": "menu.aspects.about.website"
+            },
+            "action": {
+                "type": "minecraft:open_url",
+                "url": "https://modrinth.com/datapack/corrupted-aspects"
+            }
+        },
+        {
+            "label": {
+                "translate": "menu.aspects.about.issues"
+            },
+            "action": {
+                "type": "minecraft:open_url",
+                "url": "https://github.com/CyraLX/Aspects/issues"
+            }
+        },
+        {
+            "label": {
+                "translate": "menu.aspects.about.information"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "aspects:menu/information"
+            }
+        },
+        {
+            "label": {
+                "translate": "menu.aspects.about.configs"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "aspects:menu/configs"
+            }
+        }
+    ],
+    "exit_action": {
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "smithed:data_packs"
+        },
+        "label": {
+            "translate": "gui.back"
+        }
+    }
+}

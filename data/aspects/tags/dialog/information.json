@@ -6,11 +6,7 @@
             "required": false
         },
         {
-            "id": "#aspects:wiki_entries",
-            "required": false
-        },
-        {
-            "id": "aspects:menu/configs",
+            "id": "#aspects:wiki/_entries",
             "required": false
         }
     ]

@@ -1,20 +1,24 @@
 {
     "type": "minecraft:dialog_list",
     "title": {
-        "translate": "dialog.aspects.pause_screen",
+        "translate": "dialog.aspects.information",
         "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "external_title": {
-        "translate": "dialog.aspects.pause_screen.external_title",
+        "translate": "dialog.aspects.information.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "exit_action": {
         "label": {
             "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:about"
         }
     },
     "can_close_with_escape": true,
     "pause": true,
     "columns": 3,
-    "dialogs": "#aspects:pause_screen_additions"
+    "dialogs": "#aspects:information"
 }

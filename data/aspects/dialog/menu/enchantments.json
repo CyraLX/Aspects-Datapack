@@ -14,11 +14,11 @@
         },
         "action": {
             "type": "minecraft:show_dialog",
-            "dialog": "aspects:menu/pause_screen"
+            "dialog": "aspects:menu/information"
         }
     },
     "can_close_with_escape": true,
     "pause": true,
     "columns": 3,
-    "dialogs": "#aspects:wiki_categories/enchantments"
+    "dialogs": "#aspects:wiki/enchantments"
 }

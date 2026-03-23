@@ -14,7 +14,7 @@
         },
         "action": {
             "type": "minecraft:show_dialog",
-            "dialog": "aspects:menu/pause_screen"
+            "dialog": "aspects:menu/information"
         }
     },
     "can_close_with_escape": true,

@@ -14,12 +14,12 @@
         },
         "action": {
             "type": "minecraft:show_dialog",
-            "dialog": "aspects:menu/pause_screen"
+            "dialog": "aspects:menu/information"
         }
     },
     "can_close_with_escape": true,
     "pause": true,
     "columns": 2,
     "button_width": 225,
-    "dialogs": "#aspects:wiki_categories/custom_items"
+    "dialogs": "#aspects:wiki/custom_items"
 }

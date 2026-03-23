@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "smithed:data_packs",
+            "id": "aspects:about",
             "required": false
         }
     ]
