@@ -4,6 +4,19 @@
         "name": "aspects:focus_dummy"
     },
     {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "focus": {
+                    "aspect": {
+                        "namespace": "aspects",
+                        "name": "merling"
+                    }
+                }
+            }
+        }
+    },
+    {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:tooltip_display": {
@@ -57,16 +70,6 @@
                     }
                 },
                 "count": 1
-            },
-            "minecraft:custom_data": {
-                "aspects": {
-                    "focus": {
-                        "aspect": {
-                            "namespace": "aspects",
-                            "name": "merling"
-                        }
-                    }
-                }
             },
             "minecraft:item_name": [
                 {

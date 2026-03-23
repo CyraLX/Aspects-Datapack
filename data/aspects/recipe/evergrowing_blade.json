@@ -114,6 +114,12 @@
                 }
             ],
             "minecraft:custom_data": {
+                "smithed": {
+                    "ignore": {
+                        "functionality": true,
+                        "crafting": true
+                    }
+                },
                 "aspects": {
                     "evergrowing_blade": {
                         "kill_counter": 0

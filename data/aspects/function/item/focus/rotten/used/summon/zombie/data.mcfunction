@@ -1,4 +1,5 @@
 # Add tag
+tag @s add smithed.entity
 tag @s add aspects.rotten.summon
 tag @s add aspects.rotten.summoned_temp
 tag @s add aspects.rotten.summon_recent

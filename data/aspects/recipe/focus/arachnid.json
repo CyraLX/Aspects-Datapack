@@ -68,6 +68,12 @@
                         "aspects:focus/generic/modify_offhand": 1
                     },
                     "minecraft:custom_data": {
+                        "smithed": {
+                            "ignore": {
+                                "functionality": true,
+                                "crafting": true
+                            }
+                        },
                         "aspects": {
                             "focus": {
                                 "aspect": {
@@ -81,6 +87,12 @@
                 "count": 1
             },
             "minecraft:custom_data": {
+                "smithed": {
+                    "ignore": {
+                        "functionality": true,
+                        "crafting": true
+                    }
+                },
                 "aspects": {
                     "focus": {
                         "aspect": {

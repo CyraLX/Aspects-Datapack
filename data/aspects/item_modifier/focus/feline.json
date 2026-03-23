@@ -4,6 +4,19 @@
         "name": "aspects:focus_dummy"
     },
     {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "focus": {
+                    "aspect": {
+                        "namespace": "aspects",
+                        "name": "feline"
+                    }
+                }
+            }
+        }
+    },
+    {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:item_model": "aspects:focus/feline",
@@ -50,16 +63,6 @@
                     }
                 },
                 "count": 1
-            },
-            "minecraft:custom_data": {
-                "aspects": {
-                    "focus": {
-                        "aspect": {
-                            "namespace": "aspects",
-                            "name": "feline"
-                        }
-                    }
-                }
             },
             "minecraft:item_name": {
                 "translate": "item.aspects.focus.feline",

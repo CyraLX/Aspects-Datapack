@@ -24,6 +24,19 @@
         ]
     },
     {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "focus": {
+                    "aspect": {
+                        "namespace": "aspects",
+                        "name": "shulk"
+                    }
+                }
+            }
+        }
+    },
+    {
         "function": "minecraft:set_components",
         "components": {
             "minecraft:tooltip_display": {
@@ -78,16 +91,6 @@
                     }
                 },
                 "count": 1
-            },
-            "minecraft:custom_data": {
-                "aspects": {
-                    "focus": {
-                        "aspect": {
-                            "namespace": "aspects",
-                            "name": "shulk"
-                        }
-                    }
-                }
             },
             "minecraft:item_name": {
                 "translate": "item.aspects.focus.shulk",
