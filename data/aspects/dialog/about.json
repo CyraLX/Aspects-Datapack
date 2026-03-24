@@ -43,7 +43,12 @@
     "actions": [
         {
             "label": {
-                "translate": "menu.aspects.about.website"
+                "translate": "extra.aspects.website_link",
+                "with": [
+                    {
+                        "translate": "menu.aspects.about.website"
+                    }
+                ]
             },
             "action": {
                 "type": "minecraft:open_url",
@@ -52,7 +57,12 @@
         },
         {
             "label": {
-                "translate": "menu.aspects.about.issues"
+                "translate": "extra.aspects.website_link",
+                "with": [
+                    {
+                        "translate": "menu.aspects.about.issues"
+                    }
+                ]
             },
             "action": {
                 "type": "minecraft:open_url",
@@ -61,20 +71,40 @@
         },
         {
             "label": {
-                "translate": "menu.aspects.about.information"
+                "translate": "dialog.aspects.information"
             },
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "aspects:menu/information"
-            }
+            },
+            "width": 175
         },
         {
             "label": {
-                "translate": "menu.aspects.about.configs"
+                "translate": "dialog.aspects.configs"
             },
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "aspects:menu/configs"
+            },
+            "width": 175
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.addons"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "aspects:menu/addons"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.contributors"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "aspects:menu/contributors"
             }
         }
     ],
@@ -85,6 +115,7 @@
         },
         "label": {
             "translate": "gui.back"
-        }
+        },
+        "width": 200
     }
 }

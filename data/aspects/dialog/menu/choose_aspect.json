@@ -26,7 +26,8 @@
         "action": {
             "type": "minecraft:show_dialog",
             "dialog": "aspects:aspect/choose/random"
-        }
+        },
+        "width": 200
     },
     "can_close_with_escape": false,
     "pause": true,

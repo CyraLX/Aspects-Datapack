@@ -1,0 +1,169 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.contributors",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
+    },
+    "external_title": {
+        "translate": "dialog.aspects.contributors.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!"
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.contributors.category_format",
+                        "color": "#c7fdff",
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.contributors.artists"
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "dialog.aspects.contributors.work_format",
+                        "color": "#f6c7ff",
+                        "with": [
+                            {
+                                "translate": "item.aspects.wings.elytrian",
+                                "extra": [
+                                    " ",
+                                    {
+                                        "translate": "dialog.aspects.contributors.artists.textures"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "dialog.aspects.contributors.person_format",
+                                "with": [
+                                    {
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            "Maskedwatercress"
+                                        ],
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "extra.aspects.website_link",
+                                                "with": [
+                                                    {
+                                                        "translate": "extra.aspects.redirect_to",
+                                                        "with": [
+                                                            "Maskedwatercress Instagram"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "click_event": {
+                                            "action": "open_url",
+                                            "url": "https://www.instagram.com/maskedwatercress"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "dialog.aspects.contributors.work_format",
+                        "color": "#f6c7ff",
+                        "with": [
+                            {
+                                "translate": "item.aspects.wings.honey_bee",
+                                "extra": [
+                                    " ",
+                                    {
+                                        "translate": "dialog.aspects.contributors.artists.textures"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "dialog.aspects.contributors.person_format",
+                                "with": [
+                                    "SleepySkitters"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.contributors.category_format",
+                        "color": "#c7fdff",
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.contributors.translators"
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "dialog.aspects.contributors.work_format",
+                        "color": "#f6c7ff",
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.contributors.translations.italian"
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "text": "",
+                        "extra": [
+                            {
+                                "translate": "dialog.aspects.contributors.person_format",
+                                "with": [
+                                    "Crafty"
+                                ]
+                            },
+                            "\n",
+                            {
+                                "translate": "dialog.aspects.contributors.person_format",
+                                "with": [
+                                    "Zane"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:about"
+        },
+        "width": 200
+    }
+}

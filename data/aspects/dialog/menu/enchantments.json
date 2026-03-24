@@ -15,7 +15,8 @@
         "action": {
             "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/information"
-        }
+        },
+        "width": 200
     },
     "can_close_with_escape": true,
     "pause": true,

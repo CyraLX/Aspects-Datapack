@@ -124,6 +124,7 @@
         "action": {
             "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/custom_items"
-        }
+        },
+        "width": 200
     }
 }

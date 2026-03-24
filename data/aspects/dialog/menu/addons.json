@@ -1,11 +1,11 @@
 {
     "type": "minecraft:dialog_list",
     "title": {
-        "translate": "dialog.aspects.custom_items",
+        "translate": "dialog.aspects.addons",
         "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "external_title": {
-        "translate": "dialog.aspects.custom_items.external_title",
+        "translate": "dialog.aspects.addons.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!"
     },
     "exit_action": {
@@ -14,13 +14,12 @@
         },
         "action": {
             "type": "minecraft:show_dialog",
-            "dialog": "aspects:menu/information"
+            "dialog": "aspects:about"
         },
         "width": 200
     },
     "can_close_with_escape": true,
     "pause": true,
     "columns": 2,
-    "button_width": 225,
-    "dialogs": "#aspects:wiki/custom_items"
+    "dialogs": "#aspects:addons"
 }

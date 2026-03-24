@@ -198,6 +198,7 @@
         "action": {
             "type": "minecraft:show_dialog",
             "dialog": "aspects:menu/information"
-        }
+        },
+        "width": 200
     }
 }

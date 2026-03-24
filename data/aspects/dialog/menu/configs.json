@@ -37,7 +37,8 @@
         "action": {
             "type": "minecraft:show_dialog",
             "dialog": "aspects:about"
-        }
+        },
+        "width": 200
     },
     "can_close_with_escape": true,
     "pause": true,
