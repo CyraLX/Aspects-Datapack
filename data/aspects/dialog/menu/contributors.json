@@ -138,14 +138,60 @@
                             {
                                 "translate": "dialog.aspects.contributors.person_format",
                                 "with": [
-                                    "Crafty"
+                                    {
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            "Crafty"
+                                        ],
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "extra.aspects.website_link",
+                                                "with": [
+                                                    {
+                                                        "translate": "extra.aspects.redirect_to",
+                                                        "with": [
+                                                            "Crafty Youtube"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "click_event": {
+                                            "action": "open_url",
+                                            "url": "http://www.youtube.com/@Crafty-MinishZane"
+                                        }
+                                    }
                                 ]
                             },
                             "\n",
                             {
                                 "translate": "dialog.aspects.contributors.person_format",
                                 "with": [
-                                    "Zane"
+                                    {
+                                        "translate": "extra.aspects.hover_context",
+                                        "with": [
+                                            "Zane"
+                                        ],
+                                        "hover_event": {
+                                            "action": "show_text",
+                                            "value": {
+                                                "translate": "extra.aspects.website_link",
+                                                "with": [
+                                                    {
+                                                        "translate": "extra.aspects.redirect_to",
+                                                        "with": [
+                                                            "Zane Youtube"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "click_event": {
+                                            "action": "open_url",
+                                            "url": "http://www.youtube.com/@Crafty-MinishZane"
+                                        }
+                                    }
                                 ]
                             }
                         ]
