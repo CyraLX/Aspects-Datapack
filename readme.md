@@ -119,8 +119,6 @@ Includes:
 
 - Maskedwatercress | [Instagram](https://www.instagram.com/maskedwatercress?igsh=MXB4ZmZ6dHh3bWFwcA==)
 > They've provided us with updated and extended wing designs for the Elytrian which look incredible and we are very thankful for their contribution. Please check out their other works!
-- Crafty and Zane | [YouTube](http://www.youtube.com/@Crafty-MinishZane)
-> Provided a Italian translation for 3 Official Aspects Projects!
 
 ## FAQ
 
