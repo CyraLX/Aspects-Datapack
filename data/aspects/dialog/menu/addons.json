@@ -2,12 +2,31 @@
     "type": "minecraft:dialog_list",
     "title": {
         "translate": "dialog.aspects.addons",
-        "fallback": "!! Missing Resource Pack for Aspects !!"
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects"
+            }
+        ]
     },
     "external_title": {
         "translate": "dialog.aspects.addons.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!"
     },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "translate": "dialog.aspects.addons.description",
+                "with": [
+                    {
+                        "translate": "aspects"
+                    }
+                ]
+            }
+        }
+    ],
     "exit_action": {
         "label": {
             "translate": "gui.back"
