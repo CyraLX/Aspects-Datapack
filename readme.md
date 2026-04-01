@@ -20,7 +20,7 @@
 > **Harvest the creatures of this world to become something more.**  
 > Unlock powerful abilities by absorbing the essence of creatures and choosing your **Aspect**. Whether you want to soar like an Elytrian or become one with the darkness like a Rascal, this mod lets you rewrite your nature.
 
-This datapack is inspired by the [Origins](https://modrinth.com/mod/origins) mod that introduces unique Aspects, each with distinct advantages and disadvantages.
+This Data Pack is inspired by the [Origins](https://modrinth.com/mod/origins) mod that introduces unique Aspects, each with distinct advantages and disadvantages.
 
 ## Version specifics
 Requirements:
@@ -126,12 +126,12 @@ Includes:
 
 > *Why is there a missing Resource Pack?*
 
-Likely due to the downloaded Datapack version. You **need** to download the bundled Resource Pack from the same download location where you got the Datapack.
+Likely due to the downloaded Data Pack version. You **need** to download the bundled Resource Pack from the same download location where you got the Data Pack.
 
 The download for it can be found always on the version page directly, not on the main page of this modification.
 
-Below is an example what the Datapack (top) and Resource Pack (bottom) downloads look like on Modrinth:
-![Datapack and Resource Pack download examples](https://cdn.modrinth.com/data/bEoCkEKm/images/d6fecb01cd0e74d4bea75dcfc462d500d42cf068.png)
+Below is an example what the Data Pack (top) and Resource Pack (bottom) downloads look like on Modrinth:
+![Data Pack and Resource Pack download examples](https://cdn.modrinth.com/data/bEoCkEKm/images/d6fecb01cd0e74d4bea75dcfc462d500d42cf068.png)
 
 > *My Mods button is overlapping the Aspects button in the Pause Menu!*
 
@@ -147,6 +147,6 @@ There is, but it requires commands and OP permissions. There is a debug command 
 
 > *Can I add an Aspect myself?*
 
-While this datapack allows addons to be made to add more, it isn't beginner friendly and requires decent knowledge of Minecraft's Datapack system and commands.
+While this Data Pack allows addons to be made to add more, it isn't beginner friendly and requires decent knowledge of Minecraft's Data Pack system and commands.
 
 A guide is currently not being made, but you can reference the **Endorsed Addons** above for how it can be done.
