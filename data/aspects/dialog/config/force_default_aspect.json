@@ -1,0 +1,177 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "translate": "dialog.aspects.configs.entry",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue"
+            },
+            {
+                "translate": "config.aspects.force_default_aspect"
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.configs.entry.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue"
+            },
+            {
+                "translate": "config.aspects.force_default_aspect"
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "config.aspects.force_default_aspect.description",
+                "extra": [
+                    "\n",
+                    {
+                        "translate": "config.aspects.force_default_aspect.note",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "0",
+                                "color": "gold"
+                            },
+                            {
+                                "translate": "options.off",
+                                "color": "red"
+                            },
+                            {
+                                "text": "aspects:human",
+                                "color": "gold"
+                            },
+                            {
+                                "translate": "aspect.aspects.human",
+                                "color": "#8b7e77",
+                                "shadow_color": -14541027
+                            },
+                            {
+                                "text": "aspects:merling",
+                                "color": "gold"
+                            },
+                            {
+                                "translate": "aspect.aspects.merling",
+                                "color": "#2e89f1",
+                                "shadow_color": -16047556
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "dialog.aspects.configs.entry.accepts_values",
+                        "with": [
+                            {
+                                "text": "",
+                                "color": "#d6d6d6",
+                                "extra": [
+                                    {
+                                        "translate": "extra.aspects.and",
+                                        "color": "blue",
+                                        "with": [
+                                            {
+                                                "translate": "dialog.aspects.configs.entry.accepts_values.only",
+                                                "with": [
+                                                    "0"
+                                                ]
+                                            },
+                                            {
+                                                "translate": "dialog.aspects.configs.entry.accepts_values.registered_namespace",
+                                                "with": [
+                                                    {
+                                                        "translate": "aspect"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "\n",
+                    {
+                        "translate": "dialog.aspects.configs.entry.default",
+                        "with": [
+                            {
+                                "text": "0",
+                                "color": "blue"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:text",
+            "label": {
+                "translate": "dialog.aspects.configs.entry.change_value"
+            },
+            "key": "value",
+            "width": 225,
+            "initial": "0",
+            "max_length": 8
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "exit_action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "aspects:menu/configs"
+        },
+        "width": 200
+    },
+    "columns": 2,
+    "actions": [
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.apply_input_value"
+            },
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "scoreboard players set #aspects aspects.config.force_default_aspect $(value)"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.reset_value"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/force_default_aspect/default"
+            }
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.configs.entry.check_value"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/force_default_aspect/current"
+            }
+        }
+    ]
+}

@@ -14,11 +14,19 @@
             "required": false
         },
         {
+            "id": "aspects:config/force_default_aspect/initialize",
+            "required": false
+        },
+        {
             "id": "aspects:config/reward_shattered_relic/initialize",
             "required": false
         },
         {
             "id": "aspects:config/reward_faded_relic/initialize",
+            "required": false
+        },
+        {
+            "id": "aspects:config/show_introduction/initialize",
             "required": false
         },
         {

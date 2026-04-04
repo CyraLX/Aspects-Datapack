@@ -1,5 +1,7 @@
 advancement revoke @s only aspects:item/essence_cage_universal/consume
 
+scoreboard players set @s aspects.essence_cage_universal.was_used 1
+
 function aspectlib:player/id/expose
 function aspects:aspect/expose_aspect with storage aspectlib:dummy
 function aspects:aspect/generic/remove_old_aspect with storage aspectlib:dummy aspect

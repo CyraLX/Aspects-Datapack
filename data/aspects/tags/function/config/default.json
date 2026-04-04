@@ -14,11 +14,19 @@
             "required": false
         },
         {
+            "id": "aspects:config/force_default_aspect/default",
+            "required": false
+        },
+        {
             "id": "aspects:config/reward_shattered_relic/default",
             "required": false
         },
         {
             "id": "aspects:config/reward_faded_relic/default",
+            "required": false
+        },
+        {
+            "id": "aspects:config/show_introduction/default",
             "required": false
         },
         {

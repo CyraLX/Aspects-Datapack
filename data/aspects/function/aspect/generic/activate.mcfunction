@@ -17,5 +17,7 @@ $execute if entity @s[type=minecraft:player] run advancement grant @s only $(nam
 # Play sounds
 playsound minecraft:entity.zombie_villager.converted player @a[distance=0.1..16] ~ ~ ~ 1 1.5
 playsound minecraft:entity.zombie_villager.converted player @s ~ ~ ~ 1 1.5 1
+# Reset Essence Cage (Universal) tracker
+scoreboard players reset @s aspects.essence_cage_universal.was_used
 # Call ON_ASPECT_SWITCH event
 function aspects:event/on_aspect_change/execute

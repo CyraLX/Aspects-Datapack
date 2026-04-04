@@ -38,6 +38,10 @@
             "required": false
         },
         {
+            "id": "aspects:item/essence_cage_universal/initialize_scoreboards",
+            "required": false
+        },
+        {
             "id": "aspects:item/evergrowing_blade/scoreboard/initialize",
             "required": false
         }
