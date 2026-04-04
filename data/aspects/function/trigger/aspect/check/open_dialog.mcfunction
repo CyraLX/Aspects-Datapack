@@ -1,0 +1,2 @@
+#$tellraw @s {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{translate:"trigger.aspects.aspect.check",with:[{translate:"aspect.$(namespace).$(name)",color:"$(color)",shadow_color:$(shadow_color)}, {translate:"$(namespace)",color:"blue"},{translate:"aspect.$(namespace).$(name)",color:"$(color)",shadow_color:$(shadow_color)}]}]}
+$dialog show @s $(namespace):aspect/list/$(name)
