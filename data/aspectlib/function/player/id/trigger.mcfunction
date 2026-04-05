@@ -3,7 +3,7 @@ scoreboard players operation @s aspectlib.player_id = #aspects aspectlib.player_
 
 # Store the id into a storage
 ## Temporary pull the ID into storage
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 ## Store the ID for a specific player based on that ID
 function aspectlib:player/id/store with storage aspectlib:dummy
 ## Cleaup temporary storage

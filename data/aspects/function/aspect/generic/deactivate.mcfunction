@@ -1,5 +1,5 @@
 # Expose Player ID for later
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # Store Removed Aspect
 $data modify storage aspectlib:dummy namespace set value $(namespace)
 $data modify storage aspectlib:dummy name set value $(name)

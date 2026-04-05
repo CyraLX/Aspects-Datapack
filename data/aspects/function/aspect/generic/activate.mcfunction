@@ -1,6 +1,6 @@
 $data modify storage aspectlib:dummy new_aspect set from storage aspects:registry aspect[{namespace: $(namespace), name: $(name)}]
 # Expose the player ID
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # Store data into storage for this function to be used
 function aspects:aspect/generic/store_activate_data with storage aspectlib:dummy
 # Remove the option to be able to use trigger to run this function

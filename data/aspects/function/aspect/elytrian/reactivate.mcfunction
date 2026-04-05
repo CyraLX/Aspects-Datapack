@@ -4,7 +4,7 @@ function aspects:aspect/elytrian/advancement/flying_marathon/cancel_tracking
 function aspects:aspect/elytrian/rocket_damage/scoreboard/reset
 
 # Generic REACTIVATE logic
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 data modify storage aspectlib:dummy aspect set from storage aspects:registry aspect[{namespace: "aspects", name: "elytrian"}]
 data modify storage aspectlib:dummy aspect_namespace set from storage aspectlib:dummy aspect.namespace
 data modify storage aspectlib:dummy aspect_name set from storage aspectlib:dummy aspect.name

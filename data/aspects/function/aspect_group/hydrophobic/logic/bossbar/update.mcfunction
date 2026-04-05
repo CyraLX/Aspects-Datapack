@@ -1,5 +1,5 @@
 # Get ID for the Bossbar
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 
 # Don't run if you do not have Water Ward and hide the Bossbar
 execute unless predicate aspects:enchantment/water_ward/any run return run function aspects:aspect_group/hydrophobic/logic/bossbar/hide with storage aspectlib:dummy

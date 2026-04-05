@@ -10,9 +10,9 @@ data remove storage aspectlib:dummy uuid
 data remove storage aspectlib:dummy username
 data remove storage aspectlib:dummy rotten_color
 data remove storage aspectlib:dummy rotten_shadow_color
-function aspectlib:player/id/expose
-function aspectlib:player/uuid/expose
-function aspectlib:player/username/expose with storage aspectlib:dummy
+function aspectlib:expose/player/id
+function aspectlib:expose/player/uuid
+function aspectlib:expose/player/username with storage aspectlib:dummy
 data modify storage aspectlib:dummy rotten_color set from storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}].color
 data modify storage aspectlib:dummy rotten_shadow_color set from storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}].shadow_color
 

@@ -5,7 +5,7 @@ function aspects:aspect/feline/predator/attributes/recovering/revoke
 ## Reset scoreboard state
 scoreboard players set @s aspects.feline.predator.state 0
 ## Delete bar
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function aspects:aspect/feline/predator/bossbar/hide with storage aspectlib:dummy
 ## Reset scores
 function aspects:aspect/feline/predator/scoreboard/reset

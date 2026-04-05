@@ -6,5 +6,5 @@ execute unless predicate aspects:aspect/any run return fail
 execute unless entity @s[type=minecraft:player] run return fail
 
 # If all passes, execute tag
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function aspects:item/relic/faded/prepare_aspect_for_macro with storage aspectlib:dummy

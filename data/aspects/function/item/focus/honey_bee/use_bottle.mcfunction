@@ -1,4 +1,4 @@
 scoreboard players add @s aspects.honey_bee.created_honey_bottles 1
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function aspects:item/focus/honey_bee/modify_bottle with storage aspectlib:dummy
 item modify entity @s weapon.offhand aspectlib:consume/1

@@ -1,5 +1,5 @@
 # Expose player ID
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 # Update previous and current pack_format data in player storage
 function #aspects:data_fixer/pack_format/update with storage aspectlib:dummy
 # Run validate functions with the following data:

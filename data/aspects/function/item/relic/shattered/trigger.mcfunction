@@ -6,5 +6,5 @@ execute unless score #aspects aspects.config.reward_shattered_relic matches 1 ru
 execute unless entity @s[type=minecraft:player] run return fail
 
 # If all passes, execute tag
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function aspects:item/relic/shattered/prepare_aspect_for_macro with storage aspectlib:dummy

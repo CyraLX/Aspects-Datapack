@@ -7,5 +7,5 @@ advancement revoke @s from aspectlib:root
 advancement revoke @s from aspects:gameplay/root
 
 # Remove Storage Data
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 function aspectlib:storage_data/delete with storage aspectlib:dummy

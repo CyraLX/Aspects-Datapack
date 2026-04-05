@@ -2,7 +2,7 @@
 execute unless predicate aspects:equipment/aspect_unique/chest run function aspectlib:equipment/drop/chestplate
 
 # Generic REACTIVATE logic
-function aspectlib:player/id/expose
+function aspectlib:expose/player/id
 data modify storage aspectlib:dummy aspect set from storage aspects:registry aspect[{namespace: "aspects", name: "honey_bee"}]
 data modify storage aspectlib:dummy aspect_namespace set from storage aspectlib:dummy aspect.namespace
 data modify storage aspectlib:dummy aspect_name set from storage aspectlib:dummy aspect.name
