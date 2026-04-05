@@ -10,10 +10,12 @@ scoreboard objectives add aspects.registry.aspect.list_random_index dummy
 scoreboard players set #aspects aspects.registry.aspect.amount 0
 scoreboard players set #aspects aspects.registry.aspect.amount_random 0
 scoreboard players set #aspects aspects.registry.aspect.list_index 0
-scoreboard players set #aspects aspects.registry.aspect.amount_random 0
+scoreboard players set #aspects aspects.registry.aspect.list_random_index 0
 
 # Recreate registry table
 data modify storage aspects:registry aspect set value {}
+# Recreate legacy random Aspect list
+data remove storage aspects:registry random_aspect_list
 # Register all Aspects
 function #aspects:registry/register_aspects
 # Store registered amounts
