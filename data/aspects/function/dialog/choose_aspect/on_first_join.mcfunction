@@ -1,5 +1,5 @@
 # Mark as player not viewing the dialog
-scoreboard players set @s aspects.dialog.choose_menu 0
+scoreboard players set @s aspects.dialog.menu_open 0
 
 # First check if the player is without an Aspect
 execute if function aspects:dialog/choose_aspect/aspectless/check run return 1

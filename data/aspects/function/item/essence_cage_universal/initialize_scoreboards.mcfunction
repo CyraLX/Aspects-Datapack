@@ -1,1 +1,0 @@
-scoreboard objectives add aspects.essence_cage_universal.was_used trigger

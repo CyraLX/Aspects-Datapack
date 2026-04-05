@@ -11,7 +11,7 @@ $data modify storage aspectlib:users player.$(id).aspects.aspect set value {}
 # Reset Scoreboards
 scoreboard players reset @s aspects.aspect_id
 scoreboard players reset @s aspects.choose_aspect
-scoreboard players reset @s aspects.dialog.choose_menu
+scoreboard players reset @s aspects.dialog.menu_open
 # Open Aspect Choosing dialog
 function aspects:dialog/choose_aspect/open_menu
 

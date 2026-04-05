@@ -1,2 +1,2 @@
 function #aspects:aspect/give_aspect_from_trigger
-scoreboard players set @s aspects.dialog.choose_menu 0
+scoreboard players set @s aspects.dialog.menu_open 0

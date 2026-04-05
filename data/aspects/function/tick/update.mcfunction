@@ -1,5 +1,5 @@
 # Make Aspectless players Invisible and/or Resistant to damage
-execute as @a[predicate=aspects:dialog/choose_menu/is_open] at @s run function aspects:dialog/choose_aspect/effects
+execute as @a[predicate=aspects:dialog/aspect/choose/is_open] at @s run function aspects:dialog/choose_aspect/effects
 # Make sure players have their Aspect by calling Event ON_RESPAWN if they are missing one
 execute as @a[predicate=aspectlib:flags/is_alive, predicate=aspectlib:periodic_tick/100, predicate=!aspects:aspect/any, predicate=aspects:aspect/any_score] at @s run function aspects:tick/missing_aspect
 # Delete unique items when held in mainhand or offhand
