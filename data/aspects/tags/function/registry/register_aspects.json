@@ -2,27 +2,7 @@
     "replace": false,
     "values": [
         {
-            "id": "aspects:aspect/elytrian/register_aspect",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/enderian/register_aspect",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/feline/register_aspect",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/honey_bee/register_aspect",
-            "required": false
-        },
-        {
             "id": "aspects:aspect/human/register_aspect",
-            "required": false
-        },
-        {
-            "id": "aspects:aspect/infernal/register_aspect",
             "required": false
         },
         {
@@ -30,11 +10,31 @@
             "required": false
         },
         {
-            "id": "aspects:aspect/rascal/register_aspect",
+            "id": "aspects:aspect/enderian/register_aspect",
             "required": false
         },
         {
             "id": "aspects:aspect/shulk/register_aspect",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/feline/register_aspect",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/infernal/register_aspect",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/elytrian/register_aspect",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/honey_bee/register_aspect",
+            "required": false
+        },
+        {
+            "id": "aspects:aspect/rascal/register_aspect",
             "required": false
         },
         {
