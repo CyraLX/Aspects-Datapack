@@ -5,11 +5,11 @@
 ## color = Hexidecimal color value for your Aspect
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
-## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned; defaults to false
-data modify storage aspects:registry aspect."aspects:enderian" set value {id: 2, namespace: "aspects", name: "enderian", color: "#7749cb", shadow_color: -14872014, sound: "minecraft:entity.enderman.ambient"}
+## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned
+data modify storage aspects:registry aspect append value {id: 2, namespace: "aspects", name: "enderian", color: "#7749cb", shadow_color: -14872014, sound: "minecraft:entity.enderman.ambient", prevent_random: false}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:enderian"
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect[{namespace: "aspects", name: "enderian"}]
 
 # Setup scoreboard objectives for the Aspect
 function aspects:item/focus/enderian/raycast/initialize_scoreboards

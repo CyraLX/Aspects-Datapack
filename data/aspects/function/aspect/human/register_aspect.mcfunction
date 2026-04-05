@@ -5,10 +5,10 @@
 ## color = Hexidecimal color value for your Aspect
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
-## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned; defaults to false
-data modify storage aspects:registry aspect."aspects:human" set value {id: 0, namespace: "aspects", name: "human", color: "#8b7e77", shadow_color: -14541027, sound: "minecraft:entity.player.hurt", prevent_random: true}
+## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned
+data modify storage aspects:registry aspect append value {id: 0, namespace: "aspects", name: "human", color: "#8b7e77", shadow_color: -14541027, sound: "minecraft:entity.player.hurt", prevent_random: true}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:human"
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect[{namespace: "aspects", name: "human"}]
 
 # Setup scoreboard objectives for the Aspect

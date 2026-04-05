@@ -3,7 +3,7 @@
 scoreboard players set @s aspects.focus.shulk.has_storage 0
 
 # Generic ACTIVATE logic
-function aspects:aspect/generic/activate with storage aspects:registry aspect."aspects:shulk"
+function aspects:aspect/generic/activate with storage aspects:registry aspect[{namespace: "aspects", name: "shulk"}]
 
 # Aspect specific POST-ACTIVATE logic
 

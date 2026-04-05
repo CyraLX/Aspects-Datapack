@@ -5,11 +5,11 @@
 ## color = Hexidecimal color value for your Aspect
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
-## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned; defaults to false
-data modify storage aspects:registry aspect."aspects:elytrian" set value {id: 6, namespace: "aspects", name: "elytrian", color: "#f2f10d", shadow_color: -12829693, sound: "minecraft:entity.parrot.ambient"}
+## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned
+data modify storage aspects:registry aspect append value {id: 6, namespace: "aspects", name: "elytrian", color: "#f2f10d", shadow_color: -12829693, sound: "minecraft:entity.parrot.ambient", prevent_random: false}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:elytrian"
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect[{namespace: "aspects", name: "elytrian"}]
 
 # Setup scoreboard objectives for the Aspect
 function aspects:aspect/elytrian/advancement/flying_marathon/scoreboard/initialize
