@@ -1,8 +1,6 @@
-execute store result score #aspects aspectlib.dummy run data get storage aspects:registry random_aspect_list
-scoreboard players remove #aspects aspectlib.dummy 1
-execute store result storage aspectlib:dummy random_aspect_list_length int 1 run scoreboard players get #aspects aspectlib.dummy
+execute store result storage aspectlib:dummy aspect_list_random_length int 1 run scoreboard players get #aspects aspects.registry.aspect.list_random_index
 function aspects:aspect/random/roll_aspect with storage aspectlib:dummy
-function aspects:aspect/random/retrieve_aspect_id with storage aspectlib:dummy
-function aspects:aspect/activate_aspect_macro with storage aspectlib:dummy randomly_chosen_aspect_id
-function aspects:aspect/random/retrieve_aspect_registry with storage aspectlib:dummy randomly_chosen_aspect_id
-function aspects:aspect/random/print_randomly_chosen_aspect with storage aspectlib:dummy randomly_chosen_aspect_registry
+function aspects:aspect/expose_aspect_namespaced_name_from_list_index with storage aspectlib:dummy
+function aspects:aspect/activate_aspect_macro with storage aspectlib:dummy aspect_namespaced_name
+function aspects:aspect/expose_aspect_registry_from_namespaced_name with storage aspectlib:dummy aspect_namespaced_name
+function aspects:aspect/random/print_randomly_chosen_aspect with storage aspectlib:dummy aspect_registry

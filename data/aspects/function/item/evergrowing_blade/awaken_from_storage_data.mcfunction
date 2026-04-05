@@ -1,5 +1,5 @@
 function aspectlib:player/id/expose
-function aspects:aspect/expose_aspect with storage aspectlib:dummy
+function aspects:aspect/expose_aspect_registry_from_player_id with storage aspectlib:dummy
 execute as @p[tag=evergrowing_blade_attacker,distance=..32] at @s run function aspects:item/essence_cage/awaken with storage aspectlib:dummy aspect
 
 # Cleanup Tags

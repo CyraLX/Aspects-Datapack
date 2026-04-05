@@ -1,1 +1,0 @@
-$data modify storage aspectlib:dummy randomly_chosen_aspect_id set from storage aspects:registry random_aspect_list[$(randomly_chosen_aspect_index)]
