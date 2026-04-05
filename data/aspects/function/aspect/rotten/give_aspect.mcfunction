@@ -1,7 +1,7 @@
 # Aspect specific PRE-GIVE_ASPECT logic
 
 # Generic GIVE_ASPECT logic
-function aspects:aspect/generic/give_aspect with storage aspects:registry aspect."aspects:rotten"
+function aspects:aspect/generic/give_aspect with storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}]
 
 # Aspect specific POST-GIVE_ASPECT logic
 ## Set scoreboard Objective default value

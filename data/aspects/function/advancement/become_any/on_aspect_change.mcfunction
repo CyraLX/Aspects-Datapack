@@ -7,5 +7,5 @@ execute if entity @s[advancements={aspects:gameplay/aspect/become_any=true}] run
 advancement grant @s only aspects:gameplay/aspect/become_any
 # Print welcoming message
 function aspectlib:player/id/expose
-function aspects:aspect/expose_aspect_registry_from_player_id with storage aspectlib:dummy
+function aspects:expose/aspect/registry_from_player_id with storage aspectlib:dummy
 function aspects:advancement/become_any/introduction with storage aspectlib:dummy aspect

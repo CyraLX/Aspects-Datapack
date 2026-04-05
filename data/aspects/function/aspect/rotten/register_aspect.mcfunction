@@ -9,7 +9,7 @@
 data modify storage aspects:registry aspect append value {id: 9, namespace: "aspects", name: "rotten", color: "#3e692d", shadow_color: -15787509, sound: "minecraft:entity.zombified_piglin.ambient", prevent_random: false}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect."aspects:rotten"
+function aspects:aspect/generic/register_aspect with storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}]
 
 # Setup scoreboard objectives for the Aspect
 function aspects:aspect/rotten/aggravated/scoreboard/initialize

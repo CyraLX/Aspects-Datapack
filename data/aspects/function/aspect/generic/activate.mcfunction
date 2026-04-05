@@ -1,4 +1,4 @@
-$data modify storage aspectlib:dummy new_aspect set from storage aspects:registry aspect."$(namespace):$(name)"
+$data modify storage aspectlib:dummy new_aspect set from storage aspects:registry aspect[{namespace: $(namespace), name: $(name)}]
 # Expose the player ID
 function aspectlib:player/id/expose
 # Store data into storage for this function to be used

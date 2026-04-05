@@ -6,7 +6,7 @@ function aspects:aspect/rotten/aggravated/scoreboard/reset
 function aspects:aspect/rotten/aggravated/attribute/revokeall
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect."aspects:rotten"
+function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}]
 
 # Aspect specific POST-DEACTIVATE logic
 ## Kill existing summons
