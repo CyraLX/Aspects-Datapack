@@ -1,5 +1,5 @@
 # Logger
-execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]}," Registering Aspects..."]}
+execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]}," Registering Aspects..."]}
 # Initialize Scoreboards
 scoreboard objectives add aspects.registry.aspect.amount dummy
 scoreboard objectives add aspects.registry.aspect.list_index dummy
@@ -22,4 +22,4 @@ execute store result score #aspects aspects.registry.aspect.list_index run data 
 scoreboard players remove #aspects aspects.registry.aspect.list_index 1
 
 # Logger
-execute if entity @p[tag=get_debug_logs] run tellraw @a[tag=get_debug_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},"Finished Registering ",{"score":{name:"#aspects", objective:"aspects.registry.aspect.amount"},color:blue}, " Aspects!"]}
+execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},"Finished Registering ",{"score":{name:"#aspects", objective:"aspects.registry.aspect.amount"},color:blue}, " Aspects!"]}

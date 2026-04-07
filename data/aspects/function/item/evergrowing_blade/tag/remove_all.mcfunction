@@ -1,1 +1,1 @@
-tag @a remove evergrowing_blade_attacker
+tag @a remove aspects.evergrowing_blade.attacker

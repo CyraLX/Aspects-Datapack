@@ -1,2 +1,2 @@
 data modify storage aspectlib:dummy item_modifier set value "aspects:evergrowing_blade/level_5"
-function aspectlib:debug/summon_item_macro with storage aspectlib:dummy
+function aspectlib:utility/summon_item_macro with storage aspectlib:dummy

@@ -1,2 +1,2 @@
-tag @s add evergrowing_blade_attacker
+tag @s add aspects.evergrowing_blade.attacker
 

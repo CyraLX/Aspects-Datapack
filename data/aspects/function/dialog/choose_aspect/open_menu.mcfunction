@@ -7,6 +7,7 @@ scoreboard players set @s aspects.dialog.menu_requested 1
 # Flag that player is choosing an Aspect
 scoreboard players set @s aspects.dialog.menu_open 1
 # Show Dialog
+execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," had the ", {translate:"dialog.aspects.choose_aspect",color:"gold"}, " dialog opened for them."]}
 dialog show @s aspects:menu/choose_aspect
 
 return 1
