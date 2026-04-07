@@ -14,7 +14,7 @@
             "required": false
         },
         {
-            "id": "aspects:config/force_default_aspect/default",
+            "id": "aspects:dialog/config/force_default_aspect/default",
             "required": false
         },
         {
