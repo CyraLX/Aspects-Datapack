@@ -14,4 +14,4 @@ scoreboard objectives add aspects.pack_format dummy
 scoreboard objectives add aspects.pack_format.dependency.min dummy
 scoreboard objectives add aspects.pack_format.dependency.max dummy
 # Define current pack format
-scoreboard players set #aspects aspects.pack_format 10
+scoreboard players set #aspects aspects.pack_format 11
