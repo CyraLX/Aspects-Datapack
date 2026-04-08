@@ -10,6 +10,10 @@
             "required": false
         },
         {
+            "id": "aspects:item/aspect/on_join_trigger",
+            "required": false
+        },
+        {
             "id": "aspects:dialog/choose_aspect/on_join",
             "required": false
         },
