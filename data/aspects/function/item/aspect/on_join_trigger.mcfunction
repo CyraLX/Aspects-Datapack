@@ -7,6 +7,6 @@ function aspects:expose/aspect/from_aspect_id with storage aspectlib:cache temp.
 
 # Based on Player's Aspect registry...
 ## ...update Aspect Item data
-item modify entity @s armor.body {function:"minecraft:copy_custom_data",source:{type:"minecraft:storage",source:"aspectlib:cache temp"},ops:[{op:"replace",source:"aspect",target:"aspects.aspect"}]}
+item modify entity @s armor.body {function:"minecraft:copy_custom_data",source:{type:"minecraft:storage",source:"aspectlib:cache.temp"},ops:[{op:"replace",source:"aspect",target:"aspects.aspect"}]}
 ## ...update Player Storage data
 function aspects:item/aspect/update_player_storage_macro with storage aspectlib:cache temp

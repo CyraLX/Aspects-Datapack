@@ -9,6 +9,8 @@ execute if score @s aspects.choose_aspect = @s aspects.choose_aspect run scorebo
 execute if predicate aspects:aspect/any if data storage aspectlib:cache temp.old_aspect run function aspects:aspect/generic/remove_old_aspect with storage aspectlib:cache temp.old_aspect
 # Set new Aspect
 function aspects:aspect/generic/assign_data with storage aspectlib:cache temp
+# Play Sound of new Aspect
+$function aspectlib:utility/play_pitched_sound_macro {sound:"$(sound)",type:"player",volume:100,pitch:100}
 # Trigger events
 function aspects:aspect/generic/on_respawn with storage aspectlib:cache temp.new_aspect
 # Regrant advancement to show they became it as a Toast

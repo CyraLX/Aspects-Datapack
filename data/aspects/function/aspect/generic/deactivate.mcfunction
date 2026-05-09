@@ -8,7 +8,7 @@ function aspects:aspect/generic/store_previous_aspect with storage aspectlib:cac
 $function $(namespace):aspect/$(name)/remove_data with storage aspectlib:cache temp
 # Remove Aspect Item
 item modify entity @s armor.body aspects:aspect/reset_body_components
-$item modify entity @s armor.body [{function:"minecraft:set_enchantments",enchantments:{"$(namespace):aspect/$(name)/body":0},add:0b}]
+$item modify entity @s armor.body [{function:"minecraft:set_enchantments",enchantments:{"minecraft:vanishing_curse":1,"minecraft:binding_curse":1,"$(namespace):aspect/$(name)/body":0},add:0b}]
 # Remove Aspect Score
 scoreboard players reset @s aspects.aspect_id
 # Reset Aspect Groups

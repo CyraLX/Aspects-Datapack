@@ -1,7 +1,7 @@
 # Revoke trigger advancement
 advancement revoke @s only aspects:aspect/rotten/got_hit
-# Playsound if was not aggravated before
-execute unless score @s aspects.aspect.rotten.is_aggravated matches 1.. run playsound minecraft:entity.zombified_piglin.angry voice @s ~ ~ ~ 1 0.9
+# Play Aspect Sound if was not aggravated before
+execute unless score @s aspects.aspect.rotten.is_aggravated matches 1.. run function aspectlib:utility/play_pitched_sound_macro {sound:"minecraft:entity.zombified_piglin.angry",type:"player",volume:100,pitch:90}
 # Set aggravated state and timer
 scoreboard players set @s aspects.aspect.rotten.aggravated_timer 6
 scoreboard players set @s aspects.aspect.rotten.is_aggravated 1

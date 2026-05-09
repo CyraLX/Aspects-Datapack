@@ -11,3 +11,5 @@ function aspects:aspect/feline/predator/bossbar/hide with storage aspectlib:cach
 function aspects:aspect/feline/predator/scoreboard/reset
 # Remove enchantment
 item modify entity @s armor.body {function:"set_enchantments",add:0b,enchantments:{"aspects:aspect/feline/predator/temp":0}}
+# Play Aspect Sound
+function aspects:aspect/generic/play_sound {namespace:"aspects",name:"feline",volume:100,pitch:90}

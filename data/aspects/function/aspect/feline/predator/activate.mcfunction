@@ -3,3 +3,6 @@ function aspectlib:expose/player/id
 function aspects:aspect/feline/predator/bossbar/show with storage aspectlib:cache temp
 function aspects:aspect/feline/predator/bossbar/set_value with storage aspectlib:cache temp
 item modify entity @s armor.body {function:"set_enchantments",add:0b,enchantments:{"aspects:aspect/feline/predator/temp":1}}
+
+# Play Aspect Sound
+function aspects:aspect/generic/play_sound {namespace:"aspects",name:"feline",volume:100,pitch:110}
