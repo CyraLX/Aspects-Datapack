@@ -26,7 +26,7 @@
                             },
                             {
                                 "score": {
-                                    "objective": "aspectlib.dummy",
+                                    "objective": "aspectlib.temp",
                                     "name": "@s"
                                 }
                             }
@@ -43,7 +43,7 @@
                     "aspects.evergrowing_blade.kill_counter": {
                         "min": 1
                     },
-                    "aspectlib.dummy": {
+                    "aspectlib.temp": {
                         "min": 1
                     }
                 }
@@ -95,7 +95,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                                "aspectlib.dummy": {
+                                "aspectlib.temp": {
                                     "min": 1
                                 }
                             }

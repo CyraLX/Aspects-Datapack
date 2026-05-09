@@ -7,5 +7,5 @@ particle minecraft:witch ~ ~ ~ 0.3 0.4 0.3 0 25
 playsound minecraft:entity.zombified_piglin.ambient hostile @a[distance=..16] ~ ~ ~ 1 1
 playsound minecraft:entity.enderman.teleport hostile @a[distance=..16] ~ ~ ~ 1 1
 
-scoreboard players set #aspects aspectlib.dummy 3
+scoreboard players set #aspects aspectlib.temp 3
 execute summon minecraft:zombified_piglin run function aspects:item/focus/rotten/used/summon/zombie/data with storage aspectlib:cache temp

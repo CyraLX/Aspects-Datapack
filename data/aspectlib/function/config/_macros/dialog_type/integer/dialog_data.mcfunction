@@ -13,11 +13,11 @@ data modify storage aspectlib:cache temp.config.dynamic_command_value set value 
 $execute if score #$(namespace) $(namespace).config.$(type).$(name).advanced_inputs matches 1.. run return fail
 ## Store old dummy as it is used from parent function
 data remove storage aspectlib:cache temp.temp
-execute store result storage aspectlib:cache temp.temp int 1 run scoreboard players get #aspects aspectlib.dummy
+execute store result storage aspectlib:cache temp.temp int 1 run scoreboard players get #aspects aspectlib.temp
 ## If current is out of bounds of the silder, clamp it to the slider
-execute store result score #aspects aspectlib.dummy run data get storage aspectlib:cache temp.config.end
-$execute if score #$(namespace) $(namespace).config.$(type).$(name) > #aspects aspectlib.dummy run data modify storage aspectlib:cache temp.config.initial set from storage aspectlib:cache temp.config.end
-execute store result score #aspects aspectlib.dummy run data get storage aspectlib:cache temp.config.start
-$execute if score #$(namespace) $(namespace).config.$(type).$(name) < #aspects aspectlib.dummy run data modify storage aspectlib:cache temp.config.initial set from storage aspectlib:cache temp.config.start
+execute store result score #aspects aspectlib.temp run data get storage aspectlib:cache temp.config.end
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) > #aspects aspectlib.temp run data modify storage aspectlib:cache temp.config.initial set from storage aspectlib:cache temp.config.end
+execute store result score #aspects aspectlib.temp run data get storage aspectlib:cache temp.config.start
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) < #aspects aspectlib.temp run data modify storage aspectlib:cache temp.config.initial set from storage aspectlib:cache temp.config.start
 ## Restore dummy
-execute store result score #aspects aspectlib.dummy run data get storage aspectlib:cache temp.temp
+execute store result score #aspects aspectlib.temp run data get storage aspectlib:cache temp.temp

@@ -68,7 +68,7 @@ scoreboard objectives add aspects.config.aspect.enderian_teleport_downward_dista
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"aspect",name:"enderian_teleport_downward_distance",dialog_type:2,dialog_data:{start:0,end:512,step:4,accepts_namespace:"aspects",accepts_name:".above_equal",accepts_with:["0"]}}
 # Define Default value
-scoreboard players set #aspects aspectlib.dummy 100
+scoreboard players set #aspects aspectlib.temp 100
 
 # Convert legacy scoreboard
 ## From V2 to V3

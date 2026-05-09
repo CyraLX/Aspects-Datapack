@@ -1,8 +1,8 @@
 # Set baby
 data modify entity @s IsBaby set value true
 # If rolls another rare chance...
-execute store result score #aspects aspectlib.dummy run random value 1..10 aspects:aspect/rotten/summon/baby
-execute unless score #aspects aspectlib.dummy matches 1 run return fail
+execute store result score #aspects aspectlib.temp run random value 1..10 aspects:aspect/rotten/summon/baby
+execute unless score #aspects aspectlib.temp matches 1 run return fail
 # Create god
 item replace entity @s armor.head with minecraft:golden_helmet
 item replace entity @s armor.chest with minecraft:golden_chestplate

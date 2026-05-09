@@ -1,7 +1,7 @@
 # Fix Function triggering if previous Aspects Pack Format is 6 or lower
 # Fixes Aspect Groups and Storage Data as they were redone in Pack Format 7 
-$scoreboard players set #aspects aspectlib.dummy $(aspects_pack_format_previous)
-execute unless score #aspects aspectlib.dummy matches ..6 run return fail
+$scoreboard players set #aspects aspectlib.temp $(aspects_pack_format_previous)
+execute unless score #aspects aspectlib.temp matches ..6 run return fail
 
 # Aspect Groups
 ## Make sure current Aspect Groups are deactivated

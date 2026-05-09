@@ -68,7 +68,7 @@ scoreboard objectives add aspects.config.player.force_default_aspect.advanced_in
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"player",name:"force_default_aspect",dialog_type:3,dialog_data:{action_list:[],accepts_namespace:"aspects",accepts_name:".registry",accepts_with:[{translate:"registry.aspects.aspect"}]}}
 # Define Default value
-scoreboard players set #aspects aspectlib.dummy -1
+scoreboard players set #aspects aspectlib.temp -1
 
 # Generic REGISTER_CONFIG logic
 function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

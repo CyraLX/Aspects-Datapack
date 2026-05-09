@@ -8,8 +8,8 @@ function aspectlib:registry/config/dialog/build/action with storage aspectlib:ca
 
 # Loop if list count is above the registered list amount, otherwise finish building dialog and return success
 ## Build Dialog and Return
-execute if score #aspects aspectlib.dummy > #aspects aspects.registry.config.list_index run return run function aspectlib:registry/config/dialog/build/dialog with storage aspectlib:cache temp.config_builder
+execute if score #aspects aspectlib.temp > #aspects aspects.registry.config.list_index run return run function aspectlib:registry/config/dialog/build/dialog with storage aspectlib:cache temp.config_builder
 ## Recursion
-scoreboard players add #aspects aspectlib.dummy 1
-execute store result storage aspectlib:cache temp.config_builder.registry_config_list int 1 run scoreboard players get #aspects aspectlib.dummy
+scoreboard players add #aspects aspectlib.temp 1
+execute store result storage aspectlib:cache temp.config_builder.registry_config_list int 1 run scoreboard players get #aspects aspectlib.temp
 function aspectlib:registry/config/dialog/build/loop with storage aspectlib:cache temp.config_builder

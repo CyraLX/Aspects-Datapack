@@ -15,8 +15,8 @@ data modify entity @s equipment set value {}
 data modify entity @s active_effects set value [{id:"minecraft:slowness",amplifier:9,duration:10,show_particles:false,show_icon:false},{id:"minecraft:instant_damage",amplifier:9,duration:10,show_particles:false,show_icon:false}]
 # data modify entity @s home_pos set from entity @s Pos
 # data modify entity @s home_radius set value 16
-execute store result entity @s data.aspects.variant int 1 run scoreboard players get #aspects aspectlib.dummy
-scoreboard players operation @s aspects.aspect.rotten.summon_variant = #aspects aspectlib.dummy
+execute store result entity @s data.aspects.variant int 1 run scoreboard players get #aspects aspectlib.temp
+scoreboard players operation @s aspects.aspect.rotten.summon_variant = #aspects aspectlib.temp
 data modify entity @s data.aspects.owner.UUID set from storage aspectlib:cache temp.uuid
 data modify entity @s data.aspects.owner.ID set from storage aspectlib:cache temp.id
 execute store result score @s aspects.aspect.rotten.summon_owner_id run data get storage aspectlib:cache temp.id
@@ -25,8 +25,8 @@ execute store result score @s aspects.aspect.rotten.summon_owner_id run data get
 execute if data storage aspectlib:cache temp.target_UUID run function aspects:item/focus/rotten/used/summon/zombie/make_angry
 
 # Random chance baby
-execute store result score #aspects aspectlib.dummy run random value 1..100 aspects:aspect/rotten/summon/baby
-execute if score #aspects aspectlib.dummy matches 1 run function aspects:item/focus/rotten/used/summon/zombie/baby
+execute store result score #aspects aspectlib.temp run random value 1..100 aspects:aspect/rotten/summon/baby
+execute if score #aspects aspectlib.temp matches 1 run function aspects:item/focus/rotten/used/summon/zombie/baby
 # Give random weapon
 function aspects:item/focus/rotten/used/summon/zombie/random_weapon
 

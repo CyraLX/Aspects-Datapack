@@ -4,5 +4,5 @@ particle minecraft:dust{color:16777215,scale:3} ~ ~.8 ~ 0.3 0.5 0.3 0 5
 particle minecraft:block_crumble{block_state:"minecraft:rooted_dirt"} ~ ~1 ~ 0.3 0.6 0.3 1 100
 playsound minecraft:entity.zombified_piglin.ambient hostile @a[distance=..16] ~ ~ ~ 1 1
 
-scoreboard players set #aspects aspectlib.dummy 1
+scoreboard players set #aspects aspectlib.temp 1
 execute summon minecraft:zombified_piglin run function aspects:item/focus/rotten/used/summon/zombie/data with storage aspectlib:cache temp

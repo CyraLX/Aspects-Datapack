@@ -10,8 +10,8 @@ tag @s remove aspectlib.config_changer
 execute unless score #aspects aspects.registry.config.list_index matches 0.. run return fail
 
 # Set scoreboards
-scoreboard players reset #aspects aspectlib.dummy
-scoreboard players operation #aspects aspectlib.dummy = #aspects aspects.registry.config.list_index
-execute store result storage aspectlib:cache temp.registry_config_list int 1 run scoreboard players get #aspects aspectlib.dummy
+scoreboard players reset #aspects aspectlib.temp
+scoreboard players operation #aspects aspectlib.temp = #aspects aspects.registry.config.list_index
+execute store result storage aspectlib:cache temp.registry_config_list int 1 run scoreboard players get #aspects aspectlib.temp
 # Start Loop
 function aspectlib:config/_macros/reset_to_defaults_loop with storage aspectlib:cache temp
