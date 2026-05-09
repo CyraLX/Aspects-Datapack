@@ -148,6 +148,16 @@
                 "dialog": "aspects:menu/contributors"
             },
             "width": 150
+        },
+        {
+            "label": {
+                "translate": "dialog.aspects.inspect_aspect.external_title"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger aspect.check"
+            },
+            "width": 250
         }
     ],
     "exit_action": {

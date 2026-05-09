@@ -1,0 +1,171 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.inspect_aspect",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.human",
+                "color": "#8b7e77",
+                "shadow_color": -14541027
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.inspect_aspect.external_title",
+        "fallback": "!! Missing Resource Pack for Aspects !!",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.human",
+                "color": "#8b7e77",
+                "shadow_color": -14541027
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "aspect.aspects.human.description",
+                "italic": true,
+                "color": "#d6d6d6"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
+                "italic": true,
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/human",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/human/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.effects",
+                "color": "#f6c7ff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.aspect_effects"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.aspect_info.effects.none",
+                                "hover_event": {
+                                    "action": "show_text",
+                                    "value": {
+                                        "translate": "dialog.aspects.aspect_info.effects.none.description",
+                                        "color": "white",
+                                        "italic": true,
+                                        "with": [
+                                            {
+                                                "translate": "extra.aspects.aspect_effects"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:cancel",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.focus",
+                "color": "#c7fdff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.focus_powers"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 450,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "extra.aspects.hover_context",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "translate": "dialog.aspects.aspect_info.focus.none",
+                                "hover_event": {
+                                    "action": "show_text",
+                                    "value": [
+                                        {
+                                            "translate": "dialog.aspects.aspect_info.focus.none.description",
+                                            "color": "white",
+                                            "italic": true
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true,
+    "action": {
+        "label": {
+            "translate": "gui.ok"
+        },
+        "width": 200
+    }
+}
