@@ -8,5 +8,5 @@ function aspects:aspect_group/moisture_dependant/logic/bossbar/update
 execute on attacker at @s run item modify entity @s weapon.mainhand aspectlib:consume/1
 
 # Give Wet Sponge
-data modify storage aspectlib:dummy item_modifier set value [{function:"minecraft:set_components",components:{"minecraft:item_model":"minecraft:wet_sponge"}},{function:"minecraft:set_item",item:"minecraft:wet_sponge"},{function:"minecraft:set_count",count:1}]
-execute on attacker at @s run function aspectlib:utility/summon_item_macro with storage aspectlib:dummy
+data modify storage aspectlib:cache temp.item_modifier set value [{function:"minecraft:set_components",components:{"minecraft:item_model":"minecraft:wet_sponge"}},{function:"minecraft:set_item",item:"minecraft:wet_sponge"},{function:"minecraft:set_count",count:1}]
+execute on attacker at @s run function aspectlib:utility/summon_item_macro with storage aspectlib:cache temp

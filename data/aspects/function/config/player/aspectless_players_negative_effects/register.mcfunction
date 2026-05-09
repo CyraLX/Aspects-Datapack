@@ -68,7 +68,7 @@ scoreboard objectives add aspects.config.player.aspectless_players_negative_effe
 #     accepts_with       - SNBT Text Component array formatted into the "Accepts Values" translation key
 #                           Defaults to [""]
 #
-data modify storage aspectlib:dummy config set value {namespace:"aspects",type:"player",name:"aspectless_players_negative_effects",dialog_type:1,description_with:[{translate:"options.on",color:"green"}],note_with:[{translate:"effect.minecraft.slowness"},{translate:"effect.minecraft.weakness"},{translate:"effect.minecraft.mining_fatigue"}]}
+data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"player",name:"aspectless_players_negative_effects",dialog_type:1,description_with:[{translate:"options.on",color:"green"}],note_with:[{translate:"effect.minecraft.slowness"},{translate:"effect.minecraft.weakness"},{translate:"effect.minecraft.mining_fatigue"}]}
 # Define Default value
 scoreboard players set #aspects aspectlib.dummy 1
 
@@ -78,4 +78,4 @@ execute if score #aspects aspects.config.aspectless_players_negative_effects = #
 execute if score #aspects aspects.config.aspectless_players_negative_effects = #aspects aspects.config.aspectless_players_negative_effects run scoreboard objectives remove aspects.config.aspectless_players_negative_effects
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:dummy config
+function aspects:config/_macros/register_config with storage aspectlib:cache temp.config

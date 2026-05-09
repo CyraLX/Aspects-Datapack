@@ -1,2 +1,2 @@
 function aspects:item/focus/generic/get_aspect_from_offhand
-function aspects:item/focus/generic/reapply_modifier_offhand with storage aspectlib:dummy focus
+function aspects:item/focus/generic/reapply_modifier_offhand with storage aspectlib:cache temp.focus

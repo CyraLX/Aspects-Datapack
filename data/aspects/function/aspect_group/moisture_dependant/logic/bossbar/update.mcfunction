@@ -2,8 +2,8 @@
 function aspectlib:expose/player/id
 
 # Update Bossbar with the Score value 
-function aspects:aspect_group/moisture_dependant/logic/bossbar/set_value with storage aspectlib:dummy
+function aspects:aspect_group/moisture_dependant/logic/bossbar/set_value with storage aspectlib:cache temp
 # If the Score is empty, hide the Bossbar
-execute if score @s aspects.aspect_group.moisture_dependant.current matches 600.. run return run function aspects:aspect_group/moisture_dependant/logic/bossbar/hide with storage aspectlib:dummy
+execute if score @s aspects.aspect_group.moisture_dependant.current matches 600.. run return run function aspects:aspect_group/moisture_dependant/logic/bossbar/hide with storage aspectlib:cache temp
 # Otherwise show it
-execute if score @s aspects.aspect_group.moisture_dependant.current matches ..599 run return run function aspects:aspect_group/moisture_dependant/logic/bossbar/show with storage aspectlib:dummy
+execute if score @s aspects.aspect_group.moisture_dependant.current matches ..599 run return run function aspects:aspect_group/moisture_dependant/logic/bossbar/show with storage aspectlib:cache temp

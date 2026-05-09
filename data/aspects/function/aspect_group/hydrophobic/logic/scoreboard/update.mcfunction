@@ -12,7 +12,7 @@ execute if predicate aspects:aspect_group/hydrophobic/should_take_damage unless 
 execute if score @s aspects.aspect_group.hydrophobic.current matches ..0 run return run function aspects:aspect_group/hydrophobic/logic/scoreboard/damage_aspect
 # Otherwise, update bossbar state, damage item, increase the Hydrophobia score and return
 ## Bossbar state
-execute unless predicate aspects:aspect_group/hydrophobic/state/active run function aspects:aspect_group/hydrophobic/logic/bossbar/state_active with storage aspectlib:dummy
+execute unless predicate aspects:aspect_group/hydrophobic/state/active run function aspects:aspect_group/hydrophobic/logic/bossbar/state_active with storage aspectlib:cache temp
 ## Water Ward 2 = 25 seconds
 execute if predicate aspects:enchantment/water_ward/2 run return run scoreboard players remove @s aspects.aspect_group.hydrophobic.current 12
 ## Water Ward 1 = 20 seconds

@@ -65,7 +65,7 @@ scoreboard objectives add aspects.config.player.aspectless_players_invisible.adv
 #     accepts_with       - SNBT Text Component array formatted into the "Accepts Values" translation key
 #                           Defaults to [""]
 #
-data modify storage aspectlib:dummy config set value {namespace:"aspects",type:"player",name:"aspectless_players_invisible",dialog_type:1,description_with:[{translate:"options.on",color:"green"}]}
+data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"player",name:"aspectless_players_invisible",dialog_type:1,description_with:[{translate:"options.on",color:"green"}]}
 # Define Default value
 scoreboard players set #aspects aspectlib.dummy 1
 
@@ -75,4 +75,4 @@ execute if score #aspects aspects.config.aspectless_players_invisible = #aspects
 execute if score #aspects aspects.config.aspectless_players_invisible = #aspects aspects.config.aspectless_players_invisible run scoreboard objectives remove aspects.config.aspectless_players_invisible
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:dummy config
+function aspects:config/_macros/register_config with storage aspectlib:cache temp.config

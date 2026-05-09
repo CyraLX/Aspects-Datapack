@@ -3,8 +3,8 @@ effect give @s minecraft:slowness 1 0 true
 effect give @s minecraft:mining_fatigue 1 0 true
 
 # Store target UUID, but not the focus user's
-data remove storage aspectlib:dummy target_UUID
-execute unless entity @s[tag=aspects.rotten.focus_user] run data modify storage aspectlib:dummy target_UUID set from entity @s UUID
+data remove storage aspectlib:cache temp.target_UUID
+execute unless entity @s[tag=aspects.rotten.focus_user] run data modify storage aspectlib:cache temp.target_UUID set from entity @s UUID
 
 # Summon
 # EFIMITY RAYCAST

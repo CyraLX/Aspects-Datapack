@@ -1,2 +1,2 @@
-data remove storage aspectlib:dummy aspect
-$data modify storage aspectlib:dummy aspect set from storage aspects:registry aspect[{namespace:$(namespace),name:$(name)}]
+data remove storage aspectlib:cache temp.aspect
+$data modify storage aspectlib:cache temp.aspect set from storage aspects:registry aspect[{namespace:$(namespace),name:$(name)}]

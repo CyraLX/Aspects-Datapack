@@ -1,5 +1,5 @@
 # Reset aspect storage
-data remove storage aspectlib:dummy aspect
+data remove storage aspectlib:cache temp.aspect
 
 # If killed player with Aspect, store Aspect from player into Attacker's Essence Cage
 execute if entity @s[type=minecraft:player, tag=!smithed.entity] unless entity @p[tag=aspects.evergrowing_blade.attacker,distance=..32,predicate=aspects:item/essence_cage_collector/is_held] if predicate aspects:aspect/any_score run return run function aspects:item/evergrowing_blade/awaken_from_storage_data

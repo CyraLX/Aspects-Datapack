@@ -1,3 +1,3 @@
 function aspectlib:expose/player/id
-function aspects:item/focus/honey_bee/expose_stored_status_effect with storage aspectlib:dummy
-function aspects:item/focus/honey_bee/show_stored_effect with storage aspectlib:dummy
+function aspects:item/focus/honey_bee/expose_stored_status_effect with storage aspectlib:cache temp
+function aspects:item/focus/honey_bee/show_stored_effect with storage aspectlib:cache temp

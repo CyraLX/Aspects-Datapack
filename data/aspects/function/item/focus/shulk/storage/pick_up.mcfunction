@@ -2,6 +2,6 @@ execute unless block ~ ~ ~ #aspects:item/focus/shulk/is_storage run return fail
 execute if predicate aspects:item/focus/shulk/has_storage run return run playsound minecraft:block.chest.locked player
 scoreboard players set @s aspects.focus.shulk.has_storage 1
 function aspectlib:expose/player/id
-function aspects:item/focus/shulk/storage/store_data with storage aspectlib:dummy
+function aspects:item/focus/shulk/storage/store_data with storage aspectlib:cache temp
 playsound minecraft:entity.item.pickup player @s
 setblock ~ ~ ~ air

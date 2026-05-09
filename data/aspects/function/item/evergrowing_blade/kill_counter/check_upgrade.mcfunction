@@ -24,11 +24,11 @@ execute if score #aspects aspects.evergrowing_blade.level = @s aspects.evergrowi
 
 # Otherwise upgrade sword
 ## Generate a random variant if it levels up for the first time
-execute if score #aspects aspects.evergrowing_blade.level matches 2 store result storage aspectlib:dummy evergrowing_blade.variant int 1 run random value 0..3 aspects:item/evergrowing_blade/variant
-execute store result score #aspects aspectlib.dummy run data get storage aspectlib:dummy evergrowing_blade.variant
+execute if score #aspects aspects.evergrowing_blade.level matches 2 store result storage aspectlib:cache temp.evergrowing_blade.variant int 1 run random value 0..3 aspects:item/evergrowing_blade/variant
+execute store result score #aspects aspectlib.dummy run data get storage aspectlib:cache temp.evergrowing_blade.variant
 ## Run Upgrade
-execute store result storage aspectlib:dummy evergrowing_blade.level int 1 run scoreboard players get #aspects aspects.evergrowing_blade.level
-function aspects:item/evergrowing_blade/kill_counter/upgrade_macro with storage aspectlib:dummy evergrowing_blade
+execute store result storage aspectlib:cache temp.evergrowing_blade.level int 1 run scoreboard players get #aspects aspects.evergrowing_blade.level
+function aspects:item/evergrowing_blade/kill_counter/upgrade_macro with storage aspectlib:cache temp.evergrowing_blade
 
 # Grant advancement if maxed (Level 7)
 execute if score #aspects aspects.evergrowing_blade.level matches 7.. run advancement grant @s only aspects:gameplay/get_evergrowing_blade_max

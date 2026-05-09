@@ -1,10 +1,10 @@
 # Store player nbt
-data modify storage aspectlib:dummy player_nbt set from entity @s
+data modify storage aspectlib:cache temp.player_nbt set from entity @s
 
 # Store current Absoprtion
-execute store result score @s aspects.aspect_group.track_hp.absorption run data get storage aspectlib:dummy player_nbt.AbsorptionAmount 100
+execute store result score @s aspects.aspect_group.track_hp.absorption run data get storage aspectlib:cache temp.player_nbt.AbsorptionAmount 100
 # Store current Health
-execute store result score @s aspects.aspect_group.track_hp.current run data get storage aspectlib:dummy player_nbt.Health 100
+execute store result score @s aspects.aspect_group.track_hp.current run data get storage aspectlib:cache temp.player_nbt.Health 100
 # Store max Health
 execute store result score @s aspects.aspect_group.track_hp.maximum run attribute @s minecraft:max_health get 100
 # Store total Health
@@ -30,4 +30,4 @@ scoreboard players operation #aspects aspectlib.dummy += @s aspects.aspect_group
 scoreboard players operation @s aspects.aspect_group.track_hp.relative_total /= #aspects aspectlib.dummy
 
 # Cleanup storage
-data remove storage aspectlib:dummy player_nbt
+data remove storage aspectlib:cache temp.player_nbt

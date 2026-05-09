@@ -9,7 +9,7 @@ function aspects:aspect/generic/activate with storage aspects:registry aspect[{n
 function aspects:aspect_group/sensitive_to_bane_of_arthropods/activate
 function aspects:aspect_group/winged/activate
 ## Set stored potion effect to none
-function aspects:item/focus/honey_bee/set_none with storage aspectlib:dummy
+function aspects:item/focus/honey_bee/set_none with storage aspectlib:cache temp
 
 
 

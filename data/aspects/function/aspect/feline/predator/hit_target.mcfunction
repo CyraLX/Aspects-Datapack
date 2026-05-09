@@ -6,4 +6,4 @@ execute unless predicate aspects:aspect/feline/predator/is_active run function a
 scoreboard players set @s aspects.feline.predator 11
 # Update bossbar state
 function aspectlib:expose/player/id
-function aspects:aspect/feline/predator/bossbar/state_pursuing with storage aspectlib:dummy
+function aspects:aspect/feline/predator/bossbar/state_pursuing with storage aspectlib:cache temp

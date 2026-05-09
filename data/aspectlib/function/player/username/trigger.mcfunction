@@ -2,5 +2,5 @@ summon minecraft:armor_stand ~ ~ ~ {NoGravity:true,Invisible:true,Invulnerable:t
 item replace entity @n[type=minecraft:armor_stand,tag=name_provider,distance=..16] armor.head with minecraft:stick
 item modify entity @n[type=minecraft:armor_stand,tag=name_provider,distance=..16] armor.head {function:"minecraft:set_name",entity:"this",name:{selector:"@s"},target:"item_name"}
 function aspectlib:expose/player/id
-function aspectlib:player/username/store with storage aspectlib:dummy
+function aspectlib:player/username/store with storage aspectlib:cache temp
 kill @e[type=minecraft:armor_stand,tag=name_provider,distance=..16]

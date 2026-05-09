@@ -17,12 +17,12 @@ data modify entity @s active_effects set value [{id:"minecraft:slowness",amplifi
 # data modify entity @s home_radius set value 16
 execute store result entity @s data.aspects.variant int 1 run scoreboard players get #aspects aspectlib.dummy
 scoreboard players operation @s aspects.aspect.rotten.summon_variant = #aspects aspectlib.dummy
-data modify entity @s data.aspects.owner.UUID set from storage aspectlib:dummy uuid
-data modify entity @s data.aspects.owner.ID set from storage aspectlib:dummy id
-execute store result score @s aspects.aspect.rotten.summon_owner_id run data get storage aspectlib:dummy id
+data modify entity @s data.aspects.owner.UUID set from storage aspectlib:cache temp.uuid
+data modify entity @s data.aspects.owner.ID set from storage aspectlib:cache temp.id
+execute store result score @s aspects.aspect.rotten.summon_owner_id run data get storage aspectlib:cache temp.id
 
 # Set aggro to target
-execute if data storage aspectlib:dummy target_UUID run function aspects:item/focus/rotten/used/summon/zombie/make_angry
+execute if data storage aspectlib:cache temp.target_UUID run function aspects:item/focus/rotten/used/summon/zombie/make_angry
 
 # Random chance baby
 execute store result score #aspects aspectlib.dummy run random value 1..100 aspects:aspect/rotten/summon/baby

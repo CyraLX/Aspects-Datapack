@@ -6,7 +6,7 @@ function aspects:aspect/feline/predator/attributes/recovering/revoke
 scoreboard players set @s aspects.feline.predator.state 0
 ## Delete bar
 function aspectlib:expose/player/id
-function aspects:aspect/feline/predator/bossbar/hide with storage aspectlib:dummy
+function aspects:aspect/feline/predator/bossbar/hide with storage aspectlib:cache temp
 ## Reset scores
 function aspects:aspect/feline/predator/scoreboard/reset
 # Remove enchantment

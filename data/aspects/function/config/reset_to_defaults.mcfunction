@@ -12,6 +12,6 @@ execute unless score #aspects aspects.registry.config.list_index matches 0.. run
 # Set scoreboards
 scoreboard players reset #aspects aspectlib.dummy
 scoreboard players operation #aspects aspectlib.dummy = #aspects aspects.registry.config.list_index
-execute store result storage aspectlib:dummy registry_config_list int 1 run scoreboard players get #aspects aspectlib.dummy
+execute store result storage aspectlib:cache temp.registry_config_list int 1 run scoreboard players get #aspects aspectlib.dummy
 # Start Loop
-function aspects:config/_macros/reset_to_defaults_loop with storage aspectlib:dummy
+function aspects:config/_macros/reset_to_defaults_loop with storage aspectlib:cache temp

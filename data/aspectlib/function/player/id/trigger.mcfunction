@@ -5,9 +5,9 @@ scoreboard players operation @s aspectlib.player_id = #aspects aspectlib.player_
 ## Temporary pull the ID into storage
 function aspectlib:expose/player/id
 ## Store the ID for a specific player based on that ID
-function aspectlib:player/id/store with storage aspectlib:dummy
+function aspectlib:player/id/store with storage aspectlib:cache temp
 ## Cleaup temporary storage
-data remove storage aspectlib:dummy id
+data remove storage aspectlib:cache temp.id
 
 # Log in chat
 execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs] {text:"",color:"#aaaaaa",extra:[{"text":"[AspectLib]: ","color":"#7700A7"},{selector:"@s",color:"gold"},{"text":" was assigned ID "},{"text":"#","color":"gold","extra":[{"score":{"name":"@s","objective":"aspectlib.player_id"}}]}]}

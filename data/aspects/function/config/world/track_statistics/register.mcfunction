@@ -66,7 +66,7 @@ scoreboard objectives add aspects.config.world.track_statistics.advanced_inputs 
 #     accepts_with       - SNBT Text Component array formatted into the "Accepts Values" translation key
 #                           Defaults to [""]
 #
-data modify storage aspectlib:dummy config set value {namespace:"aspects",type:"world",name:"track_statistics",dialog_type:1,description_with:[{translate:"options.on",color:"green"}]}
+data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"world",name:"track_statistics",dialog_type:1,description_with:[{translate:"options.on",color:"green"}]}
 # Define Default value
 scoreboard players set #aspects aspectlib.dummy 1
 
@@ -76,4 +76,4 @@ execute if score #aspects aspects.config.track_statistics = #aspects aspects.con
 execute if score #aspects aspects.config.track_statistics = #aspects aspects.config.track_statistics run scoreboard objectives remove aspects.config.track_statistics
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:dummy config
+function aspects:config/_macros/register_config with storage aspectlib:cache temp.config

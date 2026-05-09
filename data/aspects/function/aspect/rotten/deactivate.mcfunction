@@ -1,7 +1,7 @@
 # Aspect specific PRE-DEACTIVATE logic
 ## Deactivate Aggravated Aspect Effect
 function aspectlib:expose/player/id
-function aspects:aspect/rotten/aggravated/bossbar/destroy with storage aspectlib:dummy
+function aspects:aspect/rotten/aggravated/bossbar/destroy with storage aspectlib:cache temp
 function aspects:aspect/rotten/aggravated/scoreboard/reset
 function aspects:aspect/rotten/aggravated/attribute/revokeall
 
@@ -11,4 +11,4 @@ function aspects:aspect/generic/deactivate with storage aspects:registry aspect[
 # Aspect specific POST-DEACTIVATE logic
 ## Kill existing summons
 function aspectlib:expose/player/id
-function aspects:aspect/rotten/summons/death_kills with storage aspectlib:dummy
+function aspects:aspect/rotten/summons/death_kills with storage aspectlib:cache temp

@@ -66,12 +66,12 @@ scoreboard objectives add aspects.config.player.force_default_aspect.advanced_in
 #     accepts_with       - SNBT Text Component array formatted into the "Accepts Values" translation key
 #                           Defaults to [""]
 #
-data modify storage aspectlib:dummy config set value {namespace:"aspects",type:"player",name:"force_default_aspect",dialog_type:3,dialog_data:{action_list:[],accepts_namespace:"aspects",accepts_name:".registry",accepts_with:[{translate:"registry.aspects.aspect"}]}}
+data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"player",name:"force_default_aspect",dialog_type:3,dialog_data:{action_list:[],accepts_namespace:"aspects",accepts_name:".registry",accepts_with:[{translate:"registry.aspects.aspect"}]}}
 # Define Default value
 scoreboard players set #aspects aspectlib.dummy -1
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:dummy config
+function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
 
 # If current is less then default, set current as default
 execute unless score #aspects aspects.config.player.force_default_aspect >= #aspects aspects.config.player.force_default_aspect.default run scoreboard players operation #aspects aspects.config.player.force_default_aspect = #aspects aspects.config.player.force_default_aspect.default
@@ -79,8 +79,8 @@ execute unless score #aspects aspects.config.player.force_default_aspect >= #asp
 # Build list of Actions
 function aspects:config/player/force_default_aspect/build/action_list
 # Build Default Display
-execute store result storage aspectlib:dummy config.default int 1 run scoreboard players get #aspects aspects.config.player.force_default_aspect.default
-function aspects:config/player/force_default_aspect/build/default_display with storage aspectlib:dummy config
+execute store result storage aspectlib:cache temp.config.default int 1 run scoreboard players get #aspects aspects.config.player.force_default_aspect.default
+function aspects:config/player/force_default_aspect/build/default_display with storage aspectlib:cache temp.config
 # Build Current Display
-execute store result storage aspectlib:dummy config.current int 1 run scoreboard players get #aspects aspects.config.player.force_default_aspect
-function aspects:config/player/force_default_aspect/build/current_display with storage aspectlib:dummy config
+execute store result storage aspectlib:cache temp.config.current int 1 run scoreboard players get #aspects aspects.config.player.force_default_aspect
+function aspects:config/player/force_default_aspect/build/current_display with storage aspectlib:cache temp.config

@@ -6,12 +6,12 @@ $scoreboard players set @s aspectlib.player_id $(id)
 
 # Reset old username scores
 ## Due to the nature if this operation, reset values
-data remove storage aspectlib:dummy id
-data remove storage aspectlib:dummy username
+data remove storage aspectlib:cache temp.id
+data remove storage aspectlib:cache temp.username
 ## Perform operation
 function aspectlib:expose/player/id
-function aspectlib:expose/player/username with storage aspectlib:dummy
-execute if data storage aspectlib:dummy username run function aspects:data_fixer/username_change/reset_old_username_scores with storage aspectlib:dummy
+function aspectlib:expose/player/username with storage aspectlib:cache temp
+execute if data storage aspectlib:cache temp.username run function aspects:data_fixer/username_change/reset_old_username_scores with storage aspectlib:cache temp
 
 # Update current username
 function aspectlib:player/username/trigger

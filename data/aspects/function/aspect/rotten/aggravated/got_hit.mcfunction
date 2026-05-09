@@ -7,7 +7,7 @@ scoreboard players set @s aspects.aspect.rotten.aggravated_timer 6
 scoreboard players set @s aspects.aspect.rotten.is_aggravated 1
 # Update the bossbar
 function aspectlib:expose/player/id
-function aspects:aspect/rotten/aggravated/bossbar/show with storage aspectlib:dummy
+function aspects:aspect/rotten/aggravated/bossbar/show with storage aspectlib:cache temp
 function aspects:aspect/rotten/aggravated/bossbar/update
 # Activate Attributes
 function aspects:aspect/rotten/aggravated/attribute/activated
@@ -15,10 +15,10 @@ function aspects:aspect/rotten/aggravated/attribute/activated
 ## Make sure summons don't aggro themselves (unused)
 # execute on attacker if entity @s[type=#aspects:aspect/rotten/summons] run return fail
 ## Reset data
-data remove storage aspectlib:dummy id
-data remove storage aspectlib:dummy target_UUID
+data remove storage aspectlib:cache temp.id
+data remove storage aspectlib:cache temp.target_UUID
 ## Store data
 function aspectlib:expose/player/id
-execute on attacker if loaded ~ ~ ~ run data modify storage aspectlib:dummy target_UUID set from entity @s UUID
+execute on attacker if loaded ~ ~ ~ run data modify storage aspectlib:cache temp.target_UUID set from entity @s UUID
 ## Run anger macro on owned summons
-execute if data storage aspectlib:dummy target_UUID run function aspects:aspect/rotten/summons/prepare_to_anger with storage aspectlib:dummy
+execute if data storage aspectlib:cache temp.target_UUID run function aspects:aspect/rotten/summons/prepare_to_anger with storage aspectlib:cache temp

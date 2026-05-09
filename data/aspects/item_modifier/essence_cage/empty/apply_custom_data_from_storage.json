@@ -2,7 +2,7 @@
     "function": "minecraft:copy_custom_data",
     "source": {
         "type": "minecraft:storage",
-        "source": "aspectlib:dummy"
+        "source": "aspectlib:cache temp"
     },
     "ops": [
         {

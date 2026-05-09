@@ -1,1 +1,1 @@
-$data modify storage aspectlib:dummy aspect set from storage aspectlib:dummy aspect_list[$(aspect_list_index)]
+$data modify storage aspectlib:cache temp.aspect set from storage aspectlib:cache temp.aspect_list[$(aspect_list_index)]

@@ -12,4 +12,4 @@ $function $(aspect_namespace):aspect/$(aspect_name)/reactivate
 # Storage Data
 ## Remove legacy data
 ## It was already converted at the update function
-function #aspectlib:storage_data/delete_legacy with storage aspectlib:dummy
+function #aspectlib:storage_data/delete_legacy with storage aspectlib:cache temp

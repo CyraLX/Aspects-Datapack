@@ -1,1 +1,1 @@
-$data modify storage aspectlib:dummy string set value "$(string)$(appending_string)"
+$data modify storage aspectlib:cache temp.string set value "$(string)$(appending_string)"

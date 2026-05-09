@@ -1,7 +1,7 @@
 # Copy existing Aspects data from held cage
-data modify storage aspectlib:dummy essence_cage set from entity @s SelectedItem.components."minecraft:custom_data".aspects.essence_cage
+data modify storage aspectlib:cache temp.essence_cage set from entity @s SelectedItem.components."minecraft:custom_data".aspects.essence_cage
 # Remove existing essences
-data remove storage aspectlib:dummy essence_cage.whitelist
+data remove storage aspectlib:cache temp.essence_cage.whitelist
 # Clean cage with modified data
 item modify entity @s weapon.mainhand aspects:essence_cage/empty/copy_from_storage
 

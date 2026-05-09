@@ -4,6 +4,8 @@ scoreboard objectives add aspectlib.dummy dummy
 ## Empty object for cleanup via Item Modifiers
 data modify storage aspectlib:constant empty set value {}
 # Setup storage to contain cached things
+## Object containing temporary data for the session
+data modify storage aspectlib:cache temp set value {}
 ## Object containing dynamically built things such as Dialogs
 data modify storage aspectlib:cache build set value {}
 
