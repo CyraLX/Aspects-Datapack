@@ -70,7 +70,7 @@ scoreboard objectives add aspects.config.player.aspectless_players_negative_effe
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"player",name:"aspectless_players_negative_effects",dialog_type:1,description_with:[{translate:"options.on",color:"green"}],note_with:[{translate:"effect.minecraft.slowness"},{translate:"effect.minecraft.weakness"},{translate:"effect.minecraft.mining_fatigue"}]}
 # Define Default value
-scoreboard players set #aspects aspectlib.temp 1
+scoreboard players set #aspectlib aspectlib.temp 1
 
 # Convert legacy scoreboard
 ## From V2 to V3

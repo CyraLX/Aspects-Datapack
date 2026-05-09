@@ -9,9 +9,9 @@ data modify storage aspectlib:registry config append from storage aspectlib:cach
 
 # Apply Default value
 ## If defaults have changed and current is old defaults, sync current and old defaults to new defaults
-$execute unless score #$(namespace) $(namespace).config.$(type).$(name).default = #$(namespace) aspectlib.temp if score #$(namespace) $(namespace).config.$(type).$(name) = #$(namespace) $(namespace).config.$(type).$(name).default run scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name) = #$(namespace) aspectlib.temp
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name).default = #aspectlib aspectlib.temp if score #$(namespace) $(namespace).config.$(type).$(name) = #$(namespace) $(namespace).config.$(type).$(name).default run scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name) = #aspectlib aspectlib.temp
 ## Sync Default
-$scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name).default = #$(namespace) aspectlib.temp
+$scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name).default = #aspectlib aspectlib.temp
 ## If current not set, apply defaults
 $execute unless score #$(namespace) $(namespace).config.$(type).$(name) = #$(namespace) $(namespace).config.$(type).$(name) run scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name) = #$(namespace) $(namespace).config.$(type).$(name).default
 

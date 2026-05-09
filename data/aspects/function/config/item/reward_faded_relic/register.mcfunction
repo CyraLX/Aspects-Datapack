@@ -67,7 +67,7 @@ scoreboard objectives add aspects.config.item.reward_faded_relic.advanced_inputs
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"item",name:"reward_faded_relic",dialog_type:1,description_with:[{translate:"options.on",color:"green"}]}
 # Define Default value
-scoreboard players set #aspects aspectlib.temp 1
+scoreboard players set #aspectlib aspectlib.temp 1
 
 # Convert legacy scoreboard
 ## From V2 to V3
