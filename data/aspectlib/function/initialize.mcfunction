@@ -1,5 +1,9 @@
 # Setup a dummy scoreboard for temporary use in the future
+## Remove old scoreboard
+scoreboard objectives remove aspectlib.dummy
+## Create new scoreboard
 scoreboard objectives add aspectlib.temp dummy
+
 # Setup storage to contain constants
 ## Empty object for cleanup via Item Modifiers
 data modify storage aspectlib:constant empty set value {}
