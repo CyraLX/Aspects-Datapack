@@ -63,6 +63,14 @@
                     }
                 ]
             },
+            "tooltip": {
+                "translate": "extra.aspects.redirects_to",
+                "with": [
+                    {
+                        "translate": "extra.aspects.external_website"
+                    }
+                ]
+            },
             "action": {
                 "type": "minecraft:open_url",
                 "url": "https://modrinth.com/datapack/corrupted-aspects"
@@ -75,6 +83,14 @@
                 "with": [
                     {
                         "translate": "menu.aspects.about.issues"
+                    }
+                ]
+            },
+            "tooltip": {
+                "translate": "extra.aspects.redirects_to",
+                "with": [
+                    {
+                        "translate": "extra.aspects.external_website"
                     }
                 ]
             },
@@ -98,9 +114,18 @@
             "label": {
                 "translate": "dialog.aspects.configs.external_title"
             },
+            "tooltip": {
+                "translate": "extra.aspects.require_permissions",
+                "color": "red",
+                "with": [
+                    {
+                        "translate": "extra.aspects.operator"
+                    }
+                ]
+            },
             "action": {
-                "type": "minecraft:show_dialog",
-                "dialog": "aspects:menu/configs"
+                "type": "minecraft:run_command",
+                "command": "function aspects:config/show_menu"
             },
             "width": 175
         },

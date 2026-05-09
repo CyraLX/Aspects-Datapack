@@ -1,7 +1,11 @@
 # Setup a dummy scoreboard for temporary use in the future
 scoreboard objectives add aspectlib.dummy dummy
-# Setup an empty storage for cleanup
-data modify storage aspectlib:empty empty set value {}
+# Setup storage to contain constants
+## Empty object for cleanup via Item Modifiers
+data modify storage aspectlib:constant empty set value {}
+# Setup storage to contain cached things
+## Object containing dynamically built things such as Dialogs
+data modify storage aspectlib:cache build set value {}
 
 # Load other function initializers
 ## Player IDs

@@ -1,0 +1,1 @@
+$data modify storage aspects:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.default_display set value [{translate:"options.off",color:"red"},{text:" | ",color:"white"},{text:"$(default)",color:"blue"}]

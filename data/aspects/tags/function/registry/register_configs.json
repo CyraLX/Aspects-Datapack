@@ -1,0 +1,45 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "aspects:config/item/reward_faded_relic/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/item/reward_shattered_relic/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/player/aspectless_players_invisible/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/player/aspectless_players_invulnerable/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/player/aspectless_players_negative_effects/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/player/force_default_aspect/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/player/show_introduction/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/world/track_statistics/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/aspect/enderian_teleport_downward_distance/register",
+            "required": false
+        },
+        {
+            "id": "aspects:config/aspect/enderian_teleport_forward_distance/register",
+            "required": false
+        }
+    ]
+}

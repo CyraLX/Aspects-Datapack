@@ -1,0 +1,16 @@
+# Defaults
+$execute if score #$(namespace) $(namespace).config.$(type).$(name).default matches 1.. run data modify storage aspectlib:dummy config.default set value "options.on"
+$execute if score #$(namespace) $(namespace).config.$(type).$(name).default matches 1.. run data modify storage aspectlib:dummy config.default_color set value "green"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name).default matches 1.. run data modify storage aspectlib:dummy config.default set value "options.off"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name).default matches 1.. run data modify storage aspectlib:dummy config.default_color set value "red"
+# Current & Toggle To
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.current set value "options.on"
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.current_color set value "green"
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.toggle_to set value "options.off"
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.toggle_to_color set value "red"
+$execute if score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.toggle_to_value set value "0"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.current set value "options.off"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.current_color set value "red"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.toggle_to set value "options.on"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.toggle_to_color set value "green"
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name) matches 1.. run data modify storage aspectlib:dummy config.toggle_to_value set value "1"

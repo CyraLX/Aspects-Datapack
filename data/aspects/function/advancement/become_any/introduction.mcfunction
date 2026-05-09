@@ -1,5 +1,5 @@
 # Respect Configs
-execute unless score #aspects aspects.config.show_introduction matches 1.. run return fail
+execute unless score #aspects aspects.config.player.show_introduction matches 1.. run return fail
 
 # Header
 tellraw @s ""

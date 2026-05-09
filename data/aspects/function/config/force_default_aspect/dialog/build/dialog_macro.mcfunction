@@ -1,1 +1,0 @@
-$dialog show @s {type:"minecraft:multi_action",pause:0b, title:"Test",actions:[$(string)]}

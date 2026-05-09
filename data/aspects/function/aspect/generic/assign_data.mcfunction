@@ -7,7 +7,7 @@ $data modify storage aspectlib:users player.$(id).aspects.aspect set from storag
 $data modify storage aspectlib:users player.$(id).aspects.aspect_data."$(new_aspect_namespace):$(new_aspect_name)" set value {}
 
 # Don't update statistics if disabled
-execute unless score #aspects aspects.config.track_statistics matches 1.. run return fail
+execute unless score #aspects aspects.config.world.track_statistics matches 1.. run return fail
 
 # Make sure the changed Aspect is not the same before continuing
 ## Store IDs in scoreboards

@@ -1,9 +1,17 @@
 # Give temporary tag
 tag @s add aspectlib.config_changer
-# Give feedback in chat
-execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs, tag=!aspectlib.config_changer] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," reset all configs to default values"]}
-tellraw @s {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},"Configs reset to default values"]}
-# Set scoreboards
-function #aspects:config/default
-# Cleanup
+# logger
+execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs, tag=!aspectlib.config_changer] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," reset all Registered Configs to their default values"]}
+tellraw @s {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},"Registered Configs reset to their default values"]}
+# Remove temporary tag
 tag @s remove aspectlib.config_changer
+
+# End early if no configs are registered
+execute unless score #aspects aspects.registry.config.list_index matches 0.. run return fail
+
+# Set scoreboards
+scoreboard players reset #aspects aspectlib.dummy
+scoreboard players operation #aspects aspectlib.dummy = #aspects aspects.registry.config.list_index
+execute store result storage aspectlib:dummy registry_config_list int 1 run scoreboard players get #aspects aspectlib.dummy
+# Start Loop
+function aspects:config/_macros/reset_to_defaults_loop with storage aspectlib:dummy
