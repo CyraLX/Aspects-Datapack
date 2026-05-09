@@ -75,4 +75,4 @@ execute if score #aspects aspects.config.aspectless_players_invisible = #aspects
 execute if score #aspects aspects.config.aspectless_players_invisible = #aspects aspects.config.aspectless_players_invisible run scoreboard objectives remove aspects.config.aspectless_players_invisible
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

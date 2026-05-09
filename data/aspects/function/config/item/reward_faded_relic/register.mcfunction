@@ -75,4 +75,4 @@ execute if score #aspects aspects.config.reward_faded_relic = #aspects aspects.c
 execute if score #aspects aspects.config.reward_faded_relic = #aspects aspects.config.reward_faded_relic run scoreboard objectives remove aspects.config.reward_faded_relic
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

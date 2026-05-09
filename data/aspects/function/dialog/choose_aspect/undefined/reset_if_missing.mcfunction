@@ -1,5 +1,5 @@
 # Return early if current Aspect is valid
-$execute if data storage aspects:registry aspect[{namespace: $(namespace), name: $(name)}] run return fail
+$execute if data storage aspectlib:registry aspect[{namespace: $(namespace), name: $(name)}] run return fail
 # Print logs
 $execute if entity @p[tag=aspectlib.receive_logs] run tellraw @a[tag=aspectlib.receive_logs] {text:"",color:"#aaaaaa",extra:[{text:"",color:"#f88379",extra:["[",{translate:"aspects"},"]: "]},{selector:"@s",color:"gold"}," had an Unregistered Aspect ",{text:"$(namespace):$(name)",color:"gold"},"!\nResetting their data..."]}
 

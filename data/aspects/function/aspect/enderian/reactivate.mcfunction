@@ -2,7 +2,7 @@
 
 # Generic REACTIVATE logic
 function aspectlib:expose/player/id
-data modify storage aspectlib:cache temp.aspect set from storage aspects:registry aspect[{namespace: "aspects", name: "enderian"}]
+data modify storage aspectlib:cache temp.aspect set from storage aspectlib:registry aspect[{namespace: "aspects", name: "enderian"}]
 data modify storage aspectlib:cache temp.aspect_namespace set from storage aspectlib:cache temp.aspect.namespace
 data modify storage aspectlib:cache temp.aspect_name set from storage aspectlib:cache temp.aspect.name
 data modify storage aspectlib:cache temp.aspect_id set from storage aspectlib:cache temp.aspect.id

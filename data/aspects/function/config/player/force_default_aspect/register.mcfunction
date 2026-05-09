@@ -71,7 +71,7 @@ data modify storage aspectlib:cache temp.config set value {namespace:"aspects",t
 scoreboard players set #aspects aspectlib.dummy -1
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config
 
 # If current is less then default, set current as default
 execute unless score #aspects aspects.config.player.force_default_aspect >= #aspects aspects.config.player.force_default_aspect.default run scoreboard players operation #aspects aspects.config.player.force_default_aspect = #aspects aspects.config.player.force_default_aspect.default

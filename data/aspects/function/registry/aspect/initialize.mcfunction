@@ -9,14 +9,14 @@ scoreboard players set #aspects aspects.registry.aspect.amount 0
 scoreboard players set #aspects aspects.registry.aspect.list_index 0
 
 # Recreate registry table
-data modify storage aspects:registry aspect set value []
+data modify storage aspectlib:registry aspect set value []
 # Recreate legacy random Aspect list
-data remove storage aspects:registry random_aspect_list
+data remove storage aspectlib:registry random_aspect_list
 # Register all Aspects
 function #aspects:registry/register_aspects
 # Store registered amounts
-execute store result score #aspects aspects.registry.aspect.amount run data get storage aspects:registry aspect
-execute store result score #aspects aspects.registry.aspect.list_index run data get storage aspects:registry aspect
+execute store result score #aspects aspects.registry.aspect.amount run data get storage aspectlib:registry aspect
+execute store result score #aspects aspects.registry.aspect.list_index run data get storage aspectlib:registry aspect
 
 # Remove 1 from registered amounts to use as list index
 scoreboard players remove #aspects aspects.registry.aspect.list_index 1

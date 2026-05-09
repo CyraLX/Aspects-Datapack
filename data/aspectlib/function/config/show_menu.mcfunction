@@ -14,4 +14,4 @@ execute unless data storage aspectlib:cache build.aspects.dialog.config.list run
 execute unless data storage aspectlib:cache build.aspects.dialog.config.list run return run dialog show @s aspects:about
 
 # Show dialog
-function aspects:config/_macros/show_menu_dialog with storage aspectlib:cache build.aspects.dialog.config
+function aspectlib:config/_macros/show_menu_dialog with storage aspectlib:cache build.aspects.dialog.config

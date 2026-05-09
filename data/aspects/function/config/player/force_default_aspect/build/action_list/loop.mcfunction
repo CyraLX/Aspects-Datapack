@@ -14,7 +14,7 @@ function aspects:config/player/force_default_aspect/build/action_list/action wit
 
 # Loop if list count is above the registered list amount, otherwise return success
 ## Return
-execute if score #aspects aspectlib.dummy >= #aspects aspects.registry.aspect.list_index run return run data get storage aspects:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.action_list
+execute if score #aspects aspectlib.dummy >= #aspects aspects.registry.aspect.list_index run return run data get storage aspectlib:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.action_list
 ## Recursion
 scoreboard players add #aspects aspectlib.dummy 1
 execute store result storage aspectlib:cache temp.config.list_index int 1 run scoreboard players get #aspects aspectlib.dummy

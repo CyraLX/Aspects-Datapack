@@ -125,7 +125,7 @@
             },
             "action": {
                 "type": "minecraft:run_command",
-                "command": "function aspects:config/show_menu"
+                "command": "function aspectlib:config/show_menu"
             },
             "width": 175
         },

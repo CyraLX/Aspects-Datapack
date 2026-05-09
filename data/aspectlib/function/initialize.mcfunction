@@ -10,6 +10,8 @@ data modify storage aspectlib:cache temp set value {}
 data modify storage aspectlib:cache build set value {}
 
 # Load other function initializers
+## Registries
+function #aspectlib:registry/initialize
 ## Player IDs
 function aspectlib:player/id/initialize
 ## Player Stats

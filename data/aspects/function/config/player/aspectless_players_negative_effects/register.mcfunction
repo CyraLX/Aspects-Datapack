@@ -78,4 +78,4 @@ execute if score #aspects aspects.config.aspectless_players_negative_effects = #
 execute if score #aspects aspects.config.aspectless_players_negative_effects = #aspects aspects.config.aspectless_players_negative_effects run scoreboard objectives remove aspects.config.aspectless_players_negative_effects
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

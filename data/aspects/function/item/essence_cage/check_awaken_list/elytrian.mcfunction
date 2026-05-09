@@ -1,1 +1,1 @@
-execute if score #aspects aspects.essence.flying matches 120.. run return run function aspects:item/essence_cage/awaken with storage aspects:registry aspect[{namespace: "aspects", name: "elytrian"}]
+execute if score #aspects aspects.essence.flying matches 120.. run return run function aspects:item/essence_cage/awaken with storage aspectlib:registry aspect[{namespace: "aspects", name: "elytrian"}]

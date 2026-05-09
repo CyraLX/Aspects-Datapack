@@ -1,4 +1,4 @@
-$data modify storage aspectlib:cache temp.new_aspect set from storage aspects:registry aspect[{namespace: $(namespace), name: $(name)}]
+$data modify storage aspectlib:cache temp.new_aspect set from storage aspectlib:registry aspect[{namespace: $(namespace), name: $(name)}]
 # Expose the player ID
 function aspectlib:expose/player/id
 # Store data into storage for this function to be used

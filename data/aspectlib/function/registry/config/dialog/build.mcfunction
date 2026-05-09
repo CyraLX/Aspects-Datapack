@@ -8,4 +8,4 @@ execute store result storage aspectlib:cache temp.config_builder.registry_config
 data modify storage aspectlib:cache temp.config_builder.actions set value []
 
 # Build dialog
-function aspects:registry/config/dialog/build/loop with storage aspectlib:cache temp.config_builder
+function aspectlib:registry/config/dialog/build/loop with storage aspectlib:cache temp.config_builder

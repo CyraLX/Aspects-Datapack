@@ -10,14 +10,6 @@
             "required": false
         },
         {
-            "id": "aspects:registry/aspect/initialize",
-            "required": false
-        },
-        {
-            "id": "aspects:registry/config/initialize",
-            "required": false
-        },
-        {
             "id": "aspects:aspect/initialize",
             "required": false
         },

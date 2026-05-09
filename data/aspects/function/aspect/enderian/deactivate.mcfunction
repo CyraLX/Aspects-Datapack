@@ -1,7 +1,7 @@
 # Aspect specific PRE-DEACTIVATE logic
 
 # Generic DEACTIVATE logic
-function aspects:aspect/generic/deactivate with storage aspects:registry aspect[{namespace: "aspects", name: "enderian"}]
+function aspects:aspect/generic/deactivate with storage aspectlib:registry aspect[{namespace: "aspects", name: "enderian"}]
 
 # Aspect specific POST-DEACTIVATE logic
 ## Remove attributes that were granted by the aspect

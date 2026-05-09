@@ -1,5 +1,5 @@
 # If current is invalid, assume default
-$execute unless score #aspects aspects.config.player.force_default_aspect matches 0.. run return run data modify storage aspects:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.current_display set value [{translate:"options.off",color:"red"},{text:" | ",color:"white"},{text:"$(default)",color:"blue"}]
+$execute unless score #aspects aspects.config.player.force_default_aspect matches 0.. run return run data modify storage aspectlib:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.current_display set value [{translate:"options.off",color:"red"},{text:" | ",color:"white"},{text:"$(default)",color:"blue"}]
 # Otherwise set current as Aspect Translatable
 ## Store ID
 data remove storage aspectlib:cache temp.id
@@ -15,4 +15,4 @@ $execute unless data storage aspectlib:cache temp.aspect_translatable run return
 data modify storage aspectlib:cache temp.aspect_translatable append value {text:" | ",color:"white"}
 $data modify storage aspectlib:cache temp.aspect_translatable append value {text:"$(current)",color:"blue"}
 ## Set current as Aspect Translatable
-data modify storage aspects:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.current_display set from storage aspectlib:cache temp.aspect_translatable 
+data modify storage aspectlib:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.current_display set from storage aspectlib:cache temp.aspect_translatable 

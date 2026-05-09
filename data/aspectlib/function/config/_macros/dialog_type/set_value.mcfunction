@@ -10,4 +10,4 @@ tag @s remove aspectlib.config_changer
 $scoreboard players set #$(namespace) $(namespace).config.$(type).$(name) $(value)
 
 # Re-open Dialog
-$function aspects:config/_macros/dialog_type/show_dialog {namespace:"$(namespace)",type:"$(type)",name:"$(name)"}
+$function aspectlib:config/_macros/dialog_type/show_dialog {namespace:"$(namespace)",type:"$(type)",name:"$(name)"}

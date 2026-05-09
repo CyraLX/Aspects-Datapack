@@ -76,4 +76,4 @@ execute if score #aspects aspects.config.enderian.teleport_forward_distance = #a
 execute if score #aspects aspects.config.enderian.teleport_forward_distance = #aspects aspects.config.enderian.teleport_forward_distance run scoreboard objectives remove aspects.config.enderian.teleport_forward_distance
 
 # Generic REGISTER_CONFIG logic
-function aspects:config/_macros/register_config with storage aspectlib:cache temp.config
+function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

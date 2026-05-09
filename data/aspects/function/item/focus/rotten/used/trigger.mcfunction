@@ -13,8 +13,8 @@ data remove storage aspectlib:cache temp.rotten_shadow_color
 function aspectlib:expose/player/id
 function aspectlib:expose/player/uuid
 function aspectlib:expose/player/username with storage aspectlib:cache temp
-data modify storage aspectlib:cache temp.rotten_color set from storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}].color
-data modify storage aspectlib:cache temp.rotten_shadow_color set from storage aspects:registry aspect[{namespace: "aspects", name: "rotten"}].shadow_color
+data modify storage aspectlib:cache temp.rotten_color set from storage aspectlib:registry aspect[{namespace: "aspects", name: "rotten"}].color
+data modify storage aspectlib:cache temp.rotten_shadow_color set from storage aspectlib:registry aspect[{namespace: "aspects", name: "rotten"}].shadow_color
 
 # Make the attacker a summon target
 execute on attacker if loaded ~ ~ ~ run tag @s add aspects.rotten.summon_target

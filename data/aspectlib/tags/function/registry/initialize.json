@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:registry/initialize",
+            "required": false
+        },
+        {
+            "id": "aspectlib:registry/config/initialize",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#aspects:registry/register_configs",
+            "required": false
+        }
+    ]
+}

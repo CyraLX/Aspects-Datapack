@@ -6,10 +6,10 @@
 ## shadow_color = ARGB hex code of your Aspect color converted to a decimal number, usually 25% of the original brightness
 ## sound = Sound Event for your Aspect
 ## prevent_random = Boolean to prevent the Aspect from appearing when one is randomly assigned
-data modify storage aspects:registry aspect append value {id: 7, namespace: "aspects", name: "honey_bee", color: "#ffa41c", shadow_color: -12637945, sound: "minecraft:entity.bee.loop", prevent_random: false}
+data modify storage aspectlib:registry aspect append value {id: 7, namespace: "aspects", name: "honey_bee", color: "#ffa41c", shadow_color: -12637945, sound: "minecraft:entity.bee.loop", prevent_random: false}
 
 # Generic REGISTER_ASPECT logic
-function aspects:aspect/generic/register_aspect with storage aspects:registry aspect[{namespace: "aspects", name: "honey_bee"}]
+function aspects:aspect/generic/register_aspect with storage aspectlib:registry aspect[{namespace: "aspects", name: "honey_bee"}]
 
 # Setup scoreboard objectives for the Aspect
 scoreboard objectives add aspects.honey_bee.created_honey_bottles dummy
