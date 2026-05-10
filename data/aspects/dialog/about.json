@@ -169,5 +169,6 @@
             "translate": "gui.back"
         },
         "width": 200
-    }
+    },
+    "after_action": "wait_for_response"
 }
