@@ -200,6 +200,10 @@
                 "extra": [
                     {
                         "translate": "dialog.aspects.enchantments.incompatabilities.damage"
+                    },
+                    "\n",
+                    {
+                        "translate": "enchantment.minecraft.sweeping_edge"
                     }
                 ]
             }

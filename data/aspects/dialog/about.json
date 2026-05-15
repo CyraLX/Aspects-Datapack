@@ -22,30 +22,40 @@
                 "extra": [
                     {
                         "translate": "menu.aspects.about.version_format",
+                        "color": "aqua",
                         "with": [
                             {
                                 "translate": "dataPack.aspects.version_format_raw",
+                                "color": "dark_aqua",
                                 "with": [
                                     "1",
                                     "3",
                                     "3"
                                 ]
                             }
-                        ]
-                    },
-                    "\n",
-                    {
-                        "translate": "menu.aspects.about.pack_data_format",
-                        "with": [
-                            "11"
-                        ]
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "translate": "menu.aspects.about.pack_data_format",
+                                "color": "yellow",
+                                "with": [
+                                    {
+                                        "text": "11",
+                                        "color": "gold"
+                                    }
+                                ]
+                            }
+                        }
                     },
                     "\n\n",
                     {
                         "translate": "aspects.authors_format",
+                        "color": "aqua",
                         "with": [
                             {
-                                "translate": "aspects.authors"
+                                "translate": "aspects.authors",
+                                "color": "dark_aqua"
                             }
                         ]
                     }
