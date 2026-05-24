@@ -3,11 +3,11 @@
         "function": "minecraft:copy_custom_data",
         "source": {
             "type": "minecraft:storage",
-            "source": "aspectlib:cache temp"
+            "source": "aspectlib:cache"
         },
         "ops": [
             {
-                "source": "essence_cage",
+                "source": "temp.essence_cage",
                 "target": "aspects.essence_cage",
                 "op": "replace"
             }

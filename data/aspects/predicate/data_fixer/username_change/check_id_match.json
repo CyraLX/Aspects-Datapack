@@ -5,13 +5,13 @@
         "aspectlib.player_id": {
             "min": {
                 "type": "minecraft:storage",
-                "storage": "aspectlib:cache temp",
-                "path": "id"
+                "storage": "aspectlib:cache",
+                "path": "temp.id"
             },
             "max": {
                 "type": "minecraft:storage",
-                "storage": "aspectlib:cache temp",
-                "path": "id"
+                "storage": "aspectlib:cache",
+                "path": "temp.id"
             }
         }
     }
