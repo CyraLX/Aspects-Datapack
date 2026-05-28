@@ -27,7 +27,7 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "type": "#aspects:essence/has_any"
+                                "minecraft:entity_type": "#aspects:essence/has_any"
                             }
                         },
                         {
@@ -61,7 +61,7 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "type": "#aspectlib:player-like"
+                                "minecraft:entity_type": "#aspectlib:player-like"
                             }
                         },
                         {
@@ -147,7 +147,7 @@
                                         "condition": "minecraft:entity_properties",
                                         "entity": "this",
                                         "predicate": {
-                                            "type": "#aspects:essence/has_any"
+                                            "minecraft:entity_type": "#aspects:essence/has_any"
                                         }
                                     },
                                     {
@@ -239,7 +239,7 @@
                                         "condition": "minecraft:entity_properties",
                                         "entity": "this",
                                         "predicate": {
-                                            "type": "#aspects:essence/has_any"
+                                            "minecraft:entity_type": "#aspects:essence/has_any"
                                         }
                                     },
                                     {
@@ -251,7 +251,7 @@
                                                     "condition": "minecraft:entity_properties",
                                                     "entity": "this",
                                                     "predicate": {
-                                                        "type": "minecraft:player"
+                                                        "minecraft:entity_type": "minecraft:player"
                                                     }
                                                 }
                                             },
@@ -281,7 +281,7 @@
                                                 "condition": "minecraft:entity_properties",
                                                 "entity": "this",
                                                 "predicate": {
-                                                    "type": "minecraft:player"
+                                                    "minecraft:entity_type": "minecraft:player"
                                                 }
                                             },
                                             {
@@ -355,7 +355,7 @@
                                         "condition": "minecraft:entity_properties",
                                         "entity": "this",
                                         "predicate": {
-                                            "type": "#aspects:essence/has_any"
+                                            "minecraft:entity_type": "#aspects:essence/has_any"
                                         }
                                     },
                                     {
@@ -367,7 +367,7 @@
                                                     "condition": "minecraft:entity_properties",
                                                     "entity": "this",
                                                     "predicate": {
-                                                        "type": "minecraft:player"
+                                                        "minecraft:entity_type": "minecraft:player"
                                                     }
                                                 }
                                             },
@@ -397,7 +397,7 @@
                                                 "condition": "minecraft:entity_properties",
                                                 "entity": "this",
                                                 "predicate": {
-                                                    "type": "minecraft:player"
+                                                    "minecraft:entity_type": "minecraft:player"
                                                 }
                                             },
                                             {

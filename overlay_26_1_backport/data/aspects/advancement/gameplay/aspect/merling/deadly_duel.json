@@ -1,0 +1,361 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:trident",
+            "count": 1,
+            "components": {
+                "minecraft:enchantments": {
+                    "minecraft:impaling": 5
+                }
+            }
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.merling.deadly_duel"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.merling.deadly_duel.description"
+            }
+        ],
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "attack_merling_with_impaling": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "hurt_by_merling_with_impaling": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "source_entity": {
+                        "equipment": {
+                            "body": {
+                                "predicates": {
+                                    "minecraft:custom_data": {
+                                        "aspects": {
+                                            "aspect": "merling"
+                                        }
+                                    }
+                                }
+                            },
+                            "mainhand": {
+                                "predicates": {
+                                    "minecraft:enchantments": [
+                                        {
+                                            "enchantments": "minecraft:impaling",
+                                            "levels": {
+                                                "min": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "attack_drowned_with_impaling_mainhand": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:drowned",
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "attack_drowned_with_impaling_offhand": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:drowned",
+                            "equipment": {
+                                "offhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "hurt_by_drowned_with_impaling_mainhand": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "source_entity": {
+                        "type": "minecraft:drowned",
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "minecraft:enchantments": [
+                                        {
+                                            "enchantments": "minecraft:impaling",
+                                            "levels": {
+                                                "min": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "hurt_by_drowned_with_impaling_offhand": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/merling/is_active"
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "predicates": {
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minecraft:impaling",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "source_entity": {
+                        "type": "minecraft:drowned",
+                        "equipment": {
+                            "offhand": {
+                                "predicates": {
+                                    "minecraft:enchantments": [
+                                        {
+                                            "enchantments": "minecraft:impaling",
+                                            "levels": {
+                                                "min": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "attack_merling_with_impaling",
+            "hurt_by_merling_with_impaling",
+            "attack_drowned_with_impaling_mainhand",
+            "attack_drowned_with_impaling_offhand",
+            "hurt_by_drowned_with_impaling_mainhand",
+            "hurt_by_drowned_with_impaling_offhand"
+        ]
+    ],
+    "parent": "aspects:gameplay/aspect/merling/root"
+}

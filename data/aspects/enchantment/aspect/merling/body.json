@@ -35,7 +35,7 @@
                     "entity": "this",
                     "predicate": {
                         "vehicle": {
-                            "type": "#aspects:aspect/merling/nautilus"
+                            "minecraft:entity_type": "#aspects:aspect/merling/nautilus"
                         }
                     }
                 },

@@ -48,8 +48,7 @@
                                 "condition": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "type_specific": {
-                                        "type": "minecraft:player",
+                                    "minecraft:type_specific/player": {
                                         "input": {
                                             "sneak": true
                                         }
@@ -72,8 +71,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                        "type_specific": {
-                            "type": "minecraft:player",
+                        "minecraft:type_specific/player": {
                             "advancements": {
                                 "aspects:gameplay/aspect/elytrian/flying_marathon": false
                             },
@@ -105,8 +103,8 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "periodic_tick": 100,
-                                "type": "minecraft:player"
+                                "minecraft:entity_type": "minecraft:player",
+                                "minecraft:periodic_tick": 100
                             }
                         },
                         {

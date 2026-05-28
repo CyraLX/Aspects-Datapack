@@ -4,6 +4,10 @@
         {
             "id": "minecraft:pointed_dripstone",
             "required": false
+        },
+        {
+            "id": "#minecraft:speleothems",
+            "required": false
         }
     ]
 }

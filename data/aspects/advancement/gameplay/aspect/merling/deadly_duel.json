@@ -172,7 +172,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:drowned",
+                            "minecraft:entity_type": "minecraft:drowned",
                             "equipment": {
                                 "mainhand": {
                                     "predicates": {
@@ -226,7 +226,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:drowned",
+                            "minecraft:entity_type": "minecraft:drowned",
                             "equipment": {
                                 "offhand": {
                                     "predicates": {
@@ -277,7 +277,7 @@
                 ],
                 "damage": {
                     "source_entity": {
-                        "type": "minecraft:drowned",
+                        "minecraft:entity_type": "minecraft:drowned",
                         "equipment": {
                             "mainhand": {
                                 "predicates": {
@@ -327,7 +327,7 @@
                 ],
                 "damage": {
                     "source_entity": {
-                        "type": "minecraft:drowned",
+                        "minecraft:entity_type": "minecraft:drowned",
                         "equipment": {
                             "offhand": {
                                 "predicates": {

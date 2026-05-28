@@ -8,6 +8,10 @@
         {
             "id": "minecraft:magma_cube",
             "required": false
+        },
+        {
+            "id": "minecraft:sulfur_cube",
+            "required": false
         }
     ]
 }

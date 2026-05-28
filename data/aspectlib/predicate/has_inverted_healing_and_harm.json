@@ -15,7 +15,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                        "type": "#minecraft:inverted_healing_and_harm"
+                        "minecraft:entity_type": "#minecraft:inverted_healing_and_harm"
                     }
                 }
             ]
@@ -33,7 +33,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "#minecraft:inverted_healing_and_harm"
+                            "minecraft:entity_type": "#minecraft:inverted_healing_and_harm"
                         }
                     }
                 }

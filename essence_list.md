@@ -101,6 +101,7 @@ This document lists the essences associated with various entities.
 ## Ooze
 - Magma Cube      - Ooze, Fire
 - Slime           - Ooze
+- Sulfur Cube     - Ooze
 
 ## Plant
 - Bogged          - Undead, Plant
