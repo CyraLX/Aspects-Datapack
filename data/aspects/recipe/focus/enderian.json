@@ -34,7 +34,6 @@
                     "minecraft:enchantments"
                 ]
             },
-            "!minecraft:enchantments": {},
             "minecraft:item_model": "aspects:focus/enderian",
             "minecraft:consumable": {
                 "consume_seconds": 1,
@@ -69,8 +68,7 @@
                     "minecraft:custom_data": {
                         "smithed": {
                             "ignore": {
-                                "functionality": true,
-                                "crafting": true
+                                "everything": true
                             }
                         },
                         "aspects": {
