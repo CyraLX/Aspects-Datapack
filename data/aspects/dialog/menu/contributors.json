@@ -48,9 +48,20 @@
                                 "translate": "dialog.aspects.contributors.person_format",
                                 "with": [
                                     {
-                                        "translate": "extra.aspects.hover_context",
-                                        "with": [
-                                            "Maskedwatercress"
+                                        "text": "",
+                                        "extra": [
+                                            {
+                                                "type": "object",
+                                                "object": "player",
+                                                "player": "MaskedWaterCress"
+                                            },
+                                            " ",
+                                            {
+                                                "translate": "extra.aspects.hover_context",
+                                                "with": [
+                                                    "Maskedwatercress"
+                                                ]
+                                            }
                                         ],
                                         "hover_event": {
                                             "action": "show_text",
@@ -72,6 +83,86 @@
                                         }
                                     }
                                 ]
+                            },
+                            "\n\n",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_0",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_1",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_2",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_3",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_4",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_5",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_6",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_7",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_8",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_9",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_10",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_11",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_12",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_13",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_14",
+                                "atlas": "minecraft:items"
+                            },
+                            " ",
+                            {
+                                "sprite": "aspects:item/wings/elytrian_15",
+                                "atlas": "minecraft:items"
                             }
                         ]
                     },
@@ -98,8 +189,26 @@
                             {
                                 "translate": "dialog.aspects.contributors.person_format",
                                 "with": [
-                                    "SleepySkitters"
+                                    {
+                                        "text": "",
+                                        "extra": [
+                                            {
+                                                "type": "object",
+                                                "object": "player",
+                                                "player": "SleepySkitters"
+                                            },
+                                            " ",
+                                            {
+                                                "text": "SleepySkitters"
+                                            }
+                                        ]
+                                    }
                                 ]
+                            },
+                            "\n\n",
+                            {
+                                "sprite": "aspects:item/wings/honey_bee",
+                                "atlas": "minecraft:items"
                             }
                         ]
                     }
