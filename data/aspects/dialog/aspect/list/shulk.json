@@ -66,15 +66,9 @@
             "show_tooltip": false,
             "description": {
                 "translate": "dialog.aspects.aspect_info.essence_combination",
-                "color": "#c7ffe8"
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                "color": "#c7ffe8",
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "dialog.aspects.aspect_info.essence_combination.entry",
                         "color": "#d6d6d6",
@@ -135,15 +129,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
@@ -375,143 +363,140 @@
                                 ]
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "extra.aspects.hover_context",
-                "color": "green",
-                "with": [
+                    },
+                    "\n\n",
                     {
-                        "translate": "badge_details.aspects.hover_all"
-                    }
-                ],
-                "hover_event": {
-                    "action": "show_text",
-                    "value": {
-                        "text": "",
-                        "extra": [
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
                             {
-                                "translate": "badge_details.aspects.trigger.basic",
+                                "translate": "badge_details.aspects.hover_all"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
                                 "extra": [
-                                    "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "-50%",
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.scale"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+25%",
-                                            {
-                                                "translate": "attribute.name.attack_speed"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+4",
-                                            {
-                                                "translate": "attribute.name.max_absorption"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-50%",
-                                            {
-                                                "translate": "attribute.name.max_health"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-25%",
-                                            {
-                                                "translate": "attribute.name.attack_damage"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-50%",
-                                            {
-                                                "translate": "attribute.name.attack_knockback"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-0.5",
-                                            {
-                                                "translate": "attribute.name.block_interaction_range"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-0.5",
-                                            {
-                                                "translate": "attribute.name.entity_interaction_range"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.damaged",
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.heal_absorption",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
                                                 "with": [
-                                                    "4"
+                                                    "-50%",
+                                                    {
+                                                        "translate": "attribute.name.scale"
+                                                    }
                                                 ]
                                             },
+                                            "\n",
                                             {
-                                                "translate": "badge_details.aspects.modifier.after",
-                                                "color": "gray",
-                                                "italic": true,
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+25%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+4",
+                                                    {
+                                                        "translate": "attribute.name.max_absorption"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-50%",
+                                                    {
+                                                        "translate": "attribute.name.max_health"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-25%",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-50%",
+                                                    {
+                                                        "translate": "attribute.name.attack_knockback"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-0.5",
+                                                    {
+                                                        "translate": "attribute.name.block_interaction_range"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-0.5",
+                                                    {
+                                                        "translate": "attribute.name.entity_interaction_range"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.damaged",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.heal_absorption",
                                                         "with": [
-                                                            "10"
+                                                            "4"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.after",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "10"
+                                                                ]
+                                                            }
                                                         ]
                                                     }
                                                 ]
@@ -520,9 +505,9 @@
                                     }
                                 ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -562,16 +547,8 @@
                                 "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
-                "extra": [
+                    },
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",

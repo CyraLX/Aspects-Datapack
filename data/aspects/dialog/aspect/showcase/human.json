@@ -75,21 +75,20 @@
             "show_tooltip": false,
             "description": {
                 "translate": "dialog.aspects.aspect_info.essence_combination",
-                "color": "#c7ffe8"
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
-                "color": "#d6d6d6",
-                "with": [
+                "color": "#c7ffe8",
+                "extra": [
+                    "\n\n",
                     {
-                        "text": "120"
-                    },
-                    {
-                        "translate": "lore.essence.humanoid"
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "120"
+                            },
+                            {
+                                "translate": "lore.essence.humanoid"
+                            }
+                        ]
                     }
                 ]
             }
@@ -117,19 +116,18 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.aspect_info.effects.none.description",
-                "color": "#d6d6d6",
-                "italic": true,
-                "with": [
+                ],
+                "extra": [
+                    "\n\n",
                     {
-                        "translate": "extra.aspects.aspect_effects"
+                        "translate": "dialog.aspects.aspect_info.effects.none.description",
+                        "color": "#d6d6d6",
+                        "italic": true,
+                        "with": [
+                            {
+                                "translate": "extra.aspects.aspect_effects"
+                            }
+                        ]
                     }
                 ]
             }
@@ -154,16 +152,15 @@
                     {
                         "translate": "extra.aspects.focus_powers"
                     }
+                ],
+                "extra": [
+                    "\n\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.focus.none.description",
+                        "color": "#d6d6d6",
+                        "italic": true
+                    }
                 ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.aspect_info.focus.none.description",
-                "color": "#d6d6d6",
-                "italic": true
             }
         }
     ],

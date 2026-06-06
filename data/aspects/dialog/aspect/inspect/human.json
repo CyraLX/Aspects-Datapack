@@ -74,15 +74,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
@@ -128,15 +122,9 @@
                     {
                         "translate": "extra.aspects.focus_powers"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",

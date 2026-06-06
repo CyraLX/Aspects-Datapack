@@ -79,15 +79,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
@@ -371,192 +365,189 @@
                                 ]
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "extra.aspects.hover_context",
-                "color": "green",
-                "with": [
+                    },
+                    "\n\n",
                     {
-                        "translate": "badge_details.aspects.hover_all"
-                    }
-                ],
-                "hover_event": {
-                    "action": "show_text",
-                    "value": {
-                        "text": "",
-                        "extra": [
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
                             {
-                                "translate": "badge_details.aspects.trigger.basic",
+                                "translate": "badge_details.aspects.hover_all"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
                                 "extra": [
-                                    "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.damage_immune_to",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "damage_types.minecraft.drown"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+2",
-                                            {
-                                                "translate": "attribute.name.armor"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.vulnerable_to",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "enchantment.minecraft.smite"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-20%",
-                                            {
-                                                "translate": "attribute.name.attack_damage"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.damaged_by",
-                                "with": [
-                                    {
-                                        "text": "",
+                                        "translate": "badge_details.aspects.trigger.basic",
                                         "extra": [
+                                            "\n",
                                             {
-                                                "translate": "extra.aspects.mobs"
+                                                "translate": "badge_details.aspects.effect.damage_immune_to",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "damage_types.minecraft.drown"
+                                                    }
+                                                ]
                                             },
-                                            "/",
-                                            {
-                                                "translate": "entity.minecraft.player"
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
+                                            "\n",
                                             {
                                                 "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
                                                 "with": [
-                                                    "+20%",
+                                                    "+2",
+                                                    {
+                                                        "translate": "attribute.name.armor"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.vulnerable_to",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "enchantment.minecraft.smite"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
                                                     {
                                                         "translate": "attribute.name.attack_damage"
                                                     }
                                                 ]
-                                            },
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.damaged_by",
+                                        "with": [
                                             {
-                                                "translate": "badge_details.aspects.modifier.duration",
-                                                "color": "gray",
-                                                "italic": true,
+                                                "text": "",
+                                                "extra": [
+                                                    {
+                                                        "translate": "extra.aspects.mobs"
+                                                    },
+                                                    "/",
+                                                    {
+                                                        "translate": "entity.minecraft.player"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "extra.aspects.seconds",
+                                                        "translate": "badge_details.aspects.effect.attribute",
                                                         "with": [
-                                                            "5"
+                                                            "+20%",
+                                                            {
+                                                                "translate": "attribute.name.attack_damage"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "5"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.anger_thing_in_range_to_attacker",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "text": "",
+                                                        "extra": [
+                                                            {
+                                                                "translate": "extra.aspects.summoned"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "entity.minecraft.zombified_piglin"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "extra": [
+                                                            "32 ",
+                                                            {
+                                                                "translate": "extra.aspects.block"
+                                                            }
                                                         ]
                                                     }
                                                 ]
                                             }
                                         ]
                                     },
-                                    "\n",
+                                    "\n\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.anger_thing_in_range_to_attacker",
-                                        "color": "green",
+                                        "translate": "badge_details.aspects.trigger.inside",
                                         "with": [
                                             {
-                                                "text": "",
-                                                "extra": [
-                                                    {
-                                                        "translate": "extra.aspects.summoned"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "entity.minecraft.zombified_piglin"
-                                                    }
-                                                ]
-                                            },
+                                                "translate": "block.minecraft.water"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
                                             {
-                                                "text": "",
-                                                "extra": [
-                                                    "32 ",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-50%",
                                                     {
-                                                        "translate": "extra.aspects.block"
+                                                        "translate": "attribute.name.movement_speed"
                                                     }
                                                 ]
                                             }
                                         ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.inside",
-                                "with": [
+                                    },
+                                    "\n\n",
                                     {
-                                        "translate": "block.minecraft.water"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-50%",
+                                        "translate": "badge_details.aspects.trigger.exposed_to_sunlight",
+                                        "extra": [
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.movement_speed"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.exposed_to_sunlight",
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-10%",
-                                            {
-                                                "translate": "attribute.name.attack_damage"
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-10%",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
                                 ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -596,16 +587,8 @@
                                 "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
-                "extra": [
+                    },
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",

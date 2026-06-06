@@ -74,15 +74,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
@@ -809,393 +803,313 @@
                                 ]
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "extra.aspects.hover_context",
-                "color": "green",
-                "with": [
+                    },
+                    "\n\n",
                     {
-                        "translate": "badge_details.aspects.hover_all"
-                    }
-                ],
-                "hover_event": {
-                    "action": "show_text",
-                    "value": {
-                        "text": "",
-                        "extra": [
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
                             {
-                                "translate": "badge_details.aspects.trigger.basic",
+                                "translate": "badge_details.aspects.hover_all"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
                                 "extra": [
-                                    "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.can_breathe_in",
-                                        "color": "green",
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.can_breathe_in",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "block.minecraft.water"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+25%",
+                                                    {
+                                                        "translate": "attribute.name.water_movement_efficiency"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+400%",
+                                                            {
+                                                                "translate": "attribute.name.submerged_mining_speed"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.stacks_with_not",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "enchantment.minecraft.aqua_affinity"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.vulnerable_to",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "enchantment.minecraft.impaling"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.submerged_in",
                                         "with": [
                                             {
                                                 "translate": "block.minecraft.water"
                                             }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+25%",
+                                        ],
+                                        "extra": [
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.water_movement_efficiency"
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                        "with": [
+                                                            {
+                                                                "translate": "effect.minecraft.night_vision"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.duration",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "60"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.overtime",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "1"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
-                                    "\n",
+                                    "\n\n",
                                     {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
+                                        "translate": "badge_details.aspects.trigger.in_thing",
                                         "with": [
                                             {
+                                                "translate": "block.minecraft.water"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
                                                 "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+75%",
+                                                    {
+                                                        "translate": "attribute.name.movement_speed"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.attacking_with",
+                                        "with": [
+                                            {
+                                                "translate": "enchantment.minecraft.impaling"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+1.5",
+                                                    {
+                                                        "translate": "attribute.name.attack_damage"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
+                                                "with": [
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "+0.75",
+                                                            {
+                                                                "translate": "attribute.name.attack_damage"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.level_above",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "enchantment.level.1"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.mounting_thing",
+                                        "with": [
+                                            {
+                                                "translate": "entity.minecraft.nautilus"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
                                                 "with": [
                                                     "+400%",
                                                     {
                                                         "translate": "attribute.name.submerged_mining_speed"
                                                     }
                                                 ]
-                                            },
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.out_of",
+                                        "with": [
                                             {
-                                                "translate": "badge_details.aspects.modifier.stacks_with_not",
-                                                "color": "gray",
-                                                "italic": true,
+                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "red",
                                                 "with": [
                                                     {
-                                                        "translate": "enchantment.minecraft.aqua_affinity"
+                                                        "translate": "badge_details.aspects.effect.damage_user_overtime",
+                                                        "with": [
+                                                            "2",
+                                                            {
+                                                                "translate": "extra.aspects.seconds",
+                                                                "with": [
+                                                                    "1"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.ignores_everything"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             }
                                         ]
                                     },
-                                    "\n",
+                                    "\n\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.vulnerable_to",
-                                        "color": "red",
-                                        "with": [
+                                        "translate": "badge_details.aspects.trigger.wet",
+                                        "extra": [
+                                            "\n",
                                             {
-                                                "translate": "enchantment.minecraft.impaling"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.submerged_in",
-                                "with": [
-                                    {
-                                        "translate": "block.minecraft.water"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.give_potion_effect",
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "effect.minecraft.night_vision"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.duration",
+                                                        "translate": "badge_details.aspects.effect.restore",
                                                         "with": [
                                                             {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "60"
-                                                                ]
+                                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
                                                             }
                                                         ]
                                                     },
-                                                    " ",
                                                     {
-                                                        "translate": "badge_details.aspects.modifier.overtime",
-                                                        "with": [
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
                                                             {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "1"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.in_thing",
-                                "with": [
-                                    {
-                                        "translate": "block.minecraft.water"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+75%",
-                                            {
-                                                "translate": "attribute.name.movement_speed"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.attacking_with",
-                                "with": [
-                                    {
-                                        "translate": "enchantment.minecraft.impaling"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+1.5",
-                                            {
-                                                "translate": "attribute.name.attack_damage"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.attribute",
-                                                "with": [
-                                                    "+0.75",
-                                                    {
-                                                        "translate": "attribute.name.attack_damage"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "translate": "badge_details.aspects.modifier.level_above",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "with": [
-                                                    {
-                                                        "translate": "enchantment.level.1"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.mounting_thing",
-                                "with": [
-                                    {
-                                        "translate": "entity.minecraft.nautilus"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+400%",
-                                            {
-                                                "translate": "attribute.name.submerged_mining_speed"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.out_of",
-                                "with": [
-                                    {
-                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.damage_user_overtime",
-                                                "with": [
-                                                    "2",
-                                                    {
-                                                        "translate": "extra.aspects.seconds",
-                                                        "with": [
-                                                            "1"
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.ignores_everything"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.wet",
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.restore",
-                                                "with": [
-                                                    {
-                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.overtime",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "1"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.full_in",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "6"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.inverted",
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "badge_details.aspects.effect.drain",
-                                                "with": [
-                                                    {
-                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.overtime",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "1"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.empty_in",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.seconds",
-                                                                "with": [
-                                                                    "20"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.improved_by",
-                                                        "with": [
-                                                            {
-                                                                "translate": "enchantment.minecraft.respiration"
-                                                            }
-                                                        ]
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.suppressed_by",
-                                                        "with": [
-                                                            {
-                                                                "translate": "extra.aspects.and",
+                                                                "translate": "badge_details.aspects.modifier.overtime",
                                                                 "with": [
                                                                     {
-                                                                        "translate": "effect.minecraft.water_breathing"
-                                                                    },
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "1"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.full_in",
+                                                                "with": [
                                                                     {
-                                                                        "translate": "effect.minecraft.conduit_power"
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "6"
+                                                                        ]
                                                                     }
                                                                 ]
                                                             }
@@ -1207,129 +1121,206 @@
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "red",
-                                        "with": [
+                                        "translate": "badge_details.aspects.trigger.inverted",
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.drain",
+                                                        "with": [
+                                                            {
+                                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.overtime",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "1"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.empty_in",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.seconds",
+                                                                        "with": [
+                                                                            "20"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.improved_by",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "enchantment.minecraft.respiration"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.suppressed_by",
+                                                                "with": [
+                                                                    {
+                                                                        "translate": "extra.aspects.and",
+                                                                        "with": [
+                                                                            {
+                                                                                "translate": "effect.minecraft.water_breathing"
+                                                                            },
+                                                                            {
+                                                                                "translate": "effect.minecraft.conduit_power"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.attribute",
+                                                        "with": [
+                                                            "-25%",
+                                                            {
+                                                                "translate": "attribute.name.block_break_speed"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "translate": "badge_details.aspects.modifier.removed_by",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "with": [
+                                                            {
+                                                                "translate": "enchantment.minecraft.aqua_affinity"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
                                             {
                                                 "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
                                                 "with": [
-                                                    "-25%",
+                                                    "-20%",
                                                     {
-                                                        "translate": "attribute.name.block_break_speed"
+                                                        "translate": "attribute.name.movement_speed"
                                                     }
                                                 ]
                                             },
+                                            "\n",
                                             {
-                                                "translate": "badge_details.aspects.modifier.removed_by",
-                                                "color": "gray",
-                                                "italic": true,
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.attack_speed"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n\n",
+                                    {
+                                        "translate": "badge_details.aspects.trigger.used",
+                                        "with": [
+                                            {
+                                                "translate": "item.minecraft.potion",
+                                                "extra": [
+                                                    "+"
+                                                ]
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.restore_by",
+                                                "color": "green",
                                                 "with": [
                                                     {
-                                                        "translate": "enchantment.minecraft.aqua_affinity"
-                                                    }
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                    },
+                                                    "50%"
                                                 ]
                                             }
                                         ]
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
+                                        "translate": "badge_details.aspects.trigger.damaged_by",
                                         "with": [
-                                            "-20%",
                                             {
-                                                "translate": "attribute.name.movement_speed"
+                                                "translate": "block.minecraft.fire",
+                                                "extra": [
+                                                    "+"
+                                                ]
+                                            }
+                                        ],
+                                        "extra": [
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.drain_by",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                    },
+                                                    "3.33%"
+                                                ]
                                             }
                                         ]
                                     },
                                     "\n",
                                     {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
+                                        "translate": "badge_details.aspects.trigger.damaged_with",
                                         "with": [
-                                            "-20%",
                                             {
-                                                "translate": "attribute.name.attack_speed"
+                                                "translate": "block.minecraft.sponge"
                                             }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.used",
-                                "with": [
-                                    {
-                                        "translate": "item.minecraft.potion",
+                                        ],
                                         "extra": [
-                                            "+"
-                                        ]
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.restore_by",
-                                        "color": "green",
-                                        "with": [
+                                            "\n",
                                             {
-                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
-                                            },
-                                            "50%"
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.damaged_by",
-                                "with": [
-                                    {
-                                        "translate": "block.minecraft.fire",
-                                        "extra": [
-                                            "+"
-                                        ]
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.drain_by",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
-                                            },
-                                            "3.33%"
-                                        ]
-                                    }
-                                ]
-                            },
-                            "\n",
-                            {
-                                "translate": "badge_details.aspects.trigger.damaged_with",
-                                "with": [
-                                    {
-                                        "translate": "block.minecraft.sponge"
-                                    }
-                                ],
-                                "extra": [
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.drain_by",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "bossbar.aspects.aspect_group.moisture_dependant"
-                                            },
-                                            "25%"
+                                                "translate": "badge_details.aspects.effect.drain_by",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "bossbar.aspects.aspect_group.moisture_dependant"
+                                                    },
+                                                    "25%"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -1369,16 +1360,8 @@
                                 "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
-                "extra": [
+                    },
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",

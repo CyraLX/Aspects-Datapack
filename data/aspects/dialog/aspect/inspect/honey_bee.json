@@ -74,15 +74,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",
@@ -309,154 +303,151 @@
                                 ]
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "extra.aspects.hover_context",
-                "color": "green",
-                "with": [
+                    },
+                    "\n\n",
                     {
-                        "translate": "badge_details.aspects.hover_all"
-                    }
-                ],
-                "hover_event": {
-                    "action": "show_text",
-                    "value": {
-                        "text": "",
-                        "extra": [
+                        "translate": "extra.aspects.hover_context",
+                        "color": "green",
+                        "with": [
                             {
-                                "translate": "badge_details.aspects.trigger.basic",
+                                "translate": "badge_details.aspects.hover_all"
+                            }
+                        ],
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": {
+                                "text": "",
                                 "extra": [
-                                    "\n",
                                     {
-                                        "translate": "badge_details.aspects.modifier_format",
-                                        "color": "green",
-                                        "with": [
+                                        "translate": "badge_details.aspects.trigger.basic",
+                                        "extra": [
+                                            "\n",
                                             {
-                                                "translate": "badge_details.aspects.effect.starting_equipment",
+                                                "translate": "badge_details.aspects.modifier_format",
+                                                "color": "green",
                                                 "with": [
+                                                    {
+                                                        "translate": "badge_details.aspects.effect.starting_equipment",
+                                                        "with": [
+                                                            {
+                                                                "translate": "item.aspects.wings.honey_bee",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "text": "",
+                                                        "color": "gray",
+                                                        "italic": true,
+                                                        "extra": [
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.bound"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "badge_details.aspects.modifier.unbreakable"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.restrict_slot_except",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "equipment.slot.chest"
+                                                    },
                                                     {
                                                         "translate": "item.aspects.wings.honey_bee",
                                                         "color": "light_purple"
                                                     }
                                                 ]
                                             },
+                                            "\n",
                                             {
-                                                "text": "",
-                                                "color": "gray",
-                                                "italic": true,
-                                                "extra": [
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "+4",
                                                     {
-                                                        "translate": "badge_details.aspects.modifier.bound"
-                                                    },
-                                                    " ",
-                                                    {
-                                                        "translate": "badge_details.aspects.modifier.unbreakable"
+                                                        "translate": "attribute.name.armor"
                                                     }
                                                 ]
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.restrict_slot_except",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "equipment.slot.chest"
                                             },
+                                            "\n",
                                             {
-                                                "translate": "item.aspects.wings.honey_bee",
-                                                "color": "light_purple"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "+4",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.scale"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.armor"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "-20%",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "green",
+                                                "with": [
+                                                    "-100%",
+                                                    {
+                                                        "translate": "attribute.name.fall_damage_multiplier"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.scale"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "green",
-                                        "with": [
-                                            "-100%",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "yellow",
+                                                "with": [
+                                                    "-75%",
+                                                    {
+                                                        "translate": "attribute.name.gravity"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.fall_damage_multiplier"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "yellow",
-                                        "with": [
-                                            "-75%",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-40%",
+                                                    {
+                                                        "translate": "attribute.name.jump_strength"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.gravity"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-40%",
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.max_health"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
                                             {
-                                                "translate": "attribute.name.jump_strength"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.attribute",
-                                        "color": "red",
-                                        "with": [
-                                            "-20%",
-                                            {
-                                                "translate": "attribute.name.max_health"
-                                            }
-                                        ]
-                                    },
-                                    "\n",
-                                    {
-                                        "translate": "badge_details.aspects.effect.vulnerable_to",
-                                        "color": "red",
-                                        "with": [
-                                            {
-                                                "translate": "enchantment.minecraft.bane_of_arthropods"
+                                                "translate": "badge_details.aspects.effect.vulnerable_to",
+                                                "color": "red",
+                                                "with": [
+                                                    {
+                                                        "translate": "enchantment.minecraft.bane_of_arthropods"
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
                                 ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -496,16 +487,8 @@
                                 "translate": "dialog.aspects.aspect_info.focus.hover"
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "text": "",
-                "extra": [
+                    },
+                    "\n\n",
                     {
                         "translate": "extra.aspects.hover_context",
                         "color": "#d6d6d6",

@@ -75,21 +75,20 @@
             "show_tooltip": false,
             "description": {
                 "translate": "dialog.aspects.aspect_info.essence_combination",
-                "color": "#c7ffe8"
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 550,
-            "contents": {
-                "translate": "dialog.aspects.aspect_info.essence_combination.entry",
-                "color": "#d6d6d6",
-                "with": [
+                "color": "#c7ffe8",
+                "extra": [
+                    "\n\n",
                     {
-                        "text": "120"
-                    },
-                    {
-                        "translate": "lore.essence.fire"
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "120"
+                            },
+                            {
+                                "translate": "lore.essence.fire"
+                            }
+                        ]
                     }
                 ]
             }
@@ -117,15 +116,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 550,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.aspect_group.hydrophobic",
                         "color": "#d6d6d6",
@@ -208,15 +201,9 @@
                     {
                         "translate": "extra.aspects.focus_powers"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 550,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.infernal.use_name_1",
                         "color": "#d6d6d6",

@@ -75,15 +75,9 @@
             "show_tooltip": false,
             "description": {
                 "translate": "dialog.aspects.aspect_info.essence_combination",
-                "color": "#c7ffe8"
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 600,
-            "contents": {
-                "text": "",
+                "color": "#c7ffe8",
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "dialog.aspects.aspect_info.essence_combination.entry",
                         "color": "#d6d6d6",
@@ -135,15 +129,9 @@
                     {
                         "translate": "extra.aspects.aspect_effects"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 600,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "aspect.aspects.rascal.cave_attuned",
                         "color": "#d6d6d6",
@@ -202,15 +190,9 @@
                     {
                         "translate": "extra.aspects.focus_powers"
                     }
-                ]
-            }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 600,
-            "contents": {
-                "text": "",
+                ],
                 "extra": [
+                    "\n\n",
                     {
                         "translate": "item.aspects.focus.rascal.use_name_1",
                         "color": "#d6d6d6",
