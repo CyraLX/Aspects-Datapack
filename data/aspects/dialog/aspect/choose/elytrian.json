@@ -117,8 +117,19 @@
                                                 "translate": "badge_details.aspects.effect.starting_equipment",
                                                 "with": [
                                                     {
-                                                        "translate": "item.aspects.wings.elytrian",
-                                                        "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "aspects:item/wings/elytrian_0",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.aspects.wings.elytrian",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -158,8 +169,19 @@
                                                 "translate": "equipment.slot.chest"
                                             },
                                             {
-                                                "translate": "item.aspects.wings.elytrian",
-                                                "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "aspects:item/wings/elytrian_0",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.aspects.wings.elytrian",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                             }
                                         ]
                                     }
@@ -323,8 +345,19 @@
                                                         "translate": "badge_details.aspects.effect.damage_item",
                                                         "with": [
                                                             {
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "aspects:item/wings/elytrian_0",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
                                                                 "translate": "item.aspects.wings.elytrian",
                                                                 "color": "light_purple"
+                                                            }
+                                                        ]
                                                             },
                                                             "18"
                                                         ]
@@ -368,8 +401,19 @@
                                                         "translate": "badge_details.aspects.effect.starting_equipment",
                                                         "with": [
                                                             {
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "aspects:item/wings/elytrian_0",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
                                                                 "translate": "item.aspects.wings.elytrian",
                                                                 "color": "light_purple"
+                                                            }
+                                                        ]
                                                             }
                                                         ]
                                                     },
@@ -409,8 +453,19 @@
                                                         "translate": "equipment.slot.chest"
                                                     },
                                                     {
-                                                        "translate": "item.aspects.wings.elytrian",
-                                                        "color": "light_purple"
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "aspects:item/wings/elytrian_0",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
+                                                                "translate": "item.aspects.wings.elytrian",
+                                                                "color": "light_purple"
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
@@ -505,8 +560,19 @@
                                                         "translate": "badge_details.aspects.effect.damage_item",
                                                         "with": [
                                                             {
+                                                        "text": "",
+                                                        "color": "white",
+                                                        "extra": [
+                                                            {
+                                                                "sprite": "aspects:item/wings/elytrian_0",
+                                                                "atlas": "minecraft:items"
+                                                            },
+                                                            " ",
+                                                            {
                                                                 "translate": "item.aspects.wings.elytrian",
                                                                 "color": "light_purple"
+                                                            }
+                                                        ]
                                                             },
                                                             "18"
                                                         ]
