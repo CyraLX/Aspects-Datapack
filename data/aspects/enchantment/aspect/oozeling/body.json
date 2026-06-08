@@ -5,7 +5,7 @@
             ": ",
             {
                 "translate": "aspect.aspects.oozeling",
-                "color": "#6aa84f",
+                "color": "#7bc35c",
                 "shadow_color": -15062509
             }
         ]
@@ -76,6 +76,18 @@
                 "id": "aspects:oozeling/max_health",
                 "amount": -0.2,
                 "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:armor",
+                "id": "aspects:oozeling/armor",
+                "amount": -0.25,
+                "operation": "add_multiplied_total"
+            },
+            {
+                "attribute": "minecraft:armor_toughness",
+                "id": "aspects:oozeling/armor_toughness",
+                "amount": -0.25,
+                "operation": "add_multiplied_total"
             }
         ],
         "minecraft:damage_immunity": [
