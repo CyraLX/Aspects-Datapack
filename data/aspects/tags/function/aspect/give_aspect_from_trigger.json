@@ -48,6 +48,10 @@
         {
             "id": "aspects:aspect/arachnid/activate_from_trigger",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/oozeling/activate_from_trigger",
+            "required": false
         }
     ]
 }

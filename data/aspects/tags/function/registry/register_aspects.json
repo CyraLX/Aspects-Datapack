@@ -44,6 +44,10 @@
         {
             "id": "aspects:aspect/arachnid/register_aspect",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/oozeling/register_aspect",
+            "required": false
         }
     ]
 }

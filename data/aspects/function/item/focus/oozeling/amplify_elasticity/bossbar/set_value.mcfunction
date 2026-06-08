@@ -1,0 +1,1 @@
+$execute store result bossbar aspects:oozeling/amplify_elasticity/player_$(id) value run scoreboard players get @s aspects.oozeling.amplify_elasticity

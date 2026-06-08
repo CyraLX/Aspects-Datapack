@@ -44,6 +44,10 @@
         {
             "id": "aspects:aspect/choose/arachnid",
             "required": false
+        },
+        {
+            "id": "aspects:aspect/choose/oozeling",
+            "required": false
         }
     ]
 }

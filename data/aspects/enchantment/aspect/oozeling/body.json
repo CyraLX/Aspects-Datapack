@@ -1,0 +1,106 @@
+{
+    "description": {
+        "translate": "aspect",
+        "extra": [
+            ": ",
+            {
+                "translate": "aspect.aspects.oozeling",
+                "color": "#6aa84f",
+                "shadow_color": -15062509
+            }
+        ]
+    },
+    "supported_items": "minecraft:jigsaw",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:prevent_equipment_drop": {},
+        "minecraft:prevent_armor_change": {},
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:scale",
+                "id": "aspects:oozeling/scale",
+                "amount": 0.1,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:bounciness",
+                "id": "aspects:oozeling/bounciness",
+                "amount": 0.8,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:friction_modifier",
+                "id": "aspects:oozeling/friction_modifier",
+                "amount": 0.5,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:air_drag_modifier",
+                "id": "aspects:oozeling/air_drag_modifier",
+                "amount": -0.25,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:jump_strength",
+                "id": "aspects:oozeling/jump_strength",
+                "amount": 0.65,
+                "operation": "add_multiplied_base"
+            },
+            {
+                "attribute": "minecraft:knockback_resistance",
+                "id": "aspects:oozeling/knockback_resistance",
+                "amount": -1,
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:fall_damage_multiplier",
+                "id": "aspects:oozeling/fall_damage_multiplier",
+                "amount": -1,
+                "operation": "add_multiplied_total"
+            },
+            {
+                "attribute": "minecraft:max_health",
+                "id": "aspects:oozeling/max_health",
+                "amount": -0.2,
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "minecraft:damage_immunity": [
+            {
+                "requirements": {
+                    "condition": "damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_fall",
+                                "expected": true
+                            }
+                        ]
+                    }
+                },
+                "effect": {}
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "aspects:aspect/oozeling/crouch_jump/check"
+                }
+            }
+        ]
+    }
+}

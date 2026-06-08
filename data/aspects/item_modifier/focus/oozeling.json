@@ -1,0 +1,129 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "aspects:focus_dummy"
+    },
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "aspects": {
+                "focus": {
+                    "aspect": {
+                        "namespace": "aspects",
+                        "name": "oozeling"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:item_model": "aspects:focus/oozeling",
+            "minecraft:consumable": {
+                "consume_seconds": 2,
+                "animation": "bow",
+                "sound": "minecraft:entity.slime.jump",
+                "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+                "seconds": 60,
+                "cooldown_group": "aspects:focus"
+            },
+            "minecraft:use_remainder": {
+                "id": "minecraft:jigsaw",
+                "components": {
+                    "minecraft:item_name": {
+                        "translate": "item.aspects.focus.oozeling",
+                        "color": "#ffff55"
+                    },
+                    "minecraft:rarity": "uncommon",
+                    "minecraft:enchantment_glint_override": false,
+                    "minecraft:item_model": "aspects:focus/oozeling",
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:attribute_modifiers",
+                            "minecraft:enchantments"
+                        ]
+                    },
+                    "minecraft:enchantments": {
+                        "aspects:focus/generic/modify_mainhand": 1,
+                        "aspects:focus/generic/modify_offhand": 1
+                    },
+                    "minecraft:custom_data": {
+                        "smithed": {
+                            "ignore": {
+                                "everything": true
+                            }
+                        },
+                        "aspects": {
+                            "focus": {
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "oozeling"
+                                }
+                            }
+                        }
+                    }
+                },
+                "count": 1
+            },
+            "minecraft:item_name": {
+                "translate": "item.aspects.focus.oozeling",
+                "color": "#ffff55"
+            },
+            "minecraft:lore": [
+                {
+                    "translate": "lore.equipment.use_time_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_time"
+                        },
+                        {
+                            "translate": "lore.equipment.use_time.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "translate": "lore.equipment.use_cooldown_format",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                        {
+                            "translate": "lore.equipment.use_cooldown"
+                        },
+                        {
+                            "translate": "lore.equipment.use_cooldown.seconds",
+                            "color": "#757575",
+                            "with": [
+                                "60"
+                            ]
+                        }
+                    ]
+                },
+                "",
+                {
+                    "translate": "item.modifiers.use",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.oozeling.use_result_1"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
