@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "aspects.oozeling.crouch_jump.is_active": {
+            "min": 1
+        }
+    }
+}
