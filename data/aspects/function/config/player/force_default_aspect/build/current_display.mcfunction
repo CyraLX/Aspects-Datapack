@@ -1,3 +1,5 @@
+# Current: -1 (Random)
+execute if score #aspects aspects.config.player.force_default_aspect matches -1 run return run data modify storage aspectlib:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.current_display set value [{translate:"extra.aspects.random",color:"blue"},{text:" | ",color:"white"},{text:"-1",color:"blue"}]
 # If current is invalid, assume default
 $execute unless score #aspects aspects.config.player.force_default_aspect matches 0.. run return run data modify storage aspectlib:registry config[{namespace:"aspects",type:"player",name:"force_default_aspect"}].dialog_data.current_display set value [{translate:"options.off",color:"red"},{text:" | ",color:"white"},{text:"$(default)",color:"blue"}]
 # Otherwise set current as Aspect Translatable

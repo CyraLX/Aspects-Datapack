@@ -2,7 +2,11 @@
 # Default: 1 (true)
 scoreboard objectives add aspects.config.item.reward_shattered_relic dummy
 scoreboard objectives add aspects.config.item.reward_shattered_relic.default dummy
+scoreboard objectives add aspects.config.item.reward_shattered_relic.min_value dummy
+scoreboard objectives add aspects.config.item.reward_shattered_relic.max_value dummy
 scoreboard objectives add aspects.config.item.reward_shattered_relic.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.item.reward_shattered_relic.min_value
+scoreboard players reset #aspects aspects.config.item.reward_shattered_relic.max_value
 
 # Define Registry Data
 #

@@ -3,7 +3,11 @@
 # Default: 1 (true)
 scoreboard objectives add aspects.config.world.track_statistics dummy
 scoreboard objectives add aspects.config.world.track_statistics.default dummy
+scoreboard objectives add aspects.config.world.track_statistics.min_value dummy
+scoreboard objectives add aspects.config.world.track_statistics.max_value dummy
 scoreboard objectives add aspects.config.world.track_statistics.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.world.track_statistics.min_value
+scoreboard players reset #aspects aspects.config.world.track_statistics.max_value
 
 # Define Registry Data
 #

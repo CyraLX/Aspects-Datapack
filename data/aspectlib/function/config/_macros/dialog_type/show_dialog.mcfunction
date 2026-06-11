@@ -7,6 +7,7 @@ execute if data storage aspectlib:cache temp.config.dialog_data run data remove 
 # Migrate Current and Default to storage
 $execute store result storage aspectlib:cache temp.config.default int 1 run scoreboard players get #$(namespace) $(namespace).config.$(type).$(name).default
 $execute store result storage aspectlib:cache temp.config.current int 1 run scoreboard players get #$(namespace) $(namespace).config.$(type).$(name)
+$execute store result storage aspectlib:cache temp.config.min_value int 1 run scoreboard players get #$(namespace) $(namespace).config.$(type).$(name).min_value
 # Migrate Dialog Type to a temp scoreboard
 execute store result score #aspects aspectlib.temp run data get storage aspectlib:cache temp.config.dialog_type
 

@@ -3,7 +3,11 @@
 # Default: 100
 scoreboard objectives add aspects.config.aspect.enderian_teleport_downward_distance dummy
 scoreboard objectives add aspects.config.aspect.enderian_teleport_downward_distance.default dummy
+scoreboard objectives add aspects.config.aspect.enderian_teleport_downward_distance.min_value dummy
+scoreboard objectives add aspects.config.aspect.enderian_teleport_downward_distance.max_value dummy
 scoreboard objectives add aspects.config.aspect.enderian_teleport_downward_distance.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.aspect.enderian_teleport_downward_distance.min_value
+scoreboard players reset #aspects aspects.config.aspect.enderian_teleport_downward_distance.max_value
 
 # Define Registry Data
 #

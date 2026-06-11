@@ -14,5 +14,5 @@ scoreboard players reset @s aspects.choose_aspect
 scoreboard players reset @s aspects.dialog.menu_open
 
 # Open Aspect Choosing dialog or assign default Aspect
-execute unless score @s aspects.dialog.menu_requested matches 1 if score #aspects aspects.config.player.force_default_aspect matches 0.. run return run function aspects:config/player/force_default_aspect/assign
+execute unless score @s aspects.dialog.menu_requested matches 1 if score #aspects aspects.config.player.force_default_aspect matches -1.. run return run function aspects:config/player/force_default_aspect/assign
 return run function aspects:dialog/choose_aspect/open_menu

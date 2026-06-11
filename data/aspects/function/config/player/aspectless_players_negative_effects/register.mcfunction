@@ -5,7 +5,11 @@
 # Default: 1 (true)
 scoreboard objectives add aspects.config.player.aspectless_players_negative_effects dummy
 scoreboard objectives add aspects.config.player.aspectless_players_negative_effects.default dummy
+scoreboard objectives add aspects.config.player.aspectless_players_negative_effects.min_value dummy
+scoreboard objectives add aspects.config.player.aspectless_players_negative_effects.max_value dummy
 scoreboard objectives add aspects.config.player.aspectless_players_negative_effects.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.player.aspectless_players_negative_effects.min_value
+scoreboard players reset #aspects aspects.config.player.aspectless_players_negative_effects.max_value
 
 # Define Registry Data
 #

@@ -18,5 +18,9 @@ $execute unless score #$(namespace) $(namespace).config.$(type).$(name) = #$(nam
 # Advanced Inputs are off by Default
 $execute unless score #$(namespace) $(namespace).config.$(type).$(name).advanced_inputs = #$(namespace) $(namespace).config.$(type).$(name).advanced_inputs run scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name).advanced_inputs = #$(namespace) $(namespace).config.$(type).$(name).advanced_inputs
 
+# Apply MIN and MAX values
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name).min_value = #$(namespace) $(namespace).config.$(type).$(name).min_value run scoreboard players operation #$(namespace) $(namespace).config.$(type).$(name).min_value = #$(namespace) $(namespace).config.$(type).$(name).default
+$execute unless score #$(namespace) $(namespace).config.$(type).$(name).max_value = #$(namespace) $(namespace).config.$(type).$(name).max_value run scoreboard players set #$(namespace) $(namespace).config.$(type).$(name).max_value 16777216
+
 # Logger
 function aspectlib:config/_macros/register_config_logger with storage aspectlib:cache temp.config

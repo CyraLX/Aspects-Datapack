@@ -2,7 +2,11 @@
 # Default: 1 (true)
 scoreboard objectives add aspects.config.player.aspectless_players_invulnerable dummy
 scoreboard objectives add aspects.config.player.aspectless_players_invulnerable.default dummy
+scoreboard objectives add aspects.config.player.aspectless_players_invulnerable.min_value dummy
+scoreboard objectives add aspects.config.player.aspectless_players_invulnerable.max_value dummy
 scoreboard objectives add aspects.config.player.aspectless_players_invulnerable.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.player.aspectless_players_invulnerable.min_value
+scoreboard players reset #aspects aspects.config.player.aspectless_players_invulnerable.max_value
 
 # Define Registry Data
 #

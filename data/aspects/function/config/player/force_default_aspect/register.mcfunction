@@ -1,9 +1,13 @@
 # Instead of choosing an Aspect when first joining, it will assign the specified Aspect based on the set aspect id.
-# (For example -1 is Off, 0 will be Human, 1 is Merling, etc...)
-# Default: -1
+# (For example -2 is Off, -1 is Random, 0 will be Human, 1 is Merling, etc...)
+# Default: -2
 scoreboard objectives add aspects.config.player.force_default_aspect dummy
 scoreboard objectives add aspects.config.player.force_default_aspect.default dummy
+scoreboard objectives add aspects.config.player.force_default_aspect.min_value dummy
+scoreboard objectives add aspects.config.player.force_default_aspect.max_value dummy
 scoreboard objectives add aspects.config.player.force_default_aspect.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.player.force_default_aspect.min_value
+scoreboard players reset #aspects aspects.config.player.force_default_aspect.max_value
 
 # Define Registry Data
 #
@@ -68,7 +72,9 @@ scoreboard objectives add aspects.config.player.force_default_aspect.advanced_in
 #
 data modify storage aspectlib:cache temp.config set value {namespace:"aspects",type:"player",name:"force_default_aspect",dialog_type:3,dialog_data:{action_list:[],accepts_namespace:"aspects",accepts_name:".registry",accepts_with:[{translate:"registry.aspects.aspect"}]}}
 # Define Default value
-scoreboard players set #aspectlib aspectlib.temp -1
+scoreboard players set #aspectlib aspectlib.temp -2
+# Define MIN value
+scoreboard players set #aspects aspects.config.player.force_default_aspect.min_value -1
 
 # Generic REGISTER_CONFIG logic
 function aspectlib:config/_macros/register_config with storage aspectlib:cache temp.config

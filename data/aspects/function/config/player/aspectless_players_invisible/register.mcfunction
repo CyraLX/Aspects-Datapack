@@ -2,7 +2,11 @@
 # Default: 1 (true)
 scoreboard objectives add aspects.config.player.aspectless_players_invisible dummy
 scoreboard objectives add aspects.config.player.aspectless_players_invisible.default dummy
+scoreboard objectives add aspects.config.player.aspectless_players_invisible.min_value dummy
+scoreboard objectives add aspects.config.player.aspectless_players_invisible.max_value dummy
 scoreboard objectives add aspects.config.player.aspectless_players_invisible.advanced_inputs dummy
+scoreboard players reset #aspects aspects.config.player.aspectless_players_invisible.min_value
+scoreboard players reset #aspects aspects.config.player.aspectless_players_invisible.max_value
 
 # Define Registry Data
 #
