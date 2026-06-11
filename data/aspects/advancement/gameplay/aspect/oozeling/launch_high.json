@@ -1,0 +1,67 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:wind_charge",
+            "count": 1
+        },
+        "title": {
+            "translate": "advancements.aspects.aspect.oozeling.launch_high"
+        },
+        "description": [
+            {
+                "translate": "advancements.aspects.aspect.oozeling.launch_high.description",
+                "with": [
+                    {
+                        "translate": "item.minecraft.wind_charge"
+                    },
+                    {
+                        "text": "50 ",
+                        "extra": [
+                            {
+                                "translate": "extra.aspects.blocks_low"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "\n",
+            {
+                "translate": "advancements.aspects.aspect.oozeling.launch_high.lore",
+                "color": "gray",
+                "italic": true
+            }
+        ],
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "launch_high_using_wind_charge": {
+            "trigger": "minecraft:fall_after_explosion",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "aspects:aspect/oozeling/is_active"
+                    }
+                ],
+                "cause": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "minecraft:entity_type": "minecraft:wind_charge"
+                        }
+                    }
+                ],
+                "distance": {
+                    "y": {
+                        "min": 49
+                    }
+                }
+            }
+        }
+    },
+    "parent": "aspects:gameplay/aspect/oozeling/root"
+}

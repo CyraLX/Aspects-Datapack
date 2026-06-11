@@ -74,13 +74,13 @@
             {
                 "attribute": "minecraft:max_health",
                 "id": "aspects:oozeling/max_health",
-                "amount": -0.2,
+                "amount": -0.1,
                 "operation": "add_multiplied_base"
             },
             {
                 "attribute": "minecraft:armor",
                 "id": "aspects:oozeling/armor",
-                "amount": -0.25,
+                "amount": -0.29999,
                 "operation": "add_multiplied_total"
             },
             {

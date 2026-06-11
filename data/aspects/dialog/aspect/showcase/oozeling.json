@@ -1,0 +1,254 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.aspects.aspect_info",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.oozeling",
+                "color": "#7bc35c",
+                "shadow_color": -15062509
+            }
+        ]
+    },
+    "external_title": {
+        "translate": "dialog.aspects.aspect_info.external_title",
+        "with": [
+            {
+                "translate": "aspects",
+                "color": "blue",
+                "italic": true
+            },
+            {
+                "translate": "aspect.aspects.oozeling",
+                "color": "#7bc35c",
+                "shadow_color": -15062509
+            }
+        ]
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 550,
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "aspect.aspects.oozeling",
+                        "color": "#7bc35c",
+                        "shadow_color": -15062509
+                    },
+                    "\n",
+                    {
+                        "translate": "aspect.aspects.oozeling.description",
+                        "italic": true,
+                        "color": "#d6d6d6"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:awakened_essence_cage",
+                    "minecraft:custom_data": {
+                        "aspects": {
+                            "awakened_essence_cage": {
+                                "aspect": {
+                                    "namespace": "aspects",
+                                    "name": "oozeling"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.essence_combination",
+                "color": "#c7ffe8",
+                "extra": [
+                    "\n\n",
+                    {
+                        "translate": "dialog.aspects.aspect_info.essence_combination.entry",
+                        "color": "#d6d6d6",
+                        "with": [
+                            {
+                                "text": "120"
+                            },
+                            {
+                                "translate": "lore.essence.ooze"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:aspect/oozeling",
+                    "minecraft:enchantments": {
+                        "aspects:aspect/oozeling/body": 1
+                    },
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.effects",
+                "color": "#f6c7ff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.aspect_effects"
+                    }
+                ],
+                "extra": [
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.oozeling.elasticity",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.oozeling.elasticity.description",
+                                "italic": true
+                            }
+                        ]
+                    },
+                    "\n\n",
+                    {
+                        "translate": "aspect.aspects.oozeling.inefficient_protection",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "aspect.aspects.oozeling.inefficient_protection.description",
+                                "italic": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:jigsaw",
+                "count": 1,
+                "components": {
+                    "minecraft:item_model": "aspects:focus/oozeling",
+                    "minecraft:enchantment_glint_override": false
+                }
+            },
+            "width": 18,
+            "show_decorations": true,
+            "show_tooltip": false,
+            "description": {
+                "translate": "dialog.aspects.aspect_info.focus",
+                "color": "#c7fdff",
+                "with": [
+                    {
+                        "translate": "extra.aspects.focus_powers"
+                    }
+                ],
+                "extra": [
+                    "\n\n",
+                    {
+                        "translate": "item.aspects.focus.oozeling.use_name_1",
+                        "color": "#d6d6d6",
+                        "extra": [
+                            "\n",
+                            {
+                                "translate": "item.modifiers.use",
+                                "italic": true
+                            },
+                            " ",
+                            {
+                                "text": "",
+                                "italic": true,
+                                "extra": [
+                                    {
+                                        "translate": "item.aspects.focus.oozeling.use_result_1_1",
+                                        "with": [
+                                            {
+                                                "text": "+20% ",
+                                                "extra": [
+                                                    {
+                                                        "translate": "attribute.name.bounciness"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "40"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "item.aspects.focus.oozeling.use_result_1_2",
+                                        "with": [
+                                            {
+                                                "text": "-10% ",
+                                                "extra": [
+                                                    {
+                                                        "translate": "attribute.name.air_drag_modifier"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "40"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "\n",
+                                    {
+                                        "translate": "item.aspects.focus.oozeling.use_result_1_3",
+                                        "with": [
+                                            {
+                                                "text": "-10 ",
+                                                "extra": [
+                                                    {
+                                                        "translate": "attribute.name.knockback_resistance"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "translate": "extra.aspects.seconds",
+                                                "with": [
+                                                    "40"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": true
+}

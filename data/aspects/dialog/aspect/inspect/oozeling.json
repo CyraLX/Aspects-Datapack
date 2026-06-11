@@ -1,7 +1,7 @@
 {
-    "type": "minecraft:confirmation",
+    "type": "minecraft:notice",
     "title": {
-        "translate": "dialog.aspects.chosen_aspect",
+        "translate": "dialog.aspects.aspect_info",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -17,7 +17,7 @@
         ]
     },
     "external_title": {
-        "translate": "dialog.aspects.chosen_aspect.external_title",
+        "translate": "dialog.aspects.aspect_info.external_title",
         "fallback": "!! Missing Resource Pack for Aspects !!",
         "with": [
             {
@@ -46,7 +46,7 @@
             "type": "minecraft:plain_message",
             "width": 450,
             "contents": {
-                "translate": "dialog.aspects.chosen_aspect.hover_tutorial",
+                "translate": "dialog.aspects.aspect_info.hover_tutorial",
                 "italic": true,
                 "color": "gold"
             }
@@ -429,6 +429,17 @@
                                                 "translate": "badge_details.aspects.effect.attribute",
                                                 "color": "red",
                                                 "with": [
+                                                    "-20%",
+                                                    {
+                                                        "translate": "attribute.name.max_health"
+                                                    }
+                                                ]
+                                            },
+                                            "\n",
+                                            {
+                                                "translate": "badge_details.aspects.effect.attribute",
+                                                "color": "red",
+                                                "with": [
                                                     "-10%",
                                                     {
                                                         "translate": "attribute.name.max_health"
@@ -593,42 +604,14 @@
                     }
                 ]
             }
-        },
-        {
-            "type": "minecraft:plain_message",
-            "width": 450,
-            "contents": {
-                "translate": "dialog.aspects.chosen_aspect.confirmation",
-                "bold": false,
-                "with": [
-                    {
-                        "translate": "aspect.aspects.oozeling",
-                        "italic": true,
-                        "color": "#7bc35c",
-                        "shadow_color": -15062509
-                    }
-                ]
-            }
         }
     ],
     "can_close_with_escape": true,
     "pause": true,
-    "yes": {
+    "action": {
         "label": {
-            "translate": "gui.yes"
+            "translate": "gui.ok"
         },
-        "action": {
-            "type": "minecraft:run_command",
-            "command": "trigger aspects.choose_aspect set 11"
-        }
-    },
-    "no": {
-        "label": {
-            "translate": "gui.no"
-        },
-        "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "aspects:menu/choose_aspect"
-        }
+        "width": 200
     }
 }

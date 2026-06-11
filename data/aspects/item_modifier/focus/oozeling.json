@@ -119,7 +119,75 @@
                     "italic": false,
                     "extra": [
                         {
-                            "translate": "item.aspects.focus.oozeling.use_result_1"
+                            "translate": "item.aspects.focus.oozeling.use_result_1_1",
+                            "with": [
+                                {
+                                    "text": "+20% ",
+                                    "extra": [
+                                        {
+                                            "translate": "attribute.name.bounciness"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "extra.aspects.seconds",
+                                    "with": [
+                                        "40"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.oozeling.use_result_1_2",
+                            "with": [
+                                {
+                                    "text": "-10% ",
+                                    "extra": [
+                                        {
+                                            "translate": "attribute.name.air_drag_modifier"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "extra.aspects.seconds",
+                                    "with": [
+                                        "40"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.oozeling.use_result_1_3",
+                            "with": [
+                                {
+                                    "text": "-10 ",
+                                    "extra": [
+                                        {
+                                            "translate": "attribute.name.knockback_resistance"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "extra.aspects.seconds",
+                                    "with": [
+                                        "40"
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

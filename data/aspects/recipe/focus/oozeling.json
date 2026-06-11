@@ -36,13 +36,13 @@
             },
             "minecraft:item_model": "aspects:focus/oozeling",
             "minecraft:consumable": {
-                "consume_seconds": 0.3,
+                "consume_seconds": 2,
                 "animation": "bow",
                 "sound": "minecraft:entity.slime.jump",
                 "has_consume_particles": false
             },
             "minecraft:use_cooldown": {
-                "seconds": 15,
+                "seconds": 60,
                 "cooldown_group": "aspects:focus"
             },
             "minecraft:use_remainder": {
@@ -84,6 +84,12 @@
                 "count": 1
             },
             "minecraft:custom_data": {
+                "smithed": {
+                    "ignore": {
+                        "functionality": true,
+                        "crafting": true
+                    }
+                },
                 "aspects": {
                     "focus": {
                         "aspect": {
@@ -110,7 +116,7 @@
                             "translate": "lore.equipment.use_time.seconds",
                             "color": "#757575",
                             "with": [
-                                "0.3"
+                                "2"
                             ]
                         }
                     ]
@@ -127,7 +133,7 @@
                             "translate": "lore.equipment.use_cooldown.seconds",
                             "color": "#757575",
                             "with": [
-                                "15"
+                                "60"
                             ]
                         }
                     ]
@@ -144,7 +150,75 @@
                     "italic": false,
                     "extra": [
                         {
-                            "translate": "item.aspects.focus.oozeling.use_result_1"
+                            "translate": "item.aspects.focus.oozeling.use_result_1_1",
+                            "with": [
+                                {
+                                    "text": "+20% ",
+                                    "extra": [
+                                        {
+                                            "translate": "attribute.name.bounciness"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "extra.aspects.seconds",
+                                    "with": [
+                                        "40"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.oozeling.use_result_1_2",
+                            "with": [
+                                {
+                                    "text": "-10% ",
+                                    "extra": [
+                                        {
+                                            "translate": "attribute.name.air_drag_modifier"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "extra.aspects.seconds",
+                                    "with": [
+                                        "40"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "text": "",
+                    "color": "blue",
+                    "italic": false,
+                    "extra": [
+                        {
+                            "translate": "item.aspects.focus.oozeling.use_result_1_3",
+                            "with": [
+                                {
+                                    "text": "-10 ",
+                                    "extra": [
+                                        {
+                                            "translate": "attribute.name.knockback_resistance"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "extra.aspects.seconds",
+                                    "with": [
+                                        "40"
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
